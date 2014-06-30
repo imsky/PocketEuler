@@ -1639,6 +1639,8 @@ Problem 68
 Consider the following "magic" 3-gon ring, filled with the numbers 1 to 6,
 and each line adding to nine.
 
+![](files/p_068_1.gif)
+
 Working clockwise, and starting from the group of three with the
 numerically lowest external node (4,3,2 in this example), each solution
 can be described uniquely. For example, the above solution can be
@@ -1664,7 +1666,6 @@ Using the numbers 1 to 10, and depending on arrangements, it is possible
 to form 16- and 17-digit strings. What is the maximum 16-digit string for
 a "magic" 5-gon ring?
 
-![](files/p_068_1.gif)
 ![](files/p_068_2.gif)
 
 Answer: 26227442c6fed0292a528ac3790175be
@@ -2104,10 +2105,10 @@ Problem 85
 By counting carefully it can be seen that a rectangular grid measuring 3
 by 2 contains eighteen rectangles:
 
+![](files/p_085.gif)
+
 Although there exists no rectangular grid that contains exactly two
 million rectangles, find the area of the grid with the nearest solution.
-
-![](files/p_085.gif)
 
 Answer: 92bf5e6240737e0326ea59846a83e076
 
@@ -2118,6 +2119,8 @@ A spider, S, sits in one corner of a cuboid room, measuring 6 by 5 by 3,
 and a fly, F, sits in the opposite corner. By travelling on the surfaces
 of the room the shortest "straight line" distance from S to F is 10 and
 the path is shown on the diagram.
+
+![](files/p_086.gif)
 
 However, there are up to three "shortest" path candidates for any given
 cuboid and the shortest route doesn't always have integer length.
@@ -2130,8 +2133,6 @@ solutions is 1975 when M=99.
 
 Find the least value of M such that the number of solutions first exceeds
 one million.
-
-![](files/p_086.gif)
 
 Answer: f5c3dd7514bf620a1b85450d2ae374b1
 
@@ -2231,6 +2232,8 @@ numbers.
 
 For example, the square number 64 could be formed:
 
+![](files/p_090.gif)
+
 In fact, by carefully choosing the digits on both cubes it is possible to
 display all of the square numbers below one-hundred: 01, 04, 09, 16, 25,
 36, 49, 64, and 81.
@@ -2256,8 +2259,6 @@ for the purpose of forming 2-digit numbers.
 How many distinct arrangements of the two cubes allow for all of the
 square numbers to be displayed?
 
-![](files/p_090.gif)
-
 Answer: 6a61d423d02a1c56250dc23ae7ff12f3
 
 Problem 91
@@ -2266,15 +2267,16 @@ Problem 91
 The points P (x[1], y[1]) and Q (x[2], y[2]) are plotted at integer
 co-ordinates and are joined to the origin, O(0,0), to form ΔOPQ.
 
+![](files/p_091_1.gif)
+
 There are exactly fourteen triangles containing a right angle that can be
 formed when each co-ordinate lies between 0 and 2 inclusive; that is,
 0 ≤ x[1], y[1], x[2], y[2] ≤ 2.
 
+![](files/p_091_2.gif)
+
 Given that 0 ≤ x[1], y[1], x[2], y[2] ≤ 50, how many right triangles can
 be formed?
-
-![](files/p_091_1.gif)
-![](files/p_091_2.gif)
 
 Answer: e8dc153260a59d4f236cfd7439d5dfd3
 
@@ -2688,6 +2690,8 @@ Problem 107
 The following undirected network consists of seven vertices and twelve
 edges with a total weight of 243.
 
+![](files/p_107_1.gif)
+
 The same network can be represented by the matrix below.
 
 			  ┌──────┬────┬────┬────┬────┬────┬────┬────┐
@@ -2713,17 +2717,12 @@ still ensure that all points on the network remain connected. The network
 which achieves the maximum saving is shown below. It has a weight of 93,
 representing a saving of 243 − 93 = 150 from the original network.
 
-Using [1]network.txt, a 6K text file containing a network with forty
+![](files/p_107_2.gif)
+
+Using [network.txt](files/network.txt), a 6K text file containing a network with forty
 vertices, and given in matrix form, find the maximum saving which can be
 achieved by removing redundant edges whilst ensuring that the network
 remains connected.
-
-
-Visible links
-1. network.txt
-
-![](files/p_107_1.gif)
-![](files/p_107_2.gif)
 
 Answer: b0db1202ec966e7855ca23626eb285b8
 
@@ -2762,6 +2761,8 @@ Problem 109
 
 In the game of darts a player throws three darts at a target board which
 is split into twenty equal sized sections numbered one to twenty.
+
+![](files/p_109.gif)
 
 The score of a dart is determined by the number of the region that the
 dart lands in. A dart landing outside the red/green outer ring scores
@@ -2821,8 +2822,6 @@ example, D3 is the same as 0 D3 and 0 0 D3.
 Incredibly there are 42336 distinct ways of checking out in total.
 
 How many distinct ways can a player checkout with a score less than 100?
-
-![](files/p_109.gif)
 
 Answer: e6aebd5be1ba81557dbcc5f6f57bbe5c
 
@@ -3260,6 +3259,8 @@ Problem 126
 The minimum number of cubes to cover every visible face on a cuboid
 measuring 3 x 2 x 1 is twenty-two.
 
+![](files/p_126.gif)
+
 If we then add a second layer to this solid it would require forty-six
 cubes to cover every visible face, the third layer would require
 seventy-eight cubes, and the fourth layer would require one-hundred and
@@ -3276,8 +3277,6 @@ cubes in one of its layers. So C(22) = 2, C(46) = 4, C(78) = 5, and C(118)
 It turns out that 154 is the least value of n for which C(n) = 10.
 
 Find the least value of n for which C(n) = 1000.
-
-![](files/p_126.gif)
 
 Answer: 387d6ae83cbc6fa0b9192b56bf095c49
 
@@ -3325,6 +3324,8 @@ New rings are added in the same fashion, with the next rings being
 numbered 8 to 19, 20 to 37, 38 to 61, and so on. The diagram below shows
 the first three rings.
 
+![](files/p_128.gif)
+
 By finding the difference between tile n and each its six neighbours we
 shall define PD(n) to be the number of those differences which are prime.
 
@@ -3341,7 +3342,6 @@ form a sequence, the 10th tile would be 271.
 
 Find the 2000th tile in this sequence.
 
-![](files/p_128.gif)
 Answer: 93a1925da4792b4fa5d2dbb6ebb7c4a2
 
 
@@ -3554,6 +3554,8 @@ Problem 138
 Consider the isosceles triangle with base length, b = 16, and legs, L =
 17.
 
+![](files/p_138.gif)
+
 By using the Pythagorean theorem it can be seen that the height of the
 triangle, h = √(17^2 − 8^2) = 15, which is one less than the base length.
 
@@ -3563,8 +3565,6 @@ property that h = b ± 1.
 
 Find ∑ L for the twelve smallest isosceles triangles for which h = b ± 1
 and b, L are positive integers.
-
-![](files/p_138.gif)
 
 Answer: f7524f4d0d6d042c0f92a0d6469aff85
 
@@ -3579,14 +3579,14 @@ For example, (3, 4, 5) triangles can be placed together to form a 5 by 5
 square with a 1 by 1 hole in the middle and it can be seen that the 5 by 5
 square can be tiled with twenty-five 1 by 1 squares.
 
+![](files/p_139.gif)
+
 However, if (5, 12, 13) triangles were used then the hole would measure 7
 by 7 and these could not be used to tile the 13 by 13 square.
 
 Given that the perimeter of the right triangle is less than one-hundred
 million, how many Pythagorean triangles would allow such a tiling to take
 place?
-
-![](files/p_139.gif)
 
 Answer: 1c343ba00e6d17d7239bf45869ffed0c
 
@@ -3677,6 +3677,8 @@ point, minimises p + q + r. Even more remarkable, it can be shown that
 when the sum is minimised, AN = BM = CO = p + q + r and that AN, BM and CO
 also intersect at T.
 
+![](files/p_143_torricelli.gif)
+
 If the sum is minimised and a, b, c, p, q and r are all positive integers
 we shall call triangle ABC a Torricelli triangle. For example, a = 399, b
 = 455, c = 511 is an example of a Torricelli triangle, with p + q + r =
@@ -3684,8 +3686,6 @@ we shall call triangle ABC a Torricelli triangle. For example, a = 399, b
 
 Find the sum of all distinct values of p + q + r ≤ 120000 for Torricelli
 triangles.
-
-![](files/p_143_torricelli.gif)
 
 Answer: ec2d4c1a0c204d1f06ea5e2d189034f6
 
@@ -3700,6 +3700,8 @@ mirrors, and eventually works its way back out.
 
 The specific white cell we will be considering is an ellipse with the
 equation 4x^2 + y^2 = 100
+
+![](files/p_144_1.gif) ![](files/p_144_2.gif)
 
 The section corresponding to −0.01 ≤ x ≤ +0.01 at the top is missing,
 allowing the light to enter and exit through the hole.
@@ -3727,10 +3729,6 @@ The animation on the right shows the first 10 reflections of the beam.
 
 How many times does the beam hit the internal surface of the white cell
 before exiting?
-
-
-![](files/p_144_1.gif)
-![](files/p_144_2.gif)
 
 Answer: 8dd48d6a2e2cad213179a3992c0be53c
 
@@ -3773,6 +3771,8 @@ Problem 147
 In a 3x2 cross-hatched grid, a total of 37 different rectangles could be
 situated within that grid as indicated in the sketch.
 
+![](files/p_147.gif)
+
 There are 5 grids smaller than 3x2, vertical and horizontal dimensions
 being important, i.e. 1x1, 2x1, 3x1, 1x2 and 2x2. If each of them is
 cross-hatched, the following number of different rectangles could be
@@ -3790,8 +3790,6 @@ could be situated within 3x2 and smaller grids.
 How many different rectangles could be situated within 47x43 and smaller
 grids?
 
-
-![](files/p_147.gif)
 
 Answer: d0fca7d85d4a4df043a2ae5772ea472e
 
@@ -3872,6 +3870,8 @@ possible.
 In the example below, it can be easily verified that the marked triangle
 satisfies this condition having a sum of −42.
 
+![](files/p_150.gif)
+
 We wish to make such a triangular array with one thousand rows, so we
 generate 500500 pseudo-random numbers s[k] in the range ±2^19, using a
 type of random number generator (known as a Linear Congruential Generator)
@@ -3900,8 +3900,6 @@ The "sum of a sub-triangle" is defined as the sum of all the elements it
 contains.
 Find the smallest possible sub-triangle sum.
 
-![](files/p_150.gif)
-
 Answer: 1802939e514020769701c59b422c0498
 
 
@@ -3921,6 +3919,8 @@ obtains the A5-size sheet needed for the first batch of the week.
 
 All the unused sheets are placed back in the envelope.
 
+![](files/p_151.gif)
+
 At the beginning of each subsequent batch, he takes from the envelope one
 sheet of paper at random. If it is of size A5, he uses it. If it is
 larger, he repeats the 'cut-in-half' procedure until he has what he needs
@@ -3931,9 +3931,6 @@ of times (during each week) that the foreman finds a single sheet of paper
 in the envelope.
 
 Give your answer rounded to six decimal places using the format x.xxxxxx .
-
-
-![](files/p_151.gif)
 
 Answer: fb84a530fa9a8199edfadd618727fb70
 
@@ -3946,14 +3943,14 @@ using distinct integers.
 
 For instance, the numbers {2,3,4,5,7,12,15,20,28,35} can be used:
 
+![](files/p_152_sum.gif)
+
 In fact, only using integers between 2 and 45 inclusive, there are exactly
 three ways to do it, the remaining two being:
 {2,3,4,6,7,9,10,20,28,35,36,45} and {2,3,4,6,7,9,12,15,28,30,35,36,45}.
 
 How many ways are there to write the number 1/2 as a sum of inverse
 squares using distinct integers between 2 and 80 inclusive?
-
-![](files/p_152_sum.gif)
 
 Answer: 34ed066df378efacc9b924ec161e7639
 
@@ -3976,12 +3973,12 @@ To distinguish them from Gaussian integers with b ≠ 0 we call such
 integers "rational integers."
 A Gaussian integer is called a divisor of a rational integer n if the
 result is also a Gaussian integer.
-If for example we divide 5 by 1+2i we can simplify in the following
+If for example we divide 5 by 1+2i we can simplify ![](files/p_153_formule1.gif) in the following
 manner:
 Multiply numerator and denominator by the complex conjugate of 1+2i: 1−2i.
-The result is .
+The result is ![](files/p_153_formule2.gif).
 So 1+2i is a divisor of 5.
-Note that 1+i is not a divisor of 5 because .
+Note that 1+i is not a divisor of 5 because ![](files/p_153_formule5.gif).
 Note also that if the Gaussian Integer (a+bi) is a divisor of a rational
 integer n, then its complex conjugate (a−bi) is also a divisor of n.
 
@@ -4005,17 +4002,11 @@ positive rational integers:
 		  │ 5 │ 1, 1+2i, 1-2i, 2+i, 2-i, 5   │ 12            │
 		  └───┴──────────────────────────────┴───────────────┘
 
-For divisors with positive real parts, then, we have: .
+For divisors with positive real parts, then, we have: ![](files/p_153_formule6.gif).
 
 For 1 ≤ n ≤ 10^5, ∑ s(n)=17924657155.
 
 What is ∑ s(n) for 1 ≤ n ≤ 10^8?
-
-
-![](files/p_153_formule1.gif)
-![](files/p_153_formule2.gif)
-![](files/p_153_formule5.gif)
-![](files/p_153_formule6.gif)
 
 Answer: 08ec9d6e6c2275d37e7a227fb2d1f06f
 
@@ -4025,6 +4016,8 @@ Problem 154
 
 A triangular pyramid is constructed using spherical balls so that each
 ball rests on exactly three balls of the next lower level.
+
+![](files/p_154_pyramid.gif)
 
 Then, we calculate the number of paths leading from the apex to each
 position:
@@ -4042,9 +4035,6 @@ coefficients of the trinomial expansion (x + y + z)^n.
 How many coefficients in the expansion of (x + y + z)^200000 are multiples
 of 10^12?
 
-
-![](files/p_154_pyramid.gif)
-
 Answer: de866633fa075beb3897cbbc8abf2400
 
 
@@ -4060,8 +4050,10 @@ final circuit.
 
 Using this simple procedure and up to n identical capacitors, we can make
 circuits having a range of different total capacitances. For example,
-using up to n=3 capacitors of 60 F each, we can obtain the following 7
+using up to n=3 capacitors of 60 μF each, we can obtain the following 7
 distinct total capacitance values:
+
+![](files/p_155_capacitors1.gif)
 
 If we denote by D(n) the number of distinct total capacitance values we
 can obtain when using up to n equal-valued capacitors and the simple
@@ -4072,12 +4064,7 @@ Find D(18).
 Reminder : When connecting capacitors C[1], C[2] etc in parallel, the
 total capacitance is C[T] = C[1] + C[2] +...,
 whereas when connecting them in series, the overall capacitance is given
-by:
-
-
-![](files/p_155_capsmu.gif)
-![](files/p_155_capacitors1.gif)
-![](files/p_155_capsform.gif)
+by: ![](files/p_155_capsform.gif)
 
 Answer: da0a3fc900cc8ae42d514e280524ee39
 
@@ -4237,7 +4224,11 @@ Problem 161
 A triomino is a shape consisting of three squares joined via the
 edges.There are two basic forms:
 
+![](files/p_161_trio1.gif)
+
 If all possible orientations are taken into account there are six:
+
+![](files/p_161_trio3.gif)
 
 Any n by m grid for which nxm is divisible by 3 can be tiled with
 triominoes.
@@ -4245,11 +4236,9 @@ If we consider tilings that can be obtained by reflection or rotation from
 another tiling as different there are 41 ways a 2 by 9 grid can be tiled
 with triominoes:
 
-In how many ways can a 9 by 12 grid be tiled in this way by triominoes?
-
-![](files/p_161_trio1.gif)
-![](files/p_161_trio3.gif)
 ![](files/p_161_k9.gif)
+
+In how many ways can a 9 by 12 grid be tiled in this way by triominoes?
 
 Answer: 975ccc38bb5402c5b485f3de5928d919
 
@@ -4290,6 +4279,8 @@ Consider an equilateral triangle in which straight lines are drawn from
 each vertex to the middle of the opposite side, such as in the size 1
 triangle in the sketch below.
 
+![](files/p_163.gif)
+
 Sixteen triangles of either different shape or size or orientation or
 location can now be observed in that triangle. Using size 1 triangles as
 building blocks, larger triangles can be formed, such as the size 2
@@ -4309,8 +4300,6 @@ T(1) = 16
 T(2) = 104
 
 Find T(36).
-
-![](files/p_163.gif)
 
 Answer: a4f66a42a5b5dc395d00463d77e0a0c6
 
@@ -4525,14 +4514,13 @@ We shall define a square lamina to be a square outline with a square
 example, using exactly thirty-two square tiles we can form two different
 square laminae:
 
+![](files/p_173_square_laminas.gif)
+
 With one-hundred tiles, and not necessarily using all of the tiles at one
 time, it is possible to form forty-one different square laminae.
 
 Using up to one million tiles how many different square laminae can be
 formed?
-
-
-![](files/p_173_square_laminas.gif)
 
 Answer: 177f825c89a68aefae37b8dec9bb8a9b
 
@@ -4547,6 +4535,8 @@ Given eight tiles it is possible to form a lamina in only one way: 3x3
 square with a 1x1 hole in the middle. However, using thirty-two tiles it
 is possible to form two distinct laminae.
 
+![](files/p_173_square_laminas.gif)
+
 If t represents the number of tiles used, we shall say that t = 8 is type
 L(1) and t = 32 is type L(2).
 
@@ -4554,8 +4544,6 @@ Let N(n) be the number of t ≤ 1000000 such that t is type L(n); for
 example, N(15) = 832.
 
 What is ∑ N(n) for 1 ≤ n ≤ 10?
-
-![](files/p_173_square_laminas.gif)
 
 Answer: 73166006522ed7f51ed3e2ca66353b66
 
@@ -4609,6 +4597,8 @@ Let ABCD be a convex quadrilateral, with diagonals AC and BD. At each
 vertex the diagonal makes an angle with each of the two sides, creating
 eight corner angles.
 
+![](files/p_177_quad.gif)
+
 For example, at vertex A, the two angles are CAD, CAB.
 
 We call such a quadrilateral for which all eight corner angles have
@@ -4621,9 +4611,6 @@ What is the total number of non-similar integer angled quadrilaterals?
 
 Note: In your calculations you may assume that a calculated angle is
 integral if it is within a tolerance of 10^-9 of an integer value.
-
-
-![](files/p_177_quad.gif)
 
 Answer: d7a85236af930db0f7e84f2de8ee7ac2
 
@@ -4785,14 +4772,13 @@ triangles having all three vertices in I[2] which contain the origin in
 the interior. Two of them are shown below, the others are obtained from
 these by rotation.
 
+![](files/p_184.gif)
+
 For a radius of 3, there are 360 triangles containing the origin in the
 interior and having all vertices in I[3] and for I[5] the number is 10600.
 
 How many triangles are there containing the origin in the interior and
 having all three vertices in I[105]?
-
-
-![](files/p_184.gif)
 
 Answer: aa80f8619ed594e5d7852564457dbca6
 
@@ -4933,6 +4919,8 @@ Problem 189
 
 Consider the following configuration of 64 triangles:
 
+![](files/p_189_grid.gif)
+
 We wish to colour the interior of each triangle with one of three colours:
 red, green or blue, so that no two neighbouring triangles have the same
 colour. Such a colouring shall be called valid. Here, two triangles are
@@ -4941,14 +4929,12 @@ Note: if they only share a vertex, then they are not neighbours.
 
 For example, here is a valid colouring of the above grid:
 
+![](files/p_189_colours.gif)
+
 A colouring C' which is obtained from a colouring C by rotation or
 reflection is considered distinct from C unless the two are identical.
 
 How many distinct valid colourings are there for the above configuration?
-
-
-![](files/p_189_grid.gif)
-![](files/p_189_colours.gif)
 
 Answer: d3dfdd37601678212b746c34699f1484
 
@@ -5036,8 +5022,8 @@ Problem 194
 ===========
 
 
-Consider graphs built with the units A: and B: , where the units are glued
-alongthe vertical edges as in the graph .
+Consider graphs built with the units A: ![](files/p_194_GraphA.png) and B: ![](files/p_194_GraphB.png), where the units are glued
+alongthe vertical edges as in the graph ![](files/p_194_Fig.png).
 
 A configuration of type (a,b,c) is a graph thus built of a units A and b
 units B, where the graph's vertices are coloured using up to c colours, so
@@ -5049,11 +5035,6 @@ Let N(a,b,c) be the number of configurations of type (a,b,c).
 For example, N(1,0,3) = 24, N(0,2,4) = 92928 and N(2,2,3) = 20736.
 
 Find the last 8 digits of N(25,75,1984).
-
-
-![](files/p_194_GraphA.png)
-![](files/p_194_GraphB.png)
-![](files/p_194_Fig.png)
 
 Answer: e070561d568a80a0e45d7835e3817ba4
 
@@ -5166,6 +5147,8 @@ each pair of circles is tangent to one another and the inner circles do
 not overlap. There are four uncovered "gaps" which are to be filled
 iteratively with more tangent circles.
 
+![](files/p_199_circles_in_circles.gif)
+
 At each iteration, a maximally sized circle is placed in each gap, which
 creates more gaps for the next iteration. After 3 iterations (pictured),
 there are 108 gaps and the fraction of the area which is not covered by
@@ -5175,8 +5158,6 @@ What fraction of the area is not covered by circles after 10 iterations?
 Give your answer rounded to eight decimal places using the format
 x.xxxxxxxx .
 
-
-![](files/p_199_circles_in_circles.gif)
 
 Answer: 0f8fd87159c28ae5fea6ac91a95d48dd
 
@@ -5784,27 +5765,21 @@ Problem 225
 Problem 226
 ===========
 
+The blancmange curve is the set of points (x,y) such that 0 ≤ x ≤ 1 and ![](files/p_226_formula.gif),
+where s(x) = the distance from x to the nearest integer.
 
-   The blancmange curve is the set of points (x,y) such that 0 ≤ x ≤ 1 and ,
-   where s(x) = the distance from x to the nearest integer.
+The area under the blancmange curve is equal to ½, shown in pink in the
+diagram below.
 
-   The area under the blancmange curve is equal to ½, shown in pink in the
-   diagram below.
+![](files/p_226_scoop2.gif)
 
-                              [1]blancmange curve
+Let C be the circle with centre (¼,½) and radius ¼, shown in black in the
+diagram.
 
-   Let C be the circle with centre (¼,½) and radius ¼, shown in black in the
-   diagram.
+What area under the blancmange curve is enclosed by C?
+Give your answer rounded to eight decimal places in the form 0.abcdefgh
 
-   What area under the blancmange curve is enclosed by C?
-   Give your answer rounded to eight decimal places in the form 0.abcdefgh
-
-
-   Visible links
-   p_226_formula.gif
-   p_226_scoop2.gif
-   Answer: ce6fd32d1d2fb58c4c0c1f7962c39f04
-
+Answer: ce6fd32d1d2fb58c4c0c1f7962c39f04
 
 Problem 227
 ===========
