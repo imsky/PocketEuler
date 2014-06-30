@@ -13,7 +13,10 @@ Project Euler is protected under CC Attribution-Non-Commercial-Share Alike 2.0 U
 Many symbols are utf8, my apologies if you are on a 7-bit TTY.
 
 Solutions are hashed with md5sum
+
+```
 echo -n 'myanswer' | md5sum
+```
 
 ### Version
 
@@ -471,7 +474,7 @@ Problem 18
                   04 62 98 27 23 09 70 98 73 93 38 53 60 04 23
 
    NOTE: As there are only 16384 routes, it is possible to solve this problem
-   by trying every route. However, [1]Problem 67, is the same challenge with
+   by trying every route. However, [Problem 67](#problem-67), is the same challenge with
    a triangle containing one-hundred rows; it cannot be solved by brute
    force, and requires a clever method! ;o)
 
@@ -1674,7 +1677,7 @@ Problem 67
    Find the maximum total from top to bottom in [1]triangle.txt, a 15K text
    file containing a triangle with one-hundred rows.
 
-   NOTE: This is a much more difficult version of [2]Problem 18. It is not
+   NOTE: This is a much more difficult version of [Problem 18](#problem-18). It is not
    possible to try every route to solve this problem, as there are 2^99
    altogether! If you could check one trillion (10^12) routes every second it
    would take over twenty billion years to check them all. There is an
@@ -2052,7 +2055,7 @@ Problem 82
 ==========
 
 
-   NOTE: This problem is a more challenging version of [1]Problem 81.
+   NOTE: This problem is a more challenging version of [Problem 81](#problem-81).
 
    The minimal path sum in the 5 by 5 matrix below, by starting in any cell
    in the left column and finishing in any cell in the right column, and only
@@ -2080,7 +2083,7 @@ Problem 83
 
 
    NOTE: This problem is a significantly more challenging version of
-   [1]Problem 81.
+   [Problem 81](#problem-81).
 
    In the 5 by 5 matrix below, the minimal path sum from the top left to the
    bottom right, by moving left, right, up, and down, is indicated in bold
@@ -2723,7 +2726,7 @@ Problem 103
 
    Given that A is an optimum special sum set for n = 7, find its set string.
 
-   NOTE: This problem is related to [1]Problem 105 and [2]Problem 106.
+   NOTE: This problem is related to [Problem 105](#problem-105) and [Problem 106](#problem-106).
 
 
    Visible links
@@ -2775,7 +2778,7 @@ Problem 105
    special sum sets, A[1], A[2], ..., A[k], and find the value of S(A[1]) +
    S(A[2]) + ... + S(A[k]).
 
-   NOTE: This problem is related to [2]Problem 103 and [3]Problem 106.
+   NOTE: This problem is related to [Problem 103](#problem-103) and [Problem 106](#problem-106).
 
 
    Visible links
@@ -2807,7 +2810,7 @@ Problem 106
    For n = 12, how many of the 261625 subset pairs that can be obtained need
    to be tested for equality?
 
-   NOTE: This problem is related to [1]Problem 103 and [2]Problem 105.
+   NOTE: This problem is related to [Problem 103](#problem-103) and [Problem 105](#problem-105).
 
 
    Visible links
@@ -2886,7 +2889,7 @@ Problem 108
    What is the least value of n for which the number of distinct solutions
    exceeds one-thousand?
 
-   NOTE: This problem is an easier version of [1]Problem 110; it is strongly
+   NOTE: This problem is an easier version of [Problem 110](#problem-110); it is strongly
    advised that you solve this one first.
 
 
@@ -2983,7 +2986,7 @@ Problem 110
    What is the least value of n for which the number of distinct solutions
    exceeds four million?
 
-   NOTE: This problem is a much more difficult version of [1]Problem 108 and
+   NOTE: This problem is a much more difficult version of [Problem 108](#problem-108) and
    as it is well beyond the limitations of a brute force approach it requires
    a clever implementation.
 
@@ -3135,7 +3138,7 @@ Problem 115
 ===========
 
 
-   NOTE: This is a more difficult version of [1]Problem 114.
+   NOTE: This is a more difficult version of [Problem 114](#problem-114).
 
    A row measuring n units in length has red blocks with a minimum length of
    m units placed on it, such that any two red blocks (which are allowed to
@@ -3195,7 +3198,7 @@ Problem 116
    in length be replaced if colours cannot be mixed and at least one coloured
    tile must be used?
 
-   NOTE: This is related to [1]Problem 117.
+   NOTE: This is related to [Problem 117](#problem-117).
 
 
    Visible links
@@ -3226,7 +3229,7 @@ Problem 117
 
    How many ways can a row measuring fifty units in length be tiled?
 
-   NOTE: This is related to [1]Problem 116.
+   NOTE: This is related to [Problem 116](#problem-116).
 
 
    Visible links
