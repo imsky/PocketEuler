@@ -8052,42 +8052,39 @@ Problem 313
 Problem 314
 ===========
 
+The moon has been opened up, and land can be obtained for free, but there
+is a catch. You have to build a wall around the land that you stake out,
+and building a wall on the moon is expensive. Every country has been
+allotted a 500 m by 500 m square area, but they will possess only that
+area which they wall in. 251001 posts have been placed in a rectangular
+grid with 1 meter spacing. The wall must be a closed series of straight
+lines, each line running from post to post.
 
-   The moon has been opened up, and land can be obtained for free, but there
-   is a catch. You have to build a wall around the land that you stake out,
-   and building a wall on the moon is expensive. Every country has been
-   allotted a 500 m by 500 m square area, but they will possess only that
-   area which they wall in. 251001 posts have been placed in a rectangular
-   grid with 1 meter spacing. The wall must be a closed series of straight
-   lines, each line running from post to post.
+The bigger countries of course have built a 2000 m wall enclosing the
+entire 250 000 m^2 area. The [Duchy of Grand Fenwick](http://en.wikipedia.org/wiki/Grand_Fenwick), has a tighter
+budget, and has asked you (their Royal Programmer) to compute what shape
+would get best maximum enclosed-area/wall-length ratio.
 
-   The bigger countries of course have built a 2000 m wall enclosing the
-   entire 250 000 m^2 area. The [1]Duchy of Grand Fenwick, has a tighter
-   budget, and has asked you (their Royal Programmer) to compute what shape
-   would get best maximum enclosed-area/wall-length ratio.
+You have done some preliminary calculations on a sheet of paper.For a 2000
+meter wall enclosing the 250 000 m^2 area theenclosed-area/wall-length
+ratio is 125.
+Although not allowed , but to get an idea if this is anything better: if
+you place a circle inside the square area touching the four sides the area
+will be equal to π*250^2 m^2 and the perimeter will be π*500 m, so the
+enclosed-area/wall-length ratio will also be 125.
 
-   You have done some preliminary calculations on a sheet of paper.For a 2000
-   meter wall enclosing the 250 000 m^2 area theenclosed-area/wall-length
-   ratio is 125.
-   Although not allowed , but to get an idea if this is anything better: if
-   you place a circle inside the square area touching the four sides the area
-   will be equal to π*250^2 m^2 and the perimeter will be π*500 m, so the
-   enclosed-area/wall-length ratio will also be 125.
+However, if you cut off from the square four triangles with sides 75 m, 75
+m and 75√2 m the total area becomes 238750 m^2 and the perimeter becomes
+1400+300√2 m. So this gives an enclosed-area/wall-length ratio of 130.87,
+which is significantly better.
 
-   However, if you cut off from the square four triangles with sides 75 m, 75
-   m and 75√2 m the total area becomes 238750 m^2 and the perimeter becomes
-   1400+300√2 m. So this gives an enclosed-area/wall-length ratio of 130.87,
-   which is significantly better.
+![](files/p_314_landgrab.gif)
 
-   Find the maximum enclosed-area/wall-length ratio.
-   Give your answer rounded to 8 places behind the decimal point in the form
-   abc.defghijk.
+Find the maximum enclosed-area/wall-length ratio.
+Give your answer rounded to 8 places behind the decimal point in the form
+abc.defghijk.
 
-
-   Visible links
-   1. http://en.wikipedia.org/wiki/Grand_Fenwick
-   p_314_landgrab.gif
-   Answer: aa457cae6f67945d50683a85a9b70230
+Answer: aa457cae6f67945d50683a85a9b70230
 
 
 Problem 315
@@ -8858,32 +8855,29 @@ Problem 338
 Problem 339
 ===========
 
+"And he came towards a valley, through which ran a river; and the borders
+of the valley were wooded, and on each side of the river were level
+meadows. And on one side of the river he saw a flock of white sheep, and
+on the other a flock of black sheep. And whenever one of the white sheep
+bleated, one of the black sheep would cross over and become white; and
+when one of the black sheep bleated, one of the white sheep would cross
+over and become black."
 
-   "And he came towards a valley, through which ran a river; and the borders
-   of the valley were wooded, and on each side of the river were level
-   meadows. And on one side of the river he saw a flock of white sheep, and
-   on the other a flock of black sheep. And whenever one of the white sheep
-   bleated, one of the black sheep would cross over and become white; and
-   when one of the black sheep bleated, one of the white sheep would cross
-   over and become black."
-   [1]en.wikisource.org
+[en.wikisource.org](http://en.wikisource.org/wiki/The_Mabinogion/Peredur_the_Son_of_Evrawc)
 
-   Initially each flock consists of n sheep. Each sheep (regardless of
-   colour) is equally likely to be the next sheep to bleat. After a sheep has
-   bleated and a sheep from the other flock has crossed over, Peredur may
-   remove a number of white sheep in order to maximize the expected final
-   number of black sheep. Let E(n) be the expected final number of black
-   sheep if Peredur uses an optimal strategy.
+Initially each flock consists of n sheep. Each sheep (regardless of
+colour) is equally likely to be the next sheep to bleat. After a sheep has
+bleated and a sheep from the other flock has crossed over, Peredur may
+remove a number of white sheep in order to maximize the expected final
+number of black sheep. Let E(n) be the expected final number of black
+sheep if Peredur uses an optimal strategy.
 
-   You are given that E(5) = 6.871346 rounded to 6 places behind the decimal
-   point.
-   Find E(10 000) and give your answer rounded to 6 places behind the decimal
-   point.
+You are given that E(5) = 6.871346 rounded to 6 places behind the decimal
+point.
+Find E(10 000) and give your answer rounded to 6 places behind the decimal
+point.
 
-
-   Visible links
-   1. http://en.wikisource.org/wiki/The_Mabinogion/Peredur_the_Son_of_Evrawc
-   Answer: 0be02210b2d2212d37d026478093c457
+Answer: 0be02210b2d2212d37d026478093c457
 
 
 Problem 340
@@ -9521,43 +9515,40 @@ Problem 362
 Problem 363
 ===========
 
-   A cubic Bézier curve is defined by four points: P[0], P[1], P[2] and P[3].
+A cubic Bézier curve is defined by four points: P[0], P[1], P[2] and P[3].
 
-   The curve is constructed as follows:
-   On the segments P[0]P[1], P[1]P[2] and P[2]P[3] the points Q[0],Q[1] and
-   Q[2] are drawn such that
-   P[0]Q[0]/P[0]P[1]=P[1]Q[1]/P[1]P[2]=P[2]Q[2]/P[2]P[3]=t (t in [0,1]).
-   On the segments Q[0]Q[1] and Q[1]Q[2] the points R[0] and R[1] are drawn
-   such thatQ[0]R[0]/Q[0]Q[1]=Q[1]R[1]/Q[1]Q[2]=t for the same value of t.
-   On the segment R[0]R[1] the point B is drawn such that R[0]B/R[0]R[1]=t
-   for the same value of t.The Bézier curve defined by the points P[0], P[1],
-   P[2], P[3] is the locus of B as Q[0] takes all possible positions on the
-   segment P[0]P[1]. (Please note that for all points the value of t is the
-   same.)
+The curve is constructed as follows:
+On the segments P[0]P[1], P[1]P[2] and P[2]P[3] the points Q[0],Q[1] and
+Q[2] are drawn such that
+P[0]Q[0]/P[0]P[1]=P[1]Q[1]/P[1]P[2]=P[2]Q[2]/P[2]P[3]=t (t in [0,1]).
+On the segments Q[0]Q[1] and Q[1]Q[2] the points R[0] and R[1] are drawn
+such thatQ[0]R[0]/Q[0]Q[1]=Q[1]R[1]/Q[1]Q[2]=t for the same value of t.
+On the segment R[0]R[1] the point B is drawn such that R[0]B/R[0]R[1]=t
+for the same value of t.The Bézier curve defined by the points P[0], P[1],
+P[2], P[3] is the locus of B as Q[0] takes all possible positions on the
+segment P[0]P[1]. (Please note that for all points the value of t is the
+same.)
 
-   [1]Applet
+In the applet to the right you can drag the points P[0], P[1], P[2] and
+P[3] to see what the Bézier curve (green curve) defined by those points
+looks like. You can also drag the point Q[0] along the segment P[0]P[1].
 
-   In the applet to the right you can drag the points P[0], P[1], P[2] and
-   P[3] to see what the Bézier curve (green curve) defined by those points
-   looks like. You can also drag the point Q[0] along the segment P[0]P[1].
+**NOTE: The applet is currently unavailable**
 
-   From the construction it is clear that the Bézier curve will be tangent to
-   the segments P[0]P[1] in P[0] and P[2]P[3] in P[3].
+From the construction it is clear that the Bézier curve will be tangent to
+the segments P[0]P[1] in P[0] and P[2]P[3] in P[3].
 
-   A cubic Bézier curve with P[0]=(1,0), P[1]=(1,v), P[2]=(v,1) and
-   P[3]=(0,1) is used to approximate a quarter circle.
-   The value v>0 is chosen such that the area enclosed by the lines OP[0],
-   OP[3] and the curve is equal to ^π/[4] (the area of the quarter circle).
+A cubic Bézier curve with P[0]=(1,0), P[1]=(1,v), P[2]=(v,1) and
+P[3]=(0,1) is used to approximate a quarter circle.
+The value v>0 is chosen such that the area enclosed by the lines OP[0],
+OP[3] and the curve is equal to ^π/[4] (the area of the quarter circle).
 
-   By how many percent does the length of the curve differ from the length of
-   the quarter circle?
-   That is, if L is the length of the curve, calculate 100*^(L-π/2)/[(π/2)].
-   Give your answer rounded to 10 digits behind the decimal point.
+By how many percent does the length of the curve differ from the length of
+the quarter circle?
+That is, if L is the length of the curve, calculate 100*^(L-π/2)/[(π/2)].
+Give your answer rounded to 10 digits behind the decimal point.
 
-
-   Visible links
-   1. CabriJava.class
-   Answer: 2bc63386b7cccc64c67f90e719936143
+Answer: 2bc63386b7cccc64c67f90e719936143
 
 
 Problem 364
