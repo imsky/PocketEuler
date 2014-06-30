@@ -1459,16 +1459,16 @@ be written in the form:
 For example, let us consider √23:
 
     √23 = 4 + √23 — 4 = 4 + ___1___ = 4 +  ______1______
-                             __1__         1 + _√23 – 3_
+                             __1__         1 + _√23 – 3_
                              √23—4                 7
 
 If we continue we would get the following expansion:
 
-    √23 = 4 +  ________1_______
-             1 + ______ 1______
-                 3 + _____1____
-                     1 + ___1__
-                          8 + …
+    √23 = 4 +  _________1__________
+               1 + ______ 1________
+                   3 + _____1______
+                       1 + ___1____
+                             8 + …
 
 The process can be summarised as follows:
 
