@@ -5126,25 +5126,26 @@ Problem 194
 ===========
 
 
-   Consider graphs built with the units A: and B: , where the units are glued
-   alongthe vertical edges as in the graph .
+Consider graphs built with the units A: and B: , where the units are glued
+alongthe vertical edges as in the graph .
 
-   A configuration of type (a,b,c) is a graph thus built of a units A and b
-   units B, where the graph's vertices are coloured using up to c colours, so
-   that no two adjacent vertices have the same colour.
-   The compound graph above is an example of a configuration of type (2,2,6),
-   in fact of type (2,2,c) for all c ≥ 4.
+A configuration of type (a,b,c) is a graph thus built of a units A and b
+units B, where the graph's vertices are coloured using up to c colours, so
+that no two adjacent vertices have the same colour.
+The compound graph above is an example of a configuration of type (2,2,6),
+in fact of type (2,2,c) for all c ≥ 4.
 
-   Let N(a,b,c) be the number of configurations of type (a,b,c).
-   For example, N(1,0,3) = 24, N(0,2,4) = 92928 and N(2,2,3) = 20736.
+Let N(a,b,c) be the number of configurations of type (a,b,c).
+For example, N(1,0,3) = 24, N(0,2,4) = 92928 and N(2,2,3) = 20736.
 
-   Find the last 8 digits of N(25,75,1984).
+Find the last 8 digits of N(25,75,1984).
 
-   
-   p_194_GraphA.png
-   p_194_GraphB.png
-   p_194_Fig.png
-   Answer: e070561d568a80a0e45d7835e3817ba4
+
+![](files/p_194_GraphA.png)
+![](files/p_194_GraphB.png)
+![](files/p_194_Fig.png)
+
+Answer: e070561d568a80a0e45d7835e3817ba4
 
 
 Problem 195
@@ -5921,31 +5922,29 @@ Problem 227
 Problem 228
 ===========
 
+Let S[n] be the regular n-sided polygon – or shape – whose vertices v[k]
+(k = 1,2,…,n) have coordinates:
 
-   Let S[n] be the regular n-sided polygon – or shape – whose vertices v[k]
-   (k = 1,2,…,n) have coordinates:
+	  x[k]   =   cos( ^2k-1/[n] ×180° )
+	  y[k]   =   sin( ^2k-1/[n] ×180° )
 
-          x[k]   =   cos( ^2k-1/[n] ×180° )
-          y[k]   =   sin( ^2k-1/[n] ×180° )
+Each S[n] is to be interpreted as a filled shape consisting of all points
+on the perimeter and in the interior.
 
-   Each S[n] is to be interpreted as a filled shape consisting of all points
-   on the perimeter and in the interior.
+The Minkowski sum, S+T, of two shapes S and T is the result of adding
+every point in S to every point in T, where point addition is performed
+coordinate-wise: (u, v) + (x, y) = (u+x, v+y).
 
-   The Minkowski sum, S+T, of two shapes S and T is the result of adding
-   every point in S to every point in T, where point addition is performed
-   coordinate-wise: (u, v) + (x, y) = (u+x, v+y).
+For example, the sum of S[3] and S[4] is the six-sided shape shown in pink
+below:
 
-   For example, the sum of S[3] and S[4] is the six-sided shape shown in pink
-   below:
+					  [1]picture showing S_3 + S_4
 
-                          [1]picture showing S_3 + S_4
+How many sides does S[1864] + S[1865] + … + S[1909] have?
 
-   How many sides does S[1864] + S[1865] + … + S[1909] have?
+![](files/p_228.png)
 
-
-   Visible links
-   p_228.png
-   Answer: 35d0195ddaf58e52e12400de1c9333d8
+Answer: 35d0195ddaf58e52e12400de1c9333d8
 
 
 Problem 229
@@ -9276,26 +9275,24 @@ Problem 350
 Problem 351
 ===========
 
+A hexagonal orchard of order n is a triangular lattice made up of points
+within a regular hexagon with side n. The following is an example of a
+hexagonal orchard of order 5:
 
-   A hexagonal orchard of order n is a triangular lattice made up of points
-   within a regular hexagon with side n. The following is an example of a
-   hexagonal orchard of order 5:
+Highlighted in green are the points which are hidden from the center by a
+point closer to it. It can be seen that for a hexagonal orchard of order
+5, 30 points are hidden from the center.
 
-   Highlighted in green are the points which are hidden from the center by a
-   point closer to it. It can be seen that for a hexagonal orchard of order
-   5, 30 points are hidden from the center.
+Let H(n) be the number of points hidden from the center in a hexagonal
+orchard of order n.
 
-   Let H(n) be the number of points hidden from the center in a hexagonal
-   orchard of order n.
+H(5) = 30. H(10) = 138. H(1 000) = 1177848.
 
-   H(5) = 30. H(10) = 138. H(1 000) = 1177848.
+Find H(100 000 000).
 
-   Find H(100 000 000).
+![](files/p_351_hexorchard.png)
 
-   
-   p_351_hexorchard.png
-   Answer: 338481092e945257756075a8d03978fd
-
+Answer: 338481092e945257756075a8d03978fd
 
 Problem 352
 ===========
@@ -9413,22 +9410,21 @@ Problem 353
 Problem 354
 ===========
 
+Consider a honey bee's honeycomb where each cell is a perfect regular
+hexagon with side length 1.
 
-   Consider a honey bee's honeycomb where each cell is a perfect regular
-   hexagon with side length 1.
+One particular cell is occupied by the queen bee.
+For a positive real number L, let B(L) count the cells with distance L
+from the queen bee cell (all distances are measured from centre to
+centre); you may assume that the honeycomb is large enough to accommodate
+for any distance we wish to consider.
+For example, B(√3) = 6, B(√21) = 12 and B(111 111 111) = 54.
 
-   One particular cell is occupied by the queen bee.
-   For a positive real number L, let B(L) count the cells with distance L
-   from the queen bee cell (all distances are measured from centre to
-   centre); you may assume that the honeycomb is large enough to accommodate
-   for any distance we wish to consider.
-   For example, B(√3) = 6, B(√21) = 12 and B(111 111 111) = 54.
+Find the number of L ≤ 5·10^11 such that B(L) = 450.
 
-   Find the number of L ≤ 5·10^11 such that B(L) = 450.
+![](files/p_354_bee_honeycomb.png)
 
-   
-   p_354_bee_honeycomb.png
-   Answer: e36240897614dc46e83405ae8cdf198c
+Answer: e36240897614dc46e83405ae8cdf198c
 
 
 Problem 355
@@ -10743,23 +10739,22 @@ Problem 404
 Problem 405
 ===========
 
+We wish to tile a rectangle whose length is twice its width.
+Let T(0) be the tiling consisting of a single rectangle.
+For n > 0, let T(n) be obtained from T(n-1) by replacing all tiles in the
+following manner:
 
-   We wish to tile a rectangle whose length is twice its width.
-   Let T(0) be the tiling consisting of a single rectangle.
-   For n > 0, let T(n) be obtained from T(n-1) by replacing all tiles in the
-   following manner:
+The following animation demonstrates the tilings T(n) for n from 0 to 5:
 
-   The following animation demonstrates the tilings T(n) for n from 0 to 5:
+Let f(n) be the number of points where four tiles meet in T(n).
+For example, f(1) = 0, f(4) = 82 and f(10^9) mod 17^7 = 126897180.
 
-   Let f(n) be the number of points where four tiles meet in T(n).
-   For example, f(1) = 0, f(4) = 82 and f(10^9) mod 17^7 = 126897180.
+Find f(10^k) for k = 10^18, give your answer modulo 17^7.
 
-   Find f(10^k) for k = 10^18, give your answer modulo 17^7.
+![](files/p_405_tile1.png)
+![](files/p_405_tile2.gif)
 
-   
-   p_405_tile1.png
-   p_405_tile2.gif
-   Answer: 93b712426b768586f88d0bfe597842e6
+Answer: 93b712426b768586f88d0bfe597842e6
 
 
 Problem 406
@@ -11487,49 +11482,48 @@ Problem 430
 Problem 431
 ===========
 
+Fred the farmer arranges to have a new storage silo installed on his farm
+and having an obsession for all things square he is absolutely devastated
+when he discovers that it is circular. Quentin, the representative from
+the company that installed the silo, explains that they only manufacture
+cylindrical silos, but he points out that it is resting on a square base.
+Fred is not amused and insists that it is removed from his property.
 
-   Fred the farmer arranges to have a new storage silo installed on his farm
-   and having an obsession for all things square he is absolutely devastated
-   when he discovers that it is circular. Quentin, the representative from
-   the company that installed the silo, explains that they only manufacture
-   cylindrical silos, but he points out that it is resting on a square base.
-   Fred is not amused and insists that it is removed from his property.
+Quick thinking Quentin explains that when granular materials are delivered
+from above a conical slope is formed and the natural angle made with the
+horizontal is called the angle of repose. For example if the angle of
+repose, $\alpha = 30$ degrees, and grain is delivered at the centre of the
+silo then a perfect cone will form towards the top of the cylinder. In the
+case of this silo, which has a diameter of 6m, the amount of space wasted
+would be approximately 32.648388556 m^3. However, if grain is delivered at
+a point on the top which has a horizontal distance of $x$ metres from the
+centre then a cone with a strangely curved and sloping base is formed. He
+shows Fred a picture.
 
-   Quick thinking Quentin explains that when granular materials are delivered
-   from above a conical slope is formed and the natural angle made with the
-   horizontal is called the angle of repose. For example if the angle of
-   repose, $\alpha = 30$ degrees, and grain is delivered at the centre of the
-   silo then a perfect cone will form towards the top of the cylinder. In the
-   case of this silo, which has a diameter of 6m, the amount of space wasted
-   would be approximately 32.648388556 m^3. However, if grain is delivered at
-   a point on the top which has a horizontal distance of $x$ metres from the
-   centre then a cone with a strangely curved and sloping base is formed. He
-   shows Fred a picture.
+We shall let the amount of space wasted in cubic metres be given by
+$V(x)$. If $x = 1.114785284$, which happens to have three squared decimal
+places, then the amount of space wasted, $V(1.114785284) \approx 36$.
+Given the range of possible solutions to this problem there is exactly one
+other option: $V(2.511167869) \approx 49$. It would be like knowing that
+the square is king of the silo, sitting in splendid glory on top of your
+grain.
 
-   We shall let the amount of space wasted in cubic metres be given by
-   $V(x)$. If $x = 1.114785284$, which happens to have three squared decimal
-   places, then the amount of space wasted, $V(1.114785284) \approx 36$.
-   Given the range of possible solutions to this problem there is exactly one
-   other option: $V(2.511167869) \approx 49$. It would be like knowing that
-   the square is king of the silo, sitting in splendid glory on top of your
-   grain.
+Fred's eyes light up with delight at this elegant resolution, but on
+closer inspection of Quentin's drawings and calculations his happiness
+turns to despondency once more. Fred points out to Quentin that it's the
+radius of the silo that is 6 metres, not the diameter, and the angle of
+repose for his grain is 40 degrees. However, if Quentin can find a set of
+solutions for this particular silo then he will be more than happy to keep
+it.
 
-   Fred's eyes light up with delight at this elegant resolution, but on
-   closer inspection of Quentin's drawings and calculations his happiness
-   turns to despondency once more. Fred points out to Quentin that it's the
-   radius of the silo that is 6 metres, not the diameter, and the angle of
-   repose for his grain is 40 degrees. However, if Quentin can find a set of
-   solutions for this particular silo then he will be more than happy to keep
-   it.
+If Quick thinking Quentin is to satisfy frustratingly fussy Fred the
+farmer's appetite for all things square then determine the values of $x$
+for all possible square space wastage options and calculate $\sum x$
+correct to 9 decimal places.
 
-   If Quick thinking Quentin is to satisfy frustratingly fussy Fred the
-   farmer's appetite for all things square then determine the values of $x$
-   for all possible square space wastage options and calculate $\sum x$
-   correct to 9 decimal places.
+![](files/p_431_grain_silo.png)
 
-   
-   p_431_grain_silo.png
-   Answer: 5e5d81aa8bfaf92f68cdef0154c5c238
+Answer: 5e5d81aa8bfaf92f68cdef0154c5c238
 
 
 Problem 432
