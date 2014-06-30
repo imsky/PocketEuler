@@ -1,6 +1,6 @@
 # Local Euler
 
-This is a copy of Project Euler designed for offline use, compiled by [Kyle Keen](http://kmkeen.com/local-euler/) and converted to Markdown by [Ivan Malopinsky](http://imsky.co).
+This is the offline version of Project Euler, compiled by [Kyle Keen](http://kmkeen.com/local-euler/) and converted to Markdown by [Ivan Malopinsky](http://imsky.co).
 
 ### License
 
@@ -953,7 +953,7 @@ Problem 43
    up of each of the digits 0 to 9 in some order, but it also has a rather
    interesting sub-string divisibility property.
 
-   Let d[1] be the 1^st digit, d[2] be the 2^nd digit, and so on. In this
+   Let d[1] be the 1st digit, d[2] be the 2nd digit, and so on. In this
    way, we note the following:
 
      • d[2]d[3]d[4]=406 is divisible by 2
@@ -1112,11 +1112,11 @@ Problem 51
 ==========
 
 
-   By replacing the 1^st digit of the 2-digit number *3, it turns out that
+   By replacing the 1st digit of the 2-digit number *3, it turns out that
    six of the nine possible values: 13, 23, 43, 53, 73, and 83, are all
    prime.
 
-   By replacing the 3^rd and 4^th digits of 56**3 with the same digit, this
+   By replacing the 3rd and 4th digits of 56**3 with the same digit, this
    5-digit number is the first example having seven primes among the ten
    generated numbers, yielding the family: 56003, 56113, 56333, 56443, 56663,
    56773, and 56993. Consequently 56003, being the first member of this
@@ -5707,7 +5707,7 @@ Problem 225
    It can be shown that 27 does not divide any terms of this sequence.
    In fact, 27 is the first odd number with this property.
 
-   Find the 124^th odd number that does not divide any terms of the above
+   Find the 124th odd number that does not divide any terms of the above
    sequence.
 
    
@@ -7874,7 +7874,7 @@ Problem 308
    proper order!
 
    If someone uses the above Fractran program to solve Project Euler Problem
-   7 (find the 10001^st prime), how many iterations would be needed until the
+   7 (find the 10001st prime), how many iterations would be needed until the
    program produces 2^10001st prime ?
 
    
