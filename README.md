@@ -510,22 +510,18 @@ Problem 21
 Problem 22
 ==========
 
+Using [names.txt](files/name.txt), a 46K text file containing over five-thousand first
+names, begin by sorting it into alphabetical order. Then working out the
+alphabetical value for each name, multiply this value by its alphabetical
+position in the list to obtain a name score.
 
-   Using [1]names.txt, a 46K text file containing over five-thousand first
-   names, begin by sorting it into alphabetical order. Then working out the
-   alphabetical value for each name, multiply this value by its alphabetical
-   position in the list to obtain a name score.
+For example, when the list is sorted into alphabetical order, COLIN, which
+is worth 3 + 15 + 12 + 9 + 14 = 53, is the 938th name in the list. So,
+COLIN would obtain a score of 938 × 53 = 49714.
 
-   For example, when the list is sorted into alphabetical order, COLIN, which
-   is worth 3 + 15 + 12 + 9 + 14 = 53, is the 938th name in the list. So,
-   COLIN would obtain a score of 938 × 53 = 49714.
+What is the total of all the name scores in the file?
 
-   What is the total of all the name scores in the file?
-
-
-   Visible links
-   1. names.txt
-   Answer: f2c9c91cb025746f781fa4db8be3983f
+Answer: f2c9c91cb025746f781fa4db8be3983f
 
 
 Problem 23
@@ -933,24 +929,20 @@ Problem 41
 Problem 42
 ==========
 
+The n^th term of the sequence of triangle numbers is given by, t[n] =
+½n(n+1); so the first ten triangle numbers are:
 
-   The n^th term of the sequence of triangle numbers is given by, t[n] =
-   ½n(n+1); so the first ten triangle numbers are:
+				1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...
 
-                    1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...
+By converting each letter in a word to a number corresponding to its
+alphabetical position and adding these values we form a word value. For
+example, the word value for SKY is 19 + 11 + 25 = 55 = t[10]. If the word
+value is a triangle number then we shall call the word a triangle word.
 
-   By converting each letter in a word to a number corresponding to its
-   alphabetical position and adding these values we form a word value. For
-   example, the word value for SKY is 19 + 11 + 25 = 55 = t[10]. If the word
-   value is a triangle number then we shall call the word a triangle word.
+Using [words.txt](files/words.txt), a 16K text file containing nearly two-thousand common
+English words, how many are triangle words?
 
-   Using [1]words.txt, a 16K text file containing nearly two-thousand common
-   English words, how many are triangle words?
-
-
-   Visible links
-   1. words.txt
-   Answer: 82aa4b0af34c2313a562076992e50aa3
+Answer: 82aa4b0af34c2313a562076992e50aa3
 
 
 Problem 43
@@ -1180,60 +1172,56 @@ Problem 53
 Problem 54
 ==========
 
+In the card game poker, a hand consists of five cards and are ranked, from
+lowest to highest, in the following way:
 
-   In the card game poker, a hand consists of five cards and are ranked, from
-   lowest to highest, in the following way:
+ • High Card: Highest value card.
+ • One Pair: Two cards of the same value.
+ • Two Pairs: Two different pairs.
+ • Three of a Kind: Three cards of the same value.
+ • Straight: All cards are consecutive values.
+ • Flush: All cards of the same suit.
+ • Full House: Three of a kind and a pair.
+ • Four of a Kind: Four cards of the same value.
+ • Straight Flush: All cards are consecutive values of same suit.
+ • Royal Flush: Ten, Jack, Queen, King, Ace, in same suit.
 
-     • High Card: Highest value card.
-     • One Pair: Two cards of the same value.
-     • Two Pairs: Two different pairs.
-     • Three of a Kind: Three cards of the same value.
-     • Straight: All cards are consecutive values.
-     • Flush: All cards of the same suit.
-     • Full House: Three of a kind and a pair.
-     • Four of a Kind: Four cards of the same value.
-     • Straight Flush: All cards are consecutive values of same suit.
-     • Royal Flush: Ten, Jack, Queen, King, Ace, in same suit.
+The cards are valued in the order:
+2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King, Ace.
 
-   The cards are valued in the order:
-   2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King, Ace.
+If two players have the same ranked hands then the rank made up of the
+highest value wins; for example, a pair of eights beats a pair of fives
+(see example 1 below). But if two ranks tie, for example, both players
+have a pair of queens, then highest cards in each hand are compared (see
+example 4 below); if the highest cards tie then the next highest cards are
+compared, and so on.
 
-   If two players have the same ranked hands then the rank made up of the
-   highest value wins; for example, a pair of eights beats a pair of fives
-   (see example 1 below). But if two ranks tie, for example, both players
-   have a pair of queens, then highest cards in each hand are compared (see
-   example 4 below); if the highest cards tie then the next highest cards are
-   compared, and so on.
+Consider the following five hands dealt to two players:
 
-   Consider the following five hands dealt to two players:
+	   Hand   Player 1            Player 2              Winner
+	   1      5H 5C 6S 7S KD      2C 3S 8S 8D TD        Player 2
+			  Pair of Fives       Pair of Eights
+	   2      5D 8C 9S JS AC      2C 5C 7D 8S QH        Player 1
+			  Highest card Ace    Highest card Queen
+	   3      2D 9C AS AH AC      3D 6D 7D TD QD        Player 2
+			  Three Aces          Flush with Diamonds
+			  4D 6S 9H QH QC      3D 6D 7H QD QS
+	   4      Pair of Queens      Pair of Queens        Player 1
+			  Highest card Nine   Highest card Seven
+			  2H 2D 4C 4D 4S      3C 3D 3S 9S 9D
+	   5      Full House          Full House            Player 1
+			  With Three Fours    with Three Threes
 
-           Hand   Player 1            Player 2              Winner
-           1      5H 5C 6S 7S KD      2C 3S 8S 8D TD        Player 2
-                  Pair of Fives       Pair of Eights
-           2      5D 8C 9S JS AC      2C 5C 7D 8S QH        Player 1
-                  Highest card Ace    Highest card Queen
-           3      2D 9C AS AH AC      3D 6D 7D TD QD        Player 2
-                  Three Aces          Flush with Diamonds
-                  4D 6S 9H QH QC      3D 6D 7H QD QS
-           4      Pair of Queens      Pair of Queens        Player 1
-                  Highest card Nine   Highest card Seven
-                  2H 2D 4C 4D 4S      3C 3D 3S 9S 9D
-           5      Full House          Full House            Player 1
-                  With Three Fours    with Three Threes
+The file, [poker.txt](files/poker.txt), contains one-thousand random hands dealt to two
+players. Each line of the file contains ten cards (separated by a single
+space): the first five are Player 1's cards and the last five are Player
+2's cards. You can assume that all hands are valid (no invalid characters
+or repeated cards), each player's hand is in no specific order, and in
+each hand there is a clear winner.
 
-   The file, [1]poker.txt, contains one-thousand random hands dealt to two
-   players. Each line of the file contains ten cards (separated by a single
-   space): the first five are Player 1's cards and the last five are Player
-   2's cards. You can assume that all hands are valid (no invalid characters
-   or repeated cards), each player's hand is in no specific order, and in
-   each hand there is a clear winner.
+How many hands does Player 1 win?
 
-   How many hands does Player 1 win?
-
-
-   Visible links
-   1. poker.txt
-   Answer: 142949df56ea8ae0be8b5306971900a4
+Answer: 142949df56ea8ae0be8b5306971900a4
 
 
 Problem 55
@@ -1932,23 +1920,18 @@ Problem 78
 Problem 79
 ==========
 
+A common security method used for online banking is to ask the user for
+three random characters from a passcode. For example, if the passcode was
+531278, they may ask for the 2nd, 3rd, and 5th characters; the expected
+reply would be: 317.
 
-   A common security method used for online banking is to ask the user for
-   three random characters from a passcode. For example, if the passcode was
-   531278, they may ask for the 2nd, 3rd, and 5th characters; the expected
-   reply would be: 317.
+The text file, [keylog.txt](files/keylog.txt), contains fifty successful login attempts.
 
-   The text file, [1]keylog.txt, contains fifty successful login attempts.
+Given that the three characters are always asked for in order, analyse the
+file so as to determine the shortest possible secret passcode of unknown
+length.
 
-   Given that the three characters are always asked for in order, analyse the
-   file so as to determine the shortest possible secret passcode of unknown
-   length.
-
-
-   Visible links
-   1. keylog.txt
-   Answer: 3ccc6e16d99b21d42948f6d49b90fa30
-
+Answer: 3ccc6e16d99b21d42948f6d49b90fa30
 
 Problem 80
 ==========
@@ -1972,25 +1955,21 @@ Problem 80
 Problem 81
 ==========
 
+In the 5 by 5 matrix below, the minimal path sum from the top left to the
+bottom right, by only moving to the right and down, is indicated in bold
+red and is equal to 2427.
 
-   In the 5 by 5 matrix below, the minimal path sum from the top left to the
-   bottom right, by only moving to the right and down, is indicated in bold
-   red and is equal to 2427.
+						  131 673 234 103 18
+						  201 96  342 965 150
+						  630 803 746 422 111
+						  537 699 497 121 956
+						  805 732 524 37  331
 
-                              131 673 234 103 18
-                              201 96  342 965 150
-                              630 803 746 422 111
-                              537 699 497 121 956
-                              805 732 524 37  331
+Find the minimal path sum, in [matrix.txt](files/matrix.txt), a 31K text file containing a
+80 by 80 matrix, from the top left to the bottom right by only moving
+right and down.
 
-   Find the minimal path sum, in [1]matrix.txt, a 31K text file containing a
-   80 by 80 matrix, from the top left to the bottom right by only moving
-   right and down.
-
-
-   Visible links
-   1. matrix.txt
-   Answer: f9ffec84499832add77e6a8bb00246ec
+Answer: f9ffec84499832add77e6a8bb00246ec
 
 
 Problem 82
@@ -2230,10 +2209,10 @@ the number sixteen:
 The last example being considered the most efficient, as it uses the least
 number of numerals.
 
-The 11K text file, [2]roman.txt, contains one thousand numbers written in
+The 11K text file, [roman.txt](files/roman.txt), contains one thousand numbers written in
 valid, but not necessarily minimal, Roman numerals; that is, they are
 arranged in descending units and obey the subtractive pair rule (see
-[3]About Roman Numerals... for the definitive rules for this problem).
+[About Roman Numerals](files/about_roman_numerals.txt) for the definitive rules for this problem).
 
 Find the number of characters saved by writing each of these in their
 minimal form.
@@ -2241,13 +2220,7 @@ minimal form.
 Note: You can assume that all the Roman numerals in the file contain no
 more than four consecutive identical units.
 
-
-Visible links
-1. about=roman_numerals
-2. roman.txt
-3. about=roman_numerals
 Answer: 5c572eca050594c7bc3c36e7e8ab9550
-
 
 Problem 90
 ==========
@@ -2407,48 +2380,44 @@ Problem 95
 Problem 96
 ==========
 
+Su Doku (Japanese meaning number place) is the name given to a popular
+puzzle concept. Its origin is unclear, but credit must be attributed to
+Leonhard Euler who invented a similar, and much more difficult, puzzle
+idea called Latin Squares. The objective of Su Doku puzzles, however, is
+to replace the blanks (or zeros) in a 9 by 9 grid in such that each row,
+column, and 3 by 3 box contains each of the digits 1 to 9. Below is an
+example of a typical starting puzzle grid and its solution grid.
 
-   Su Doku (Japanese meaning number place) is the name given to a popular
-   puzzle concept. Its origin is unclear, but credit must be attributed to
-   Leonhard Euler who invented a similar, and much more difficult, puzzle
-   idea called Latin Squares. The objective of Su Doku puzzles, however, is
-   to replace the blanks (or zeros) in a 9 by 9 grid in such that each row,
-   column, and 3 by 3 box contains each of the digits 1 to 9. Below is an
-   example of a typical starting puzzle grid and its solution grid.
+	  ┌───────┬───────┬───────┐         ┌───────┬───────┬───────┐
+	  │ 0 0 3 │ 0 2 0 │ 6 0 0 │         │ 4 8 3 │ 9 2 1 │ 6 5 7 │
+	  │ 9 0 0 │ 3 0 5 │ 0 0 1 │         │ 9 6 7 │ 3 4 5 │ 8 2 1 │
+	  │ 0 0 1 │ 8 0 6 │ 4 0 0 │         │ 2 5 1 │ 8 7 6 │ 4 9 3 │
+	  ├───────┼───────┼───────┤         ├───────┼───────┼───────┤
+	  │ 0 0 8 │ 1 0 2 │ 9 0 0 │         │ 5 4 8 │ 1 3 2 │ 9 7 6 │
+	  │ 7 0 0 │ 0 0 0 │ 0 0 8 │         │ 7 2 9 │ 5 6 4 │ 1 3 8 │
+	  │ 0 0 6 │ 7 0 8 │ 2 0 0 │         │ 1 3 6 │ 7 9 8 │ 2 4 5 │
+	  ├───────┼───────┼───────┤         ├───────┼───────┼───────┤
+	  │ 0 0 2 │ 6 0 9 │ 5 0 0 │         │ 3 7 2 │ 6 8 9 │ 5 1 4 │
+	  │ 8 0 0 │ 2 0 3 │ 0 0 9 │         │ 8 1 4 │ 2 5 3 │ 7 6 9 │
+	  │ 0 0 5 │ 0 1 0 │ 3 0 0 │         │ 6 9 5 │ 4 1 7 │ 3 8 2 │
+	  └───────┴───────┴───────┘         └───────┴───────┴───────┘
 
-          ┌───────┬───────┬───────┐         ┌───────┬───────┬───────┐
-          │ 0 0 3 │ 0 2 0 │ 6 0 0 │         │ 4 8 3 │ 9 2 1 │ 6 5 7 │
-          │ 9 0 0 │ 3 0 5 │ 0 0 1 │         │ 9 6 7 │ 3 4 5 │ 8 2 1 │
-          │ 0 0 1 │ 8 0 6 │ 4 0 0 │         │ 2 5 1 │ 8 7 6 │ 4 9 3 │
-          ├───────┼───────┼───────┤         ├───────┼───────┼───────┤
-          │ 0 0 8 │ 1 0 2 │ 9 0 0 │         │ 5 4 8 │ 1 3 2 │ 9 7 6 │
-          │ 7 0 0 │ 0 0 0 │ 0 0 8 │         │ 7 2 9 │ 5 6 4 │ 1 3 8 │
-          │ 0 0 6 │ 7 0 8 │ 2 0 0 │         │ 1 3 6 │ 7 9 8 │ 2 4 5 │
-          ├───────┼───────┼───────┤         ├───────┼───────┼───────┤
-          │ 0 0 2 │ 6 0 9 │ 5 0 0 │         │ 3 7 2 │ 6 8 9 │ 5 1 4 │
-          │ 8 0 0 │ 2 0 3 │ 0 0 9 │         │ 8 1 4 │ 2 5 3 │ 7 6 9 │
-          │ 0 0 5 │ 0 1 0 │ 3 0 0 │         │ 6 9 5 │ 4 1 7 │ 3 8 2 │
-          └───────┴───────┴───────┘         └───────┴───────┴───────┘
+A well constructed Su Doku puzzle has a unique solution and can be solved
+by logic, although it may be necessary to employ "guess and test" methods
+in order to eliminate options (there is much contested opinion over this).
+The complexity of the search determines the difficulty of the puzzle; the
+example above is considered easy because it can be solved by straight
+forward direct deduction.
 
-   A well constructed Su Doku puzzle has a unique solution and can be solved
-   by logic, although it may be necessary to employ "guess and test" methods
-   in order to eliminate options (there is much contested opinion over this).
-   The complexity of the search determines the difficulty of the puzzle; the
-   example above is considered easy because it can be solved by straight
-   forward direct deduction.
+The 6K text file, [sudoku.txt](files/sudoku.txt), contains fifty different Su Doku puzzles
+ranging in difficulty, but all with unique solutions (the first puzzle in
+the file is the example above).
 
-   The 6K text file, [1]sudoku.txt, contains fifty different Su Doku puzzles
-   ranging in difficulty, but all with unique solutions (the first puzzle in
-   the file is the example above).
+By solving all fifty puzzles find the sum of the 3-digit numbers found in
+the top left corner of each solution grid; for example, 483 is the 3-digit
+number found in the top left corner of the solution grid above.
 
-   By solving all fifty puzzles find the sum of the 3-digit numbers found in
-   the top left corner of each solution grid; for example, 483 is the 3-digit
-   number found in the top left corner of the solution grid above.
-
-
-   Visible links
-   1. sudoku.txt
-   Answer: 26f6abfa0d7725fef678e371897d5df0
+Answer: 26f6abfa0d7725fef678e371897d5df0
 
 
 Problem 97
@@ -2472,27 +2441,23 @@ Problem 97
 Problem 98
 ==========
 
+By replacing each of the letters in the word CARE with 1, 2, 9, and 6
+respectively, we form a square number: 1296 = 36^2. What is remarkable is
+that, by using the same digital substitutions, the anagram, RACE, also
+forms a square number: 9216 = 96^2. We shall call CARE (and RACE) a square
+anagram word pair and specify further that leading zeroes are not
+permitted, neither may a different letter have the same digital value as
+another letter.
 
-   By replacing each of the letters in the word CARE with 1, 2, 9, and 6
-   respectively, we form a square number: 1296 = 36^2. What is remarkable is
-   that, by using the same digital substitutions, the anagram, RACE, also
-   forms a square number: 9216 = 96^2. We shall call CARE (and RACE) a square
-   anagram word pair and specify further that leading zeroes are not
-   permitted, neither may a different letter have the same digital value as
-   another letter.
+Using [words.txt](files/words.txt), a 16K text file containing nearly two-thousand common
+English words, find all the square anagram word pairs (a palindromic word
+is NOT considered to be an anagram of itself).
 
-   Using [1]words.txt, a 16K text file containing nearly two-thousand common
-   English words, find all the square anagram word pairs (a palindromic word
-   is NOT considered to be an anagram of itself).
+What is the largest square number formed by any member of such a pair?
 
-   What is the largest square number formed by any member of such a pair?
+NOTE: All anagrams formed must be contained in the given text file.
 
-   NOTE: All anagrams formed must be contained in the given text file.
-
-
-   Visible links
-   1. words.txt
-   Answer: 36b3b5f54143786b7ab2ebb6bcd06e75
+Answer: 36b3b5f54143786b7ab2ebb6bcd06e75
 
 
 Problem 99
@@ -2586,30 +2551,26 @@ Problem 101
 Problem 102
 ===========
 
+Three distinct points are plotted at random on a Cartesian plane, for
+which -1000 ≤ x, y ≤ 1000, such that a triangle is formed.
 
-   Three distinct points are plotted at random on a Cartesian plane, for
-   which -1000 ≤ x, y ≤ 1000, such that a triangle is formed.
+Consider the following two triangles:
 
-   Consider the following two triangles:
+				 A(-340,495), B(-153,-910), C(835,-947)
 
-                     A(-340,495), B(-153,-910), C(835,-947)
+				 X(-175,41), Y(-421,-714), Z(574,-645)
 
-                     X(-175,41), Y(-421,-714), Z(574,-645)
+It can be verified that triangle ABC contains the origin, whereas triangle
+XYZ does not.
 
-   It can be verified that triangle ABC contains the origin, whereas triangle
-   XYZ does not.
+Using [triangles.txt](files/triangles.txt), a 27K text file containing the co-ordinates of one
+thousand "random" triangles, find the number of triangles for which the
+interior contains the origin.
 
-   Using [1]triangles.txt, a 27K text file containing the co-ordinates of one
-   thousand "random" triangles, find the number of triangles for which the
-   interior contains the origin.
+NOTE: The first two examples in the file represent the triangles in the
+example given above.
 
-   NOTE: The first two examples in the file represent the triangles in the
-   example given above.
-
-
-   Visible links
-   1. triangles.txt
-   Answer: 74db120f0a8e5646ef5a30154e9f6deb
+Answer: 74db120f0a8e5646ef5a30154e9f6deb
 
 
 Problem 103
