@@ -512,7 +512,7 @@ Problem 21
 Problem 22
 ==========
 
-Using [names.txt](files/name.txt), a 46K text file containing over five-thousand first
+Using [names.txt](files/names.txt), a 46K text file containing over five-thousand first
 names, begin by sorting it into alphabetical order. Then working out the
 alphabetical value for each name, multiply this value by its alphabetical
 position in the list to obtain a name score.
