@@ -4,7 +4,6 @@ This is a copy of Project Euler designed for offline use, compiled by [Kyle Keen
 
 ### License
 
-
 Project Euler is protected under CC Attribution-Non-Commercial-Share Alike 2.0 UK: England & Wales
 
 ### Usage
@@ -165,38 +164,37 @@ Answer: d915b2a9ac8749a6b837404815f1ae25
 Problem 11
 ==========
 
+In the 20×20 grid below, four numbers along a diagonal line have been
+marked with brackets.
 
-   In the 20×20 grid below, four numbers along a diagonal line have been
-   marked in red.
+	  08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
+	  49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00
+	  81 49 31 73 55 79 14 29 93 71 40 67 53 88 30 03 49 13 36 65
+	  52 70 95 23 04 60 11 42 69 24 68 56 01 32 56 71 37 02 36 91
+	  22 31 16 71 51 67 63 89 41 92 36 54 22 40 40 28 66 33 13 80
+	  24 47 32 60 99 03 45 02 44 75 33 53 78 36 84 20 35 17 12 50
+	  32 98 81 28 64 23 67 10[26]38 40 67 59 54 70 66 18 38 64 70
+	  67 26 20 68 02 62 12 20 95[63]94 39 63 08 40 91 66 49 94 21
+	  24 55 58 05 66 73 99 26 97 17[78]78 96 83 14 88 34 89 63 72
+	  21 36 23 09 75 00 76 44 20 45 35[14]00 61 33 97 34 31 33 95
+	  78 17 53 28 22 75 31 67 15 94 03 80 04 62 16 14 09 53 56 92
+	  16 39 05 42 96 35 31 47 55 58 88 24 00 17 54 24 36 29 85 57
+	  86 56 00 48 35 71 89 07 05 44 44 37 44 60 21 58 51 54 17 58
+	  19 80 81 68 05 94 47 69 28 73 92 13 86 52 17 77 04 89 55 40
+	  04 52 08 83 97 35 99 16 07 97 57 32 16 26 26 79 33 27 98 66
+	  88 36 68 87 57 62 20 72 03 46 33 67 46 55 12 32 63 93 53 69
+	  04 42 16 73 38 25 39 11 24 94 72 18 08 46 29 32 40 62 76 36
+	  20 69 36 41 72 30 23 88 34 62 99 69 82 67 59 85 74 04 36 16
+	  20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54
+	  01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48
 
-          08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
-          49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00
-          81 49 31 73 55 79 14 29 93 71 40 67 53 88 30 03 49 13 36 65
-          52 70 95 23 04 60 11 42 69 24 68 56 01 32 56 71 37 02 36 91
-          22 31 16 71 51 67 63 89 41 92 36 54 22 40 40 28 66 33 13 80
-          24 47 32 60 99 03 45 02 44 75 33 53 78 36 84 20 35 17 12 50
-          32 98 81 28 64 23 67 10 26 38 40 67 59 54 70 66 18 38 64 70
-          67 26 20 68 02 62 12 20 95 63 94 39 63 08 40 91 66 49 94 21
-          24 55 58 05 66 73 99 26 97 17 78 78 96 83 14 88 34 89 63 72
-          21 36 23 09 75 00 76 44 20 45 35 14 00 61 33 97 34 31 33 95
-          78 17 53 28 22 75 31 67 15 94 03 80 04 62 16 14 09 53 56 92
-          16 39 05 42 96 35 31 47 55 58 88 24 00 17 54 24 36 29 85 57
-          86 56 00 48 35 71 89 07 05 44 44 37 44 60 21 58 51 54 17 58
-          19 80 81 68 05 94 47 69 28 73 92 13 86 52 17 77 04 89 55 40
-          04 52 08 83 97 35 99 16 07 97 57 32 16 26 26 79 33 27 98 66
-          88 36 68 87 57 62 20 72 03 46 33 67 46 55 12 32 63 93 53 69
-          04 42 16 73 38 25 39 11 24 94 72 18 08 46 29 32 40 62 76 36
-          20 69 36 41 72 30 23 88 34 62 99 69 82 67 59 85 74 04 36 16
-          20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54
-          01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48
+The product of these numbers is 26 × 63 × 78 × 14 = 1788696.
 
-   The product of these numbers is 26 × 63 × 78 × 14 = 1788696.
+What is the greatest product of four adjacent numbers in the same
+direction (up, down, left, right, or diagonally) in the 20×20 grid?
 
-   What is the greatest product of four adjacent numbers in the same
-   direction (up, down, left, right, or diagonally) in the 20×20 grid?
 
-   
-   Answer: 678f5d2e1eaa42f04fa53411b4f441ac
+Answer: 678f5d2e1eaa42f04fa53411b4f441ac
 
 
 Problem 12
@@ -1981,11 +1979,11 @@ NOTE: This problem is a more challenging version of [Problem 81](#problem-81).
 
 The minimal path sum in the 5 by 5 matrix below, by starting in any cell
 in the left column and finishing in any cell in the right column, and only
-moving up, down, and right, is indicated in red and bold; the sum is equal
+moving up, down, and right, is indicated with brackets; the sum is equal
 to 994.
 
-						  131 673 234 103 18
-						  201 96  342 965 150
+						  131 673[234 103 18]
+						 [201 96  342]965 150
 						  630 803 746 422 111
 						  537 699 497 121 956
 						  805 732 524 37  331
@@ -2003,14 +2001,13 @@ NOTE: This problem is a significantly more challenging version of
 [Problem 81](#problem-81).
 
 In the 5 by 5 matrix below, the minimal path sum from the top left to the
-bottom right, by moving left, right, up, and down, is indicated in bold
-red and is equal to 2297.
+bottom right, by moving left, right, up, and down, is indicated in brackets and is equal to 2297.
 
-						  131 673 234 103 18
-						  201 96  342 965 150
-						  630 803 746 422 111
-						  537 699 497 121 956
-						  805 732 524 37  331
+						 [131]673[234 103 18]
+						 [201 96  342]965[150]
+						  630 803 746[422 111]
+						  537 699 497[121]956
+						  805 732 524[37  331]
 
 Find the minimal path sum, in [matrix.txt](files/matrix.txt), a 31K text file containing a
 80 by 80 matrix, from the top left to the bottom right by moving left,
@@ -2530,15 +2527,14 @@ Problem 101
 
    Hence we obtain the following OPs for the cubic sequence:
 
-   OP(1, n) = 1               1, 1, 1, 1, ...
-   OP(2, n) = 7n−6            1, 8, 15, ...
-   OP(3, n) = 6n^2−11n+6      1, 8, 27, 58, ...
+   OP(1, n) = 1               1,[1], 1, 1, ...
+   OP(2, n) = 7n−6            1, 8, [15], ...
+   OP(3, n) = 6n^2−11n+6      1, 8, 27, [58], ...
    OP(4, n) = n^3             1, 8, 27, 64, 125, ...
 
    Clearly no BOPs exist for k ≥ 4.
 
-   By considering the sum of FITs generated by the BOPs (indicated in red
-   above), we obtain 1 + 15 + 58 = 74.
+   By considering the sum of FITs generated by the BOPs (indicated in brackets above), we obtain 1 + 15 + 58 = 74.
 
    Consider the following tenth degree polynomial generating function:
 
@@ -5571,21 +5567,21 @@ Problem 215
 ===========
 
 
-   Consider the problem of building a wall out of 2×1 and 3×1 bricks
-   (horizontal×vertical dimensions) such that, for extra strength, the gaps
-   between horizontally-adjacent bricks never line up in consecutive layers,
-   i.e. never form a "running crack".
+Consider the problem of building a wall out of 2×1 and 3×1 bricks
+(horizontal×vertical dimensions) such that, for extra strength, the gaps
+between horizontally-adjacent bricks never line up in consecutive layers,
+i.e. never form a "running crack".
 
-   For example, the following 9×3 wall is not acceptable due to the running
-   crack shown in red:
+For example, the following 9×3 wall is not acceptable due to the running
+crack shown in red:
 
-   There are eight ways of forming a crack-free 9×3 wall, written W(9,3) = 8.
+![](files/p_215_crackfree.gif)
 
-   Calculate W(32,10).
+There are eight ways of forming a crack-free 9×3 wall, written W(9,3) = 8.
 
-   
-   p_215_crackfree.gif
-   Answer: 60212c9ec4a6cd1d14277c32b6adf2d8
+Calculate W(32,10).
+
+Answer: 60212c9ec4a6cd1d14277c32b6adf2d8
 
 
 Problem 216
@@ -7870,36 +7866,37 @@ Problem 306
 ===========
 
 
-   The following game is a classic example of Combinatorial Game Theory:
+The following game is a classic example of Combinatorial Game Theory:
 
-   Two players start with a strip of n white squares and they take alternate
-   turns.
-   On each turn, a player picks two contiguous white squares and paints them
-   black.
-   The first player who cannot make a move loses.
+Two players start with a strip of n white squares and they take alternate
+turns.
+On each turn, a player picks two contiguous white squares and paints them
+black.
+The first player who cannot make a move loses.
 
-     • If n = 1, there are no valid moves, so the first player loses
-       automatically.
-     • If n = 2, there is only one valid move, after which the second player
-       loses.
-     • If n = 3, there are two valid moves, but both leave a situation where
-       the second player loses.
-     • If n = 4, there are three valid moves for the first player; she can
-       win the game by painting the two middle squares.
-     • If n = 5, there are four valid moves for the first player (shown below
-       in red); but no matter what she does, the second player (blue) wins.
+ • If n = 1, there are no valid moves, so the first player loses
+   automatically.
+ • If n = 2, there is only one valid move, after which the second player
+   loses.
+ • If n = 3, there are two valid moves, but both leave a situation where
+   the second player loses.
+ • If n = 4, there are three valid moves for the first player; she can
+   win the game by painting the two middle squares.
+ • If n = 5, there are four valid moves for the first player (shown below
+   in red); but no matter what she does, the second player (blue) wins.
 
-   So, for 1 ≤ n ≤ 5, there are 3 values of n for which the first player can
-   force a win.
-   Similarly, for 1 ≤ n ≤ 50, there are 40 values of n for which the first
-   player can force a win.
+So, for 1 ≤ n ≤ 5, there are 3 values of n for which the first player can
+force a win.
+Similarly, for 1 ≤ n ≤ 50, there are 40 values of n for which the first
+player can force a win.
 
-   For 1 ≤ n ≤ 1 000 000, how many values of n are there for which the first
-   player can force a win?
+For 1 ≤ n ≤ 1 000 000, how many values of n are there for which the first
+player can force a win?
 
-   
-   p_306_pstrip.gif
-   Answer: 394d602ba21e30693db90c9ecd4bd3a2
+
+![](files/p_306_pstrip.gif)
+
+Answer: 394d602ba21e30693db90c9ecd4bd3a2
 
 
 Problem 307
