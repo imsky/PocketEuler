@@ -1,6 +1,6 @@
 # Local Euler
 
-This is a copy of Project Euler designed for offline use, compiled by [Kyle Keen](http://kmkeen.com/local-euler/).
+This is a copy of Project Euler designed for offline use, compiled by [Kyle Keen](http://kmkeen.com/local-euler/) and converted to Markdown by [Ivan Malopinsky](http://imsky.co).
 
 ### License
 
@@ -1963,11 +1963,7 @@ In the 5 by 5 matrix below, the minimal path sum from the top left to the
 bottom right, by only moving to the right and down, is indicated in bold
 red and is equal to 2427.
 
-						  131 673 234 103 18
-						  201 96  342 965 150
-						  630 803 746 422 111
-						  537 699 497 121 956
-						  805 732 524 37  331
+![](files/p_81.png)
 
 Find the minimal path sum, in [matrix.txt](files/matrix.txt), a 31K text file containing a
 80 by 80 matrix, from the top left to the bottom right by only moving
@@ -1983,14 +1979,10 @@ NOTE: This problem is a more challenging version of [Problem 81](#problem-81).
 
 The minimal path sum in the 5 by 5 matrix below, by starting in any cell
 in the left column and finishing in any cell in the right column, and only
-moving up, down, and right, is indicated with brackets; the sum is equal
+moving up, down, and right, is indicated in red; the sum is equal
 to 994.
 
-						  131 673[234 103 18]
-						 [201 96  342]965 150
-						  630 803 746 422 111
-						  537 699 497 121 956
-						  805 732 524 37  331
+![](files/p_82.png)
 
 Find the minimal path sum, in [matrix.txt](files/matrix.txt), a 31K text file containing a
 80 by 80 matrix, from the left column to the right column.
@@ -2005,13 +1997,9 @@ NOTE: This problem is a significantly more challenging version of
 [Problem 81](#problem-81).
 
 In the 5 by 5 matrix below, the minimal path sum from the top left to the
-bottom right, by moving left, right, up, and down, is indicated in brackets and is equal to 2297.
+bottom right, by moving left, right, up, and down, is indicated in red and is equal to 2297.
 
-						 [131]673[234 103 18]
-						 [201 96  342]965[150]
-						  630 803 746[422 111]
-						  537 699 497[121]956
-						  805 732 524[37  331]
+![](files/p_83.png)
 
 Find the minimal path sum, in [matrix.txt](files/matrix.txt), a 31K text file containing a
 80 by 80 matrix, from the top left to the bottom right by moving left,
@@ -5052,19 +5040,8 @@ Problem 196
 
 
    Build a triangle from all positive integers in the following way:
-
-    1
-    2  3
-    4  5  6
-    7  8  9 10
-   11 12 13 14 15
-   16 17 18 19 20 21
-   22 23 24 25 26 27 28
-   29 30 31 32 33 34 35 36
-   37 38 39 40 41 42 43 44 45
-   46 47 48 49 50 51 52 53 54 55
-   56 57 58 59 60 61 62 63 64 65 66
-   . . .
+   
+   ![](files/p_196.png)
 
    Each positive integer has up to eight neighbours in the triangle.
 
@@ -11160,8 +11137,8 @@ Feed (CRLF) instead of a comma.
 
 The required answer to each puzzle is based on the value of each letter
 necessary to arrive at the solution and according to the alphabetical
-order. As indicated under the example puzzle, its answer would be
-8426039571. At least 9 out of the 10 encrypting letters are always part of
+order. As indicated under the example puzzle, its answer would be 8426039571. 
+At least 9 out of the 10 encrypting letters are always part of
 the problem description. When only 9 are given, the missing one must be
 assigned the remaining digit.
 
