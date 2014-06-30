@@ -412,44 +412,40 @@ Problem 17
 Problem 18
 ==========
 
+By starting at the top of the triangle below and moving to adjacent
+numbers on the row below, the maximum total from top to bottom is 23.
 
-   By starting at the top of the triangle below and moving to adjacent
-   numbers on the row below, the maximum total from top to bottom is 23.
+								   3
+								  7 4
+								 2 4 6
+								8 5 9 3
 
-                                       3
-                                      7 4
-                                     2 4 6
-                                    8 5 9 3
+That is, 3 + 7 + 4 + 9 = 23.
 
-   That is, 3 + 7 + 4 + 9 = 23.
+Find the maximum total from top to bottom of the triangle below:
 
-   Find the maximum total from top to bottom of the triangle below:
+								   75
+								 95 64
+								17 47 82
+							  18 35 87 10
+							 20 04 82 47 65
+						   19 01 23 75 03 34
+						  88 02 77 73 07 63 67
+						99 65 04 28 06 16 70 92
+					   41 41 26 56 83 40 80 70 33
+					 41 48 72 33 47 32 37 16 94 29
+					53 71 44 65 25 43 91 52 97 51 14
+				  70 11 33 28 77 73 17 78 39 68 17 57
+				 91 71 52 38 17 14 91 43 58 50 27 29 48
+			   63 66 04 68 89 53 67 30 73 16 69 87 40 31
+			  04 62 98 27 23 09 70 98 73 93 38 53 60 04 23
 
-                                       75
-                                     95 64
-                                    17 47 82
-                                  18 35 87 10
-                                 20 04 82 47 65
-                               19 01 23 75 03 34
-                              88 02 77 73 07 63 67
-                            99 65 04 28 06 16 70 92
-                           41 41 26 56 83 40 80 70 33
-                         41 48 72 33 47 32 37 16 94 29
-                        53 71 44 65 25 43 91 52 97 51 14
-                      70 11 33 28 77 73 17 78 39 68 17 57
-                     91 71 52 38 17 14 91 43 58 50 27 29 48
-                   63 66 04 68 89 53 67 30 73 16 69 87 40 31
-                  04 62 98 27 23 09 70 98 73 93 38 53 60 04 23
+NOTE: As there are only 16384 routes, it is possible to solve this problem
+by trying every route. However, [Problem 67](#problem-67), is the same challenge with
+a triangle containing one-hundred rows; it cannot be solved by brute
+force, and requires a clever method! ;o)
 
-   NOTE: As there are only 16384 routes, it is possible to solve this problem
-   by trying every route. However, [Problem 67](#problem-67), is the same challenge with
-   a triangle containing one-hundred rows; it cannot be solved by brute
-   force, and requires a clever method! ;o)
-
-
-   Visible links
-   1. problem=67
-   Answer: 708f3cf8100d5e71834b1db77dfa15d6
+Answer: 708f3cf8100d5e71834b1db77dfa15d6
 
 
 Problem 19
@@ -1627,31 +1623,26 @@ Problem 66
 Problem 67
 ==========
 
+By starting at the top of the triangle below and moving to adjacent
+numbers on the row below, the maximum total from top to bottom is 23.
 
-   By starting at the top of the triangle below and moving to adjacent
-   numbers on the row below, the maximum total from top to bottom is 23.
+								   3
+								  7 4
+								 2 4 6
+								8 5 9 3
 
-                                       3
-                                      7 4
-                                     2 4 6
-                                    8 5 9 3
+That is, 3 + 7 + 4 + 9 = 23.
 
-   That is, 3 + 7 + 4 + 9 = 23.
+Find the maximum total from top to bottom in [triangle.txt](files/triangle.txt), a 15K text
+file containing a triangle with one-hundred rows.
 
-   Find the maximum total from top to bottom in [1]triangle.txt, a 15K text
-   file containing a triangle with one-hundred rows.
+NOTE: This is a much more difficult version of [Problem 18](#problem-18). It is not
+possible to try every route to solve this problem, as there are 2^99
+altogether! If you could check one trillion (10^12) routes every second it
+would take over twenty billion years to check them all. There is an
+efficient algorithm to solve it. ;o)
 
-   NOTE: This is a much more difficult version of [Problem 18](#problem-18). It is not
-   possible to try every route to solve this problem, as there are 2^99
-   altogether! If you could check one trillion (10^12) routes every second it
-   would take over twenty billion years to check them all. There is an
-   efficient algorithm to solve it. ;o)
-
-
-   Visible links
-   1. triangle.txt
-   2. problem=18
-   Answer: 9d702ffd99ad9c70ac37e506facc8c38
+Answer: 9d702ffd99ad9c70ac37e506facc8c38
 
 
 Problem 68
@@ -2005,56 +1996,46 @@ Problem 81
 Problem 82
 ==========
 
+NOTE: This problem is a more challenging version of [Problem 81](#problem-81).
 
-   NOTE: This problem is a more challenging version of [Problem 81](#problem-81).
+The minimal path sum in the 5 by 5 matrix below, by starting in any cell
+in the left column and finishing in any cell in the right column, and only
+moving up, down, and right, is indicated in red and bold; the sum is equal
+to 994.
 
-   The minimal path sum in the 5 by 5 matrix below, by starting in any cell
-   in the left column and finishing in any cell in the right column, and only
-   moving up, down, and right, is indicated in red and bold; the sum is equal
-   to 994.
+						  131 673 234 103 18
+						  201 96  342 965 150
+						  630 803 746 422 111
+						  537 699 497 121 956
+						  805 732 524 37  331
 
-                              131 673 234 103 18
-                              201 96  342 965 150
-                              630 803 746 422 111
-                              537 699 497 121 956
-                              805 732 524 37  331
+Find the minimal path sum, in [matrix.txt](files/matrix.txt), a 31K text file containing a
+80 by 80 matrix, from the left column to the right column.
 
-   Find the minimal path sum, in [2]matrix.txt, a 31K text file containing a
-   80 by 80 matrix, from the left column to the right column.
-
-
-   Visible links
-   1. problem=81
-   2. matrix.txt
-   Answer: e6b3b1cd89b018d4754cf63863f6690a
+Answer: e6b3b1cd89b018d4754cf63863f6690a
 
 
 Problem 83
 ==========
 
+NOTE: This problem is a significantly more challenging version of
+[Problem 81](#problem-81).
 
-   NOTE: This problem is a significantly more challenging version of
-   [Problem 81](#problem-81).
+In the 5 by 5 matrix below, the minimal path sum from the top left to the
+bottom right, by moving left, right, up, and down, is indicated in bold
+red and is equal to 2297.
 
-   In the 5 by 5 matrix below, the minimal path sum from the top left to the
-   bottom right, by moving left, right, up, and down, is indicated in bold
-   red and is equal to 2297.
+						  131 673 234 103 18
+						  201 96  342 965 150
+						  630 803 746 422 111
+						  537 699 497 121 956
+						  805 732 524 37  331
 
-                              131 673 234 103 18
-                              201 96  342 965 150
-                              630 803 746 422 111
-                              537 699 497 121 956
-                              805 732 524 37  331
+Find the minimal path sum, in [matrix.txt](files/matrix.txt), a 31K text file containing a
+80 by 80 matrix, from the top left to the bottom right by moving left,
+right, up, and down.
 
-   Find the minimal path sum, in [2]matrix.txt, a 31K text file containing a
-   80 by 80 matrix, from the top left to the bottom right by moving left,
-   right, up, and down.
-
-
-   Visible links
-   1. problem=81
-   2. matrix.txt
-   Answer: 61b28c4fbe8560003ee50fa5619d7a1e
+Answer: 61b28c4fbe8560003ee50fa5619d7a1e
 
 
 Problem 84
@@ -2634,42 +2615,37 @@ Problem 102
 Problem 103
 ===========
 
+Let S(A) represent the sum of elements in set A of size n. We shall call
+it a special sum set if for any two non-empty disjoint subsets, B and C,
+the following properties are true:
 
-   Let S(A) represent the sum of elements in set A of size n. We shall call
-   it a special sum set if for any two non-empty disjoint subsets, B and C,
-   the following properties are true:
+i. S(B) ≠ S(C); that is, sums of subsets cannot be equal.
+ii. If B contains more elements than C then S(B) > S(C).
 
-   i. S(B) ≠ S(C); that is, sums of subsets cannot be equal.
-   ii. If B contains more elements than C then S(B) > S(C).
+If S(A) is minimised for a given n, we shall call it an optimum special
+sum set. The first five optimum special sum sets are given below.
 
-   If S(A) is minimised for a given n, we shall call it an optimum special
-   sum set. The first five optimum special sum sets are given below.
+n = 1: {1}
+n = 2: {1, 2}
+n = 3: {2, 3, 4}
+n = 4: {3, 5, 6, 7}
+n = 5: {6, 9, 11, 12, 13}
 
-   n = 1: {1}
-   n = 2: {1, 2}
-   n = 3: {2, 3, 4}
-   n = 4: {3, 5, 6, 7}
-   n = 5: {6, 9, 11, 12, 13}
+It seems that for a given optimum set, A = {a[1], a[2], ... , a[n]}, the
+next optimum set is of the form B = {b, a[1]+b, a[2]+b, ... ,a[n]+b},
+where b is the "middle" element on the previous row.
 
-   It seems that for a given optimum set, A = {a[1], a[2], ... , a[n]}, the
-   next optimum set is of the form B = {b, a[1]+b, a[2]+b, ... ,a[n]+b},
-   where b is the "middle" element on the previous row.
+By applying this "rule" we would expect the optimum set for n = 6 to be A
+= {11, 17, 20, 22, 23, 24}, with S(A) = 117. However, this is not the
+optimum set, as we have merely applied an algorithm to provide a near
+optimum set. The optimum set for n = 6 is A = {11, 18, 19, 20, 22, 25},
+with S(A) = 115 and corresponding set string: 111819202225.
 
-   By applying this "rule" we would expect the optimum set for n = 6 to be A
-   = {11, 17, 20, 22, 23, 24}, with S(A) = 117. However, this is not the
-   optimum set, as we have merely applied an algorithm to provide a near
-   optimum set. The optimum set for n = 6 is A = {11, 18, 19, 20, 22, 25},
-   with S(A) = 115 and corresponding set string: 111819202225.
+Given that A is an optimum special sum set for n = 7, find its set string.
 
-   Given that A is an optimum special sum set for n = 7, find its set string.
+NOTE: This problem is related to [Problem 105](#problem-105) and [Problem 106](#problem-106).
 
-   NOTE: This problem is related to [Problem 105](#problem-105) and [Problem 106](#problem-106).
-
-
-   Visible links
-   1. problem=105
-   2. problem=106
-   Answer: af8c238336c2a79bb81a24b3fef3330d
+Answer: af8c238336c2a79bb81a24b3fef3330d
 
 
 Problem 104
@@ -2709,7 +2685,7 @@ Problem 105
    161, 139, 158} satisfies both rules for all possible subset pair
    combinations and S(A) = 1286.
 
-   Using [1]sets.txt (right click and "Save Link/Target As..."), a 4K text
+   Using [sets.txt](files/sets.txt) (right click and "Save Link/Target As..."), a 4K text
    file with one-hundred sets containing seven to twelve elements (the two
    examples given above are the first two sets in the file), identify all the
    special sum sets, A[1], A[2], ..., A[k], and find the value of S(A[1]) +
@@ -2717,11 +2693,6 @@ Problem 105
 
    NOTE: This problem is related to [Problem 103](#problem-103) and [Problem 106](#problem-106).
 
-
-   Visible links
-   1. sets.txt
-   2. problem=103
-   3. problem=106
    Answer: c87d30e494eff438fe37b4c810167da0
 
 
@@ -2729,31 +2700,27 @@ Problem 106
 ===========
 
 
-   Let S(A) represent the sum of elements in set A of size n. We shall call
-   it a special sum set if for any two non-empty disjoint subsets, B and C,
-   the following properties are true:
+Let S(A) represent the sum of elements in set A of size n. We shall call
+it a special sum set if for any two non-empty disjoint subsets, B and C,
+the following properties are true:
 
-   i. S(B) ≠ S(C); that is, sums of subsets cannot be equal.
-   ii. If B contains more elements than C then S(B) > S(C).
+i. S(B) ≠ S(C); that is, sums of subsets cannot be equal.
+ii. If B contains more elements than C then S(B) > S(C).
 
-   For this problem we shall assume that a given set contains n strictly
-   increasing elements and it already satisfies the second rule.
+For this problem we shall assume that a given set contains n strictly
+increasing elements and it already satisfies the second rule.
 
-   Surprisingly, out of the 25 possible subset pairs that can be obtained
-   from a set for which n = 4, only 1 of these pairs need to be tested for
-   equality (first rule). Similarly, when n = 7, only 70 out of the 966
-   subset pairs need to be tested.
+Surprisingly, out of the 25 possible subset pairs that can be obtained
+from a set for which n = 4, only 1 of these pairs need to be tested for
+equality (first rule). Similarly, when n = 7, only 70 out of the 966
+subset pairs need to be tested.
 
-   For n = 12, how many of the 261625 subset pairs that can be obtained need
-   to be tested for equality?
+For n = 12, how many of the 261625 subset pairs that can be obtained need
+to be tested for equality?
 
-   NOTE: This problem is related to [Problem 103](#problem-103) and [Problem 105](#problem-105).
+NOTE: This problem is related to [Problem 103](#problem-103) and [Problem 105](#problem-105).
 
-
-   Visible links
-   1. problem=103
-   2. problem=105
-   Answer: c8fd9e36fdeb06bcc93a0732c667b6d8
+Answer: c8fd9e36fdeb06bcc93a0732c667b6d8
 
 
 Problem 107
@@ -2804,35 +2771,31 @@ Answer: b0db1202ec966e7855ca23626eb285b8
 Problem 108
 ===========
 
+In the following equation x, y, and n are positive integers.
 
-   In the following equation x, y, and n are positive integers.
+							   1   1   1
+							   ─ + ─ = ─
+							   x   y   n
 
-                                   1   1   1
-                                   ─ + ─ = ─
-                                   x   y   n
+For n = 4 there are exactly three distinct solutions:
 
-   For n = 4 there are exactly three distinct solutions:
+							   1   1    1
+							   ─ + ─  = ─
+							   5   20   4
+							   1   1    1
+							   ─ + ─  = ─
+							   6   12   4
+							   1   1    1
+							   ─ + ─  = ─
+							   8   8    4
 
-                                   1   1    1
-                                   ─ + ─  = ─
-                                   5   20   4
-                                   1   1    1
-                                   ─ + ─  = ─
-                                   6   12   4
-                                   1   1    1
-                                   ─ + ─  = ─
-                                   8   8    4
+What is the least value of n for which the number of distinct solutions
+exceeds one-thousand?
 
-   What is the least value of n for which the number of distinct solutions
-   exceeds one-thousand?
+NOTE: This problem is an easier version of [Problem 110](#problem-110); it is strongly
+advised that you solve this one first.
 
-   NOTE: This problem is an easier version of [Problem 110](#problem-110); it is strongly
-   advised that you solve this one first.
-
-
-   Visible links
-   1. problem=110
-   Answer: 765ba18edd2844db2db95fba25d2f3e7
+Answer: 765ba18edd2844db2db95fba25d2f3e7
 
 
 Problem 109
@@ -3066,104 +3029,92 @@ Problem 114
 Problem 115
 ===========
 
+NOTE: This is a more difficult version of [Problem 114](#problem-114).
 
-   NOTE: This is a more difficult version of [Problem 114](#problem-114).
+A row measuring n units in length has red blocks with a minimum length of
+m units placed on it, such that any two red blocks (which are allowed to
+be different lengths) are separated by at least one black square.
 
-   A row measuring n units in length has red blocks with a minimum length of
-   m units placed on it, such that any two red blocks (which are allowed to
-   be different lengths) are separated by at least one black square.
+Let the fill-count function, F(m, n), represent the number of ways that a
+row can be filled.
 
-   Let the fill-count function, F(m, n), represent the number of ways that a
-   row can be filled.
+For example, F(3, 29) = 673135 and F(3, 30) = 1089155.
 
-   For example, F(3, 29) = 673135 and F(3, 30) = 1089155.
+That is, for m = 3, it can be seen that n = 30 is the smallest value for
+which the fill-count function first exceeds one million.
 
-   That is, for m = 3, it can be seen that n = 30 is the smallest value for
-   which the fill-count function first exceeds one million.
+In the same way, for m = 10, it can be verified that F(10, 56) = 880711
+and F(10, 57) = 1148904, so n = 57 is the least value for which the
+fill-count function first exceeds one million.
 
-   In the same way, for m = 10, it can be verified that F(10, 56) = 880711
-   and F(10, 57) = 1148904, so n = 57 is the least value for which the
-   fill-count function first exceeds one million.
+For m = 50, find the least value of n for which the fill-count function
+first exceeds one million.
 
-   For m = 50, find the least value of n for which the fill-count function
-   first exceeds one million.
-
-
-   Visible links
-   1. problem=114
-   Answer: 006f52e9102a8d3be2fe5614f42ba989
+Answer: 006f52e9102a8d3be2fe5614f42ba989
 
 
 Problem 116
 ===========
 
+A row of five black square tiles is to have a number of its tiles replaced
+with coloured oblong tiles chosen from red (length two), green (length
+three), or blue (length four).
 
-   A row of five black square tiles is to have a number of its tiles replaced
-   with coloured oblong tiles chosen from red (length two), green (length
-   three), or blue (length four).
+If red tiles are chosen there are exactly seven ways this can be done.
 
-   If red tiles are chosen there are exactly seven ways this can be done.
+					 ┌─╥╥╥┐  ┌╥─╥╥┐  ┌╥╥─╥┐  ┌╥╥╥─┐
+					 └─╨╨╨┘  └╨─╨╨┘  └╨╨─╨┘  └╨╨╨─┘
 
-                         ┌─╥╥╥┐  ┌╥─╥╥┐  ┌╥╥─╥┐  ┌╥╥╥─┐
-                         └─╨╨╨┘  └╨─╨╨┘  └╨╨─╨┘  └╨╨╨─┘
+					 ┌─╥─╥┐  ┌─╥╥─┐  ┌╥─╥─┐   
+					 └─╨─╨┘  └─╨╨─┘  └╨─╨─┘
 
-                         ┌─╥─╥┐  ┌─╥╥─┐  ┌╥─╥─┐   
-                         └─╨─╨┘  └─╨╨─┘  └╨─╨─┘
+If green tiles are chosen there are three ways.
 
-   If green tiles are chosen there are three ways.
+					   ┌──╥╥┐  ┌╥──╥┐  ┌╥╥──┐   
+					   └──╨╨┘  └╨──╨┘  └╨╨──┘
 
-                           ┌──╥╥┐  ┌╥──╥┐  ┌╥╥──┐   
-                           └──╨╨┘  └╨──╨┘  └╨╨──┘
+And if blue tiles are chosen there are two ways.
 
-   And if blue tiles are chosen there are two ways.
+							 ┌╥───┐  ┌───╥┐
+							 └╨───┘  └───╨┘
 
-                                 ┌╥───┐  ┌───╥┐
-                                 └╨───┘  └───╨┘
+Assuming that colours cannot be mixed there are 7 + 3 + 2 = 12 ways of
+replacing the black tiles in a row measuring five units in length.
 
-   Assuming that colours cannot be mixed there are 7 + 3 + 2 = 12 ways of
-   replacing the black tiles in a row measuring five units in length.
+How many different ways can the black tiles in a row measuring fifty units
+in length be replaced if colours cannot be mixed and at least one coloured
+tile must be used?
 
-   How many different ways can the black tiles in a row measuring fifty units
-   in length be replaced if colours cannot be mixed and at least one coloured
-   tile must be used?
+NOTE: This is related to [Problem 117](#problem-117).
 
-   NOTE: This is related to [Problem 117](#problem-117).
-
-
-   Visible links
-   1. problem=117
-   Answer: c21ca0ec54e6d1646a953a480f68feb4
+Answer: c21ca0ec54e6d1646a953a480f68feb4
 
 
 Problem 117
 ===========
 
+Using a combination of black square tiles and oblong tiles chosen from:
+red tiles measuring two units, green tiles measuring three units, and blue
+tiles measuring four units, it is possible to tile a row measuring five
+units in length in exactly fifteen different ways.
 
-   Using a combination of black square tiles and oblong tiles chosen from:
-   red tiles measuring two units, green tiles measuring three units, and blue
-   tiles measuring four units, it is possible to tile a row measuring five
-   units in length in exactly fifteen different ways.
+					 ┌╥╥╥╥┐  ┌─╥╥╥┐  ┌╥─╥╥┐  ┌╥╥─╥┐
+					 └╨╨╨╨┘  └─╨╨╨┘  └╨─╨╨┘  └╨╨─╨┘
 
-                         ┌╥╥╥╥┐  ┌─╥╥╥┐  ┌╥─╥╥┐  ┌╥╥─╥┐
-                         └╨╨╨╨┘  └─╨╨╨┘  └╨─╨╨┘  └╨╨─╨┘
+					 ┌╥╥╥─┐  ┌─╥─╥┐  ┌─╥╥─┐  ┌╥─╥─┐
+					 └╨╨╨─┘  └─╨─╨┘  └─╨╨─┘  └╨─╨─┘
 
-                         ┌╥╥╥─┐  ┌─╥─╥┐  ┌─╥╥─┐  ┌╥─╥─┐
-                         └╨╨╨─┘  └─╨─╨┘  └─╨╨─┘  └╨─╨─┘
+					 ┌──╥╥┐  ┌╥──╥┐  ┌╥╥──┐  ┌─╥──┐
+					 └──╨╨┘  └╨──╨┘  └╨╨──┘  └─╨──┘
 
-                         ┌──╥╥┐  ┌╥──╥┐  ┌╥╥──┐  ┌─╥──┐
-                         └──╨╨┘  └╨──╨┘  └╨╨──┘  └─╨──┘
+					 ┌──╥─┐  ┌───╥┐  ┌╥───┐   
+					 └──╨─┘  └───╨┘  └╨───┘
 
-                         ┌──╥─┐  ┌───╥┐  ┌╥───┐   
-                         └──╨─┘  └───╨┘  └╨───┘
+How many ways can a row measuring fifty units in length be tiled?
 
-   How many ways can a row measuring fifty units in length be tiled?
+NOTE: This is related to [Problem 116](#problem-116).
 
-   NOTE: This is related to [Problem 116](#problem-116).
-
-
-   Visible links
-   1. problem=116
-   Answer: 542612809b3dd08cf518b85450fce8d6
+Answer: 542612809b3dd08cf518b85450fce8d6
 
 
 Problem 118
