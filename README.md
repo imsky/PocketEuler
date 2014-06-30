@@ -2159,28 +2159,26 @@ Answer: 92bf5e6240737e0326ea59846a83e076
 Problem 86
 ==========
 
+A spider, S, sits in one corner of a cuboid room, measuring 6 by 5 by 3,
+and a fly, F, sits in the opposite corner. By travelling on the surfaces
+of the room the shortest "straight line" distance from S to F is 10 and
+the path is shown on the diagram.
 
-   A spider, S, sits in one corner of a cuboid room, measuring 6 by 5 by 3,
-   and a fly, F, sits in the opposite corner. By travelling on the surfaces
-   of the room the shortest "straight line" distance from S to F is 10 and
-   the path is shown on the diagram.
+However, there are up to three "shortest" path candidates for any given
+cuboid and the shortest route doesn't always have integer length.
 
-   However, there are up to three "shortest" path candidates for any given
-   cuboid and the shortest route doesn't always have integer length.
+By considering all cuboid rooms with integer dimensions, up to a maximum
+size of M by M by M, there are exactly 2060 cuboids for which the shortest
+route has integer length when M=100, and this is the least value of M for
+which the number of solutions first exceeds two thousand; the number of
+solutions is 1975 when M=99.
 
-   By considering all cuboid rooms with integer dimensions, up to a maximum
-   size of M by M by M, there are exactly 2060 cuboids for which the shortest
-   route has integer length when M=100, and this is the least value of M for
-   which the number of solutions first exceeds two thousand; the number of
-   solutions is 1975 when M=99.
+Find the least value of M such that the number of solutions first exceeds
+one million.
 
-   Find the least value of M such that the number of solutions first exceeds
-   one million.
+![](files/p_086.gif)
 
-   
-   p_086.gif
-   Answer: f5c3dd7514bf620a1b85450d2ae374b1
-
+Answer: f5c3dd7514bf620a1b85450d2ae374b1
 
 Problem 87
 ==========
@@ -2277,63 +2275,59 @@ Answer: 5c572eca050594c7bc3c36e7e8ab9550
 Problem 90
 ==========
 
+Each of the six faces on a cube has a different digit (0 to 9) written on
+it; the same is done to a second cube. By placing the two cubes
+side-by-side in different positions we can form a variety of 2-digit
+numbers.
 
-   Each of the six faces on a cube has a different digit (0 to 9) written on
-   it; the same is done to a second cube. By placing the two cubes
-   side-by-side in different positions we can form a variety of 2-digit
-   numbers.
+For example, the square number 64 could be formed:
 
-   For example, the square number 64 could be formed:
+In fact, by carefully choosing the digits on both cubes it is possible to
+display all of the square numbers below one-hundred: 01, 04, 09, 16, 25,
+36, 49, 64, and 81.
 
-   In fact, by carefully choosing the digits on both cubes it is possible to
-   display all of the square numbers below one-hundred: 01, 04, 09, 16, 25,
-   36, 49, 64, and 81.
+For example, one way this can be achieved is by placing {0, 5, 6, 7, 8, 9}
+on one cube and {1, 2, 3, 4, 8, 9} on the other cube.
 
-   For example, one way this can be achieved is by placing {0, 5, 6, 7, 8, 9}
-   on one cube and {1, 2, 3, 4, 8, 9} on the other cube.
+However, for this problem we shall allow the 6 or 9 to be turned
+upside-down so that an arrangement like {0, 5, 6, 7, 8, 9} and {1, 2, 3,
+4, 6, 7} allows for all nine square numbers to be displayed; otherwise it
+would be impossible to obtain 09.
 
-   However, for this problem we shall allow the 6 or 9 to be turned
-   upside-down so that an arrangement like {0, 5, 6, 7, 8, 9} and {1, 2, 3,
-   4, 6, 7} allows for all nine square numbers to be displayed; otherwise it
-   would be impossible to obtain 09.
+In determining a distinct arrangement we are interested in the digits on
+each cube, not the order.
 
-   In determining a distinct arrangement we are interested in the digits on
-   each cube, not the order.
+{1, 2, 3, 4, 5, 6} is equivalent to {3, 6, 4, 1, 2, 5}
+{1, 2, 3, 4, 5, 6} is distinct from {1, 2, 3, 4, 5, 9}
 
-   {1, 2, 3, 4, 5, 6} is equivalent to {3, 6, 4, 1, 2, 5}
-   {1, 2, 3, 4, 5, 6} is distinct from {1, 2, 3, 4, 5, 9}
+But because we are allowing 6 and 9 to be reversed, the two distinct sets
+in the last example both represent the extended set {1, 2, 3, 4, 5, 6, 9}
+for the purpose of forming 2-digit numbers.
 
-   But because we are allowing 6 and 9 to be reversed, the two distinct sets
-   in the last example both represent the extended set {1, 2, 3, 4, 5, 6, 9}
-   for the purpose of forming 2-digit numbers.
+How many distinct arrangements of the two cubes allow for all of the
+square numbers to be displayed?
 
-   How many distinct arrangements of the two cubes allow for all of the
-   square numbers to be displayed?
+![](files/p_090.gif)
 
-   
-   p_090.gif
-   Answer: 6a61d423d02a1c56250dc23ae7ff12f3
-
+Answer: 6a61d423d02a1c56250dc23ae7ff12f3
 
 Problem 91
 ==========
 
+The points P (x[1], y[1]) and Q (x[2], y[2]) are plotted at integer
+co-ordinates and are joined to the origin, O(0,0), to form ΔOPQ.
 
-   The points P (x[1], y[1]) and Q (x[2], y[2]) are plotted at integer
-   co-ordinates and are joined to the origin, O(0,0), to form ΔOPQ.
+There are exactly fourteen triangles containing a right angle that can be
+formed when each co-ordinate lies between 0 and 2 inclusive; that is,
+0 ≤ x[1], y[1], x[2], y[2] ≤ 2.
 
-   There are exactly fourteen triangles containing a right angle that can be
-   formed when each co-ordinate lies between 0 and 2 inclusive; that is,
-   0 ≤ x[1], y[1], x[2], y[2] ≤ 2.
+Given that 0 ≤ x[1], y[1], x[2], y[2] ≤ 50, how many right triangles can
+be formed?
 
-   Given that 0 ≤ x[1], y[1], x[2], y[2] ≤ 50, how many right triangles can
-   be formed?
+![](files/p_091_1.gif)
+![](files/p_091_2.gif)
 
-   
-   p_091_1.gif
-   p_091_2.gif
-   Answer: e8dc153260a59d4f236cfd7439d5dfd3
-
+Answer: e8dc153260a59d4f236cfd7439d5dfd3
 
 Problem 92
 ==========
@@ -2774,47 +2768,47 @@ Problem 106
 Problem 107
 ===========
 
+The following undirected network consists of seven vertices and twelve
+edges with a total weight of 243.
 
-   The following undirected network consists of seven vertices and twelve
-   edges with a total weight of 243.
+The same network can be represented by the matrix below.
 
-   The same network can be represented by the matrix below.
+			  ┌──────┬────┬────┬────┬────┬────┬────┬────┐
+			  │      │ A  │ B  │ C  │ D  │ E  │ F  │ G  │
+			  ├──────┼────┼────┼────┼────┼────┼────┼────┤
+			  │ A    │ -  │ 16 │ 12 │ 21 │ -  │ -  │ -  │
+			  ├──────┼────┼────┼────┼────┼────┼────┼────┤
+			  │ B    │ 16 │ -  │ -  │ 17 │ 20 │ -  │ -  │
+			  ├──────┼────┼────┼────┼────┼────┼────┼────┤
+			  │ C    │ 12 │ -  │ -  │ 28 │ -  │ 31 │ -  │
+			  ├──────┼────┼────┼────┼────┼────┼────┼────┤
+			  │ D    │ 21 │ 17 │ 28 │ -  │ 18 │ 19 │ 23 │
+			  ├──────┼────┼────┼────┼────┼────┼────┼────┤
+			  │ E    │ -  │ 20 │ -  │ 18 │ -  │ -  │ 11 │
+			  ├──────┼────┼────┼────┼────┼────┼────┼────┤
+			  │ F    │ -  │ -  │ 31 │ 19 │ -  │ -  │ 27 │
+			  ├──────┼────┼────┼────┼────┼────┼────┼────┤
+			  │ G    │ -  │ -  │ -  │ 23 │ 11 │ 27 │ -  │
+			  └──────┴────┴────┴────┴────┴────┴────┴────┘
 
-                  ┌──────┬────┬────┬────┬────┬────┬────┬────┐
-                  │      │ A  │ B  │ C  │ D  │ E  │ F  │ G  │
-                  ├──────┼────┼────┼────┼────┼────┼────┼────┤
-                  │ A    │ -  │ 16 │ 12 │ 21 │ -  │ -  │ -  │
-                  ├──────┼────┼────┼────┼────┼────┼────┼────┤
-                  │ B    │ 16 │ -  │ -  │ 17 │ 20 │ -  │ -  │
-                  ├──────┼────┼────┼────┼────┼────┼────┼────┤
-                  │ C    │ 12 │ -  │ -  │ 28 │ -  │ 31 │ -  │
-                  ├──────┼────┼────┼────┼────┼────┼────┼────┤
-                  │ D    │ 21 │ 17 │ 28 │ -  │ 18 │ 19 │ 23 │
-                  ├──────┼────┼────┼────┼────┼────┼────┼────┤
-                  │ E    │ -  │ 20 │ -  │ 18 │ -  │ -  │ 11 │
-                  ├──────┼────┼────┼────┼────┼────┼────┼────┤
-                  │ F    │ -  │ -  │ 31 │ 19 │ -  │ -  │ 27 │
-                  ├──────┼────┼────┼────┼────┼────┼────┼────┤
-                  │ G    │ -  │ -  │ -  │ 23 │ 11 │ 27 │ -  │
-                  └──────┴────┴────┴────┴────┴────┴────┴────┘
+However, it is possible to optimise the network by removing some edges and
+still ensure that all points on the network remain connected. The network
+which achieves the maximum saving is shown below. It has a weight of 93,
+representing a saving of 243 − 93 = 150 from the original network.
 
-   However, it is possible to optimise the network by removing some edges and
-   still ensure that all points on the network remain connected. The network
-   which achieves the maximum saving is shown below. It has a weight of 93,
-   representing a saving of 243 − 93 = 150 from the original network.
-
-   Using [1]network.txt, a 6K text file containing a network with forty
-   vertices, and given in matrix form, find the maximum saving which can be
-   achieved by removing redundant edges whilst ensuring that the network
-   remains connected.
+Using [1]network.txt, a 6K text file containing a network with forty
+vertices, and given in matrix form, find the maximum saving which can be
+achieved by removing redundant edges whilst ensuring that the network
+remains connected.
 
 
-   Visible links
-   1. network.txt
-   p_107_1.gif
-   p_107_2.gif
-   Answer: b0db1202ec966e7855ca23626eb285b8
+Visible links
+1. network.txt
 
+![](files/p_107_1.gif)
+![](files/p_107_2.gif)
+
+Answer: b0db1202ec966e7855ca23626eb285b8
 
 Problem 108
 ===========
@@ -2853,100 +2847,93 @@ Problem 108
 Problem 109
 ===========
 
+In the game of darts a player throws three darts at a target board which
+is split into twenty equal sized sections numbered one to twenty.
 
-   In the game of darts a player throws three darts at a target board which
-   is split into twenty equal sized sections numbered one to twenty.
+The score of a dart is determined by the number of the region that the
+dart lands in. A dart landing outside the red/green outer ring scores
+zero. The black and cream regions inside this ring represent single
+scores. However, the red/green outer ring and middle ring score double and
+treble scores respectively.
 
-   The score of a dart is determined by the number of the region that the
-   dart lands in. A dart landing outside the red/green outer ring scores
-   zero. The black and cream regions inside this ring represent single
-   scores. However, the red/green outer ring and middle ring score double and
-   treble scores respectively.
+At the centre of the board are two concentric circles called the bull
+region, or bulls-eye. The outer bull is worth 25 points and the inner bull
+is a double, worth 50 points.
 
-   At the centre of the board are two concentric circles called the bull
-   region, or bulls-eye. The outer bull is worth 25 points and the inner bull
-   is a double, worth 50 points.
+There are many variations of rules but in the most popular game the
+players will begin with a score 301 or 501 and the first player to reduce
+their running total to zero is a winner. However, it is normal to play a
+"doubles out" system, which means that the player must land a double
+(including the double bulls-eye at the centre of the board) on their final
+dart to win; any other dart that would reduce their running total to one
+or lower means the score for that set of three darts is "bust".
 
-   There are many variations of rules but in the most popular game the
-   players will begin with a score 301 or 501 and the first player to reduce
-   their running total to zero is a winner. However, it is normal to play a
-   "doubles out" system, which means that the player must land a double
-   (including the double bulls-eye at the centre of the board) on their final
-   dart to win; any other dart that would reduce their running total to one
-   or lower means the score for that set of three darts is "bust".
+When a player is able to finish on their current score it is called a
+"checkout" and the highest checkout is 170: T20 T20 D25 (two treble 20s
+and double bull).
 
-   When a player is able to finish on their current score it is called a
-   "checkout" and the highest checkout is 170: T20 T20 D25 (two treble 20s
-   and double bull).
+There are exactly eleven distinct ways to checkout on a score of 6:
 
-   There are exactly eleven distinct ways to checkout on a score of 6:
+							   ┌──┬──┬──┐
+							   │D3│  │  │
+							   ├──┼──┼──┤
+							   │D1│D2│  │
+							   ├──┼──┼──┤
+							   │S2│D2│  │
+							   ├──┼──┼──┤
+							   │D2│D1│  │
+							   ├──┼──┼──┤
+							   │S4│D1│  │
+							   ├──┼──┼──┤
+							   │S1│S1│D2│
+							   ├──┼──┼──┤
+							   │S1│T1│D1│
+							   ├──┼──┼──┤
+							   │S1│S3│D1│
+							   ├──┼──┼──┤
+							   │D1│D1│D1│
+							   ├──┼──┼──┤
+							   │D1│S2│D1│
+							   ├──┼──┼──┤
+							   │S2│S2│D1│
+							   └──┴──┴──┘
 
-                                   ┌──┬──┬──┐
-                                   │D3│  │  │
-                                   ├──┼──┼──┤
-                                   │D1│D2│  │
-                                   ├──┼──┼──┤
-                                   │S2│D2│  │
-                                   ├──┼──┼──┤
-                                   │D2│D1│  │
-                                   ├──┼──┼──┤
-                                   │S4│D1│  │
-                                   ├──┼──┼──┤
-                                   │S1│S1│D2│
-                                   ├──┼──┼──┤
-                                   │S1│T1│D1│
-                                   ├──┼──┼──┤
-                                   │S1│S3│D1│
-                                   ├──┼──┼──┤
-                                   │D1│D1│D1│
-                                   ├──┼──┼──┤
-                                   │D1│S2│D1│
-                                   ├──┼──┼──┤
-                                   │S2│S2│D1│
-                                   └──┴──┴──┘
+Note that D1 D2 is considered different to D2 D1 as they finish on
+different doubles. However, the combination S1 T1 D1 is considered the
+same as T1 S1 D1.
 
-   Note that D1 D2 is considered different to D2 D1 as they finish on
-   different doubles. However, the combination S1 T1 D1 is considered the
-   same as T1 S1 D1.
+In addition we shall not include misses in considering combinations; for
+example, D3 is the same as 0 D3 and 0 0 D3.
 
-   In addition we shall not include misses in considering combinations; for
-   example, D3 is the same as 0 D3 and 0 0 D3.
+Incredibly there are 42336 distinct ways of checking out in total.
 
-   Incredibly there are 42336 distinct ways of checking out in total.
+How many distinct ways can a player checkout with a score less than 100?
 
-   How many distinct ways can a player checkout with a score less than 100?
+![](files/p_109.gif)
 
-   
-   p_109.gif
-   Answer: e6aebd5be1ba81557dbcc5f6f57bbe5c
-
+Answer: e6aebd5be1ba81557dbcc5f6f57bbe5c
 
 Problem 110
 ===========
 
+In the following equation x, y, and n are positive integers.
 
-   In the following equation x, y, and n are positive integers.
+							   1   1   1
+							   ─ + ─ = ─
+							   x   y   n
 
-                                   1   1   1
-                                   ─ + ─ = ─
-                                   x   y   n
+It can be verified that when n = 1260 there are 113 distinct solutions and
+this is the least value of n for which the total number of distinct
+solutions exceeds one hundred.
 
-   It can be verified that when n = 1260 there are 113 distinct solutions and
-   this is the least value of n for which the total number of distinct
-   solutions exceeds one hundred.
+What is the least value of n for which the number of distinct solutions
+exceeds four million?
 
-   What is the least value of n for which the number of distinct solutions
-   exceeds four million?
+NOTE: This problem is a much more difficult version of [Problem 108](#problem-108) and
+as it is well beyond the limitations of a brute force approach it requires
+a clever implementation.
 
-   NOTE: This problem is a much more difficult version of [Problem 108](#problem-108) and
-   as it is well beyond the limitations of a brute force approach it requires
-   a clever implementation.
-
-
-   Visible links
-   1. problem=108
-   Answer: 591a7a92f10322866e6a02f3b2386a1c
-
+Answer: 591a7a92f10322866e6a02f3b2386a1c
 
 Problem 111
 ===========
@@ -2998,7 +2985,6 @@ Problem 111
 
    Find the sum of all S(10, d).
 
-   
    Answer: cdf4d134a3b0caa10a69e2771ac4fd36
 
 
@@ -3370,30 +3356,29 @@ Problem 125
 Problem 126
 ===========
 
+The minimum number of cubes to cover every visible face on a cuboid
+measuring 3 x 2 x 1 is twenty-two.
 
-   The minimum number of cubes to cover every visible face on a cuboid
-   measuring 3 x 2 x 1 is twenty-two.
+If we then add a second layer to this solid it would require forty-six
+cubes to cover every visible face, the third layer would require
+seventy-eight cubes, and the fourth layer would require one-hundred and
+eighteen cubes to cover every visible face.
 
-   If we then add a second layer to this solid it would require forty-six
-   cubes to cover every visible face, the third layer would require
-   seventy-eight cubes, and the fourth layer would require one-hundred and
-   eighteen cubes to cover every visible face.
+However, the first layer on a cuboid measuring 5 x 1 x 1 also requires
+twenty-two cubes; similarly the first layer on cuboids measuring
+5 x 3 x 1, 7 x 2 x 1, and 11 x 1 x 1 all contain forty-six cubes.
 
-   However, the first layer on a cuboid measuring 5 x 1 x 1 also requires
-   twenty-two cubes; similarly the first layer on cuboids measuring
-   5 x 3 x 1, 7 x 2 x 1, and 11 x 1 x 1 all contain forty-six cubes.
+We shall define C(n) to represent the number of cuboids that contain n
+cubes in one of its layers. So C(22) = 2, C(46) = 4, C(78) = 5, and C(118)
+= 8.
 
-   We shall define C(n) to represent the number of cuboids that contain n
-   cubes in one of its layers. So C(22) = 2, C(46) = 4, C(78) = 5, and C(118)
-   = 8.
+It turns out that 154 is the least value of n for which C(n) = 10.
 
-   It turns out that 154 is the least value of n for which C(n) = 10.
+Find the least value of n for which C(n) = 1000.
 
-   Find the least value of n for which C(n) = 1000.
+![](files/p_126.gif)
 
-   
-   p_126.gif
-   Answer: 387d6ae83cbc6fa0b9192b56bf095c49
+Answer: 387d6ae83cbc6fa0b9192b56bf095c49
 
 
 Problem 127
@@ -3431,33 +3416,32 @@ Problem 128
 ===========
 
 
-   A hexagonal tile with number 1 is surrounded by a ring of six hexagonal
-   tiles, starting at "12 o'clock" and numbering the tiles 2 to 7 in an
-   anti-clockwise direction.
+A hexagonal tile with number 1 is surrounded by a ring of six hexagonal
+tiles, starting at "12 o'clock" and numbering the tiles 2 to 7 in an
+anti-clockwise direction.
 
-   New rings are added in the same fashion, with the next rings being
-   numbered 8 to 19, 20 to 37, 38 to 61, and so on. The diagram below shows
-   the first three rings.
+New rings are added in the same fashion, with the next rings being
+numbered 8 to 19, 20 to 37, 38 to 61, and so on. The diagram below shows
+the first three rings.
 
-   By finding the difference between tile n and each its six neighbours we
-   shall define PD(n) to be the number of those differences which are prime.
+By finding the difference between tile n and each its six neighbours we
+shall define PD(n) to be the number of those differences which are prime.
 
-   For example, working clockwise around tile 8 the differences are 12, 29,
-   11, 6, 1, and 13. So PD(8) = 3.
+For example, working clockwise around tile 8 the differences are 12, 29,
+11, 6, 1, and 13. So PD(8) = 3.
 
-   In the same way, the differences around tile 17 are 1, 17, 16, 1, 11, and
-   10, hence PD(17) = 2.
+In the same way, the differences around tile 17 are 1, 17, 16, 1, 11, and
+10, hence PD(17) = 2.
 
-   It can be shown that the maximum value of PD(n) is 3.
+It can be shown that the maximum value of PD(n) is 3.
 
-   If all of the tiles for which PD(n) = 3 are listed in ascending order to
-   form a sequence, the 10th tile would be 271.
+If all of the tiles for which PD(n) = 3 are listed in ascending order to
+form a sequence, the 10th tile would be 271.
 
-   Find the 2000th tile in this sequence.
+Find the 2000th tile in this sequence.
 
-   
-   p_128.gif
-   Answer: 93a1925da4792b4fa5d2dbb6ebb7c4a2
+![](files/p_128.gif)
+Answer: 93a1925da4792b4fa5d2dbb6ebb7c4a2
 
 
 Problem 129
@@ -3666,48 +3650,44 @@ Problem 137
 Problem 138
 ===========
 
+Consider the isosceles triangle with base length, b = 16, and legs, L =
+17.
 
-   Consider the isosceles triangle with base length, b = 16, and legs, L =
-   17.
+By using the Pythagorean theorem it can be seen that the height of the
+triangle, h = √(17^2 − 8^2) = 15, which is one less than the base length.
 
-   By using the Pythagorean theorem it can be seen that the height of the
-   triangle, h = √(17^2 − 8^2) = 15, which is one less than the base length.
+With b = 272 and L = 305, we get h = 273, which is one more than the base
+length, and this is the second smallest isosceles triangle with the
+property that h = b ± 1.
 
-   With b = 272 and L = 305, we get h = 273, which is one more than the base
-   length, and this is the second smallest isosceles triangle with the
-   property that h = b ± 1.
+Find ∑ L for the twelve smallest isosceles triangles for which h = b ± 1
+and b, L are positive integers.
 
-   Find ∑ L for the twelve smallest isosceles triangles for which h = b ± 1
-   and b, L are positive integers.
+![](files/p_138.gif)
 
-   
-   p_138.gif
-   Answer: f7524f4d0d6d042c0f92a0d6469aff85
-
+Answer: f7524f4d0d6d042c0f92a0d6469aff85
 
 Problem 139
 ===========
 
+Let (a, b, c) represent the three sides of a right angle triangle with
+integral length sides. It is possible to place four such triangles
+together to form a square with length c.
 
-   Let (a, b, c) represent the three sides of a right angle triangle with
-   integral length sides. It is possible to place four such triangles
-   together to form a square with length c.
+For example, (3, 4, 5) triangles can be placed together to form a 5 by 5
+square with a 1 by 1 hole in the middle and it can be seen that the 5 by 5
+square can be tiled with twenty-five 1 by 1 squares.
 
-   For example, (3, 4, 5) triangles can be placed together to form a 5 by 5
-   square with a 1 by 1 hole in the middle and it can be seen that the 5 by 5
-   square can be tiled with twenty-five 1 by 1 squares.
+However, if (5, 12, 13) triangles were used then the hole would measure 7
+by 7 and these could not be used to tile the 13 by 13 square.
 
-   However, if (5, 12, 13) triangles were used then the hole would measure 7
-   by 7 and these could not be used to tile the 13 by 13 square.
+Given that the perimeter of the right triangle is less than one-hundred
+million, how many Pythagorean triangles would allow such a tiling to take
+place?
 
-   Given that the perimeter of the right triangle is less than one-hundred
-   million, how many Pythagorean triangles would allow such a tiling to take
-   place?
+![](files/p_139.gif)
 
-   
-   p_139.gif
-   Answer: 1c343ba00e6d17d7239bf45869ffed0c
-
+Answer: 1c343ba00e6d17d7239bf45869ffed0c
 
 Problem 140
 ===========
@@ -3781,76 +3761,77 @@ Problem 143
 ===========
 
 
-   Let ABC be a triangle with all interior angles being less than 120
-   degrees. Let X be any point inside the triangle and let XA = p, XC = q,
-   and XB = r.
+Let ABC be a triangle with all interior angles being less than 120
+degrees. Let X be any point inside the triangle and let XA = p, XC = q,
+and XB = r.
 
-   Fermat challenged Torricelli to find the position of X such that p + q + r
-   was minimised.
+Fermat challenged Torricelli to find the position of X such that p + q + r
+was minimised.
 
-   Torricelli was able to prove that if equilateral triangles AOB, BNC and
-   AMC are constructed on each side of triangle ABC, the circumscribed
-   circles of AOB, BNC, and AMC will intersect at a single point, T, inside
-   the triangle. Moreover he proved that T, called the Torricelli/Fermat
-   point, minimises p + q + r. Even more remarkable, it can be shown that
-   when the sum is minimised, AN = BM = CO = p + q + r and that AN, BM and CO
-   also intersect at T.
+Torricelli was able to prove that if equilateral triangles AOB, BNC and
+AMC are constructed on each side of triangle ABC, the circumscribed
+circles of AOB, BNC, and AMC will intersect at a single point, T, inside
+the triangle. Moreover he proved that T, called the Torricelli/Fermat
+point, minimises p + q + r. Even more remarkable, it can be shown that
+when the sum is minimised, AN = BM = CO = p + q + r and that AN, BM and CO
+also intersect at T.
 
-   If the sum is minimised and a, b, c, p, q and r are all positive integers
-   we shall call triangle ABC a Torricelli triangle. For example, a = 399, b
-   = 455, c = 511 is an example of a Torricelli triangle, with p + q + r =
-   784.
+If the sum is minimised and a, b, c, p, q and r are all positive integers
+we shall call triangle ABC a Torricelli triangle. For example, a = 399, b
+= 455, c = 511 is an example of a Torricelli triangle, with p + q + r =
+784.
 
-   Find the sum of all distinct values of p + q + r ≤ 120000 for Torricelli
-   triangles.
+Find the sum of all distinct values of p + q + r ≤ 120000 for Torricelli
+triangles.
 
-   
-   p_143_torricelli.gif
-   Answer: ec2d4c1a0c204d1f06ea5e2d189034f6
+![](files/p_143_torricelli.gif)
+
+Answer: ec2d4c1a0c204d1f06ea5e2d189034f6
 
 
 Problem 144
 ===========
 
 
-   In laser physics, a "white cell" is a mirror system that acts as a delay
-   line for the laser beam. The beam enters the cell, bounces around on the
-   mirrors, and eventually works its way back out.
+In laser physics, a "white cell" is a mirror system that acts as a delay
+line for the laser beam. The beam enters the cell, bounces around on the
+mirrors, and eventually works its way back out.
 
-   The specific white cell we will be considering is an ellipse with the
-   equation 4x^2 + y^2 = 100
+The specific white cell we will be considering is an ellipse with the
+equation 4x^2 + y^2 = 100
 
-   The section corresponding to −0.01 ≤ x ≤ +0.01 at the top is missing,
-   allowing the light to enter and exit through the hole.
+The section corresponding to −0.01 ≤ x ≤ +0.01 at the top is missing,
+allowing the light to enter and exit through the hole.
 
-   The light beam in this problem starts at the point (0.0,10.1) just outside
-   the white cell, and the beam first impacts the mirror at (1.4,-9.6).
+The light beam in this problem starts at the point (0.0,10.1) just outside
+the white cell, and the beam first impacts the mirror at (1.4,-9.6).
 
-   Each time the laser beam hits the surface of the ellipse, it follows the
-   usual law of reflection "angle of incidence equals angle of reflection."
-   That is, both the incident and reflected beams make the same angle with
-   the normal line at the point of incidence.
+Each time the laser beam hits the surface of the ellipse, it follows the
+usual law of reflection "angle of incidence equals angle of reflection."
+That is, both the incident and reflected beams make the same angle with
+the normal line at the point of incidence.
 
-   In the figure on the left, the red line shows the first two points of
-   contact between the laser beam and the wall of the white cell; the blue
-   line shows the line tangent to the ellipse at the point of incidence of
-   the first bounce.
+In the figure on the left, the red line shows the first two points of
+contact between the laser beam and the wall of the white cell; the blue
+line shows the line tangent to the ellipse at the point of incidence of
+the first bounce.
 
-   The slope m of the tangent line at any point (x,y) of the given ellipse
-   is: m = −4x/y
+The slope m of the tangent line at any point (x,y) of the given ellipse
+is: m = −4x/y
 
-   The normal line is perpendicular to this tangent line at the point of
-   incidence.
+The normal line is perpendicular to this tangent line at the point of
+incidence.
 
-   The animation on the right shows the first 10 reflections of the beam.
+The animation on the right shows the first 10 reflections of the beam.
 
-   How many times does the beam hit the internal surface of the white cell
-   before exiting?
+How many times does the beam hit the internal surface of the white cell
+before exiting?
 
-   
-   p_144_1.gif
-   p_144_2.gif
-   Answer: 8dd48d6a2e2cad213179a3992c0be53c
+
+![](files/p_144_1.gif)
+![](files/p_144_2.gif)
+
+Answer: 8dd48d6a2e2cad213179a3992c0be53c
 
 
 Problem 145
@@ -3888,30 +3869,30 @@ Problem 146
 Problem 147
 ===========
 
+In a 3x2 cross-hatched grid, a total of 37 different rectangles could be
+situated within that grid as indicated in the sketch.
 
-   In a 3x2 cross-hatched grid, a total of 37 different rectangles could be
-   situated within that grid as indicated in the sketch.
+There are 5 grids smaller than 3x2, vertical and horizontal dimensions
+being important, i.e. 1x1, 2x1, 3x1, 1x2 and 2x2. If each of them is
+cross-hatched, the following number of different rectangles could be
+situated within those smaller grids:
 
-   There are 5 grids smaller than 3x2, vertical and horizontal dimensions
-   being important, i.e. 1x1, 2x1, 3x1, 1x2 and 2x2. If each of them is
-   cross-hatched, the following number of different rectangles could be
-   situated within those smaller grids:
+1x1: 1
+2x1: 4
+3x1: 8
+1x2: 4
+2x2: 18
 
-   1x1: 1
-   2x1: 4
-   3x1: 8
-   1x2: 4
-   2x2: 18
+Adding those to the 37 of the 3x2 grid, a total of 72 different rectangles
+could be situated within 3x2 and smaller grids.
 
-   Adding those to the 37 of the 3x2 grid, a total of 72 different rectangles
-   could be situated within 3x2 and smaller grids.
+How many different rectangles could be situated within 47x43 and smaller
+grids?
 
-   How many different rectangles could be situated within 47x43 and smaller
-   grids?
 
-   
-   p_147.gif
-   Answer: d0fca7d85d4a4df043a2ae5772ea472e
+![](files/p_147.gif)
+
+Answer: d0fca7d85d4a4df043a2ae5772ea472e
 
 
 Problem 148
@@ -3983,223 +3964,221 @@ Problem 149
 Problem 150
 ===========
 
+In a triangular array of positive and negative integers, we wish to find a
+sub-triangle such that the sum of the numbers it contains is the smallest
+possible.
 
-   In a triangular array of positive and negative integers, we wish to find a
-   sub-triangle such that the sum of the numbers it contains is the smallest
-   possible.
+In the example below, it can be easily verified that the marked triangle
+satisfies this condition having a sum of −42.
 
-   In the example below, it can be easily verified that the marked triangle
-   satisfies this condition having a sum of −42.
+We wish to make such a triangular array with one thousand rows, so we
+generate 500500 pseudo-random numbers s[k] in the range ±2^19, using a
+type of random number generator (known as a Linear Congruential Generator)
+as follows:
 
-   We wish to make such a triangular array with one thousand rows, so we
-   generate 500500 pseudo-random numbers s[k] in the range ±2^19, using a
-   type of random number generator (known as a Linear Congruential Generator)
-   as follows:
+t := 0
+for k = 1 up to k = 500500:
+    t := (615949*t + 797807) modulo 2^20
+    s[k] := t−2^19
 
-   t := 0
-   for k = 1 up to k = 500500:
-       t := (615949*t + 797807) modulo 2^20
-       s[k] := t−2^19
+Thus: s[1] = 273519, s[2] = −153582, s[3] = 450905 etc
 
-   Thus: s[1] = 273519, s[2] = −153582, s[3] = 450905 etc
+Our triangular array is then formed using the pseudo-random numbers thus:
 
-   Our triangular array is then formed using the pseudo-random numbers thus:
+								  s[1]
+							   s[2]  s[3]
+						   s[4]  s[5]  s[6] 
+						s[7]  s[8]  s[9]  s[10]
+								  ...
 
-                                      s[1]
-                                   s[2]  s[3]
-                               s[4]  s[5]  s[6] 
-                            s[7]  s[8]  s[9]  s[10]
-                                      ...
+Sub-triangles can start at any element of the array and extend down as far
+as we like (taking-in the two elements directly below it from the next
+row, the three elements directly below from the row after that, and so
+on).
+The "sum of a sub-triangle" is defined as the sum of all the elements it
+contains.
+Find the smallest possible sub-triangle sum.
 
-   Sub-triangles can start at any element of the array and extend down as far
-   as we like (taking-in the two elements directly below it from the next
-   row, the three elements directly below from the row after that, and so
-   on).
-   The "sum of a sub-triangle" is defined as the sum of all the elements it
-   contains.
-   Find the smallest possible sub-triangle sum.
+![](files/p_150.gif)
 
-   
-   p_150.gif
-   Answer: 1802939e514020769701c59b422c0498
+Answer: 1802939e514020769701c59b422c0498
 
 
 Problem 151
 ===========
 
 
-   A printing shop runs 16 batches (jobs) every week and each batch requires
-   a sheet of special colour-proofing paper of size A5.
+A printing shop runs 16 batches (jobs) every week and each batch requires
+a sheet of special colour-proofing paper of size A5.
 
-   Every Monday morning, the foreman opens a new envelope, containing a large
-   sheet of the special paper with size A1.
+Every Monday morning, the foreman opens a new envelope, containing a large
+sheet of the special paper with size A1.
 
-   He proceeds to cut it in half, thus getting two sheets of size A2. Then he
-   cuts one of them in half to get two sheets of size A3 and so on until he
-   obtains the A5-size sheet needed for the first batch of the week.
+He proceeds to cut it in half, thus getting two sheets of size A2. Then he
+cuts one of them in half to get two sheets of size A3 and so on until he
+obtains the A5-size sheet needed for the first batch of the week.
 
-   All the unused sheets are placed back in the envelope.
+All the unused sheets are placed back in the envelope.
 
-   At the beginning of each subsequent batch, he takes from the envelope one
-   sheet of paper at random. If it is of size A5, he uses it. If it is
-   larger, he repeats the 'cut-in-half' procedure until he has what he needs
-   and any remaining sheets are always placed back in the envelope.
+At the beginning of each subsequent batch, he takes from the envelope one
+sheet of paper at random. If it is of size A5, he uses it. If it is
+larger, he repeats the 'cut-in-half' procedure until he has what he needs
+and any remaining sheets are always placed back in the envelope.
 
-   Excluding the first and last batch of the week, find the expected number
-   of times (during each week) that the foreman finds a single sheet of paper
-   in the envelope.
+Excluding the first and last batch of the week, find the expected number
+of times (during each week) that the foreman finds a single sheet of paper
+in the envelope.
 
-   Give your answer rounded to six decimal places using the format x.xxxxxx .
+Give your answer rounded to six decimal places using the format x.xxxxxx .
 
-   
-   p_151.gif
-   Answer: fb84a530fa9a8199edfadd618727fb70
+
+![](files/p_151.gif)
+
+Answer: fb84a530fa9a8199edfadd618727fb70
 
 
 Problem 152
 ===========
 
+There are several ways to write the number 1/2 as a sum of inverse squares
+using distinct integers.
 
-   There are several ways to write the number 1/2 as a sum of inverse squares
-   using distinct integers.
+For instance, the numbers {2,3,4,5,7,12,15,20,28,35} can be used:
 
-   For instance, the numbers {2,3,4,5,7,12,15,20,28,35} can be used:
+In fact, only using integers between 2 and 45 inclusive, there are exactly
+three ways to do it, the remaining two being:
+{2,3,4,6,7,9,10,20,28,35,36,45} and {2,3,4,6,7,9,12,15,28,30,35,36,45}.
 
-   In fact, only using integers between 2 and 45 inclusive, there are exactly
-   three ways to do it, the remaining two being:
-   {2,3,4,6,7,9,10,20,28,35,36,45} and {2,3,4,6,7,9,12,15,28,30,35,36,45}.
+How many ways are there to write the number 1/2 as a sum of inverse
+squares using distinct integers between 2 and 80 inclusive?
 
-   How many ways are there to write the number 1/2 as a sum of inverse
-   squares using distinct integers between 2 and 80 inclusive?
+![](files/p_152_sum.gif)
 
-   
-   p_152_sum.gif
-   Answer: 34ed066df378efacc9b924ec161e7639
-
+Answer: 34ed066df378efacc9b924ec161e7639
 
 Problem 153
 ===========
 
+As we all know the equation x^2=-1 has no solutions for real x.
+If we however introduce the imaginary number i this equation has two
+solutions: x=i and x=-i.
+If we go a step further the equation (x-3)^2=-4 has two complex solutions:
+x=3+2i and x=3-2i.
+x=3+2i and x=3-2i are called each others' complex conjugate.
+Numbers of the form a+bi are called complex numbers.
+In general a+bi and a−bi are each other's complex conjugate.
 
-   As we all know the equation x^2=-1 has no solutions for real x.
-   If we however introduce the imaginary number i this equation has two
-   solutions: x=i and x=-i.
-   If we go a step further the equation (x-3)^2=-4 has two complex solutions:
-   x=3+2i and x=3-2i.
-   x=3+2i and x=3-2i are called each others' complex conjugate.
-   Numbers of the form a+bi are called complex numbers.
-   In general a+bi and a−bi are each other's complex conjugate.
+A Gaussian Integer is a complex number a+bi such that both a and b are
+integers.
+The regular integers are also Gaussian integers (with b=0).
+To distinguish them from Gaussian integers with b ≠ 0 we call such
+integers "rational integers."
+A Gaussian integer is called a divisor of a rational integer n if the
+result is also a Gaussian integer.
+If for example we divide 5 by 1+2i we can simplify in the following
+manner:
+Multiply numerator and denominator by the complex conjugate of 1+2i: 1−2i.
+The result is .
+So 1+2i is a divisor of 5.
+Note that 1+i is not a divisor of 5 because .
+Note also that if the Gaussian Integer (a+bi) is a divisor of a rational
+integer n, then its complex conjugate (a−bi) is also a divisor of n.
 
-   A Gaussian Integer is a complex number a+bi such that both a and b are
-   integers.
-   The regular integers are also Gaussian integers (with b=0).
-   To distinguish them from Gaussian integers with b ≠ 0 we call such
-   integers "rational integers."
-   A Gaussian integer is called a divisor of a rational integer n if the
-   result is also a Gaussian integer.
-   If for example we divide 5 by 1+2i we can simplify in the following
-   manner:
-   Multiply numerator and denominator by the complex conjugate of 1+2i: 1−2i.
-   The result is .
-   So 1+2i is a divisor of 5.
-   Note that 1+i is not a divisor of 5 because .
-   Note also that if the Gaussian Integer (a+bi) is a divisor of a rational
-   integer n, then its complex conjugate (a−bi) is also a divisor of n.
+In fact, 5 has six divisors such that the real part is positive: {1, 1 +
+2i, 1 − 2i, 2 + i, 2 − i, 5}.
+The following is a table of all of the divisors for the first five
+positive rational integers:
 
-   In fact, 5 has six divisors such that the real part is positive: {1, 1 +
-   2i, 1 − 2i, 2 + i, 2 − i, 5}.
-   The following is a table of all of the divisors for the first five
-   positive rational integers:
+		  ┌───┬──────────────────────────────┬───────────────┐
+		  │ n │ Gaussian integer divisors    │ Sum s(n) of   │
+		  │   │ with positive real part      │ thesedivisors │
+		  ├───┼──────────────────────────────┼───────────────┤
+		  │ 1 │ 1                            │ 1             │
+		  ├───┼──────────────────────────────┼───────────────┤
+		  │ 2 │ 1, 1+i, 1-i, 2               │ 5             │
+		  ├───┼──────────────────────────────┼───────────────┤
+		  │ 3 │ 1, 3                         │ 4             │
+		  ├───┼──────────────────────────────┼───────────────┤
+		  │ 4 │ 1, 1+i, 1-i, 2, 2+2i, 2-2i,4 │ 13            │
+		  ├───┼──────────────────────────────┼───────────────┤
+		  │ 5 │ 1, 1+2i, 1-2i, 2+i, 2-i, 5   │ 12            │
+		  └───┴──────────────────────────────┴───────────────┘
 
-              ┌───┬──────────────────────────────┬───────────────┐
-              │ n │ Gaussian integer divisors    │ Sum s(n) of   │
-              │   │ with positive real part      │ thesedivisors │
-              ├───┼──────────────────────────────┼───────────────┤
-              │ 1 │ 1                            │ 1             │
-              ├───┼──────────────────────────────┼───────────────┤
-              │ 2 │ 1, 1+i, 1-i, 2               │ 5             │
-              ├───┼──────────────────────────────┼───────────────┤
-              │ 3 │ 1, 3                         │ 4             │
-              ├───┼──────────────────────────────┼───────────────┤
-              │ 4 │ 1, 1+i, 1-i, 2, 2+2i, 2-2i,4 │ 13            │
-              ├───┼──────────────────────────────┼───────────────┤
-              │ 5 │ 1, 1+2i, 1-2i, 2+i, 2-i, 5   │ 12            │
-              └───┴──────────────────────────────┴───────────────┘
+For divisors with positive real parts, then, we have: .
 
-   For divisors with positive real parts, then, we have: .
+For 1 ≤ n ≤ 10^5, ∑ s(n)=17924657155.
 
-   For 1 ≤ n ≤ 10^5, ∑ s(n)=17924657155.
+What is ∑ s(n) for 1 ≤ n ≤ 10^8?
 
-   What is ∑ s(n) for 1 ≤ n ≤ 10^8?
 
-   
-   p_153_formule1.gif
-   p_153_formule2.gif
-   p_153_formule5.gif
-   p_153_formule6.gif
-   Answer: 08ec9d6e6c2275d37e7a227fb2d1f06f
+![](files/p_153_formule1.gif)
+![](files/p_153_formule2.gif)
+![](files/p_153_formule5.gif)
+![](files/p_153_formule6.gif)
+
+Answer: 08ec9d6e6c2275d37e7a227fb2d1f06f
 
 
 Problem 154
 ===========
 
+A triangular pyramid is constructed using spherical balls so that each
+ball rests on exactly three balls of the next lower level.
 
-   A triangular pyramid is constructed using spherical balls so that each
-   ball rests on exactly three balls of the next lower level.
+Then, we calculate the number of paths leading from the apex to each
+position:
 
-   Then, we calculate the number of paths leading from the apex to each
-   position:
+A path starts at the apex and progresses downwards to any of the three
+spheres directly below the current position.
 
-   A path starts at the apex and progresses downwards to any of the three
-   spheres directly below the current position.
+Consequently, the number of paths to reach a certain position is the sum
+of the numbers immediately above it (depending on the position, there are
+up to three numbers above it).
 
-   Consequently, the number of paths to reach a certain position is the sum
-   of the numbers immediately above it (depending on the position, there are
-   up to three numbers above it).
+The result is Pascal's pyramid and the numbers at each level n are the
+coefficients of the trinomial expansion (x + y + z)^n.
 
-   The result is Pascal's pyramid and the numbers at each level n are the
-   coefficients of the trinomial expansion (x + y + z)^n.
+How many coefficients in the expansion of (x + y + z)^200000 are multiples
+of 10^12?
 
-   How many coefficients in the expansion of (x + y + z)^200000 are multiples
-   of 10^12?
 
-   
-   p_154_pyramid.gif
-   Answer: de866633fa075beb3897cbbc8abf2400
+![](files/p_154_pyramid.gif)
+
+Answer: de866633fa075beb3897cbbc8abf2400
 
 
 Problem 155
 ===========
 
+An electric circuit uses exclusively identical capacitors of the same
+value C.
+The capacitors can be connected in series or in parallel to form
+sub-units, which can then be connected in series or in parallel with other
+capacitors or other sub-units to form larger sub-units, and so on up to a
+final circuit.
 
-   An electric circuit uses exclusively identical capacitors of the same
-   value C.
-   The capacitors can be connected in series or in parallel to form
-   sub-units, which can then be connected in series or in parallel with other
-   capacitors or other sub-units to form larger sub-units, and so on up to a
-   final circuit.
+Using this simple procedure and up to n identical capacitors, we can make
+circuits having a range of different total capacitances. For example,
+using up to n=3 capacitors of 60 F each, we can obtain the following 7
+distinct total capacitance values:
 
-   Using this simple procedure and up to n identical capacitors, we can make
-   circuits having a range of different total capacitances. For example,
-   using up to n=3 capacitors of 60 F each, we can obtain the following 7
-   distinct total capacitance values:
+If we denote by D(n) the number of distinct total capacitance values we
+can obtain when using up to n equal-valued capacitors and the simple
+procedure described above, we have: D(1)=1, D(2)=3, D(3)=7 ...
 
-   If we denote by D(n) the number of distinct total capacitance values we
-   can obtain when using up to n equal-valued capacitors and the simple
-   procedure described above, we have: D(1)=1, D(2)=3, D(3)=7 ...
+Find D(18).
 
-   Find D(18).
+Reminder : When connecting capacitors C[1], C[2] etc in parallel, the
+total capacitance is C[T] = C[1] + C[2] +...,
+whereas when connecting them in series, the overall capacitance is given
+by:
 
-   Reminder : When connecting capacitors C[1], C[2] etc in parallel, the
-   total capacitance is C[T] = C[1] + C[2] +...,
-   whereas when connecting them in series, the overall capacitance is given
-   by:
 
-   
-   p_155_capsmu.gif
-   p_155_capacitors1.gif
-   p_155_capsform.gif
-   Answer: da0a3fc900cc8ae42d514e280524ee39
+![](files/p_155_capsmu.gif)
+![](files/p_155_capacitors1.gif)
+![](files/p_155_capsform.gif)
+
+Answer: da0a3fc900cc8ae42d514e280524ee39
 
 
 Problem 156
