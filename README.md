@@ -4232,20 +4232,18 @@ Answer: ac0c6b67ed28cebb02b802e7a204aaee
 Problem 157
 ===========
 
+Consider the diophantine equation ^1/[a]+^1/[b]= ^p/[10^n] with a, b, p, n
+positive integers and a ≤ b.
+For n=1 this equation has 20 solutions that are listed below:
 
-   Consider the diophantine equation ^1/[a]+^1/[b]= ^p/[10^n] with a, b, p, n
-   positive integers and a ≤ b.
-   For n=1 this equation has 20 solutions that are listed below:
+    1/1+1/1=20/10   1/1+1/2=15/10  1/1+1/5=12/10  1/1+1/10=11/10 1/2+1/2=10/10
+    1/2+1/5=7/10    1/2+1/10=6/10  1/3+1/6=5/10   1/3+1/15=4/10  1/4+1/4=5/10
+    1/4+1/20=3/10   1/5+1/5=4/10   1/5+1/10=3/10  1/6+1/30=2/10  1/10+1/10=2/10
+    1/11+1/110=1/10 1/12+1/60=1/10 1/14+1/35=1/10 1/15+1/30=1/10 1/20+1/20=1/10
 
-1/1+1/1=20/10   1/1+1/2=15/10  1/1+1/5=12/10  1/1+1/10=11/10 1/2+1/2=10/10
-1/2+1/5=7/10    1/2+1/10=6/10  1/3+1/6=5/10   1/3+1/15=4/10  1/4+1/4=5/10
-1/4+1/20=3/10   1/5+1/5=4/10   1/5+1/10=3/10  1/6+1/30=2/10  1/10+1/10=2/10
-1/11+1/110=1/10 1/12+1/60=1/10 1/14+1/35=1/10 1/15+1/30=1/10 1/20+1/20=1/10
+How many solutions has this equation for 1 ≤ n ≤ 9?
 
-   How many solutions has this equation for 1 ≤ n ≤ 9?
-
-   
-   Answer: c96fc71df4ef8f6420fda7958957538c
+Answer: c96fc71df4ef8f6420fda7958957538c
 
 
 Problem 158
@@ -4276,52 +4274,42 @@ Problem 158
 Problem 159
 ===========
 
+A composite number can be factored many different ways. For instance, not
+including multiplication by one, 24 can be factored in 7 distinct ways:
 
-   A composite number can be factored many different ways. For instance, not
-   including multiplication by one, 24 can be factored in 7 distinct ways:
+    24 = 2x2x2x3
+    24 = 2x3x4
+    24 = 2x2x6
+    24 = 4x6
+    24 = 3x8
+    24 = 2x12
+    24 = 24
 
-   24 = 2x2x2x3
-   24 = 2x3x4
-   24 = 2x2x6
-   24 = 4x6
-   24 = 3x8
-   24 = 2x12
-   24 = 24
+Recall that the digital root of a number, in base 10, is found by adding
+together the digits of that number, and repeating that process until a
+number is arrived at that is less than 10. Thus the digital root of 467 is 8.
 
-   Recall that the digital root of a number, in base 10, is found by adding
-   together the digits of that number, and repeating that process until a
-   number is arrived at that is less than 10. Thus the digital root of 467 is
-   8.
-
-   We shall call a Digital Root Sum (DRS) the sum of the digital roots of the
-   individual factors of our number.
-   The chart below demonstrates all of the DRS values for 24.
-
-                        ┌─────────────┬────────────────┐
-                        │Factorisation│Digital Root Sum│
-                        ├─────────────┼────────────────┤
-                        │2x2x2x3      │       9        │
-                        ├─────────────┼────────────────┤
-                        │2x3x4        │       9        │
-                        ├─────────────┼────────────────┤
-                        │2x2x6        │       10       │
-                        ├─────────────┼────────────────┤
-                        │4x6          │       10       │
-                        ├─────────────┼────────────────┤
-                        │3x8          │       11       │
-                        ├─────────────┼────────────────┤
-                        │2x12         │       5        │
-                        ├─────────────┼────────────────┤
-                        │24           │       6        │
-                        └─────────────┴────────────────┘
-
-   The maximum Digital Root Sum of 24 is 11.
-   The function mdrs(n) gives the maximum Digital Root Sum of n. So
-   mdrs(24)=11.
-   Find ∑mdrs(n) for 1 < n < 1,000,000.
-
+We shall call a Digital Root Sum (DRS) the sum of the digital roots of the
+individual factors of our number.
+The chart below demonstrates all of the DRS values for 24.
    
-   Answer: 2ab79df40adc1028d1fa83a6333db907
+| Factorisation | Digital Root Sum |
+| ------------- | ---------------- |
+| 2x2x2x3       | 9                |
+| 2x3x4         | 9                |
+| 2x2x6         | 10               |
+| 4x6           | 10               |
+| 3x8           | 11               |
+| 2x12          | 5                |
+| 24            | 6                |
+
+The maximum Digital Root Sum of 24 is 11.
+The function mdrs(n) gives the maximum Digital Root Sum of n. So
+mdrs(24)=11.
+Find ∑mdrs(n) for 1 < n < 1,000,000.
+
+
+Answer: 2ab79df40adc1028d1fa83a6333db907
 
 
 Problem 160
