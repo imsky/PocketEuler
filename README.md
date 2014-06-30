@@ -12,7 +12,9 @@ Project Euler is protected under CC Attribution-Non-Commercial-Share Alike 2.0 U
 ^sup and [sub] are frequently use for subscripts/superscripts.
 Many symbols are utf8, my apologies if you are on a 7-bit TTY.
 
-Solutions are hashed with md5sum
+Answers are encrypted with the MD5 algorithm. You can verify your answers online using [JavaScript MD5](http://blueimp.github.io/JavaScript-MD5/).
+
+If you're using Linux or OS X, you can use `md5sum` to verify your answers as well:
 
 ```
 echo -n 'myanswer' | md5sum
