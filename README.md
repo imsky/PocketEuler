@@ -135,7 +135,7 @@ product are 9 × 9 × 8 × 9 = 5832.
 Find the thirteen adjacent digits in the 1000-digit number that have the
 greatest product. What is the value of this product?
 
-Answer: dd23490768a67ebc2fc92804d875f292
+Answer: 0f53ea7949d32ef24f9186207600403c
 
 Problem 9
 =========
