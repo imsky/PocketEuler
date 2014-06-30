@@ -4345,25 +4345,24 @@ Problem 160
 Problem 161
 ===========
 
+A triomino is a shape consisting of three squares joined via the
+edges.There are two basic forms:
 
-   A triomino is a shape consisting of three squares joined via the
-   edges.There are two basic forms:
+If all possible orientations are taken into account there are six:
 
-   If all possible orientations are taken into account there are six:
+Any n by m grid for which nxm is divisible by 3 can be tiled with
+triominoes.
+If we consider tilings that can be obtained by reflection or rotation from
+another tiling as different there are 41 ways a 2 by 9 grid can be tiled
+with triominoes:
 
-   Any n by m grid for which nxm is divisible by 3 can be tiled with
-   triominoes.
-   If we consider tilings that can be obtained by reflection or rotation from
-   another tiling as different there are 41 ways a 2 by 9 grid can be tiled
-   with triominoes:
+In how many ways can a 9 by 12 grid be tiled in this way by triominoes?
 
-   In how many ways can a 9 by 12 grid be tiled in this way by triominoes?
+![](files/p_161_trio1.gif)
+![](files/p_161_trio3.gif)
+![](files/p_161_k9.gif)
 
-   
-   p_161_trio1.gif
-   p_161_trio3.gif
-   p_161_k9.gif
-   Answer: 975ccc38bb5402c5b485f3de5928d919
+Answer: 975ccc38bb5402c5b485f3de5928d919
 
 
 Problem 162
@@ -4398,34 +4397,33 @@ Problem 162
 Problem 163
 ===========
 
+Consider an equilateral triangle in which straight lines are drawn from
+each vertex to the middle of the opposite side, such as in the size 1
+triangle in the sketch below.
 
-   Consider an equilateral triangle in which straight lines are drawn from
-   each vertex to the middle of the opposite side, such as in the size 1
-   triangle in the sketch below.
+Sixteen triangles of either different shape or size or orientation or
+location can now be observed in that triangle. Using size 1 triangles as
+building blocks, larger triangles can be formed, such as the size 2
+triangle in the above sketch. One-hundred and four triangles of either
+different shape or size or orientation or location can now be observed in
+that size 2 triangle.
 
-   Sixteen triangles of either different shape or size or orientation or
-   location can now be observed in that triangle. Using size 1 triangles as
-   building blocks, larger triangles can be formed, such as the size 2
-   triangle in the above sketch. One-hundred and four triangles of either
-   different shape or size or orientation or location can now be observed in
-   that size 2 triangle.
+It can be observed that the size 2 triangle contains 4 size 1 triangle
+building blocks. A size 3 triangle would contain 9 size 1 triangle
+building blocks and a size n triangle would thus contain n^2 size 1
+triangle building blocks.
 
-   It can be observed that the size 2 triangle contains 4 size 1 triangle
-   building blocks. A size 3 triangle would contain 9 size 1 triangle
-   building blocks and a size n triangle would thus contain n^2 size 1
-   triangle building blocks.
+If we denote T(n) as the number of triangles present in a triangle of size
+n, then
 
-   If we denote T(n) as the number of triangles present in a triangle of size
-   n, then
+T(1) = 16
+T(2) = 104
 
-   T(1) = 16
-   T(2) = 104
+Find T(36).
 
-   Find T(36).
+![](files/p_163.gif)
 
-   
-   p_163.gif
-   Answer: a4f66a42a5b5dc395d00463d77e0a0c6
+Answer: a4f66a42a5b5dc395d00463d77e0a0c6
 
 
 Problem 164
@@ -4633,46 +4631,44 @@ Problem 172
 Problem 173
 ===========
 
+We shall define a square lamina to be a square outline with a square
+"hole" so that the shape possesses vertical and horizontal symmetry. For
+example, using exactly thirty-two square tiles we can form two different
+square laminae:
 
-   We shall define a square lamina to be a square outline with a square
-   "hole" so that the shape possesses vertical and horizontal symmetry. For
-   example, using exactly thirty-two square tiles we can form two different
-   square laminae:
+With one-hundred tiles, and not necessarily using all of the tiles at one
+time, it is possible to form forty-one different square laminae.
 
-   With one-hundred tiles, and not necessarily using all of the tiles at one
-   time, it is possible to form forty-one different square laminae.
+Using up to one million tiles how many different square laminae can be
+formed?
 
-   Using up to one million tiles how many different square laminae can be
-   formed?
 
-   
-   p_173_square_laminas.gif
-   Answer: 177f825c89a68aefae37b8dec9bb8a9b
+![](files/p_173_square_laminas.gif)
+
+Answer: 177f825c89a68aefae37b8dec9bb8a9b
 
 
 Problem 174
 ===========
 
+We shall define a square lamina to be a square outline with a square
+"hole" so that the shape possesses vertical and horizontal symmetry.
 
-   We shall define a square lamina to be a square outline with a square
-   "hole" so that the shape possesses vertical and horizontal symmetry.
+Given eight tiles it is possible to form a lamina in only one way: 3x3
+square with a 1x1 hole in the middle. However, using thirty-two tiles it
+is possible to form two distinct laminae.
 
-   Given eight tiles it is possible to form a lamina in only one way: 3x3
-   square with a 1x1 hole in the middle. However, using thirty-two tiles it
-   is possible to form two distinct laminae.
+If t represents the number of tiles used, we shall say that t = 8 is type
+L(1) and t = 32 is type L(2).
 
-   If t represents the number of tiles used, we shall say that t = 8 is type
-   L(1) and t = 32 is type L(2).
+Let N(n) be the number of t ≤ 1000000 such that t is type L(n); for
+example, N(15) = 832.
 
-   Let N(n) be the number of t ≤ 1000000 such that t is type L(n); for
-   example, N(15) = 832.
+What is ∑ N(n) for 1 ≤ n ≤ 10?
 
-   What is ∑ N(n) for 1 ≤ n ≤ 10?
+![](files/p_173_square_laminas.gif)
 
-   
-   p_173_square_laminas.gif
-   Answer: 73166006522ed7f51ed3e2ca66353b66
-
+Answer: 73166006522ed7f51ed3e2ca66353b66
 
 Problem 175
 ===========
@@ -4720,27 +4716,27 @@ Problem 176
 Problem 177
 ===========
 
+Let ABCD be a convex quadrilateral, with diagonals AC and BD. At each
+vertex the diagonal makes an angle with each of the two sides, creating
+eight corner angles.
 
-   Let ABCD be a convex quadrilateral, with diagonals AC and BD. At each
-   vertex the diagonal makes an angle with each of the two sides, creating
-   eight corner angles.
+For example, at vertex A, the two angles are CAD, CAB.
 
-   For example, at vertex A, the two angles are CAD, CAB.
+We call such a quadrilateral for which all eight corner angles have
+integer values when measured in degrees an "integer angled quadrilateral".
+An example of an integer angled quadrilateral is a square, where all eight
+corner angles are 45°. Another example is given by DAC = 20°, BAC = 60°,
+ABD = 50°, CBD = 30°, BCA = 40°, DCA = 30°, CDB = 80°, ADB = 50°.
 
-   We call such a quadrilateral for which all eight corner angles have
-   integer values when measured in degrees an "integer angled quadrilateral".
-   An example of an integer angled quadrilateral is a square, where all eight
-   corner angles are 45°. Another example is given by DAC = 20°, BAC = 60°,
-   ABD = 50°, CBD = 30°, BCA = 40°, DCA = 30°, CDB = 80°, ADB = 50°.
+What is the total number of non-similar integer angled quadrilaterals?
 
-   What is the total number of non-similar integer angled quadrilaterals?
+Note: In your calculations you may assume that a calculated angle is
+integral if it is within a tolerance of 10^-9 of an integer value.
 
-   Note: In your calculations you may assume that a calculated angle is
-   integral if it is within a tolerance of 10^-9 of an integer value.
 
-   
-   p_177_quad.gif
-   Answer: d7a85236af930db0f7e84f2de8ee7ac2
+![](files/p_177_quad.gif)
+
+Answer: d7a85236af930db0f7e84f2de8ee7ac2
 
 
 Problem 178
@@ -4890,26 +4886,26 @@ Problem 183
 Problem 184
 ===========
 
+Consider the set I[r] of points (x,y) with integer co-ordinates in the
+interior of the circle with radius r, centered at the origin, i.e. x^2 +
+y^2 < r^2.
 
-   Consider the set I[r] of points (x,y) with integer co-ordinates in the
-   interior of the circle with radius r, centered at the origin, i.e. x^2 +
-   y^2 < r^2.
+For a radius of 2, I[2] contains the nine points (0,0), (1,0), (1,1),
+(0,1), (-1,1), (-1,0), (-1,-1), (0,-1) and (1,-1). There are eight
+triangles having all three vertices in I[2] which contain the origin in
+the interior. Two of them are shown below, the others are obtained from
+these by rotation.
 
-   For a radius of 2, I[2] contains the nine points (0,0), (1,0), (1,1),
-   (0,1), (-1,1), (-1,0), (-1,-1), (0,-1) and (1,-1). There are eight
-   triangles having all three vertices in I[2] which contain the origin in
-   the interior. Two of them are shown below, the others are obtained from
-   these by rotation.
+For a radius of 3, there are 360 triangles containing the origin in the
+interior and having all vertices in I[3] and for I[5] the number is 10600.
 
-   For a radius of 3, there are 360 triangles containing the origin in the
-   interior and having all vertices in I[3] and for I[5] the number is 10600.
+How many triangles are there containing the origin in the interior and
+having all three vertices in I[105]?
 
-   How many triangles are there containing the origin in the interior and
-   having all three vertices in I[105]?
 
-   
-   p_184.gif
-   Answer: aa80f8619ed594e5d7852564457dbca6
+![](files/p_184.gif)
+
+Answer: aa80f8619ed594e5d7852564457dbca6
 
 
 Problem 185
@@ -5046,26 +5042,26 @@ Problem 188
 Problem 189
 ===========
 
+Consider the following configuration of 64 triangles:
 
-   Consider the following configuration of 64 triangles:
+We wish to colour the interior of each triangle with one of three colours:
+red, green or blue, so that no two neighbouring triangles have the same
+colour. Such a colouring shall be called valid. Here, two triangles are
+said to be neighbouring if they share an edge.
+Note: if they only share a vertex, then they are not neighbours.
 
-   We wish to colour the interior of each triangle with one of three colours:
-   red, green or blue, so that no two neighbouring triangles have the same
-   colour. Such a colouring shall be called valid. Here, two triangles are
-   said to be neighbouring if they share an edge.
-   Note: if they only share a vertex, then they are not neighbours.
+For example, here is a valid colouring of the above grid:
 
-   For example, here is a valid colouring of the above grid:
+A colouring C' which is obtained from a colouring C by rotation or
+reflection is considered distinct from C unless the two are identical.
 
-   A colouring C' which is obtained from a colouring C by rotation or
-   reflection is considered distinct from C unless the two are identical.
+How many distinct valid colourings are there for the above configuration?
 
-   How many distinct valid colourings are there for the above configuration?
 
-   
-   p_189_grid.gif
-   p_189_colours.gif
-   Answer: d3dfdd37601678212b746c34699f1484
+![](files/p_189_grid.gif)
+![](files/p_189_colours.gif)
+
+Answer: d3dfdd37601678212b746c34699f1484
 
 
 Problem 190
@@ -5275,23 +5271,24 @@ Problem 199
 ===========
 
 
-   Three circles of equal radius are placed inside a larger circle such that
-   each pair of circles is tangent to one another and the inner circles do
-   not overlap. There are four uncovered "gaps" which are to be filled
-   iteratively with more tangent circles.
+Three circles of equal radius are placed inside a larger circle such that
+each pair of circles is tangent to one another and the inner circles do
+not overlap. There are four uncovered "gaps" which are to be filled
+iteratively with more tangent circles.
 
-   At each iteration, a maximally sized circle is placed in each gap, which
-   creates more gaps for the next iteration. After 3 iterations (pictured),
-   there are 108 gaps and the fraction of the area which is not covered by
-   circles is 0.06790342, rounded to eight decimal places.
+At each iteration, a maximally sized circle is placed in each gap, which
+creates more gaps for the next iteration. After 3 iterations (pictured),
+there are 108 gaps and the fraction of the area which is not covered by
+circles is 0.06790342, rounded to eight decimal places.
 
-   What fraction of the area is not covered by circles after 10 iterations?
-   Give your answer rounded to eight decimal places using the format
-   x.xxxxxxxx .
+What fraction of the area is not covered by circles after 10 iterations?
+Give your answer rounded to eight decimal places using the format
+x.xxxxxxxx .
 
-   
-   p_199_circles_in_circles.gif
-   Answer: 0f8fd87159c28ae5fea6ac91a95d48dd
+
+![](files/p_199_circles_in_circles.gif)
+
+Answer: 0f8fd87159c28ae5fea6ac91a95d48dd
 
 
 Problem 200
