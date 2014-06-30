@@ -1351,38 +1351,34 @@ Problem 58
 Problem 59
 ==========
 
+Each character on a computer is assigned a unique code and the preferred
+standard is ASCII (American Standard Code for Information Interchange).
+For example, uppercase A = 65, asterisk (*) = 42, and lowercase k = 107.
 
-   Each character on a computer is assigned a unique code and the preferred
-   standard is ASCII (American Standard Code for Information Interchange).
-   For example, uppercase A = 65, asterisk (*) = 42, and lowercase k = 107.
+A modern encryption method is to take a text file, convert the bytes to
+ASCII, then XOR each byte with a given value, taken from a secret key. The
+advantage with the XOR function is that using the same encryption key on
+the cipher text, restores the plain text; for example, 65 XOR 42 = 107,
+then 107 XOR 42 = 65.
 
-   A modern encryption method is to take a text file, convert the bytes to
-   ASCII, then XOR each byte with a given value, taken from a secret key. The
-   advantage with the XOR function is that using the same encryption key on
-   the cipher text, restores the plain text; for example, 65 XOR 42 = 107,
-   then 107 XOR 42 = 65.
+For unbreakable encryption, the key is the same length as the plain text
+message, and the key is made up of random bytes. The user would keep the
+encrypted message and the encryption key in different locations, and
+without both "halves", it is impossible to decrypt the message.
 
-   For unbreakable encryption, the key is the same length as the plain text
-   message, and the key is made up of random bytes. The user would keep the
-   encrypted message and the encryption key in different locations, and
-   without both "halves", it is impossible to decrypt the message.
+Unfortunately, this method is impractical for most users, so the modified
+method is to use a password as a key. If the password is shorter than the
+message, which is likely, the key is repeated cyclically throughout the
+message. The balance for this method is using a sufficiently long password
+key for security, but short enough to be memorable.
 
-   Unfortunately, this method is impractical for most users, so the modified
-   method is to use a password as a key. If the password is shorter than the
-   message, which is likely, the key is repeated cyclically throughout the
-   message. The balance for this method is using a sufficiently long password
-   key for security, but short enough to be memorable.
+Your task has been made easy, as the encryption key consists of three
+lower case characters. Using [cipher1.txt](files/cipher1.txt), a file containing the
+encrypted ASCII codes, and the knowledge that the plain text must contain
+common English words, decrypt the message and find the sum of the ASCII
+values in the original text.
 
-   Your task has been made easy, as the encryption key consists of three
-   lower case characters. Using [1]cipher1.txt, a file containing the
-   encrypted ASCII codes, and the knowledge that the plain text must contain
-   common English words, decrypt the message and find the sum of the ASCII
-   values in the original text.
-
-
-   Visible links
-   1. cipher1.txt
-   Answer: 68f891fe214e2bfa07c998ad5d0a390f
+Answer: 68f891fe214e2bfa07c998ad5d0a390f
 
 
 Problem 60
@@ -2521,25 +2517,20 @@ Problem 98
 Problem 99
 ==========
 
+Comparing two numbers written in index form like 2^11 and 3^7 is not
+difficult, as any calculator would confirm that 2^11 = 2048 < 3^7 = 2187.
 
-   Comparing two numbers written in index form like 2^11 and 3^7 is not
-   difficult, as any calculator would confirm that 2^11 = 2048 < 3^7 = 2187.
+However, confirming that 632382^518061 > 519432^525806 would be much more
+difficult, as both numbers contain over three million digits.
 
-   However, confirming that 632382^518061 > 519432^525806 would be much more
-   difficult, as both numbers contain over three million digits.
+Using [base_exp.txt](files/base_exp.txt), a 22K text file containing one thousand lines with
+a base/exponent pair on each line, determine which line number has the
+greatest numerical value.
 
-   Using [1]base_exp.txt, a 22K text file containing one thousand lines with
-   a base/exponent pair on each line, determine which line number has the
-   greatest numerical value.
+NOTE: The first two lines in the file represent the numbers in the example
+given above.
 
-   NOTE: The first two lines in the file represent the numbers in the example
-   given above.
-
-
-   Visible links
-   1. base_exp.txt
-   Answer: 1ecfb463472ec9115b10c292ef8bc986
-
+Answer: 1ecfb463472ec9115b10c292ef8bc986
 
 Problem 100
 ===========
@@ -11269,61 +11260,55 @@ Problem 423
 Problem 424
 ===========
 
+The above is an example of a cryptic kakuro (also known as cross sums, or
+even sums cross) puzzle, with its final solution on the right. (The common
+rules of kakuro puzzles can be found easily on numerous internet sites.
+Other related information can also be currently found at [krazydad.com](http://krazydad.com)
+whose author has provided the puzzle data for this challenge.)
 
-   The above is an example of a cryptic kakuro (also known as cross sums, or
-   even sums cross) puzzle, with its final solution on the right. (The common
-   rules of kakuro puzzles can be found easily on numerous internet sites.
-   Other related information can also be currently found at [1]krazydad.com
-   whose author has provided the puzzle data for this challenge.)
+The downloadable text file ([kakuro200.txt](files/kakuro200.txt)) contains the description of
+200 such puzzles, a mix of 5x5 and 6x6 types. The first puzzle in the file
+is the above example which is coded as follows:
 
-   The downloadable text file ([2]kakuro200.txt) contains the description of
-   200 such puzzles, a mix of 5x5 and 6x6 types. The first puzzle in the file
-   is the above example which is coded as follows:
+6,X,X,(vCC),(vI),X,X,X,(hH),B,O,(vCA),(vJE),X,(hFE,vD),O,O,O,O,(hA),O,I,(hJC,vB),O,O,(hJC),H,O,O,O,X,X,X,(hJE),O,O,X
 
-   6,X,X,(vCC),(vI),X,X,X,(hH),B,O,(vCA),(vJE),X,(hFE,vD),O,O,O,O,(hA),O,I,(hJC,vB),O,O,(hJC),H,O,O,O,X,X,X,(hJE),O,O,X
+The first character is a numerical digit indicating the size of the
+information grid. It would be either a 6 (for a 5x5 kakuro puzzle) or a 7
+(for a 6x6 puzzle) followed by a comma (,). The extra top line and left
+column are needed to insert information.
 
-   The first character is a numerical digit indicating the size of the
-   information grid. It would be either a 6 (for a 5x5 kakuro puzzle) or a 7
-   (for a 6x6 puzzle) followed by a comma (,). The extra top line and left
-   column are needed to insert information.
+The content of each cell is then described and followed by a comma, going
+left to right and starting with the top line.
+X = Gray cell, not required to be filled by a digit.
+O (upper case letter)= White empty cell to be filled by a digit.
+A = Or any one of the upper case letters from A to J to be replaced by its
+equivalent digit in the solved puzzle.
+( ) = Location of the encrypted sums. Horizontal sums are preceded by a
+lower case "h" and vertical sums are preceded by a lower case "v". Those
+are followed by one or two upper case letters depending if the sum is a
+single digit or double digit one. For double digit sums, the first letter
+would be for the "tens" and the second one for the "units". When the cell
+must contain information for both a horizontal and a vertical sum, the
+first one is always for the horizontal sum and the two are separated by a
+comma within the same set of brackets, ex.: (hFE,vD). Each set of brackets
+is also immediately followed by a comma.
 
-   The content of each cell is then described and followed by a comma, going
-   left to right and starting with the top line.
-   X = Gray cell, not required to be filled by a digit.
-   O (upper case letter)= White empty cell to be filled by a digit.
-   A = Or any one of the upper case letters from A to J to be replaced by its
-   equivalent digit in the solved puzzle.
-   ( ) = Location of the encrypted sums. Horizontal sums are preceded by a
-   lower case "h" and vertical sums are preceded by a lower case "v". Those
-   are followed by one or two upper case letters depending if the sum is a
-   single digit or double digit one. For double digit sums, the first letter
-   would be for the "tens" and the second one for the "units". When the cell
-   must contain information for both a horizontal and a vertical sum, the
-   first one is always for the horizontal sum and the two are separated by a
-   comma within the same set of brackets, ex.: (hFE,vD). Each set of brackets
-   is also immediately followed by a comma.
+The description of the last cell is followed by a Carriage Return/Line
+Feed (CRLF) instead of a comma.
 
-   The description of the last cell is followed by a Carriage Return/Line
-   Feed (CRLF) instead of a comma.
+The required answer to each puzzle is based on the value of each letter
+necessary to arrive at the solution and according to the alphabetical
+order. As indicated under the example puzzle, its answer would be
+8426039571. At least 9 out of the 10 encrypting letters are always part of
+the problem description. When only 9 are given, the missing one must be
+assigned the remaining digit.
 
-   The required answer to each puzzle is based on the value of each letter
-   necessary to arrive at the solution and according to the alphabetical
-   order. As indicated under the example puzzle, its answer would be
-   8426039571. At least 9 out of the 10 encrypting letters are always part of
-   the problem description. When only 9 are given, the missing one must be
-   assigned the remaining digit.
+You are given that the sum of the answers for the first 10 puzzles in the
+file is 64414157580.
 
-   You are given that the sum of the answers for the first 10 puzzles in the
-   file is 64414157580.
+Find the sum of the answers for the 200 puzzles.
 
-   Find the sum of the answers for the 200 puzzles.
-
-
-   Visible links
-   1. http://krazydad.com/
-   2. kakuro200.txt
-   Answer: c412afe5b5d76dbfbb77443ed5836d89
-
+Answer: c412afe5b5d76dbfbb77443ed5836d89
 
 Problem 425
 ===========
