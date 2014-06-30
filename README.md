@@ -4242,48 +4242,48 @@ Problem 156
 ===========
 
 
-   Starting from zero the natural numbers are written down in base 10 like
-   this:
-   0 1 2 3 4 5 6 7 8 9 10 11 12....
+Starting from zero the natural numbers are written down in base 10 like
+this: 0 1 2 3 4 5 6 7 8 9 10 11 12 ….
 
-   Consider the digit d=1. After we write down each number n, we will update
-   the number of ones that have occurred and call this number f(n,1). The
-   first values for f(n,1), then, are as follows:
+Consider the digit d=1. After we write down each number n, we will update
+the number of ones that have occurred and call this number f(n,1). The
+first values for f(n,1), then, are as follows:
 
-                                   n  f(n,1)
-                                   0  0
-                                   1  1
-                                   2  1
-                                   3  1
-                                   4  1
-                                   5  1
-                                   6  1
-                                   7  1
-                                   8  1
-                                   9  1
-                                   10 2
-                                   11 4
-                                   12 5
+| n   | f(n,1) |
+| --- | ------ |
+| 0   | 0      |
+| 1   | 1      |
+| 2   | 1      |
+| 3   | 1      |
+| 4   | 1      |
+| 5   | 1      |
+| 6   | 1      |
+| 7   | 1      |
+| 8   | 1      |
+| 9   | 1      |
+| 10  | 2      |
+| 11  | 4      |
+| 12  | 5      |
 
-   Note that f(n,1) never equals 3.
-   So the first two solutions of the equation f(n,1)=n are n=0 and n=1. The
-   next solution is n=199981.
+Note that f(n,1) never equals 3.
+So the first two solutions of the equation f(n,1)=n are n=0 and n=1. The
+next solution is n=199981.
 
-   In the same manner the function f(n,d) gives the total number of digits d
-   that have been written down after the number n has been written.
-   In fact, for every digit d ≠ 0, 0 is the first solution of the equation
-   f(n,d)=n.
+In the same manner the function f(n,d) gives the total number of digits d
+that have been written down after the number n has been written.
+In fact, for every digit d ≠ 0, 0 is the first solution of the equation
+f(n,d)=n.
 
-   Let s(d) be the sum of all the solutions for which f(n,d)=n.
-   You are given that s(1)=22786974071.
+Let s(d) be the sum of all the solutions for which f(n,d)=n.
+You are given that s(1)=22786974071.
 
-   Find ∑ s(d) for 1 ≤ d ≤ 9.
+Find ∑ s(d) for 1 ≤ d ≤ 9.
 
-   Note: if, for some n, f(n,d)=n for more than one value of d this value of
-   n is counted again for every value of d for which f(n,d)=n.
+Note: if, for some n, f(n,d)=n for more than one value of d this value of
+n is counted again for every value of d for which f(n,d)=n.
 
-   
-   Answer: ac0c6b67ed28cebb02b802e7a204aaee
+
+Answer: ac0c6b67ed28cebb02b802e7a204aaee
 
 
 Problem 157
@@ -4973,54 +4973,54 @@ Problem 185
 ===========
 
 
-   The game Number Mind is a variant of the well known game Master Mind.
+The game Number Mind is a variant of the well known game Master Mind.
 
-   Instead of coloured pegs, you have to guess a secret sequence of digits.
-   After each guess you're only told in how many places you've guessed the
-   correct digit. So, if the sequence was 1234 and you guessed 2036, you'd be
-   told that you have one correct digit; however, you would NOT be told that
-   you also have another digit in the wrong place.
+Instead of coloured pegs, you have to guess a secret sequence of digits.
+After each guess you're only told in how many places you've guessed the
+correct digit. So, if the sequence was 1234 and you guessed 2036, you'd be
+told that you have one correct digit; however, you would NOT be told that
+you also have another digit in the wrong place.
 
-   For instance, given the following guesses for a 5-digit secret sequence,
+For instance, given the following guesses for a 5-digit secret sequence,
 
-   90342 ;2 correct
-   70794 ;0 correct
-   39458 ;2 correct
-   34109 ;1 correct
-   51545 ;2 correct
-   12531 ;1 correct
+    90342 ;2 correct
+    70794 ;0 correct
+    39458 ;2 correct
+    34109 ;1 correct
+    51545 ;2 correct
+    12531 ;1 correct
 
-   The correct sequence 39542 is unique.
+The correct sequence 39542 is unique.
 
-   Based on the following guesses,
+Based on the following guesses,
 
-   5616185650518293 ;2 correct
-   3847439647293047 ;1 correct
-   5855462940810587 ;3 correct
-   9742855507068353 ;3 correct
-   4296849643607543 ;3 correct
-   3174248439465858 ;1 correct
-   4513559094146117 ;2 correct
-   7890971548908067 ;3 correct
-   8157356344118483 ;1 correct
-   2615250744386899 ;2 correct
-   8690095851526254 ;3 correct
-   6375711915077050 ;1 correct
-   6913859173121360 ;1 correct
-   6442889055042768 ;2 correct
-   2321386104303845 ;0 correct
-   2326509471271448 ;2 correct
-   5251583379644322 ;2 correct
-   1748270476758276 ;3 correct
-   4895722652190306 ;1 correct
-   3041631117224635 ;3 correct
-   1841236454324589 ;3 correct
-   2659862637316867 ;2 correct
+    5616185650518293 ;2 correct
+    3847439647293047 ;1 correct
+    5855462940810587 ;3 correct
+    9742855507068353 ;3 correct
+    4296849643607543 ;3 correct
+    3174248439465858 ;1 correct
+    4513559094146117 ;2 correct
+    7890971548908067 ;3 correct
+    8157356344118483 ;1 correct
+    2615250744386899 ;2 correct
+    8690095851526254 ;3 correct
+    6375711915077050 ;1 correct
+    6913859173121360 ;1 correct
+    6442889055042768 ;2 correct
+    2321386104303845 ;0 correct
+    2326509471271448 ;2 correct
+    5251583379644322 ;2 correct
+    1748270476758276 ;3 correct
+    4895722652190306 ;1 correct
+    3041631117224635 ;3 correct
+    1841236454324589 ;3 correct
+    2659862637316867 ;2 correct
 
-   Find the unique 16-digit secret sequence.
+Find the unique 16-digit secret sequence.
 
-   
-   Answer: 70f84864f21c4bf07ee53436580cd4bb
+
+Answer: 70f84864f21c4bf07ee53436580cd4bb
 
 
 Problem 186
