@@ -2162,34 +2162,32 @@ Problem 87
 Problem 88
 ==========
 
+A natural number, N, that can be written as the sum and product of a given
+set of at least two natural numbers, {a[1], a[2], ... , a[k]} is called a
+product-sum number: N = a[1] + a[2] + ... + a[k] = a[1] × a[2] × ... ×
+a[k].
 
-   A natural number, N, that can be written as the sum and product of a given
-   set of at least two natural numbers, {a[1], a[2], ... , a[k]} is called a
-   product-sum number: N = a[1] + a[2] + ... + a[k] = a[1] × a[2] × ... ×
-   a[k].
+For example, 6 = 1 + 2 + 3 = 1 × 2 × 3.
 
-   For example, 6 = 1 + 2 + 3 = 1 × 2 × 3.
+For a given set of size, k, we shall call the smallest N with this
+property a minimal product-sum number. The minimal product-sum numbers for
+sets of size, k = 2, 3, 4, 5, and 6 are as follows.
 
-   For a given set of size, k, we shall call the smallest N with this
-   property a minimal product-sum number. The minimal product-sum numbers for
-   sets of size, k = 2, 3, 4, 5, and 6 are as follows.
+    k=2: 4 = 2 × 2 = 2 + 2
+    k=3: 6 = 1 × 2 × 3 = 1 + 2 + 3
+    k=4: 8 = 1 × 1 × 2 × 4 = 1 + 1 + 2 + 4
+    k=5: 8 = 1 × 1 × 2 × 2 × 2 = 1 + 1 + 2 + 2 + 2
+    k=6: 12 = 1 × 1 × 1 × 1 × 2 × 6 = 1 + 1 + 1 + 1 + 2 + 6
 
-   k=2: 4 = 2 × 2 = 2 + 2
-   k=3: 6 = 1 × 2 × 3 = 1 + 2 + 3
-   k=4: 8 = 1 × 1 × 2 × 4 = 1 + 1 + 2 + 4
-   k=5: 8 = 1 × 1 × 2 × 2 × 2 = 1 + 1 + 2 + 2 + 2
-   k=6: 12 = 1 × 1 × 1 × 1 × 2 × 6 = 1 + 1 + 1 + 1 + 2 + 6
+Hence for 2≤k≤6, the sum of all the minimal product-sum numbers is
+4+6+8+12 = 30; note that 8 is only counted once in the sum.
 
-   Hence for 2≤k≤6, the sum of all the minimal product-sum numbers is
-   4+6+8+12 = 30; note that 8 is only counted once in the sum.
+In fact, as the complete set of minimal product-sum numbers for 2≤k≤12 is
+{4, 6, 8, 12, 15, 16}, the sum is 61.
 
-   In fact, as the complete set of minimal product-sum numbers for 2≤k≤12 is
-   {4, 6, 8, 12, 15, 16}, the sum is 61.
+What is the sum of all the minimal product-sum numbers for 2≤k≤12000?
 
-   What is the sum of all the minimal product-sum numbers for 2≤k≤12000?
-
-   
-   Answer: ffde7251f43906d31534ae69fa555757
+Answer: ffde7251f43906d31534ae69fa555757
 
 
 Problem 89
@@ -2506,49 +2504,48 @@ Problem 100
 Problem 101
 ===========
 
+If we are presented with the first k terms of a sequence it is impossible
+to say with certainty the value of the next term, as there are infinitely
+many polynomial functions that can model the sequence.
 
-   If we are presented with the first k terms of a sequence it is impossible
-   to say with certainty the value of the next term, as there are infinitely
-   many polynomial functions that can model the sequence.
+As an example, let us consider the sequence of cube numbers. This is
+defined by the generating function,
+u[n] = n^3: 1, 8, 27, 64, 125, 216, ...
 
-   As an example, let us consider the sequence of cube numbers. This is
-   defined by the generating function,
-   u[n] = n^3: 1, 8, 27, 64, 125, 216, ...
+Suppose we were only given the first two terms of this sequence. Working
+on the principle that "simple is best" we should assume a linear
+relationship and predict the next term to be 15 (common difference 7).
+Even if we were presented with the first three terms, by the same
+principle of simplicity, a quadratic relationship should be assumed.
 
-   Suppose we were only given the first two terms of this sequence. Working
-   on the principle that "simple is best" we should assume a linear
-   relationship and predict the next term to be 15 (common difference 7).
-   Even if we were presented with the first three terms, by the same
-   principle of simplicity, a quadratic relationship should be assumed.
+We shall define OP(k, n) to be the n^th term of the optimum polynomial
+generating function for the first k terms of a sequence. It should be
+clear that OP(k, n) will accurately generate the terms of the sequence for
+n ≤ k, and potentially the first incorrect term (FIT) will be OP(k, k+1);
+in which case we shall call it a bad OP (BOP).
 
-   We shall define OP(k, n) to be the n^th term of the optimum polynomial
-   generating function for the first k terms of a sequence. It should be
-   clear that OP(k, n) will accurately generate the terms of the sequence for
-   n ≤ k, and potentially the first incorrect term (FIT) will be OP(k, k+1);
-   in which case we shall call it a bad OP (BOP).
+As a basis, if we were only given the first term of sequence, it would be
+most sensible to assume constancy; that is, for n ≥ 2, OP(1, n) = u[1].
 
-   As a basis, if we were only given the first term of sequence, it would be
-   most sensible to assume constancy; that is, for n ≥ 2, OP(1, n) = u[1].
+Hence we obtain the following OPs for the cubic sequence:
 
-   Hence we obtain the following OPs for the cubic sequence:
+    OP(1, n) = 1               1,[1], 1, 1, ...
+    OP(2, n) = 7n−6            1, 8, [15], ...
+    OP(3, n) = 6n^2−11n+6      1, 8, 27, [58], ...
+    OP(4, n) = n^3             1, 8, 27, 64, 125, ...
 
-   OP(1, n) = 1               1,[1], 1, 1, ...
-   OP(2, n) = 7n−6            1, 8, [15], ...
-   OP(3, n) = 6n^2−11n+6      1, 8, 27, [58], ...
-   OP(4, n) = n^3             1, 8, 27, 64, 125, ...
+Clearly no BOPs exist for k ≥ 4.
 
-   Clearly no BOPs exist for k ≥ 4.
+By considering the sum of FITs generated by the BOPs (indicated in brackets above), we obtain 1 + 15 + 58 = 74.
 
-   By considering the sum of FITs generated by the BOPs (indicated in brackets above), we obtain 1 + 15 + 58 = 74.
+Consider the following tenth degree polynomial generating function:
 
-   Consider the following tenth degree polynomial generating function:
+   u[n] = 1 − n + n^2 − n^3 + n^4 − n^5 + n^6 − n^7 + n^8 − n^9 + n^10
 
-      u[n] = 1 − n + n^2 − n^3 + n^4 − n^5 + n^6 − n^7 + n^8 − n^9 + n^10
+Find the sum of FITs for the BOPs.
 
-   Find the sum of FITs for the BOPs.
 
-   
-   Answer: d382b0cc25e82446da83d3a792e1cd27
+Answer: d382b0cc25e82446da83d3a792e1cd27
 
 
 Problem 102
@@ -2589,11 +2586,13 @@ ii. If B contains more elements than C then S(B) > S(C).
 If S(A) is minimised for a given n, we shall call it an optimum special
 sum set. The first five optimum special sum sets are given below.
 
+```
 n = 1: {1}
 n = 2: {1, 2}
 n = 3: {2, 3, 4}
 n = 4: {3, 5, 6, 7}
 n = 5: {6, 9, 11, 12, 13}
+```
 
 It seems that for a given optimum set, A = {a[1], a[2], ... , a[n]}, the
 next optimum set is of the form B = {b, a[1]+b, a[2]+b, ... ,a[n]+b},
@@ -2853,54 +2852,42 @@ Answer: 591a7a92f10322866e6a02f3b2386a1c
 Problem 111
 ===========
 
+Considering 4-digit primes containing repeated digits it is clear that
+they cannot all be the same: 1111 is divisible by 11, 2222 is divisible by
+22, and so on. But there are nine 4-digit primes containing three ones:
 
-   Considering 4-digit primes containing repeated digits it is clear that
-   they cannot all be the same: 1111 is divisible by 11, 2222 is divisible by
-   22, and so on. But there are nine 4-digit primes containing three ones:
+		  1117, 1151, 1171, 1181, 1511, 1811, 2111, 4111, 8111
 
-              1117, 1151, 1171, 1181, 1511, 1811, 2111, 4111, 8111
+We shall say that M(n, d) represents the maximum number of repeated digits
+for an n-digit prime where d is the repeated digit, N(n, d) represents the
+number of such primes, and S(n, d) represents the sum of these primes.
 
-   We shall say that M(n, d) represents the maximum number of repeated digits
-   for an n-digit prime where d is the repeated digit, N(n, d) represents the
-   number of such primes, and S(n, d) represents the sum of these primes.
+So M(4, 1) = 3 is the maximum number of repeated digits for a 4-digit
+prime where one is the repeated digit, there are N(4, 1) = 9 such primes,
+and the sum of these primes is S(4, 1) = 22275. It turns out that for d =
+0, it is only possible to have M(4, 0) = 2 repeated digits, but there are
+N(4, 0) = 13 such cases.
 
-   So M(4, 1) = 3 is the maximum number of repeated digits for a 4-digit
-   prime where one is the repeated digit, there are N(4, 1) = 9 such primes,
-   and the sum of these primes is S(4, 1) = 22275. It turns out that for d =
-   0, it is only possible to have M(4, 0) = 2 repeated digits, but there are
-   N(4, 0) = 13 such cases.
+In the same way we obtain the following results for 4-digit primes.
+   
+| Digit, d | M(4, d) | N(4, d) | S(4,d) |
+| -------- | --------| ------- | ------ |
+| 0        | 2       | 13      | 67061  |
+| 1        | 3       | 9       | 22275  |
+| 2        | 3       | 1       | 2221   |
+| 3        | 3       | 12      | 46214  |
+| 4        | 3       | 2       | 8888   |
+| 5        | 3       | 1       | 5557   |
+| 6        | 3       | 1       | 6661   |
+| 7        | 3       | 9       | 57863  |
+| 8        | 3       | 1       | 8887   |
+| 9        | 3       | 7       | 48073  |
 
-   In the same way we obtain the following results for 4-digit primes.
+For d = 0 to 9, the sum of all S(4, d) is 273700.
 
-                   ┌──────────┬─────────┬─────────┬─────────┐
-                   │ Digit, d │ M(4, d) │ N(4, d) │ S(4, d) │
-                   ├──────────┼─────────┼─────────┼─────────┤
-                   │ 0        │ 2       │ 13      │ 67061   │
-                   ├──────────┼─────────┼─────────┼─────────┤
-                   │ 1        │ 3       │ 9       │ 22275   │
-                   ├──────────┼─────────┼─────────┼─────────┤
-                   │ 2        │ 3       │ 1       │ 2221    │
-                   ├──────────┼─────────┼─────────┼─────────┤
-                   │ 3        │ 3       │ 12      │ 46214   │
-                   ├──────────┼─────────┼─────────┼─────────┤
-                   │ 4        │ 3       │ 2       │ 8888    │
-                   ├──────────┼─────────┼─────────┼─────────┤
-                   │ 5        │ 3       │ 1       │ 5557    │
-                   ├──────────┼─────────┼─────────┼─────────┤
-                   │ 6        │ 3       │ 1       │ 6661    │
-                   ├──────────┼─────────┼─────────┼─────────┤
-                   │ 7        │ 3       │ 9       │ 57863   │
-                   ├──────────┼─────────┼─────────┼─────────┤
-                   │ 8        │ 3       │ 1       │ 8887    │
-                   ├──────────┼─────────┼─────────┼─────────┤
-                   │ 9        │ 3       │ 7       │ 48073   │
-                   └──────────┴─────────┴─────────┴─────────┘
+Find the sum of all S(10, d).
 
-   For d = 0 to 9, the sum of all S(4, d) is 273700.
-
-   Find the sum of all S(10, d).
-
-   Answer: cdf4d134a3b0caa10a69e2771ac4fd36
+Answer: cdf4d134a3b0caa10a69e2771ac4fd36
 
 
 Problem 112
