@@ -3583,7 +3583,7 @@ below.
 | (√137−5)/14 | 4         |
 | 1/2         | 5         |
 
-We shall call A[G](x) a golden nugget if x is rational, because they
+We shall call `A[G](x)` a golden nugget if x is rational, because they
 become increasingly rarer; for example, the 20th golden nugget is
 211345365.
 
@@ -4611,30 +4611,32 @@ Problem 180
 ===========
 
 
-   For any integer n, consider the three functions
+For any integer n, consider the three functions
 
-   f[1,n](x,y,z) = x^n+1 + y^n+1 − z^n+1
-   f[2,n](x,y,z) = (xy + yz + zx)*(x^n-1 + y^n-1 − z^n-1)
-   f[3,n](x,y,z) = xyz*(x^n-2 + y^n-2 − z^n-2)
+```
+f[1,n](x,y,z) = x^n+1 + y^n+1 − z^n+1
+f[2,n](x,y,z) = (xy + yz + zx)*(x^n-1 + y^n-1 − z^n-1)
+f[3,n](x,y,z) = xyz*(x^n-2 + y^n-2 − z^n-2)
+```
 
-   and their combination
+and their combination
 
-   f[n](x,y,z) = f[1,n](x,y,z) + f[2,n](x,y,z) − f[3,n](x,y,z)
+```
+f[n](x,y,z) = f[1,n](x,y,z) + f[2,n](x,y,z) − f[3,n](x,y,z)
+```
 
-   We call (x,y,z) a golden triple of order k if x, y, and z are all rational
-   numbers of the form a / b with
-   0 < a < b ≤ k and there is (at least) one integer n, so that f[n](x,y,z) =
-   0.
+We call (x,y,z) a golden triple of order k if x, y, and z are all rational
+numbers of the form a / b with
+0 < a < b ≤ k and there is (at least) one integer n, so that `f[n](x,y,z)` = 0.
 
-   Let s(x,y,z) = x + y + z.
-   Let t = u / v be the sum of all distinct s(x,y,z) for all golden triples
-   (x,y,z) of order 35.
-   All the s(x,y,z) and t must be in reduced form.
+Let s(x,y,z) = x + y + z.
+Let t = u / v be the sum of all distinct s(x,y,z) for all golden triples
+(x,y,z) of order 35.
+All the s(x,y,z) and t must be in reduced form.
 
-   Find u + v.
+Find u + v.
 
-   
-   Answer: 6459f69d151314c59df404868f45fa96
+Answer: 6459f69d151314c59df404868f45fa96
 
 
 Problem 181
@@ -6841,27 +6843,27 @@ Problem 268
 Problem 269
 ===========
 
+A root or zero of a polynomial P(x) is a solution to the equation P(x) =
+0.
+Define P[n] as the polynomial whose coefficients are the digits of n.
+For example, `P[5703](x)` = 5x^3 + 7x^2 + 3.
 
-   A root or zero of a polynomial P(x) is a solution to the equation P(x) =
-   0.
-   Define P[n] as the polynomial whose coefficients are the digits of n.
-   For example, P[5703](x) = 5x^3 + 7x^2 + 3.
+We can see that:
 
-   We can see that:
+```
+P[n](0) is the last digit of n,
+P[n](1) is the sum of the digits of n,
+P[n](10) is n itself.
+```
 
-     • P[n](0) is the last digit of n,
-     • P[n](1) is the sum of the digits of n,
-     • P[n](10) is n itself.
+Define Z(k) as the number of positive integers, n, not exceeding k for
+which the polynomial P[n] has at least one integer root.
 
-   Define Z(k) as the number of positive integers, n, not exceeding k for
-   which the polynomial P[n] has at least one integer root.
+It can be verified that Z(100 000) is 14696.
 
-   It can be verified that Z(100 000) is 14696.
+What is Z(10^16)?
 
-   What is Z(10^16)?
-
-   
-   Answer: f7ba868cb52a9b9c7e58b1b92e230be8
+Answer: f7ba868cb52a9b9c7e58b1b92e230be8
 
 
 Problem 270
@@ -11399,19 +11401,19 @@ Problem 435
 ===========
 
 
-   The Fibonacci numbers {f[n], n ≥ 0} are defined recursively as f[n] =
-   f[n-1] + f[n-2] with base cases f[0] = 0 and f[1] = 1.
+The Fibonacci numbers {f[n], n ≥ 0} are defined recursively as f[n] =
+f[n-1] + f[n-2] with base cases f[0] = 0 and f[1] = 1.
 
-   Define the polynomials {F[n], n ≥ 0} as F[n](x) = ∑f[i]x^i for 0 ≤ i ≤ n.
+Define the polynomials {F[n], n ≥ 0} as `F[n](x)` = ∑f[i]x^i for 0 ≤ i ≤ n.
 
-   For example, F[7](x) = x + x^2 + 2x^3 + 3x^4 + 5x^5 + 8x^6 + 13x^7, and
-   F[7](11) = 268357683.
+For example, `F[7](x)` = x + x^2 + 2x^3 + 3x^4 + 5x^5 + 8x^6 + 13x^7, and
+`F[7](11)` = 268357683.
 
-   Let n = 10^15. Find the sum [∑[0≤x≤100] F[n](x)] mod 1307674368000 (=
-   15!).
+Let n = 10^15. Find the sum [∑[0≤x≤100] `F[n](x)`] mod 1307674368000 (=
+15!).
 
-   
-   Answer: 0f08231a97e872f565a085de75743a1c
+
+Answer: 0f08231a97e872f565a085de75743a1c
 
 
 Problem 436
@@ -11654,22 +11656,22 @@ Problem 445
 ===========
 
 
-   For every integer n>1, the family of functions f[n,a,b] is defined by
-   f[n,a,b](x)≡ax+b mod n for a,b,x integer and 0<a<n, 0≤b<n, 0≤x<n.
-   We will call f[n,a,b] a retraction if f[n,a,b](f[n,a,b](x))≡f[n,a,b](x)
-   mod n for every 0≤x<n.
-   Let R(n) be the number of retractions for n.
+For every integer n>1, the family of functions f[n,a,b] is defined by
+`f[n,a,b](x)`≡ax+b mod n for a,b,x integer and 0<a<n, 0≤b<n, 0≤x<n.
+We will call f[n,a,b] a retraction if `f[n,a,b](f[n,a,b](x))`≡`f[n,a,b](x)
+mod n` for every 0≤x<n.
+Let R(n) be the number of retractions for n.
 
-   You are given that
-   ∑ R(c) for c=C(100 000,k), and 1 ≤ k ≤99 999 ≡628701600 (mod 1 000 000
-   007).
-   (C(n,k) is the binomial coefficient).
+You are given that
+∑ R(c) for c=C(100 000,k), and 1 ≤ k ≤99 999 ≡628701600 (mod 1 000 000
+007).
+(C(n,k) is the binomial coefficient).
 
-   Find ∑ R(c) for c=C(10 000 000,k), and 1 ≤k≤ 9 999 999.
-   Give your answer modulo 1 000 000 007.
+Find ∑ R(c) for c=C(10 000 000,k), and 1 ≤k≤ 9 999 999.
+Give your answer modulo 1 000 000 007.
 
-   
-   Answer: ?
+
+Answer: ?
 
 
 Problem 446
@@ -11677,9 +11679,9 @@ Problem 446
 
 
    For every integer n>1, the family of functions f[n,a,b] is defined by
-   f[n,a,b](x)≡ax+b mod n for a,b,x integer and 0<a<n, 0≤b<n, 0≤x<n.
-   We will call f[n,a,b] a retraction if f[n,a,b](f[n,a,b](x))≡f[n,a,b](x)
-   mod n for every 0≤x<n.
+   `f[n,a,b](x)`≡ax+b mod n for a,b,x integer and 0<a<n, 0≤b<n, 0≤x<n.
+   We will call f[n,a,b] a retraction if `f[n,a,b](f[n,a,b](x))`≡`f[n,a,b](x)
+   mod n` for every 0≤x<n.
    Let R(n) be the number of retractions for n.
 
    F(N)=∑R(n^4+4) for 1≤n≤N.
@@ -11696,9 +11698,9 @@ Problem 447
 
 
    For every integer n>1, the family of functions f[n,a,b] is defined by
-   f[n,a,b](x)≡ax+b mod n for a,b,x integer and 0<a<n, 0≤b<n, 0≤x<n.
-   We will call f[n,a,b] a retraction if f[n,a,b](f[n,a,b](x))≡f[n,a,b](x)
-   mod n for every 0≤x<n.
+   `f[n,a,b](x)`≡ax+b mod n for a,b,x integer and 0<a<n, 0≤b<n, 0≤x<n.
+   We will call f[n,a,b] a retraction if `f[n,a,b](f[n,a,b](x))`≡`f[n,a,b](x)
+   mod n` for every 0≤x<n.
    Let R(n) be the number of retractions for n.
 
    F(N)=∑R(n) for 2≤n≤N.
