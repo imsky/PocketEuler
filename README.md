@@ -2637,7 +2637,7 @@ Problem 105
    161, 139, 158} satisfies both rules for all possible subset pair
    combinations and S(A) = 1286.
 
-   Using [sets.txt](files/sets.txt) (right click and "Save Link/Target As..."), a 4K text
+   Using [sets.txt](files/sets.txt), a 4K text
    file with one-hundred sets containing seven to twelve elements (the two
    examples given above are the first two sets in the file), identify all the
    special sum sets, A[1], A[2], ..., A[k], and find the value of S(A[1]) +
@@ -3958,20 +3958,14 @@ In fact, 5 has six divisors such that the real part is positive: {1, 1 +
 The following is a table of all of the divisors for the first five
 positive rational integers:
 
-		  ┌───┬──────────────────────────────┬───────────────┐
-		  │ n │ Gaussian integer divisors    │ Sum s(n) of   │
-		  │   │ with positive real part      │ thesedivisors │
-		  ├───┼──────────────────────────────┼───────────────┤
-		  │ 1 │ 1                            │ 1             │
-		  ├───┼──────────────────────────────┼───────────────┤
-		  │ 2 │ 1, 1+i, 1-i, 2               │ 5             │
-		  ├───┼──────────────────────────────┼───────────────┤
-		  │ 3 │ 1, 3                         │ 4             │
-		  ├───┼──────────────────────────────┼───────────────┤
-		  │ 4 │ 1, 1+i, 1-i, 2, 2+2i, 2-2i,4 │ 13            │
-		  ├───┼──────────────────────────────┼───────────────┤
-		  │ 5 │ 1, 1+2i, 1-2i, 2+i, 2-i, 5   │ 12            │
-		  └───┴──────────────────────────────┴───────────────┘
+|  n  | Gaussian integer divisors with positive real part | Sum s(n) of these divisors |
+| --- | ------------------------------------------------- | -------------------------- |
+| 1   | 1                                                 | 1                          |
+| 2   | 1, 1+i, 1-i, 2                                    | 5                          |
+| 3   | 1, 3                                              | 4                          |
+| 4   | 1, 1+i, 1-i, 2, 2+2i, 2-2i, 4                     | 13                         |
+| 5   | 1, 1+2i, 1-2i, 2+i, 2-i, 5                        | 12                         |
+
 
 For divisors with positive real parts, then, we have: ![](files/p_153_formule6.gif).
 
@@ -4812,41 +4806,36 @@ Problem 186
 ===========
 
 
-   Here are the records from a busy telephone system with one million users:
+Here are the records from a busy telephone system with one million users:
 
-                    ┌─────────────────┬─────────┬─────────┐
-                    │RecNr            │ Caller  │ Called  │
-                    ├─────────────────┼─────────┼─────────┤
-                    │        1        │ 200007  │ 100053  │
-                    ├─────────────────┼─────────┼─────────┤
-                    │        2        │ 600183  │ 500439  │
-                    ├─────────────────┼─────────┼─────────┤
-                    │        3        │ 600863  │ 701497  │
-                    ├─────────────────┼─────────┼─────────┤
-                    │       ...       │   ...   │   ...   │
-                    └─────────────────┴─────────┴─────────┘
+| RecNr | Caller   | Called  |
+| ----- | -------- | ------- |
+| 1     | 200007   | 100053  |
+| 2     | 600183   | 500439  |
+| 3     | 600863   | 701497  |
+| …     | …        | …       |
 
-   The telephone number of the caller and the called number in record n are
-   Caller(n) = S[2n-1] and Called(n) = S[2n] where S[1,2,3,...] come from the
-   "Lagged Fibonacci Generator":
+The telephone number of the caller and the called number in record n are
+Caller(n) = S[2n-1] and Called(n) = S[2n] where S[1,2,3,...] come from the
+"Lagged Fibonacci Generator":
 
-   For 1 ≤ k ≤ 55, S[k] = [100003 - 200003k + 300007k^3] (modulo 1000000)
-   For 56 ≤ k, S[k] = [S[k-24] + S[k-55]] (modulo 1000000)
+For 1 ≤ k ≤ 55, S[k] = [100003 - 200003k + 300007k^3] (modulo 1000000)
+For 56 ≤ k, S[k] = [S[k-24] + S[k-55]] (modulo 1000000)
 
-   If Caller(n) = Called(n) then the user is assumed to have misdialled and
-   the call fails; otherwise the call is successful.
+If Caller(n) = Called(n) then the user is assumed to have misdialled and
+the call fails; otherwise the call is successful.
 
-   From the start of the records, we say that any pair of users X and Y are
-   friends if X calls Y or vice-versa. Similarly, X is a friend of a friend
-   of Z if X is a friend of Y and Y is a friend of Z; and so on for longer
-   chains.
+From the start of the records, we say that any pair of users X and Y are
+friends if X calls Y or vice-versa. Similarly, X is a friend of a friend
+of Z if X is a friend of Y and Y is a friend of Z; and so on for longer
+chains.
 
-   The Prime Minister's phone number is 524287. After how many successful
-   calls, not counting misdials, will 99% of the users (including the PM) be
-   a friend, or a friend of a friend etc., of the Prime Minister?
+The Prime Minister's phone number is 524287. After how many successful
+calls, not counting misdials, will 99% of the users (including the PM) be
+a friend, or a friend of a friend etc., of the Prime Minister?
 
-   
-   Answer: b21d68f1871abf1d5bbcf1206b3f1643
+
+Answer: b21d68f1871abf1d5bbcf1206b3f1643
 
 
 Problem 187
@@ -4930,27 +4919,25 @@ Problem 190
 Problem 191
 ===========
 
+A particular school offers cash rewards to children with good attendance
+and punctuality. If they are absent for three consecutive days or late on
+more than one occasion then they forfeit their prize.
 
-   A particular school offers cash rewards to children with good attendance
-   and punctuality. If they are absent for three consecutive days or late on
-   more than one occasion then they forfeit their prize.
+During an n-day period a trinary string is formed for each child
+consisting of L's (late), O's (on time), and A's (absent).
 
-   During an n-day period a trinary string is formed for each child
-   consisting of L's (late), O's (on time), and A's (absent).
+Although there are eighty-one trinary strings for a 4-day period that can
+be formed, exactly forty-three strings would lead to a prize:
 
-   Although there are eighty-one trinary strings for a 4-day period that can
-   be formed, exactly forty-three strings would lead to a prize:
+    OOOO OOOA OOOL OOAO OOAA OOAL OOLO OOLA OAOO OAOA
+    OAOL OAAO OAAL OALO OALA OLOO OLOA OLAO OLAA AOOO
+    AOOA AOOL AOAO AOAA AOAL AOLO AOLA AAOO AAOA AAOL
+    AALO AALA ALOO ALOA ALAO ALAA LOOO LOOA LOAO LOAA
+    LAOO LAOA LAAO
 
-   OOOO OOOA OOOL OOAO OOAA OOAL OOLO OOLA OAOO OAOA
-   OAOL OAAO OAAL OALO OALA OLOO OLOA OLAO OLAA AOOO
-   AOOA AOOL AOAO AOAA AOAL AOLO AOLA AAOO AAOA AAOL
-   AALO AALA ALOO ALOA ALAO ALAA LOOO LOOA LOAO LOAA
-   LAOO LAOA LAAO
+How many "prize" strings exist over a 30-day period?
 
-   How many "prize" strings exist over a 30-day period?
-
-   
-   Answer: e04dfa598b22a87570f63063f3ff595d
+Answer: e04dfa598b22a87570f63063f3ff595d
 
 
 Problem 192
@@ -6164,24 +6151,25 @@ Problem 243
 Problem 244
 ===========
 
+You probably know the game Fifteen Puzzle. Here, instead of numbered
+tiles, we have seven red tiles and eight blue tiles.
 
-   You probably know the game Fifteen Puzzle. Here, instead of numbered
-   tiles, we have seven red tiles and eight blue tiles.
-
-   A move is denoted by the uppercase initial of the direction (Left, Right,
-   Up, Down) in which the tile is slid, e.g. starting from configuration (S),
-   by the sequence LULUR we reach the configuration (E):
+A move is denoted by the uppercase initial of the direction (Left, Right,
+Up, Down) in which the tile is slid, e.g. starting from configuration (S),
+by the sequence LULUR we reach the configuration (E):
 
                   (S)                   , (E)
 
-   For each path, its checksum is calculated by (pseudocode):
-   checksum = 0
-   checksum = (checksum × 243 + m[1]) mod 100 000 007
-   checksum = (checksum × 243 + m[2]) mod 100 000 007
-      …
-   checksum = (checksum × 243 + m[n]) mod 100 000 007
-   where m[k] is the ASCII value of the k^th letter in the move sequence and
-                      the ASCII values for the moves are:
+For each path, its checksum is calculated by (pseudocode):
+   
+    checksum = 0
+    checksum = (checksum × 243 + m[1]) mod 100 000 007
+    checksum = (checksum × 243 + m[2]) mod 100 000 007
+       …
+    checksum = (checksum × 243 + m[n]) mod 100 000 007
+    
+where m[k] is the ASCII value of the k^th letter in the move sequence and
+the ASCII values for the moves are:
 
                                  ┌──────┬─────┐
                                  │L     │76   │
@@ -6193,21 +6181,21 @@ Problem 244
                                  │D     │68   │
                                  └──────┴─────┘
 
-   For the sequence LULUR given above, the checksum would be 19761398.
+For the sequence LULUR given above, the checksum would be 19761398.
 
-   Now, starting from configuration (S),find all shortest ways to reach
-   configuration (T).
+Now, starting from configuration (S),find all shortest ways to reach
+configuration (T).
 
-                  (S)                   , (T)
+			  (S)                   , (T)
 
-   What is the sum of all checksums for the paths having the minimal length?
+What is the sum of all checksums for the paths having the minimal length?
 
-   
-   p_244_start.gif
-   p_244_example.gif
-   p_244_start.gif
-   p_244_target.gif
-   Answer: f8fd502ec1d0084a79d43d9dc5bd3a3d
+
+p_244_start.gif
+p_244_example.gif
+p_244_start.gif
+p_244_target.gif
+Answer: f8fd502ec1d0084a79d43d9dc5bd3a3d
 
 
 Problem 245
@@ -6360,9 +6348,9 @@ Problem 252
    For our example, we used the first 20 points (T[2k−1], T[2k]), for
    k = 1,2,…,20, produced with the pseudo-random number generator:
 
-                     S[0]   =[ ] 290797[ ]
-                     S[n+1] =[ ] S[n]^2 mod 50515093
-                     T[n]   =[ ] ( S[n] mod 2000 ) − 1000^ 
+                     S[0]   = 290797
+                     S[n+1] = S[n]^2 mod 50515093
+                     T[n]   = ( S[n] mod 2000 ) − 1000
 
    i.e. (527, 144), (−488, 732), (−454, −947), …
 
@@ -6378,70 +6366,53 @@ Problem 252
 Problem 253
 ===========
 
+A small child has a “number caterpillar” consisting of forty jigsaw
+pieces, each with one number on it, which, when connected together in a
+line, reveal the numbers 1 to 40 in order.
 
-   A small child has a “number caterpillar” consisting of forty jigsaw
-   pieces, each with one number on it, which, when connected together in a
-   line, reveal the numbers 1 to 40 in order.
+Every night, the child's father has to pick up the pieces of the
+caterpillar that have been scattered across the play room. He picks up the
+pieces at random and places them in the correct order.
+As the caterpillar is built up in this way, it forms distinct segments
+that gradually merge together.
+The number of segments starts at zero (no pieces placed), generally
+increases up to about eleven or twelve, then tends to drop again before
+finishing at a single segment (all pieces placed).
 
-   Every night, the child's father has to pick up the pieces of the
-   caterpillar that have been scattered across the play room. He picks up the
-   pieces at random and places them in the correct order.
-   As the caterpillar is built up in this way, it forms distinct segments
-   that gradually merge together.
-   The number of segments starts at zero (no pieces placed), generally
-   increases up to about eleven or twelve, then tends to drop again before
-   finishing at a single segment (all pieces placed).
-
-   For example:
-
-                         ┌────────────┬───────────────┐
-                         │Piece Placed│Segments So Far│
-                         ├────────────┼───────────────┤
-                         │     12     │       1       │
-                         ├────────────┼───────────────┤
-                         │     4      │       2       │
-                         ├────────────┼───────────────┤
-                         │     29     │       3       │
-                         ├────────────┼───────────────┤
-                         │     6      │       4       │
-                         ├────────────┼───────────────┤
-                         │     34     │       5       │
-                         ├────────────┼───────────────┤
-                         │     5      │       4       │
-                         ├────────────┼───────────────┤
-                         │     35     │       4       │
-                         ├────────────┼───────────────┤
-                         │     …      │       …       │
-                         └────────────┴───────────────┘
-
-   Let M be the maximum number of segments encountered during a random
-   tidy-up of the caterpillar.
-   For a caterpillar of ten pieces, the number of possibilities for each M is
-
-                            ┌────────┬─────────────┐
-                            │   M    │Possibilities│
-                            ├────────┼─────────────┤
-                            │   1    │    512      │
-                            ├────────┼─────────────┤
-                            │   2    │ 250912      │
-                            ├────────┼─────────────┤
-                            │   3    │1815264      │
-                            ├────────┼─────────────┤
-                            │   4    │1418112      │
-                            ├────────┼─────────────┤
-                            │   5    │ 144000      │
-                            └────────┴─────────────┘
-
-   so the most likely value of M is 3 and the average value is
-   ^385643⁄[113400] = 3.400732, rounded to six decimal places.
-
-   The most likely value of M for a forty-piece caterpillar is 11; but what
-   is the average value of M?
-
-   Give your answer rounded to six decimal places.
-
+For example:
    
-   Answer: 228de0a37019fd7c7051029f3d126422
+| Piece Placed | Segments So Far |
+| ------------ | --------------- |
+| 12           | 1               |
+| 4            | 2               |
+| 29           | 3               |
+| 6            | 4               |
+| 34           | 5               |
+| 5            | 4               |
+| 35           | 4               |
+| …            | …               |
+
+Let M be the maximum number of segments encountered during a random
+tidy-up of the caterpillar.
+For a caterpillar of ten pieces, the number of possibilities for each M is
+
+| M   | Possibilities |
+| --- | ------------- |
+| 1   | 512           |
+| 2   | 250912        |
+| 3   | 1815264       |
+| 4   | 1418112       |
+| 5   | 144000        |
+
+so the most likely value of M is 3 and the average value is 385643/113400 = 3.400732, 
+rounded to six decimal places.
+
+The most likely value of M for a forty-piece caterpillar is 11; but what
+is the average value of M?
+
+Give your answer rounded to six decimal places.
+
+Answer: 228de0a37019fd7c7051029f3d126422
 
 
 Problem 254
