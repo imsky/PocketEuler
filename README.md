@@ -165,28 +165,9 @@ Problem 11
 ==========
 
 In the 20×20 grid below, four numbers along a diagonal line have been
-marked with brackets.
+marked in red.
 
-	  08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
-	  49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00
-	  81 49 31 73 55 79 14 29 93 71 40 67 53 88 30 03 49 13 36 65
-	  52 70 95 23 04 60 11 42 69 24 68 56 01 32 56 71 37 02 36 91
-	  22 31 16 71 51 67 63 89 41 92 36 54 22 40 40 28 66 33 13 80
-	  24 47 32 60 99 03 45 02 44 75 33 53 78 36 84 20 35 17 12 50
-	  32 98 81 28 64 23 67 10[26]38 40 67 59 54 70 66 18 38 64 70
-	  67 26 20 68 02 62 12 20 95[63]94 39 63 08 40 91 66 49 94 21
-	  24 55 58 05 66 73 99 26 97 17[78]78 96 83 14 88 34 89 63 72
-	  21 36 23 09 75 00 76 44 20 45 35[14]00 61 33 97 34 31 33 95
-	  78 17 53 28 22 75 31 67 15 94 03 80 04 62 16 14 09 53 56 92
-	  16 39 05 42 96 35 31 47 55 58 88 24 00 17 54 24 36 29 85 57
-	  86 56 00 48 35 71 89 07 05 44 44 37 44 60 21 58 51 54 17 58
-	  19 80 81 68 05 94 47 69 28 73 92 13 86 52 17 77 04 89 55 40
-	  04 52 08 83 97 35 99 16 07 97 57 32 16 26 26 79 33 27 98 66
-	  88 36 68 87 57 62 20 72 03 46 33 67 46 55 12 32 63 93 53 69
-	  04 42 16 73 38 25 39 11 24 94 72 18 08 46 29 32 40 62 76 36
-	  20 69 36 41 72 30 23 88 34 62 99 69 82 67 59 85 74 04 36 16
-	  20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54
-	  01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48
+![](files/p_11.png)
 
 The product of these numbers is 26 × 63 × 78 × 14 = 1788696.
 
@@ -1175,16 +1156,16 @@ Problem 54
 In the card game poker, a hand consists of five cards and are ranked, from
 lowest to highest, in the following way:
 
- • High Card: Highest value card.
- • One Pair: Two cards of the same value.
- • Two Pairs: Two different pairs.
- • Three of a Kind: Three cards of the same value.
- • Straight: All cards are consecutive values.
- • Flush: All cards of the same suit.
- • Full House: Three of a kind and a pair.
- • Four of a Kind: Four cards of the same value.
- • Straight Flush: All cards are consecutive values of same suit.
- • Royal Flush: Ten, Jack, Queen, King, Ace, in same suit.
+ * High Card: Highest value card.
+ * One Pair: Two cards of the same value.
+ * Two Pairs: Two different pairs.
+ * Three of a Kind: Three cards of the same value.
+ * Straight: All cards are consecutive values.
+ * Flush: All cards of the same suit.
+ * Full House: Three of a kind and a pair.
+ * Four of a Kind: Four cards of the same value.
+ * Straight Flush: All cards are consecutive values of same suit.
+ * Royal Flush: Ten, Jack, Queen, King, Ace, in same suit.
 
 The cards are valued in the order:
 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King, Ace.
@@ -1198,19 +1179,19 @@ compared, and so on.
 
 Consider the following five hands dealt to two players:
 
-	   Hand   Player 1            Player 2              Winner
-	   1      5H 5C 6S 7S KD      2C 3S 8S 8D TD        Player 2
-			  Pair of Fives       Pair of Eights
-	   2      5D 8C 9S JS AC      2C 5C 7D 8S QH        Player 1
-			  Highest card Ace    Highest card Queen
-	   3      2D 9C AS AH AC      3D 6D 7D TD QD        Player 2
-			  Three Aces          Flush with Diamonds
-			  4D 6S 9H QH QC      3D 6D 7H QD QS
-	   4      Pair of Queens      Pair of Queens        Player 1
-			  Highest card Nine   Highest card Seven
-			  2H 2D 4C 4D 4S      3C 3D 3S 9S 9D
-	   5      Full House          Full House            Player 1
-			  With Three Fours    with Three Threes
+    Hand   Player 1            Player 2              Winner
+    1      5H 5C 6S 7S KD      2C 3S 8S 8D TD        Player 2
+           Pair of Fives       Pair of Eights
+    2      5D 8C 9S JS AC      2C 5C 7D 8S QH        Player 1
+           Highest card Ace    Highest card Queen
+    3      2D 9C AS AH AC      3D 6D 7D TD QD        Player 2
+           Three Aces          Flush with Diamonds
+           4D 6S 9H QH QC      3D 6D 7H QD QS
+    4      Pair of Queens      Pair of Queens        Player 1
+           Highest card Nine   Highest card Seven
+    5      2H 2D 4C 4D 4S      3C 3D 3S 9S 9D
+           Full House          Full House            Player 1
+           With Three Fours    with Three Threes
 
 The file, [poker.txt](files/poker.txt), contains one-thousand random hands dealt to two
 players. Each line of the file contains ten cards (separated by a single
@@ -5178,25 +5159,23 @@ Answer: b7ad07c58c81a940b8ff067a13b2760d
 Problem 202
 ===========
 
+Three mirrors are arranged in the shape of an equilateral triangle, with
+their reflective surfaces pointing inwards. There is an infinitesimal gap
+at each vertex of the triangle through which a laser beam may pass.
 
-   Three mirrors are arranged in the shape of an equilateral triangle, with
-   their reflective surfaces pointing inwards. There is an infinitesimal gap
-   at each vertex of the triangle through which a laser beam may pass.
+Label the vertices A, B and C. There are 2 ways in which a laser beam may
+enter vertex C, bounce off 11 surfaces, then exit through the same vertex:
+one way is shown below; the other is the reverse of that.
 
-   Label the vertices A, B and C. There are 2 ways in which a laser beam may
-   enter vertex C, bounce off 11 surfaces, then exit through the same vertex:
-   one way is shown below; the other is the reverse of that.
+![](files/p_201_laserbeam.gif)
 
-   There are 80840 ways in which a laser beam may enter vertex C, bounce off
-   1000001 surfaces, then exit through the same vertex.
+There are 80840 ways in which a laser beam may enter vertex C, bounce off
+1000001 surfaces, then exit through the same vertex.
 
-   In how many ways can a laser beam enter at vertex C, bounce off
-   12017639147 surfaces, then exit through the same vertex?
+In how many ways can a laser beam enter at vertex C, bounce off
+12017639147 surfaces, then exit through the same vertex?
 
-   
-   p_201_laserbeam.gif
-   Answer: e9774949b5efad0d40d60ede379c5321
-
+Answer: e9774949b5efad0d40d60ede379c5321
 
 Problem 203
 ===========
@@ -5320,20 +5299,20 @@ Problem 208
 ===========
 
 
-   A robot moves in a series of one-fifth circular arcs (72°), with a free
-   choice of a clockwise or an anticlockwise arc for each step, but no
-   turning on the spot.
+A robot moves in a series of one-fifth circular arcs (72°), with a free
+choice of a clockwise or an anticlockwise arc for each step, but no
+turning on the spot.
 
-   One of 70932 possible closed paths of 25 arcs starting northward is
+One of 70932 possible closed paths of 25 arcs starting northward is
 
-   Given that the robot starts facing North, how many journeys of 70 arcs in
-   length can it take that return it, after the final arc, to its starting
-   position?
-   (Any arc may be traversed multiple times.)
+![](files/p_208_robotwalk.gif)
 
-   
-   p_208_robotwalk.gif
-   Answer: 3010e33173f30e0aac79e84835b48823
+Given that the robot starts facing North, how many journeys of 70 arcs in
+length can it take that return it, after the final arc, to its starting
+position?
+(Any arc may be traversed multiple times.)
+
+Answer: 3010e33173f30e0aac79e84835b48823
 
 
 Problem 209
@@ -5592,30 +5571,30 @@ Problem 220
 ===========
 
 
-   Let D[0] be the two-letter string "Fa". For n≥1, derive D[n] from D[n-1]
-   by the string-rewriting rules:
+Let D[0] be the two-letter string "Fa". For n≥1, derive D[n] from D[n-1]
+by the string-rewriting rules:
 
-   "a" → "aRbFR"
-   "b" → "LFaLb"
+    "a" → "aRbFR"
+    "b" → "LFaLb"
 
-   Thus, D[0] = "Fa", D[1] = "FaRbFR", D[2] = "FaRbFRRLFaLbFR", and so on.
+Thus, D[0] = "Fa", D[1] = "FaRbFR", D[2] = "FaRbFRRLFaLbFR", and so on.
 
-   These strings can be interpreted as instructions to a computer graphics
-   program, with "F" meaning "draw forward one unit", "L" meaning "turn left
-   90 degrees", "R" meaning "turn right 90 degrees", and "a" and "b" being
-   ignored. The initial position of the computer cursor is (0,0), pointing up
-   towards (0,1).
+These strings can be interpreted as instructions to a computer graphics
+program, with "F" meaning "draw forward one unit", "L" meaning "turn left
+90 degrees", "R" meaning "turn right 90 degrees", and "a" and "b" being
+ignored. The initial position of the computer cursor is (0,0), pointing up
+towards (0,1).
 
-   Then D[n] is an exotic drawing known as the Heighway Dragon of order n.
-   For example, D[10] is shown below; counting each "F" as one step, the
-   highlighted spot at (18,16) is the position reached after 500 steps.
+Then D[n] is an exotic drawing known as the Heighway Dragon of order n.
+For example, D[10] is shown below; counting each "F" as one step, the
+highlighted spot at (18,16) is the position reached after 500 steps.
 
-   What is the position of the cursor after 10^12 steps in D[50] ?
-   Give your answer in the form x,y with no spaces.
+![](files/p_220.gif)
 
-   
-   p_220.gif
-   Answer: e2018d8efde8ea00319f1adc042f150b
+What is the position of the cursor after 10^12 steps in D[50] ?
+Give your answer in the form x,y with no spaces.
+
+Answer: e2018d8efde8ea00319f1adc042f150b
 
 
 Problem 221
@@ -5982,22 +5961,20 @@ Problem 236
 Problem 237
 ===========
 
+Let T(n) be the number of tours over a 4 × n playing board such that:
 
-   Let T(n) be the number of tours over a 4 × n playing board such that:
+* The tour starts in the top left corner.
+* The tour consists of moves that are up, down, left, or right one square.
+* The tour visits each square exactly once.
+* The tour ends in the bottom left corner.
 
-     • The tour starts in the top left corner.
-     • The tour consists of moves that are up, down, left, or right one
-       square.
-     • The tour visits each square exactly once.
-     • The tour ends in the bottom left corner.
+The diagram shows one tour over a 4 × 10 board:
 
-   The diagram shows one tour over a 4 × 10 board:
+![](files/p_237.gif)
 
-   T(10) is 2329. What is T(10^12) modulo 10^8?
+T(10) is 2329. What is T(10^12) modulo 10^8?
 
-   
-   p_237.gif
-   Answer: 0742988a3948491b15fb48e476c78a6a
+Answer: 0742988a3948491b15fb48e476c78a6a
 
 
 Problem 238
@@ -6160,7 +6137,7 @@ A move is denoted by the uppercase initial of the direction (Left, Right,
 Up, Down) in which the tile is slid, e.g. starting from configuration (S),
 by the sequence LULUR we reach the configuration (E):
 
-                  (S)                   , (E)
+(S) ![](files/p_244_start.gif), (E) ![](files/p_244_example.gif)
 
 For each path, its checksum is calculated by (pseudocode):
    
@@ -6188,15 +6165,10 @@ For the sequence LULUR given above, the checksum would be 19761398.
 Now, starting from configuration (S),find all shortest ways to reach
 configuration (T).
 
-			  (S)                   , (T)
+(S) ![](files/p_244_start.gif), (T) ![](files/p_244_target.gif)
 
 What is the sum of all checksums for the paths having the minimal length?
 
-
-p_244_start.gif
-p_244_example.gif
-p_244_start.gif
-p_244_target.gif
 Answer: f8fd502ec1d0084a79d43d9dc5bd3a3d
 
 
@@ -6230,51 +6202,49 @@ Problem 246
 ===========
 
 
-   A definition for an ellipse is:
-   Given a circle c with centre M and radius r and a point G such that
-   d(G,M)<r, the locus of the points that are equidistant from c and G form
-   an ellipse.
+A definition for an ellipse is:
+Given a circle c with centre M and radius r and a point G such that
+d(G,M)<r, the locus of the points that are equidistant from c and G form
+an ellipse.
 
-         The construction of the points of the ellipse is shown below.
+The construction of the points of the ellipse is shown below.
 
-   Given are the points M(-2000,1500) and G(8000,1500).
-   Given is also the circle c with centre M and radius 15000.
-   The locus of the points that are equidistant from G and c form an ellipse
-   e.
-   From a point P outside e the two tangents t[1] and t[2] to the ellipse are
-   drawn.
-   Let the points where t[1] and t[2] touch the ellipse be R and S.
+![](files/p_246_anim.gif)
 
-   For how many lattice points P is angle RPS greater than 45 degrees?
+Given are the points M(-2000,1500) and G(8000,1500).
+Given is also the circle c with centre M and radius 15000.
+The locus of the points that are equidistant from G and c form an ellipse.
+From a point P outside e the two tangents t[1] and t[2] to the ellipse are drawn.
+Let the points where t[1] and t[2] touch the ellipse be R and S.
 
-   
-   p_246_anim.gif
-   p_246_ellipse.gif
-   Answer: 94c521ffeb906391d161b66fec433827
+![](files/p_246_ellipse.gif)
+
+For how many lattice points P is angle RPS greater than 45 degrees?
+
+Answer: 94c521ffeb906391d161b66fec433827
 
 
 Problem 247
 ===========
 
+Consider the region constrained by 1 ≤ x and 0 ≤ y ≤ ^1/[x].
 
-   Consider the region constrained by 1 ≤ x and 0 ≤ y ≤ ^1/[x].
+Let S[1] be the largest square that can fit under the curve.
+Let S[2] be the largest square that fits in the remaining area, and so on.
+Let the index of S[n] be the pair (left, below) indicating the number of
+squares to the left of S[n] and the number of squares below S[n].
 
-   Let S[1] be the largest square that can fit under the curve.
-   Let S[2] be the largest square that fits in the remaining area, and so on.
-   Let the index of S[n] be the pair (left, below) indicating the number of
-   squares to the left of S[n] and the number of squares below S[n].
+![](files/p_247_hypersquares.gif)
 
-   The diagram shows some such squares labelled by number.
-   S[2] has one square to its left and none below, so the index of S[2] is
-   (1,0).
-   It can be seen that the index of S[32] is (1,1) as is the index of S[50].
-   50 is the largest n for which the index of S[n] is (1,1).
+The diagram shows some such squares labelled by number.
+S[2] has one square to its left and none below, so the index of S[2] is
+(1,0).
+It can be seen that the index of S[32] is (1,1) as is the index of S[50].
+50 is the largest n for which the index of S[n] is (1,1).
 
-   What is the largest n for which the index of S[n] is (3,3)?
+What is the largest n for which the index of S[n] is (3,3)?
 
-   
-   p_247_hypersquares.gif
-   Answer: 257956694e7665e3d512ad5b819ef79d
+Answer: 257956694e7665e3d512ad5b819ef79d
 
 
 Problem 248
@@ -6319,50 +6289,51 @@ Problem 251
 ===========
 
 
-   A triplet of positive integers (a,b,c) is called a Cardano Triplet if it
-   satisfies the condition:
+A triplet of positive integers (a,b,c) is called a Cardano Triplet if it
+satisfies the condition:
 
-   For example, (2,1,5) is a Cardano Triplet.
+![](files/p_251_cardano.gif)
 
-   There exist 149 Cardano Triplets for which a+b+c ≤ 1000.
+For example, (2,1,5) is a Cardano Triplet.
 
-   Find how many Cardano Triplets exist such that a+b+c ≤ 110,000,000.
+There exist 149 Cardano Triplets for which a+b+c ≤ 1000.
 
-   
-   p_251_cardano.gif
-   Answer: 9690315a09a4d9f58dcc19ad96e6e889
+Find how many Cardano Triplets exist such that a+b+c ≤ 110,000,000.
+
+Answer: 9690315a09a4d9f58dcc19ad96e6e889
 
 
 Problem 252
 ===========
 
 
-   Given a set of points on a plane, we define a convex hole to be a convex
-   polygon having as vertices any of the given points and not containing any
-   of the given points in its interior (in addition to the vertices, other
-   given points may lie on the perimeter of the polygon).
+Given a set of points on a plane, we define a convex hole to be a convex
+polygon having as vertices any of the given points and not containing any
+of the given points in its interior (in addition to the vertices, other
+given points may lie on the perimeter of the polygon).
 
-   As an example, the image below shows a set of twenty points and a few such
-   convex holes. The convex hole shown as a red heptagon has an area equal to
-   1049694.5 square units, which is the highest possible area for a convex
-   hole on the given set of points.
+As an example, the image below shows a set of twenty points and a few such
+convex holes. The convex hole shown as a red heptagon has an area equal to
+1049694.5 square units, which is the highest possible area for a convex
+hole on the given set of points.
 
-   For our example, we used the first 20 points (T[2k−1], T[2k]), for
-   k = 1,2,…,20, produced with the pseudo-random number generator:
+![](files/p_252_convexhole.gif)
 
-                     S[0]   = 290797
-                     S[n+1] = S[n]^2 mod 50515093
-                     T[n]   = ( S[n] mod 2000 ) − 1000
+For our example, we used the first 20 points (T[2k−1], T[2k]), for
+k = 1,2,…,20, produced with the pseudo-random number generator:
 
-   i.e. (527, 144), (−488, 732), (−454, −947), …
+				 S[0]   = 290797
+				 S[n+1] = S[n]^2 mod 50515093
+				 T[n]   = ( S[n] mod 2000 ) − 1000
 
-   What is the maximum area for a convex hole on the set containing the first
-   500 points in the pseudo-random sequence?
-   Specify your answer including one digit after the decimal point.
+i.e. (527, 144), (−488, 732), (−454, −947), …
 
-   
-   p_252_convexhole.gif
-   Answer: 53b1ced82e1b588d756750c4d2f77e0d
+What is the maximum area for a convex hole on the set containing the first
+500 points in the pseudo-random sequence?
+Specify your answer including one digit after the decimal point.
+
+
+Answer: 53b1ced82e1b588d756750c4d2f77e0d
 
 
 Problem 253
@@ -6445,111 +6416,113 @@ Problem 255
 ===========
 
 
-   We define the rounded-square-root of a positive integer n as the square
-   root of n rounded to the nearest integer.
+We define the rounded-square-root of a positive integer n as the square
+root of n rounded to the nearest integer.
 
-   The following procedure (essentially Heron's method adapted to integer
-   arithmetic) finds the rounded-square-root of n:
+The following procedure (essentially Heron's method adapted to integer
+arithmetic) finds the rounded-square-root of n:
 
-   Let d be the number of digits of the number n.
-   If d is odd, set x[0] = 2×10^(d-1)⁄2.
-   If d is even, set x[0] = 7×10^(d-2)⁄2.
-   Repeat:
+Let d be the number of digits of the number n.
+If d is odd, set x[0] = 2×10^(d-1)⁄2.
+If d is even, set x[0] = 7×10^(d-2)⁄2.
+Repeat:
 
-   until x[k+1] = x[k].
+![](files/p_255_Heron.gif)
 
-   As an example, let us find the rounded-square-root of n = 4321.
-   n has 4 digits, so x[0] = 7×10^(4-2)⁄2 = 70.
-   Since x[2] = x[1], we stop here.
-   So, after just two iterations, we have found that the rounded-square-root
-   of 4321 is 66 (the actual square root is 65.7343137…).
+until x[k+1] = x[k].
 
-   The number of iterations required when using this method is surprisingly
-   low.
-   For example, we can find the rounded-square-root of a 5-digit integer
-   (10,000 ≤ n ≤ 99,999) with an average of 3.2102888889 iterations (the
-   average value was rounded to 10 decimal places).
+As an example, let us find the rounded-square-root of n = 4321.
+n has 4 digits, so x[0] = 7×10^(4-2)⁄2 = 70.
 
-   Using the procedure described above, what is the average number of
-   iterations required to find the rounded-square-root of a 14-digit number
-   (10^13 ≤ n < 10^14)?
-   Give your answer rounded to 10 decimal places.
+![](files/p_255_Example.gif)
 
-   Note: The symbols ⌊x⌋ and ⌈x⌉ represent the floor function and ceiling
-   function respectively.
+Since x[2] = x[1], we stop here.
+So, after just two iterations, we have found that the rounded-square-root
+of 4321 is 66 (the actual square root is 65.7343137…).
 
-   
-   p_255_Heron.gif
-   p_255_Example.gif
-   Answer: 12be028b156b49faa1137febda940ab5
+The number of iterations required when using this method is surprisingly
+low.
+For example, we can find the rounded-square-root of a 5-digit integer
+(10,000 ≤ n ≤ 99,999) with an average of 3.2102888889 iterations (the
+average value was rounded to 10 decimal places).
+
+Using the procedure described above, what is the average number of
+iterations required to find the rounded-square-root of a 14-digit number
+(10^13 ≤ n < 10^14)?
+Give your answer rounded to 10 decimal places.
+
+Note: The symbols ⌊x⌋ and ⌈x⌉ represent the floor function and ceiling
+function respectively.
+
+Answer: 12be028b156b49faa1137febda940ab5
 
 
 Problem 256
 ===========
 
 
-   Tatami are rectangular mats, used to completely cover the floor of a room,
-   without overlap.
+Tatami are rectangular mats, used to completely cover the floor of a room,
+without overlap.
 
-   Assuming that the only type of available tatami has dimensions 1×2, there
-   are obviously some limitations for the shape and size of the rooms that
-   can be covered.
+Assuming that the only type of available tatami has dimensions 1×2, there
+are obviously some limitations for the shape and size of the rooms that
+can be covered.
 
-   For this problem, we consider only rectangular rooms with integer
-   dimensions a, b and even size s = a·b.
-   We use the term 'size' to denote the floor surface area of the room, and —
-   without loss of generality — we add the condition a ≤ b.
+For this problem, we consider only rectangular rooms with integer
+dimensions a, b and even size s = a·b.
+We use the term 'size' to denote the floor surface area of the room, and —
+without loss of generality — we add the condition a ≤ b.
 
-   There is one rule to follow when laying out tatami: there must be no
-   points where corners of four different mats meet.
-   For example, consider the two arrangements below for a 4×4 room:
+There is one rule to follow when laying out tatami: there must be no
+points where corners of four different mats meet.
+For example, consider the two arrangements below for a 4×4 room:
 
-   The arrangement on the left is acceptable, whereas the one on the right is
-   not: a red "X" in the middle, marks the point where four tatami meet.
+![](files/p_256_tatami3.gif)
 
-   Because of this rule, certain even-sized rooms cannot be covered with
-   tatami: we call them tatami-free rooms.
-   Further, we define T(s) as the number of tatami-free rooms of size s.
+The arrangement on the left is acceptable, whereas the one on the right is
+not: a red "X" in the middle, marks the point where four tatami meet.
 
-   The smallest tatami-free room has size s = 70 and dimensions 7×10.
-   All the other rooms of size s = 70 can be covered with tatami; they are:
-   1×70, 2×35 and 5×14.
-   Hence, T(70) = 1.
+Because of this rule, certain even-sized rooms cannot be covered with
+tatami: we call them tatami-free rooms.
+Further, we define T(s) as the number of tatami-free rooms of size s.
 
-   Similarly, we can verify that T(1320) = 5 because there are exactly 5
-   tatami-free rooms of size s = 1320:
-   20×66, 22×60, 24×55, 30×44 and 33×40.
-   In fact, s = 1320 is the smallest room-size s for which T(s) = 5.
+The smallest tatami-free room has size s = 70 and dimensions 7×10.
+All the other rooms of size s = 70 can be covered with tatami; they are:
+1×70, 2×35 and 5×14.
+Hence, T(70) = 1.
 
-   Find the smallest room-size s for which T(s) = 200.
+Similarly, we can verify that T(1320) = 5 because there are exactly 5
+tatami-free rooms of size s = 1320:
+20×66, 22×60, 24×55, 30×44 and 33×40.
+In fact, s = 1320 is the smallest room-size s for which T(s) = 5.
 
-   
-   p_256_tatami3.gif
-   Answer: ef8eb0c177d00a5b80e1723786a22698
+Find the smallest room-size s for which T(s) = 200.
+
+Answer: ef8eb0c177d00a5b80e1723786a22698
 
 
 Problem 257
 ===========
 
 
-   Given is an integer sided triangle ABC with sides a ≤ b ≤ c. (AB = c, BC =
-   a and AC = b).
-   The angular bisectors of the triangle intersect the sides at points E, F
-   and G (see picture below).
+Given is an integer sided triangle ABC with sides a ≤ b ≤ c. (AB = c, BC =
+a and AC = b).
+The angular bisectors of the triangle intersect the sides at points E, F
+and G (see picture below).
 
-   The segments EF, EG and FG partition the triangle ABC into four smaller
-   triangles: AEG, BFE, CGF and EFG.
-   It can be proven that for each of these four triangles the ratio
-   area(ABC)/area(subtriangle) is rational.
-   However, there exist triangles for which some or all of these ratios are
-   integral.
+![](files/p_257_bisector.gif)
 
-   How many triangles ABC with perimeter≤100,000,000 exist so that the ratio
-   area(ABC)/area(AEG) is integral?
+The segments EF, EG and FG partition the triangle ABC into four smaller
+triangles: AEG, BFE, CGF and EFG.
+It can be proven that for each of these four triangles the ratio
+area(ABC)/area(subtriangle) is rational.
+However, there exist triangles for which some or all of these ratios are
+integral.
 
-   
-   p_257_bisector.gif
-   Answer: 3ba58bde91c83c98904050d90e466ce2
+How many triangles ABC with perimeter≤100,000,000 exist so that the ratio
+area(ABC)/area(AEG) is integral?
+
+Answer: 3ba58bde91c83c98904050d90e466ce2
 
 
 Problem 258
@@ -6657,32 +6630,32 @@ Problem 262
 ===========
 
 
-   The following equation represents the continuous topography of a
-   mountainous region, giving the elevation h at any point (x,y):
+The following equation represents the continuous topography of a
+mountainous region, giving the elevation h at any point (x,y):
 
-   A mosquito intends to fly from A(200,200) to B(1400,1400), without leaving
-   the area given by 0 ≤ x, y ≤ 1600.
+![](files/p_262_formula1.gif)
 
-   Because of the intervening mountains, it first rises straight up to a
-   point A', having elevation f. Then, while remaining at the same elevation
-   f, it flies around any obstacles until it arrives at a point B' directly
-   above B.
+A mosquito intends to fly from A(200,200) to B(1400,1400), without leaving
+the area given by 0 ≤ x, y ≤ 1600.
 
-   First, determine f[min] which is the minimum constant elevation allowing
-   such a trip from A to B, while remaining in the specified area.
-   Then, find the length of the shortest path between A' and B', while flying
-   at that constant elevation f[min].
+Because of the intervening mountains, it first rises straight up to a
+point A', having elevation f. Then, while remaining at the same elevation
+f, it flies around any obstacles until it arrives at a point B' directly
+above B.
 
-   Give that length as your answer, rounded to three decimal places.
+First, determine f[min] which is the minimum constant elevation allowing
+such a trip from A to B, while remaining in the specified area.
+Then, find the length of the shortest path between A' and B', while flying
+at that constant elevation f[min].
 
-   Note: For convenience, the elevation function shown above is repeated
-   below, in a form suitable for most programming languages:
-   h=( 5000-0.005*(x*x+y*y+x*y)+12.5*(x+y) ) * exp(
-   -abs(0.000001*(x*x+y*y)-0.0015*(x+y)+0.7) )
+Give that length as your answer, rounded to three decimal places.
 
-   
-   p_262_formula1.gif
-   Answer: a5921e175a44d31e7f82f7f9a61a36af
+Note: For convenience, the elevation function shown above is repeated
+below, in a form suitable for most programming languages:
+h=( 5000-0.005*(x*x+y*y+x*y)+12.5*(x+y) ) * exp(
+-abs(0.000001*(x*x+y*y)-0.0015*(x+y)+0.7) )
+
+Answer: a5921e175a44d31e7f82f7f9a61a36af
 
 
 Problem 263
@@ -6720,67 +6693,66 @@ Problem 263
 Problem 264
 ===========
 
+Consider all the triangles having:
 
-   Consider all the triangles having:
+* All their vertices on lattice points.
+* Circumcentre at the origin O.
+* Orthocentre at the point H(5, 0).
 
-     • All their vertices on lattice points.
-     • Circumcentre at the origin O.
-     • Orthocentre at the point H(5, 0).
+There are nine such triangles having a perimeter ≤ 50.
+Listed and shown in ascending order of their perimeter, they are:
 
-   There are nine such triangles having a perimeter ≤ 50.
-   Listed and shown in ascending order of their perimeter, they are:
+    A(-4, 3), B(5, 0), C(4, -3)
+    A(4, 3), B(5, 0), C(-4, -3)
+    A(-3, 4), B(5, 0), C(3, -4)
 
-   A(-4, 3), B(5, 0), C(4, -3)
-   A(4, 3), B(5, 0), C(-4, -3)
-   A(-3, 4), B(5, 0), C(3, -4)
+    A(3, 4), B(5, 0), C(-3, -4)
+    A(0, 5), B(5, 0), C(0, -5)
+    A(1, 8), B(8, -1), C(-4, -7)
 
-   A(3, 4), B(5, 0), C(-3, -4)
-   A(0, 5), B(5, 0), C(0, -5)
-   A(1, 8), B(8, -1), C(-4, -7)
+    A(8, 1), B(1, -8), C(-4, 7)
+    A(2, 9), B(9, -2), C(-6, -7)
+    A(9, 2), B(2, -9), C(-6, 7)
 
-   A(8, 1), B(1, -8), C(-4, 7)
-   A(2, 9), B(9, -2), C(-6, -7)
-   A(9, 2), B(2, -9), C(-6, 7)
+![](files/p_264_TriangleCentres.gif)
 
-   The sum of their perimeters, rounded to four decimal places, is 291.0089.
+The sum of their perimeters, rounded to four decimal places, is 291.0089.
 
-   Find all such triangles with a perimeter ≤ 10^5.
-   Enter as your answer the sum of their perimeters rounded to four decimal
-   places.
+Find all such triangles with a perimeter ≤ 10^5.
+Enter as your answer the sum of their perimeters rounded to four decimal
+places.
 
-   
-   p_264_TriangleCentres.gif
-   Answer: 287514a045a38be0a75a1786694c77ee
+Answer: 287514a045a38be0a75a1786694c77ee
 
 
 Problem 265
 ===========
 
 
-   2^N binary digits can be placed in a circle so that all the N-digit
-   clockwise subsequences are distinct.
+2^N binary digits can be placed in a circle so that all the N-digit
+clockwise subsequences are distinct.
 
-   For N=3, two such circular arrangements are possible, ignoring rotations:
+For N=3, two such circular arrangements are possible, ignoring rotations:
 
-   For the first arrangement, the 3-digit subsequences, in clockwise order,
-   are:
-   000, 001, 010, 101, 011, 111, 110 and 100.
+![](files/p_265_BinaryCircles.gif)
 
-   Each circular arrangement can be encoded as a number by concatenating the
-   binary digits starting with the subsequence of all zeros as the most
-   significant bits and proceeding clockwise. The two arrangements for N=3
-   are thus represented as 23 and 29:
-                               00010111 [2] = 23
-                               00011101 [2] = 29
+For the first arrangement, the 3-digit subsequences, in clockwise order,
+are:
+000, 001, 010, 101, 011, 111, 110 and 100.
 
-   Calling S(N) the sum of the unique numeric representations, we can see
-   that S(3) = 23 + 29 = 52.
+Each circular arrangement can be encoded as a number by concatenating the
+binary digits starting with the subsequence of all zeros as the most
+significant bits and proceeding clockwise. The two arrangements for N=3
+are thus represented as 23 and 29:
+						   00010111 [2] = 23
+						   00011101 [2] = 29
 
-   Find S(5).
+Calling S(N) the sum of the unique numeric representations, we can see
+that S(3) = 23 + 29 = 52.
 
-   
-   p_265_BinaryCircles.gif
-   Answer: c25cebbc8dce4bdcf96cb395a11afcc3
+Find S(5).
+
+Answer: c25cebbc8dce4bdcf96cb395a11afcc3
 
 
 Problem 266
@@ -6870,25 +6842,24 @@ Problem 270
 ===========
 
 
-   A square piece of paper with integer dimensions N×N is placed with a
-   corner at the origin and two of its sides along the x- and y-axes. Then,
-   we cut it up respecting the following rules:
+A square piece of paper with integer dimensions N×N is placed with a
+corner at the origin and two of its sides along the x- and y-axes. Then,
+we cut it up respecting the following rules:
 
-     • We only make straight cuts between two points lying on different sides
-       of the square, and having integer coordinates.
-     • Two cuts cannot cross, but several cuts can meet at the same border
-       point.
-     • Proceed until no more legal cuts can be made.
+* We only make straight cuts between two points lying on different sides
+  of the square, and having integer coordinates.
+* Two cuts cannot cross, but several cuts can meet at the same border point.
+* Proceed until no more legal cuts can be made.
 
-   Counting any reflections or rotations as distinct, we call C(N) the number
-   of ways to cut an N×N square. For example, C(1) = 2 and C(2) = 30 (shown
-   below).
+Counting any reflections or rotations as distinct, we call C(N) the number
+of ways to cut an N×N square. For example, C(1) = 2 and C(2) = 30 (shown
+below).
 
-   What is C(30) mod 10^8 ?
+![](files/p_270_CutSquare.gif)
 
-   
-   p_270_CutSquare.gif
-   Answer: 2a592dfd1e9e3e9e38578affa7c72605
+What is C(30) mod 10^8 ?
+
+Answer: 2a592dfd1e9e3e9e38578affa7c72605
 
 
 Problem 271
@@ -6983,28 +6954,26 @@ Problem 274
 Problem 275
 ===========
 
+Let us define a balanced sculpture of order n as follows:
 
-   Let us define a balanced sculpture of order n as follows:
+* A polyomino made up of n+1 tiles known as the blocks (n tiles)
+   and the plinth (remaining tile);
+* the plinth has its centre at position (x = 0, y = 0);
+* the blocks have y-coordinates greater than zero (so the plinth is the
+   unique lowest tile);
+* the centre of mass of all the blocks, combined, has x-coordinate equal to zero.
 
-     • A polyomino made up of n+1 tiles known as the blocks (n tiles)
-       and the plinth (remaining tile);
-     • the plinth has its centre at position (x = 0, y = 0);
-     • the blocks have y-coordinates greater than zero (so the plinth is the
-       unique lowest tile);
-     • the centre of mass of all the blocks, combined, has x-coordinate equal
-       to zero.
+When counting the sculptures, any arrangements which are simply
+reflections about the y-axis, are not counted as distinct. For example,
+the 18 balanced sculptures of order 6 are shown below; note that each pair
+of mirror images (about the y-axis) is counted as one sculpture:
 
-   When counting the sculptures, any arrangements which are simply
-   reflections about the y-axis, are not counted as distinct. For example,
-   the 18 balanced sculptures of order 6 are shown below; note that each pair
-   of mirror images (about the y-axis) is counted as one sculpture:
+![](files/p_275_sculptures2.gif)
 
-   There are 964 balanced sculptures of order 10 and 360505 of order 15.
-   How many balanced sculptures are there of order 18?
+There are 964 balanced sculptures of order 10 and 360505 of order 15.
+How many balanced sculptures are there of order 18?
 
-   
-   p_275_sculptures2.gif
-   Answer: a2a192f9790dcbfe4b450a82c4461d4a
+Answer: a2a192f9790dcbfe4b450a82c4461d4a
 
 
 Problem 276
@@ -7119,39 +7088,37 @@ Problem 280
 Problem 281
 ===========
 
+You are given a pizza (perfect circle) that has been cut into m·n equal
+pieces and you want to have exactly one topping on each slice.
 
-   You are given a pizza (perfect circle) that has been cut into m·n equal
-   pieces and you want to have exactly one topping on each slice.
+Let f(m,n) denote the number of ways you can have toppings on the pizza
+with m different toppings (m ≥ 2), using each topping on exactly n slices
+(n ≥ 1).
+Reflections are considered distinct, rotations are not.
 
-   Let f(m,n) denote the number of ways you can have toppings on the pizza
-   with m different toppings (m ≥ 2), using each topping on exactly n slices
-   (n ≥ 1).
-   Reflections are considered distinct, rotations are not.
+Thus, for instance, f(2,1) = 1, f(2,2) = f(3,1) = 2 and f(3,2) = 16.
+f(3,2) is shown below:
 
-   Thus, for instance, f(2,1) = 1, f(2,2) = f(3,1) = 2 and f(3,2) = 16.
-   f(3,2) is shown below:
+![](files/p_281_pizza.gif)
 
-   Find the sum of all f(m,n) such that f(m,n) ≤ 10^15.
+Find the sum of all f(m,n) such that f(m,n) ≤ 10^15.
 
-   
-   p_281_pizza.gif
-   Answer: ceee6ced9d64aad844310c8ce2aae2b7
+Answer: ceee6ced9d64aad844310c8ce2aae2b7
 
 
 Problem 282
 ===========
 
+For non-negative integers m, n, the Ackermann function A(m, n) is defined
+as follows:
 
-   For non-negative integers m, n, the Ackermann function A(m, n) is defined
-   as follows:
+![](files/p_282_formula.gif)
 
-   For example A(1, 0) = 2, A(2, 2) = 7 and A(3, 4) = 125.
+For example A(1, 0) = 2, A(2, 2) = 7 and A(3, 4) = 125.
 
-   Find A(n, n) and give your answer mod 14^8.
+Find A(n, n) and give your answer mod 14^8.
 
-   
-   p_282_formula.gif
-   Answer: a1cc665e127af4e907e13087ee777bd5
+Answer: a1cc665e127af4e907e13087ee777bd5
 
 
 Problem 283
@@ -7251,40 +7218,39 @@ Problem 287
 ===========
 
 
-   The quadtree encoding allows us to describe a 2^N×2^N black and white
-   image as a sequence of bits (0 and 1). Those sequences are to be read from
-   left to right like this:
+The quadtree encoding allows us to describe a 2^N×2^N black and white
+image as a sequence of bits (0 and 1). Those sequences are to be read from
+left to right like this:
 
-     • the first bit deals with the complete 2^N×2^N region;
-     • "0" denotes a split:
-       the current 2^n×2^n region is divided into 4 sub-regions of dimension
-       2^n-1×2^n-1,
-       the next bits contains the description of the top left, top right,
-       bottom left and bottom right sub-regions - in that order;
-     • "10" indicates that the current region contains only black pixels;
-     • "11" indicates that the current region contains only white pixels.
+* the first bit deals with the complete 2^N×2^N region;
+* "0" denotes a split:
+  the current 2^n×2^n region is divided into 4 sub-regions of dimension 2^n-1×2^n-1,
+  the next bits contains the description of the top left, top right,
+  bottom left and bottom right sub-regions - in that order;
+* "10" indicates that the current region contains only black pixels;
+* "11" indicates that the current region contains only white pixels.
 
-   Consider the following 4×4 image (colored marks denote places where a
-   split can occur):
+Consider the following 4×4 image (colored marks denote places where a
+split can occur):
 
-   This image can be described by several sequences, for example
-   :"001010101001011111011010101010", of length 30, or
-   "0100101111101110", of length 16, which is the minimal sequence for this
-   image.
+![](files/p_287_quadtree.gif)
 
-   For a positive integer N, define D[N] as the 2^N×2^N image with the
-   following coloring scheme:
+This image can be described by several sequences, for example
+:"001010101001011111011010101010", of length 30, or
+"0100101111101110", of length 16, which is the minimal sequence for this
+image.
 
-     • the pixel with coordinates x = 0, y = 0 corresponds to the bottom left
-       pixel,
-     • if (x - 2^N-1)^2 + (y - 2^N-1)^2 ≤ 2^2N-2 then the pixel is black,
-     • otherwise the pixel is white.
+For a positive integer N, define D[N] as the 2^N×2^N image with the
+following coloring scheme:
 
-   What is the length of the minimal sequence describing D[24] ?
+* the pixel with coordinates x = 0, y = 0 corresponds to the bottom left
+   pixel,
+* if (x - 2^N-1)^2 + (y - 2^N-1)^2 ≤ 2^2N-2 then the pixel is black,
+* otherwise the pixel is white.
 
-   
-   p_287_quadtree.gif
-   Answer: 6c2beec8a6c0bc788d5e45c317b0d7ca
+What is the length of the minimal sequence describing D[24] ?
+
+Answer: 6c2beec8a6c0bc788d5e45c317b0d7ca
 
 
 Problem 288
@@ -7314,30 +7280,30 @@ Problem 289
 ===========
 
 
-   Let C(x,y) be a circle passing through the points (x, y), (x, y+1),
-   (x+1, y) and (x+1, y+1).
+Let C(x,y) be a circle passing through the points (x, y), (x, y+1),
+(x+1, y) and (x+1, y+1).
 
-   For positive integers m and n, let E(m,n) be a configuration which
-   consists of the m·n circles:
-   { C(x,y): 0 ≤ x < m, 0 ≤ y < n, x and y are integers }
+For positive integers m and n, let E(m,n) be a configuration which
+consists of the m·n circles:
+{ C(x,y): 0 ≤ x < m, 0 ≤ y < n, x and y are integers }
 
-   An Eulerian cycle on E(m,n) is a closed path that passes through each arc
-   exactly once.
-   Many such paths are possible on E(m,n), but we are only interested in
-   those which are not self-crossing: A non-crossing path just touches itself
-   at lattice points, but it never crosses itself.
+An Eulerian cycle on E(m,n) is a closed path that passes through each arc
+exactly once.
+Many such paths are possible on E(m,n), but we are only interested in
+those which are not self-crossing: A non-crossing path just touches itself
+at lattice points, but it never crosses itself.
 
-   The image below shows E(3,3) and an example of an Eulerian non-crossing
-   path.
+The image below shows E(3,3) and an example of an Eulerian non-crossing
+path.
 
-   Let L(m,n) be the number of Eulerian non-crossing paths on E(m,n).
-   For example, L(1,2) = 2, L(2,2) = 37 and L(3,3) = 104290.
+![](files/p_289_euler.gif)
 
-   Find L(6,10) mod 10^10.
+Let L(m,n) be the number of Eulerian non-crossing paths on E(m,n).
+For example, L(1,2) = 2, L(2,2) = 37 and L(3,3) = 104290.
 
-   
-   p_289_euler.gif
-   Answer: 9fa32696df356b3d41faa7dd278c88a9
+Find L(6,10) mod 10^10.
+
+Answer: 9fa32696df356b3d41faa7dd278c88a9
 
 
 Problem 290
@@ -7354,17 +7320,12 @@ Problem 290
 Problem 291
 ===========
 
+A prime number p is called a Panaitopol prime if ![](files/p_291_formula.gif) for some positive
+integers x and y.
 
-   A prime number p is called a Panaitopol prime if for some positive
-   integers
-   x and y.
+Find how many Panaitopol primes are less than 5×10^15.
 
-   Find how many Panaitopol primes are less than 5×10^15.
-
-   
-   p_291_formula.gif
-   Answer: 15d4b4d97452ca7d219e3fa72f6b7aef
-
+Answer: 15d4b4d97452ca7d219e3fa72f6b7aef
 
 Problem 292
 ===========
@@ -7557,33 +7518,33 @@ Problem 299
 ===========
 
 
-   Four points with integer coordinates are selected:
-   A(a, 0), B(b, 0), C(0, c) and D(0, d), with 0 < a < b and 0 < c < d.
-   Point P, also with integer coordinates, is chosen on the line AC so that
-   the three triangles ABP, CDP and BDP are all similar.
+Four points with integer coordinates are selected:
+A(a, 0), B(b, 0), C(0, c) and D(0, d), with 0 < a < b and 0 < c < d.
+Point P, also with integer coordinates, is chosen on the line AC so that
+the three triangles ABP, CDP and BDP are all similar.
 
-   It is easy to prove that the three triangles can be similar, only if a=c.
+![](files/p_299_ThreeSimTri.gif)
 
-   So, given that a=c, we are looking for triplets (a,b,d) such that at least
-   one point P (with integer coordinates) exists on AC, making the three
-   triangles ABP, CDP and BDP all similar.
+It is easy to prove that the three triangles can be similar, only if a=c.
 
-   For example, if (a,b,d)=(2,3,4), it can be easily verified that point
-   P(1,1) satisfies the above condition. Note that the triplets (2,3,4) and
-   (2,4,3) are considered as distinct, although point P(1,1) is common for
-   both.
+So, given that a=c, we are looking for triplets (a,b,d) such that at least
+one point P (with integer coordinates) exists on AC, making the three
+triangles ABP, CDP and BDP all similar.
 
-   If b+d < 100, there are 92 distinct triplets (a,b,d) such that point P
-   exists.
-   If b+d < 100 000, there are 320471 distinct triplets (a,b,d) such that
-   point P exists.
+For example, if (a,b,d)=(2,3,4), it can be easily verified that point
+P(1,1) satisfies the above condition. Note that the triplets (2,3,4) and
+(2,4,3) are considered as distinct, although point P(1,1) is common for
+both.
 
-   If b+d < 100 000 000, how many distinct triplets (a,b,d) are there such
-   that point P exists?
+If b+d < 100, there are 92 distinct triplets (a,b,d) such that point P
+exists.
+If b+d < 100 000, there are 320471 distinct triplets (a,b,d) such that
+point P exists.
 
-   
-   p_299_ThreeSimTri.gif
-   Answer: fb8f093361a6db56c8a1d1661ab229cd
+If b+d < 100 000 000, how many distinct triplets (a,b,d) are there such
+that point P exists?
+
+Answer: fb8f093361a6db56c8a1d1661ab229cd
 
 
 Problem 300
