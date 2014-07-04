@@ -1188,89 +1188,83 @@ Answer: 142949df56ea8ae0be8b5306971900a4
 Problem 55
 ==========
 
+If we take 47, reverse and add, 47 + 74 = 121, which is palindromic.
 
-   If we take 47, reverse and add, 47 + 74 = 121, which is palindromic.
+Not all numbers produce palindromes so quickly. For example,
 
-   Not all numbers produce palindromes so quickly. For example,
+    349 + 943 = 1292,
+    1292 + 2921 = 4213
+    4213 + 3124 = 7337
 
-   349 + 943 = 1292,
-   1292 + 2921 = 4213
-   4213 + 3124 = 7337
+That is, 349 took three iterations to arrive at a palindrome.
 
-   That is, 349 took three iterations to arrive at a palindrome.
+Although no one has proved it yet, it is thought that some numbers, like
+196, never produce a palindrome. A number that never forms a palindrome
+through the reverse and add process is called a Lychrel number. Due to the
+theoretical nature of these numbers, and for the purpose of this problem,
+we shall assume that a number is Lychrel until proven otherwise. In
+addition you are given that for every number below ten-thousand, it will
+either (i) become a palindrome in less than fifty iterations, or, (ii) no
+one, with all the computing power that exists, has managed so far to map
+it to a palindrome. In fact, 10677 is the first number to be shown to
+require over fifty iterations before producing a palindrome:
+4668731596684224866951378664 (53 iterations, 28-digits).
 
-   Although no one has proved it yet, it is thought that some numbers, like
-   196, never produce a palindrome. A number that never forms a palindrome
-   through the reverse and add process is called a Lychrel number. Due to the
-   theoretical nature of these numbers, and for the purpose of this problem,
-   we shall assume that a number is Lychrel until proven otherwise. In
-   addition you are given that for every number below ten-thousand, it will
-   either (i) become a palindrome in less than fifty iterations, or, (ii) no
-   one, with all the computing power that exists, has managed so far to map
-   it to a palindrome. In fact, 10677 is the first number to be shown to
-   require over fifty iterations before producing a palindrome:
-   4668731596684224866951378664 (53 iterations, 28-digits).
+Surprisingly, there are palindromic numbers that are themselves Lychrel
+numbers; the first example is 4994.
 
-   Surprisingly, there are palindromic numbers that are themselves Lychrel
-   numbers; the first example is 4994.
+How many Lychrel numbers are there below ten-thousand?
 
-   How many Lychrel numbers are there below ten-thousand?
+NOTE: Wording was modified slightly on 24 April 2007 to emphasise the
+theoretical nature of Lychrel numbers.
 
-   NOTE: Wording was modified slightly on 24 April 2007 to emphasise the
-   theoretical nature of Lychrel numbers.
-
-   
-   Answer: 077e29b11be80ab57e1a2ecabb7da330
-
+Answer: 077e29b11be80ab57e1a2ecabb7da330
 
 Problem 56
 ==========
 
+A googol (10^100) is a massive number: one followed by one-hundred zeros;
+100^100 is almost unimaginably large: one followed by two-hundred zeros.
+Despite their size, the sum of the digits in each number is only 1.
 
-   A googol (10^100) is a massive number: one followed by one-hundred zeros;
-   100^100 is almost unimaginably large: one followed by two-hundred zeros.
-   Despite their size, the sum of the digits in each number is only 1.
+Considering natural numbers of the form, a^b, where a, b < 100, what is
+the maximum digital sum?
 
-   Considering natural numbers of the form, a^b, where a, b < 100, what is
-   the maximum digital sum?
-
-   
-   Answer: c22abfa379f38b5b0411bc11fa9bf92f
+Answer: c22abfa379f38b5b0411bc11fa9bf92f
 
 
 Problem 57
 ==========
 
 
-   It is possible to show that the square root of two can be expressed as an
-   infinite continued fraction.
+It is possible to show that the square root of two can be expressed as an
+infinite continued fraction.
 
               √ 2 = 1 + 1/(2 + 1/(2 + 1/(2 + ... ))) = 1.414213...
 
-   By expanding this for the first four iterations, we get:
+By expanding this for the first four iterations, we get:
 
-   1 + 1/2 = 3/2 = 1.5
-   1 + 1/(2 + 1/2) = 7/5 = 1.4
-   1 + 1/(2 + 1/(2 + 1/2)) = 17/12 = 1.41666...
-   1 + 1/(2 + 1/(2 + 1/(2 + 1/2))) = 41/29 = 1.41379...
+    1 + 1/2 = 3/2 = 1.5
+    1 + 1/(2 + 1/2) = 7/5 = 1.4
+    1 + 1/(2 + 1/(2 + 1/2)) = 17/12 = 1.41666...
+    1 + 1/(2 + 1/(2 + 1/(2 + 1/2))) = 41/29 = 1.41379...
 
-   The next three expansions are 99/70, 239/169, and 577/408, but the eighth
-   expansion, 1393/985, is the first example where the number of digits in
-   the numerator exceeds the number of digits in the denominator.
+The next three expansions are 99/70, 239/169, and 577/408, but the eighth
+expansion, 1393/985, is the first example where the number of digits in
+the numerator exceeds the number of digits in the denominator.
 
-   In the first one-thousand expansions, how many fractions contain a
-   numerator with more digits than denominator?
+In the first one-thousand expansions, how many fractions contain a
+numerator with more digits than denominator?
 
-   
-   Answer: b3e3e393c77e35a4a3f3cbd1e429b5dc
+Answer: b3e3e393c77e35a4a3f3cbd1e429b5dc
 
 
 Problem 58
 ==========
 
 
-   Starting with 1 and spiralling anticlockwise in the following way, a
-   square spiral with side length 7 is formed.
+Starting with 1 and spiralling anticlockwise in the following way, a
+square spiral with side length 7 is formed.
 
                               37 36 35 34 33 32 31
                               38 17 16 15 14 13 30
@@ -1280,17 +1274,16 @@ Problem 58
                               42 21 22 23 24 25 26
                               43 44 45 46 47 48 49
 
-   It is interesting to note that the odd squares lie along the bottom right
-   diagonal, but what is more interesting is that 8 out of the 13 numbers
-   lying along both diagonals are prime; that is, a ratio of 8/13 ≈ 62%.
+It is interesting to note that the odd squares lie along the bottom right
+diagonal, but what is more interesting is that 8 out of the 13 numbers
+lying along both diagonals are prime; that is, a ratio of 8/13 ≈ 62%.
 
-   If one complete new layer is wrapped around the spiral above, a square
-   spiral with side length 9 will be formed. If this process is continued,
-   what is the side length of the square spiral for which the ratio of primes
-   along both diagonals first falls below 10%?
+If one complete new layer is wrapped around the spiral above, a square
+spiral with side length 9 will be formed. If this process is continued,
+what is the side length of the square spiral for which the ratio of primes
+along both diagonals first falls below 10%?
 
-   
-   Answer: b62fc92a2561538525c89be63f36bf7b
+Answer: b62fc92a2561538525c89be63f36bf7b
 
 
 Problem 59
@@ -1330,17 +1323,16 @@ Problem 60
 ==========
 
 
-   The primes 3, 7, 109, and 673, are quite remarkable. By taking any two
-   primes and concatenating them in any order the result will always be
-   prime. For example, taking 7 and 109, both 7109 and 1097 are prime. The
-   sum of these four primes, 792, represents the lowest sum for a set of four
-   primes with this property.
+The primes 3, 7, 109, and 673, are quite remarkable. By taking any two
+primes and concatenating them in any order the result will always be
+prime. For example, taking 7 and 109, both 7109 and 1097 are prime. The
+sum of these four primes, 792, represents the lowest sum for a set of four
+primes with this property.
 
-   Find the lowest sum for a set of five primes for which any two primes
-   concatenate to produce another prime.
+Find the lowest sum for a set of five primes for which any two primes
+concatenate to produce another prime.
 
-   
-   Answer: a4b5a70ca8cf24d0eb4330748d1e72e5
+Answer: a4b5a70ca8cf24d0eb4330748d1e72e5
 
 
 Problem 61
@@ -1380,30 +1372,27 @@ Answer: caec17d84884addeec35c3610645ab63
 Problem 62
 ==========
 
+The cube, 41063625 (345^3), can be permuted to produce two other cubes:
+56623104 (384^3) and 66430125 (405^3). In fact, 41063625 is the smallest
+cube which has exactly three permutations of its digits which are also
+cube.
 
-   The cube, 41063625 (345^3), can be permuted to produce two other cubes:
-   56623104 (384^3) and 66430125 (405^3). In fact, 41063625 is the smallest
-   cube which has exactly three permutations of its digits which are also
-   cube.
+Find the smallest cube for which exactly five permutations of its digits
+are cube.
 
-   Find the smallest cube for which exactly five permutations of its digits
-   are cube.
-
-   
-   Answer: 8f46b522b5401b8b6df99a7410eea44b
+Answer: 8f46b522b5401b8b6df99a7410eea44b
 
 
 Problem 63
 ==========
 
 
-   The 5-digit number, 16807=7^5, is also a fifth power. Similarly, the
-   9-digit number, 134217728=8^9, is a ninth power.
+The 5-digit number, 16807=7^5, is also a fifth power. Similarly, the
+9-digit number, 134217728=8^9, is a ninth power.
 
-   How many n-digit positive integers exist which are also an nth power?
+How many n-digit positive integers exist which are also an nth power?
 
-   
-   Answer: f457c545a9ded88f18ecee47145a72c0
+Answer: f457c545a9ded88f18ecee47145a72c0
 
 
 Problem 64
