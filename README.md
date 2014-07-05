@@ -1534,32 +1534,31 @@ Problem 66
 ==========
 
 
-   Consider quadratic Diophantine equations of the form:
+Consider quadratic Diophantine equations of the form:
 
-                                 x^2 – Dy^2 = 1
+                         x^2 – Dy^2 = 1
 
-   For example, when D=13, the minimal solution in x is 649^2 – 13×180^2 = 1.
+For example, when D=13, the minimal solution in x is 649^2 – 13×180^2 = 1.
 
-   It can be assumed that there are no solutions in positive integers when D
-   is square.
+It can be assumed that there are no solutions in positive integers when D
+is square.
 
-   By finding minimal solutions in x for D = {2, 3, 5, 6, 7}, we obtain the
-   following:
+By finding minimal solutions in x for D = {2, 3, 5, 6, 7}, we obtain the
+following:
 
-   3^2 – 2×2^2 = 1
-   2^2 – 3×1^2 = 1
-   9^2 – 5×4^2 = 1
-   5^2 – 6×2^2 = 1
-   8^2 – 7×3^2 = 1
+    3^2 – 2×2^2 = 1
+    2^2 – 3×1^2 = 1
+    9^2 – 5×4^2 = 1
+    5^2 – 6×2^2 = 1
+    8^2 – 7×3^2 = 1
 
-   Hence, by considering minimal solutions in x for D ≤ 7, the largest x is
-   obtained when D=5.
+Hence, by considering minimal solutions in x for D ≤ 7, the largest x is
+obtained when D=5.
 
-   Find the value of D ≤ 1000 in minimal solutions of x for which the largest
-   value of x is obtained.
+Find the value of D ≤ 1000 in minimal solutions of x for which the largest
+value of x is obtained.
 
-   
-   Answer: 3a066bda8c96b9478bb0512f0a43028c
+Answer: 3a066bda8c96b9478bb0512f0a43028c
 
 
 Problem 67
@@ -1568,10 +1567,10 @@ Problem 67
 By starting at the top of the triangle below and moving to adjacent
 numbers on the row below, the maximum total from top to bottom is 23.
 
-								   3
-								  7 4
-								 2 4 6
-								8 5 9 3
+	   3
+	  7 4
+	 2 4 6
+	8 5 9 3
 
 That is, 3 + 7 + 4 + 9 = 23.
 
@@ -1656,123 +1655,119 @@ Problem 70
 ==========
 
 
-   Euler's Totient function, φ(n) [sometimes called the phi function], is
-   used to determine the number of positive numbers less than or equal to n
-   which are relatively prime to n. For example, as 1, 2, 4, 5, 7, and 8, are
-   all less than nine and relatively prime to nine, φ(9)=6.
-   The number 1 is considered to be relatively prime to every positive
-   number, so φ(1)=1.
+Euler's Totient function, φ(n) [sometimes called the phi function], is
+used to determine the number of positive numbers less than or equal to n
+which are relatively prime to n. For example, as 1, 2, 4, 5, 7, and 8, are
+all less than nine and relatively prime to nine, φ(9)=6.
+The number 1 is considered to be relatively prime to every positive
+number, so φ(1)=1.
 
-   Interestingly, φ(87109)=79180, and it can be seen that 87109 is a
-   permutation of 79180.
+Interestingly, φ(87109)=79180, and it can be seen that 87109 is a
+permutation of 79180.
 
-   Find the value of n, 1 < n < 10^7, for which φ(n) is a permutation of n
-   and the ratio n/φ(n) produces a minimum.
+Find the value of n, 1 < n < 10^7, for which φ(n) is a permutation of n
+and the ratio n/φ(n) produces a minimum.
 
-   
-   Answer: 1884dde67ced589082c8b7043abce181
+
+Answer: 1884dde67ced589082c8b7043abce181
 
 
 Problem 71
 ==========
 
 
-   Consider the fraction, n/d, where n and d are positive integers. If n<d
-   and HCF(n,d)=1, it is called a reduced proper fraction.
+Consider the fraction, n/d, where n and d are positive integers. If n<d
+and HCF(n,d)=1, it is called a reduced proper fraction.
 
-   If we list the set of reduced proper fractions for d ≤ 8 in ascending
-   order of size, we get:
+If we list the set of reduced proper fractions for d ≤ 8 in ascending
+order of size, we get:
 
-   1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3,
-                          5/7, 3/4, 4/5, 5/6, 6/7, 7/8
+1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8
 
-   It can be seen that 2/5 is the fraction immediately to the left of 3/7.
+It can be seen that 2/5 is the fraction immediately to the left of 3/7.
 
-   By listing the set of reduced proper fractions for d ≤ 1,000,000 in
-   ascending order of size, find the numerator of the fraction immediately to
-   the left of 3/7.
+By listing the set of reduced proper fractions for d ≤ 1,000,000 in
+ascending order of size, find the numerator of the fraction immediately to
+the left of 3/7.
 
-   
-   Answer: 71f38fa2f04db30be52f883d583bfd6f
+
+Answer: 71f38fa2f04db30be52f883d583bfd6f
 
 
 Problem 72
 ==========
 
 
-   Consider the fraction, n/d, where n and d are positive integers. If n<d
-   and HCF(n,d)=1, it is called a reduced proper fraction.
+Consider the fraction, n/d, where n and d are positive integers. If n<d
+and HCF(n,d)=1, it is called a reduced proper fraction.
 
-   If we list the set of reduced proper fractions for d ≤ 8 in ascending
-   order of size, we get:
+If we list the set of reduced proper fractions for d ≤ 8 in ascending
+order of size, we get:
 
-   1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3,
-                          5/7, 3/4, 4/5, 5/6, 6/7, 7/8
+1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8
 
-   It can be seen that there are 21 elements in this set.
+It can be seen that there are 21 elements in this set.
 
-   How many elements would be contained in the set of reduced proper
-   fractions for d ≤ 1,000,000?
+How many elements would be contained in the set of reduced proper
+fractions for d ≤ 1,000,000?
 
-   
-   Answer: 0384fb529dc651fe0f460acff3e9ac5d
+
+Answer: 0384fb529dc651fe0f460acff3e9ac5d
 
 
 Problem 73
 ==========
 
 
-   Consider the fraction, n/d, where n and d are positive integers. If n<d
-   and HCF(n,d)=1, it is called a reduced proper fraction.
+Consider the fraction, n/d, where n and d are positive integers. If n<d
+and HCF(n,d)=1, it is called a reduced proper fraction.
 
-   If we list the set of reduced proper fractions for d ≤ 8 in ascending
-   order of size, we get:
+If we list the set of reduced proper fractions for d ≤ 8 in ascending
+order of size, we get:
 
-   1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3,
-                          5/7, 3/4, 4/5, 5/6, 6/7, 7/8
+1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8
 
-   It can be seen that there are 3 fractions between 1/3 and 1/2.
+It can be seen that there are 3 fractions between 1/3 and 1/2.
 
-   How many fractions lie between 1/3 and 1/2 in the sorted set of reduced
-   proper fractions for d ≤ 12,000?
+How many fractions lie between 1/3 and 1/2 in the sorted set of reduced
+proper fractions for d ≤ 12,000?
 
-   
-   Answer: 990a49eb474672444137fff1e5528a1b
+Answer: 990a49eb474672444137fff1e5528a1b
 
 
 Problem 74
 ==========
 
 
-   The number 145 is well known for the property that the sum of the
-   factorial of its digits is equal to 145:
+The number 145 is well known for the property that the sum of the
+factorial of its digits is equal to 145:
 
-   1! + 4! + 5! = 1 + 24 + 120 = 145
+1! + 4! + 5! = 1 + 24 + 120 = 145
 
-   Perhaps less well known is 169, in that it produces the longest chain of
-   numbers that link back to 169; it turns out that there are only three such
-   loops that exist:
+Perhaps less well known is 169, in that it produces the longest chain of
+numbers that link back to 169; it turns out that there are only three such
+loops that exist:
 
-   169 → 363601 → 1454 → 169
-   871 → 45361 → 871
-   872 → 45362 → 872
+    169 → 363601 → 1454 → 169
+    871 → 45361 → 871
+    872 → 45362 → 872
 
-   It is not difficult to prove that EVERY starting number will eventually
-   get stuck in a loop. For example,
+It is not difficult to prove that EVERY starting number will eventually
+get stuck in a loop. For example,
 
-   69 → 363600 → 1454 → 169 → 363601 (→ 1454)
-   78 → 45360 → 871 → 45361 (→ 871)
-   540 → 145 (→ 145)
+    69 → 363600 → 1454 → 169 → 363601 (→ 1454)
+    78 → 45360 → 871 → 45361 (→ 871)
+    540 → 145 (→ 145)
 
-   Starting with 69 produces a chain of five non-repeating terms, but the
-   longest non-repeating chain with a starting number below one million is
-   sixty terms.
+Starting with 69 produces a chain of five non-repeating terms, but the
+longest non-repeating chain with a starting number below one million is
+sixty terms.
 
-   How many chains, with a starting number below one million, contain exactly
-   sixty non-repeating terms?
+How many chains, with a starting number below one million, contain exactly
+sixty non-repeating terms?
 
-   
-   Answer: 69cb3ea317a32c4e6143e665fdb20b14
+
+Answer: 69cb3ea317a32c4e6143e665fdb20b14
 
 
 Problem 75
