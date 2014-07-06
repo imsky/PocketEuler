@@ -1774,97 +1774,91 @@ Problem 75
 ==========
 
 
-   It turns out that 12 cm is the smallest length of wire that can be bent to
-   form an integer sided right angle triangle in exactly one way, but there
-   are many more examples.
+It turns out that 12 cm is the smallest length of wire that can be bent to
+form an integer sided right angle triangle in exactly one way, but there
+are many more examples.
 
-   12 cm: (3,4,5)
-   24 cm: (6,8,10)
-   30 cm: (5,12,13)
-   36 cm: (9,12,15)
-   40 cm: (8,15,17)
-   48 cm: (12,16,20)
+    12 cm: (3,4,5)
+    24 cm: (6,8,10)
+    30 cm: (5,12,13)
+    36 cm: (9,12,15)
+    40 cm: (8,15,17)
+    48 cm: (12,16,20)
 
-   In contrast, some lengths of wire, like 20 cm, cannot be bent to form an
-   integer sided right angle triangle, and other lengths allow more than one
-   solution to be found; for example, using 120 cm it is possible to form
-   exactly three different integer sided right angle triangles.
+In contrast, some lengths of wire, like 20 cm, cannot be bent to form an
+integer sided right angle triangle, and other lengths allow more than one
+solution to be found; for example, using 120 cm it is possible to form
+exactly three different integer sided right angle triangles.
 
-   120 cm: (30,40,50), (20,48,52), (24,45,51)
+120 cm: (30,40,50), (20,48,52), (24,45,51)
 
-   Given that L is the length of the wire, for how many values of L ≤
-   1,500,000 can exactly one integer sided right angle triangle be formed?
+Given that L is the length of the wire, for how many values of L ≤
+1,500,000 can exactly one integer sided right angle triangle be formed?
 
-   
-   Answer: 583e391a7bd87f785412f72f486433cb
+Answer: 583e391a7bd87f785412f72f486433cb
 
 
 Problem 76
 ==========
 
 
-   It is possible to write five as a sum in exactly six different ways:
+It is possible to write five as a sum in exactly six different ways:
 
-   4 + 1
-   3 + 2
-   3 + 1 + 1
-   2 + 2 + 1
-   2 + 1 + 1 + 1
-   1 + 1 + 1 + 1 + 1
+    4 + 1
+    3 + 2
+    3 + 1 + 1
+    2 + 2 + 1
+    2 + 1 + 1 + 1
+    1 + 1 + 1 + 1 + 1
 
-   How many different ways can one hundred be written as a sum of at least
-   two positive integers?
+How many different ways can one hundred be written as a sum of at least
+two positive integers?
 
-   
-   Answer: 18ed0f01e082beffe0049ae1272689d2
+Answer: 18ed0f01e082beffe0049ae1272689d2
 
 
 Problem 77
 ==========
 
+It is possible to write ten as the sum of primes in exactly five different
+ways:
 
-   It is possible to write ten as the sum of primes in exactly five different
-   ways:
+    7 + 3
+    5 + 5
+    5 + 3 + 2
+    3 + 3 + 2 + 2
+    2 + 2 + 2 + 2 + 2
 
-   7 + 3
-   5 + 5
-   5 + 3 + 2
-   3 + 3 + 2 + 2
-   2 + 2 + 2 + 2 + 2
+What is the first value which can be written as the sum of primes in over
+five thousand different ways?
 
-   What is the first value which can be written as the sum of primes in over
-   five thousand different ways?
-
-   
-   Answer: e2c420d928d4bf8ce0ff2ec19b371514
+Answer: e2c420d928d4bf8ce0ff2ec19b371514
 
 
 Problem 78
 ==========
 
+Let p(n) represent the number of different ways in which n coins can be
+separated into piles. For example, five coins can separated into piles in
+exactly seven different ways, so p(5)=7.
 
-   Let p(n) represent the number of different ways in which n coins can be
-   separated into piles. For example, five coins can separated into piles in
-   exactly seven different ways, so p(5)=7.
+       OOOOO
 
-                               OOOOO
+       OOOO   O
 
-                               OOOO   O
+       OOO   OO
 
-                               OOO   OO
+       OOO   O   O
 
-                               OOO   O   O
+       OO   OO   O
 
-                               OO   OO   O
+       OO   O   O   O
 
-                               OO   O   O   O
+       O   O   O   O   O
 
-                               O   O   O   O   O
+Find the least value of n for which p(n) is divisible by one million.
 
-   Find the least value of n for which p(n) is divisible by one million.
-
-   
-   Answer: ef2a8695e428116131cc94c651d0e566
+Answer: ef2a8695e428116131cc94c651d0e566
 
 
 Problem 79
@@ -1887,19 +1881,18 @@ Problem 80
 ==========
 
 
-   It is well known that if the square root of a natural number is not an
-   integer, then it is irrational. The decimal expansion of such square roots
-   is infinite without any repeating pattern at all.
+It is well known that if the square root of a natural number is not an
+integer, then it is irrational. The decimal expansion of such square roots
+is infinite without any repeating pattern at all.
 
-   The square root of two is 1.41421356237309504880..., and the digital sum
-   of the first one hundred decimal digits is 475.
+The square root of two is 1.41421356237309504880..., and the digital sum
+of the first one hundred decimal digits is 475.
 
-   For the first one hundred natural numbers, find the total of the digital
-   sums of the first one hundred decimal digits for all the irrational square
-   roots.
+For the first one hundred natural numbers, find the total of the digital
+sums of the first one hundred decimal digits for all the irrational square
+roots.
 
-   
-   Answer: 6cc501a25298e4051886ef1a126e9484
+Answer: 6cc501a25298e4051886ef1a126e9484
 
 
 Problem 81
@@ -2076,21 +2069,19 @@ Answer: f5c3dd7514bf620a1b85450d2ae374b1
 Problem 87
 ==========
 
+The smallest number expressible as the sum of a prime square, prime cube,
+and prime fourth power is 28. In fact, there are exactly four numbers
+below fifty that can be expressed in such a way:
 
-   The smallest number expressible as the sum of a prime square, prime cube,
-   and prime fourth power is 28. In fact, there are exactly four numbers
-   below fifty that can be expressed in such a way:
+    28 = 2^2 + 2^3 + 2^4
+    33 = 3^2 + 2^3 + 2^4
+    49 = 5^2 + 2^3 + 2^4
+    47 = 2^2 + 3^3 + 2^4
 
-   28 = 2^2 + 2^3 + 2^4
-   33 = 3^2 + 2^3 + 2^4
-   49 = 5^2 + 2^3 + 2^4
-   47 = 2^2 + 3^3 + 2^4
+How many numbers below fifty million can be expressed as the sum of a
+prime square, prime cube, and prime fourth power?
 
-   How many numbers below fifty million can be expressed as the sum of a
-   prime square, prime cube, and prime fourth power?
-
-   
-   Answer: e7fb7907f1af626cc42e787e367ec602
+Answer: e7fb7907f1af626cc42e787e367ec602
 
 
 Problem 88
@@ -2218,99 +2209,92 @@ Answer: e8dc153260a59d4f236cfd7439d5dfd3
 Problem 92
 ==========
 
+A number chain is created by continuously adding the square of the digits
+in a number to form a new number until it has been seen before.
 
-   A number chain is created by continuously adding the square of the digits
-   in a number to form a new number until it has been seen before.
+For example,
 
-   For example,
+    44 → 32 → 13 → 10 → 1 → 1
+    85 → 89 → 145 → 42 → 20 → 4 → 16 → 37 → 58 → 89
 
-   44 → 32 → 13 → 10 → 1 → 1
-   85 → 89 → 145 → 42 → 20 → 4 → 16 → 37 → 58 → 89
+Therefore any chain that arrives at 1 or 89 will become stuck in an
+endless loop. What is most amazing is that EVERY starting number will
+eventually arrive at 1 or 89.
 
-   Therefore any chain that arrives at 1 or 89 will become stuck in an
-   endless loop. What is most amazing is that EVERY starting number will
-   eventually arrive at 1 or 89.
+How many starting numbers below ten million will arrive at 89?
 
-   How many starting numbers below ten million will arrive at 89?
-
-   
-   Answer: 6cee918c0612bccc2dac03d05e07035f
+Answer: 6cee918c0612bccc2dac03d05e07035f
 
 
 Problem 93
 ==========
 
 
-   By using each of the digits from the set, {1, 2, 3, 4}, exactly once, and
-   making use of the four arithmetic operations (+, −, *, /) and
-   brackets/parentheses, it is possible to form different positive integer
-   targets.
+By using each of the digits from the set, {1, 2, 3, 4}, exactly once, and
+making use of the four arithmetic operations (+, −, *, /) and
+brackets/parentheses, it is possible to form different positive integer
+targets.
 
-   For example,
+For example,
 
-   8 = (4 * (1 + 3)) / 2
-   14 = 4 * (3 + 1 / 2)
-   19 = 4 * (2 + 3) − 1
-   36 = 3 * 4 * (2 + 1)
+    8 = (4 * (1 + 3)) / 2
+    14 = 4 * (3 + 1 / 2)
+    19 = 4 * (2 + 3) − 1
+    36 = 3 * 4 * (2 + 1)
 
-   Note that concatenations of the digits, like 12 + 34, are not allowed.
+Note that concatenations of the digits, like 12 + 34, are not allowed.
 
-   Using the set, {1, 2, 3, 4}, it is possible to obtain thirty-one different
-   target numbers of which 36 is the maximum, and each of the numbers 1 to 28
-   can be obtained before encountering the first non-expressible number.
+Using the set, {1, 2, 3, 4}, it is possible to obtain thirty-one different
+target numbers of which 36 is the maximum, and each of the numbers 1 to 28
+can be obtained before encountering the first non-expressible number.
 
-   Find the set of four distinct digits, a < b < c < d, for which the longest
-   set of consecutive positive integers, 1 to n, can be obtained, giving your
-   answer as a string: abcd.
+Find the set of four distinct digits, a < b < c < d, for which the longest
+set of consecutive positive integers, 1 to n, can be obtained, giving your
+answer as a string: abcd.
 
-   
-   Answer: 26588e932c7ccfa1df309280702fe1b5
+Answer: 26588e932c7ccfa1df309280702fe1b5
 
 
 Problem 94
 ==========
 
+It is easily proved that no equilateral triangle exists with integral
+length sides and integral area. However, the almost equilateral triangle
+5-5-6 has an area of 12 square units.
 
-   It is easily proved that no equilateral triangle exists with integral
-   length sides and integral area. However, the almost equilateral triangle
-   5-5-6 has an area of 12 square units.
+We shall define an almost equilateral triangle to be a triangle for which
+two sides are equal and the third differs by no more than one unit.
 
-   We shall define an almost equilateral triangle to be a triangle for which
-   two sides are equal and the third differs by no more than one unit.
+Find the sum of the perimeters of all almost equilateral triangles with
+integral side lengths and area and whose perimeters do not exceed one
+billion (1,000,000,000).
 
-   Find the sum of the perimeters of all almost equilateral triangles with
-   integral side lengths and area and whose perimeters do not exceed one
-   billion (1,000,000,000).
-
-   
-   Answer: 3218c6bb59f2539ec39ad4bf37c10913
+Answer: 3218c6bb59f2539ec39ad4bf37c10913
 
 
 Problem 95
 ==========
 
+The proper divisors of a number are all the divisors excluding the number
+itself. For example, the proper divisors of 28 are 1, 2, 4, 7, and 14. As
+the sum of these divisors is equal to 28, we call it a perfect number.
 
-   The proper divisors of a number are all the divisors excluding the number
-   itself. For example, the proper divisors of 28 are 1, 2, 4, 7, and 14. As
-   the sum of these divisors is equal to 28, we call it a perfect number.
+Interestingly the sum of the proper divisors of 220 is 284 and the sum of
+the proper divisors of 284 is 220, forming a chain of two numbers. For
+this reason, 220 and 284 are called an amicable pair.
 
-   Interestingly the sum of the proper divisors of 220 is 284 and the sum of
-   the proper divisors of 284 is 220, forming a chain of two numbers. For
-   this reason, 220 and 284 are called an amicable pair.
+Perhaps less well known are longer chains. For example, starting with
+12496, we form a chain of five numbers:
 
-   Perhaps less well known are longer chains. For example, starting with
-   12496, we form a chain of five numbers:
+     12496 → 14288 → 15472 → 14536 → 14264 (→ 12496 → ...)
 
-             12496 → 14288 → 15472 → 14536 → 14264 (→ 12496 → ...)
+Since this chain returns to its starting point, it is called an amicable
+chain.
 
-   Since this chain returns to its starting point, it is called an amicable
-   chain.
+Find the smallest member of the longest amicable chain with no element
+exceeding one million.
 
-   Find the smallest member of the longest amicable chain with no element
-   exceeding one million.
-
-   
-   Answer: cd2018beeece5fb0a71a96308e567bde
+Answer: cd2018beeece5fb0a71a96308e567bde
 
 
 Problem 96
@@ -2360,18 +2344,17 @@ Problem 97
 ==========
 
 
-   The first known prime found to exceed one million digits was discovered in
-   1999, and is a Mersenne prime of the form 2^6972593−1; it contains exactly
-   2,098,960 digits. Subsequently other Mersenne primes, of the form 2^p−1,
-   have been found which contain more digits.
+The first known prime found to exceed one million digits was discovered in
+1999, and is a Mersenne prime of the form 2^6972593−1; it contains exactly
+2,098,960 digits. Subsequently other Mersenne primes, of the form 2^p−1,
+have been found which contain more digits.
 
-   However, in 2004 there was found a massive non-Mersenne prime which
-   contains 2,357,207 digits: 28433×2^7830457+1.
+However, in 2004 there was found a massive non-Mersenne prime which
+contains 2,357,207 digits: 28433×2^7830457+1.
 
-   Find the last ten digits of this prime number.
+Find the last ten digits of this prime number.
 
-   
-   Answer: 68c8c919526039022b923a72d5cc12b1
+Answer: 68c8c919526039022b923a72d5cc12b1
 
 
 Problem 98
