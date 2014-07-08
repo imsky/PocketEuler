@@ -7497,170 +7497,167 @@ Answer: fb8f093361a6db56c8a1d1661ab229cd
 Problem 300
 ===========
 
+In a very simplified form, we can consider proteins as strings consisting
+of hydrophobic (H) and polar (P) elements, e.g. HHPPHHHPHHPH.
+For this problem, the orientation of a protein is important; e.g. HPP is
+considered distinct from PPH. Thus, there are 2^n distinct proteins
+consisting of n elements.
 
-   In a very simplified form, we can consider proteins as strings consisting
-   of hydrophobic (H) and polar (P) elements, e.g. HHPPHHHPHHPH.
-   For this problem, the orientation of a protein is important; e.g. HPP is
-   considered distinct from PPH. Thus, there are 2^n distinct proteins
-   consisting of n elements.
+When one encounters these strings in nature, they are always folded in
+such a way that the number of H-H contact points is as large as possible,
+since this is energetically advantageous.
+As a result, the H-elements tend to accumulate in the inner part, with the
+P-elements on the outside.
+Natural proteins are folded in three dimensions of course, but we will
+only consider protein folding in two dimensions.
 
-   When one encounters these strings in nature, they are always folded in
-   such a way that the number of H-H contact points is as large as possible,
-   since this is energetically advantageous.
-   As a result, the H-elements tend to accumulate in the inner part, with the
-   P-elements on the outside.
-   Natural proteins are folded in three dimensions of course, but we will
-   only consider protein folding in two dimensions.
+The figure below shows two possible ways that our example protein could be
+folded (H-H contact points are shown with red dots).
 
-   The figure below shows two possible ways that our example protein could be
-   folded (H-H contact points are shown with red dots).
+![](files/p_300_protein.gif)
 
-   The folding on the left has only six H-H contact points, thus it would
-   never occur naturally.
-   On the other hand, the folding on the right has nine H-H contact points,
-   which is optimal for this string.
+The folding on the left has only six H-H contact points, thus it would
+never occur naturally.
+On the other hand, the folding on the right has nine H-H contact points,
+which is optimal for this string.
 
-   Assuming that H and P elements are equally likely to occur in any position
-   along the string, the average number of H-H contact points in an optimal
-   folding of a random protein string of length 8 turns out to be
-   850 / 2^8=3.3203125.
+Assuming that H and P elements are equally likely to occur in any position
+along the string, the average number of H-H contact points in an optimal
+folding of a random protein string of length 8 turns out to be
+850 / 2^8=3.3203125.
 
-   What is the average number of H-H contact points in an optimal folding of
-   a random protein string of length 15?
-   Give your answer using as many decimal places as necessary for an exact
-   result.
+What is the average number of H-H contact points in an optimal folding of
+a random protein string of length 15?
+Give your answer using as many decimal places as necessary for an exact
+result.
 
-   
-   p_300_protein.gif
-   Answer: 5a0d6315bc18279c46a1fb8cbd2f16b5
+Answer: 5a0d6315bc18279c46a1fb8cbd2f16b5
 
 
 Problem 301
 ===========
 
 
-   Nim is a game played with heaps of stones, where two players take it in
-   turn to remove any number of stones from any heap until no stones remain.
+Nim is a game played with heaps of stones, where two players take it in
+turn to remove any number of stones from any heap until no stones remain.
 
-   We'll consider the three-heap normal-play version of Nim, which works as
-   follows:
-   - At the start of the game there are three heaps of stones.
-   - On his turn the player removes any positive number of stones from any
-   single heap.
-   - The first player unable to move (because no stones remain) loses.
+We'll consider the three-heap normal-play version of Nim, which works as
+follows:
+- At the start of the game there are three heaps of stones.
+- On his turn the player removes any positive number of stones from any
+single heap.
+- The first player unable to move (because no stones remain) loses.
 
-   If (n[1],n[2],n[3]) indicates a Nim position consisting of heaps of size
-   n[1], n[2] and n[3] then there is a simple function X(n[1],n[2],n[3]) —
-   that you may look up or attempt to deduce for yourself — that returns:
+If (n[1],n[2],n[3]) indicates a Nim position consisting of heaps of size
+n[1], n[2] and n[3] then there is a simple function X(n[1],n[2],n[3]) —
+that you may look up or attempt to deduce for yourself — that returns:
 
-     • zero if, with perfect strategy, the player about to move will
-       eventually lose; or
-     • non-zero if, with perfect strategy, the player about to move will
-       eventually win.
+ • zero if, with perfect strategy, the player about to move will
+   eventually lose; or
+ • non-zero if, with perfect strategy, the player about to move will
+   eventually win.
 
-   For example X(1,2,3) = 0 because, no matter what the current player does,
-   his opponent can respond with a move that leaves two heaps of equal size,
-   at which point every move by the current player can be mirrored by his
-   opponent until no stones remain; so the current player loses. To
-   illustrate:
-   - current player moves to (1,2,1)
-   - opponent moves to (1,0,1)
-   - current player moves to (0,0,1)
-   - opponent moves to (0,0,0), and so wins.
+For example X(1,2,3) = 0 because, no matter what the current player does,
+his opponent can respond with a move that leaves two heaps of equal size,
+at which point every move by the current player can be mirrored by his
+opponent until no stones remain; so the current player loses. To
+illustrate:
+- current player moves to (1,2,1)
+- opponent moves to (1,0,1)
+- current player moves to (0,0,1)
+- opponent moves to (0,0,0), and so wins.
 
-   For how many positive integers n ≤ 2^30 does X(n,2n,3n) = 0 ?
+For how many positive integers n ≤ 2^30 does X(n,2n,3n) = 0 ?
 
-   
-   Answer: f47b7d975a5ebd3b66af0968ef5e1cdb
+
+Answer: f47b7d975a5ebd3b66af0968ef5e1cdb
 
 
 Problem 302
 ===========
 
+A positive integer n is powerful if p^2 is a divisor of n for every prime
+factor p in n.
 
-   A positive integer n is powerful if p^2 is a divisor of n for every prime
-   factor p in n.
+A positive integer n is a perfect power if n can be expressed as a power
+of another positive integer.
 
-   A positive integer n is a perfect power if n can be expressed as a power
-   of another positive integer.
+A positive integer n is an Achilles number if n is powerful but not a
+perfect power. For example, 864 and 1800 are Achilles numbers: 864 =
+2^5·3^3 and 1800 = 2^3·3^2·5^2.
 
-   A positive integer n is an Achilles number if n is powerful but not a
-   perfect power. For example, 864 and 1800 are Achilles numbers: 864 =
-   2^5·3^3 and 1800 = 2^3·3^2·5^2.
+We shall call a positive integer S a Strong Achilles number if both S and
+φ(S) are Achilles numbers.^1
+For example, 864 is a Strong Achilles number: φ(864) = 288 = 2^5·3^2.
+However, 1800 isn't a Strong Achilles number because: φ(1800) = 480 =
+2^5·3^1·5^1.
 
-   We shall call a positive integer S a Strong Achilles number if both S and
-   φ(S) are Achilles numbers.^1
-   For example, 864 is a Strong Achilles number: φ(864) = 288 = 2^5·3^2.
-   However, 1800 isn't a Strong Achilles number because: φ(1800) = 480 =
-   2^5·3^1·5^1.
+There are 7 Strong Achilles numbers below 10^4 and 656 below 10^8.
 
-   There are 7 Strong Achilles numbers below 10^4 and 656 below 10^8.
+How many Strong Achilles numbers are there below 10^18?
 
-   How many Strong Achilles numbers are there below 10^18?
+^1 φ denotes Euler's totient function.
 
-   ^1 φ denotes Euler's totient function.
 
-   
-   Answer: 1ea8b8d64cead5149721a128b0de378c
+Answer: 1ea8b8d64cead5149721a128b0de378c
 
 
 Problem 303
 ===========
 
 
-   For a positive integer n, define f(n) as the least positive multiple of n
-   that, written in base 10, uses only digits ≤ 2.
+For a positive integer n, define f(n) as the least positive multiple of n
+that, written in base 10, uses only digits ≤ 2.
 
-   Thus f(2)=2, f(3)=12, f(7)=21, f(42)=210, f(89)=1121222.
+Thus f(2)=2, f(3)=12, f(7)=21, f(42)=210, f(89)=1121222.
 
-   Also, .
+Also, ![](files/p303_formula100.gif).
 
-   Find .
+Find ![](files/p303_formula10000.gif).
 
-   
-   Answer: b904a0b3d922e628a828e744ee7d3a60
+Answer: b904a0b3d922e628a828e744ee7d3a60
 
 
 Problem 304
 ===========
 
 
-   For any positive integer n the function next_prime(n) returns the smallest
-   prime p
-   such that p>n.
+For any positive integer n the function next_prime(n) returns the smallest
+prime p
+such that p>n.
 
-   The sequence a(n) is defined by:
-   a(1)=next_prime(10^14) and a(n)=next_prime(a(n-1)) for n>1.
+The sequence a(n) is defined by:
+a(1)=next_prime(10^14) and a(n)=next_prime(a(n-1)) for n>1.
 
-   The fibonacci sequence f(n) is defined by:f(0)=0, f(1)=1 and
-   f(n)=f(n-1)+f(n-2) for n>1.
+The fibonacci sequence f(n) is defined by:f(0)=0, f(1)=1 and
+f(n)=f(n-1)+f(n-2) for n>1.
 
-   The sequence b(n) is defined as f(a(n)).
+The sequence b(n) is defined as f(a(n)).
 
-   Find ∑b(n) for 1≤n≤100 000. Give your answer mod 1234567891011.
+Find ∑b(n) for 1≤n≤100 000. Give your answer mod 1234567891011.
 
-   
-   Answer: 499427a3e4bf9ad34a6df3056604b4c1
+
+Answer: 499427a3e4bf9ad34a6df3056604b4c1
 
 
 Problem 305
 ===========
 
 
-   Let's call S the (infinite) string that is made by concatenating the
-   consecutive positive integers (starting from 1) written down in base 10.
-   Thus, S = 1234567891011121314151617181920212223242...
+Let's call S the (infinite) string that is made by concatenating the
+consecutive positive integers (starting from 1) written down in base 10.
+Thus, S = 1234567891011121314151617181920212223242...
 
-   It's easy to see that any number will show up an infinite number of times
-   in S.
+It's easy to see that any number will show up an infinite number of times
+in S.
 
-   Let's call f(n) the starting position of the nth occurrence of n in S.
-   For example, f(1)=1, f(5)=81, f(12)=271 and f(7780)=111111365.
+Let's call f(n) the starting position of the nth occurrence of n in S.
+For example, f(1)=1, f(5)=81, f(12)=271 and f(7780)=111111365.
 
-   Find ∑f(3^k) for 1≤k≤13.
+Find ∑f(3^k) for 1≤k≤13.
 
-   
-   Answer: 9def85298f598867d361e4afca8cdd96
+
+Answer: 9def85298f598867d361e4afca8cdd96
 
 
 Problem 306
@@ -7758,27 +7755,26 @@ Problem 308
 Problem 309
 ===========
 
+In the classic "Crossing Ladders" problem, we are given the lengths x and
+y of two ladders resting on the opposite walls of a narrow, level street.
+We are also given the height h above the street where the two ladders
+cross and we are asked to find the width of the street (w).
 
-   In the classic "Crossing Ladders" problem, we are given the lengths x and
-   y of two ladders resting on the opposite walls of a narrow, level street.
-   We are also given the height h above the street where the two ladders
-   cross and we are asked to find the width of the street (w).
+![](files/p_309_ladders.gif)
 
-   Here, we are only concerned with instances where all four variables are
-   positive integers.
-   For example, if x = 70, y = 119 and h = 30, we can calculate that w = 56.
+Here, we are only concerned with instances where all four variables are
+positive integers.
+For example, if x = 70, y = 119 and h = 30, we can calculate that w = 56.
 
-   In fact, for integer values x, y, h and 0 < x < y < 200, there are only
-   five triplets (x,y,h) producing integer solutions for w:
-   (70, 119, 30), (74, 182, 21), (87, 105, 35), (100, 116, 35) and (119, 175,
-   40).
+In fact, for integer values x, y, h and 0 < x < y < 200, there are only
+five triplets (x,y,h) producing integer solutions for w:
+(70, 119, 30), (74, 182, 21), (87, 105, 35), (100, 116, 35) and (119, 175,
+40).
 
-   For integer values x, y, h and 0 < x < y < 1 000 000, how many triplets
-   (x,y,h) produce integer solutions for w?
+For integer values x, y, h and 0 < x < y < 1 000 000, how many triplets
+(x,y,h) produce integer solutions for w?
 
-   
-   p_309_ladders.gif
-   Answer: 0875415a84bfe8bc237dcfc6b440d263
+Answer: 0875415a84bfe8bc237dcfc6b440d263
 
 
 Problem 310
@@ -7804,75 +7800,77 @@ Problem 311
 ===========
 
 
-   ABCD is a convex, integer sided quadrilateral with 1 ≤ AB < BC < CD < AD.
-   BD has integer length. O is the midpoint of BD. AO has integer length.
-   We'll call ABCD a biclinic integral quadrilateral if AO = CO ≤ BO = DO.
+ABCD is a convex, integer sided quadrilateral with 1 ≤ AB < BC < CD < AD.
+BD has integer length. O is the midpoint of BD. AO has integer length.
+We'll call ABCD a biclinic integral quadrilateral if AO = CO ≤ BO = DO.
 
-   For example, the following quadrilateral is a biclinic integral
-   quadrilateral:
-   AB = 19, BC = 29, CD = 37, AD = 43, BD = 48 and AO = CO = 23.
+For example, the following quadrilateral is a biclinic integral
+quadrilateral:
+AB = 19, BC = 29, CD = 37, AD = 43, BD = 48 and AO = CO = 23.
 
-   Let B(N) be the number of distinct biclinic integral quadrilaterals ABCD
-   that satisfy AB^2+BC^2+CD^2+AD^2 ≤ N.
-   We can verify that B(10 000) = 49 and B(1 000 000) = 38239.
+![](files/p_311_biclinic.gif)
 
-   Find B(10 000 000 000).
+Let B(N) be the number of distinct biclinic integral quadrilaterals ABCD
+that satisfy AB^2+BC^2+CD^2+AD^2 ≤ N.
+We can verify that B(10 000) = 49 and B(1 000 000) = 38239.
 
-   
-   p_311_biclinic.gif
-   Answer: 36115d4f7dc07eea106d78e8431868e6
+Find B(10 000 000 000).
+
+Answer: 36115d4f7dc07eea106d78e8431868e6
 
 
 Problem 312
 ===========
 
 
-   - A Sierpiński graph of order-1 (S[1]) is an equilateral triangle.
-   - S[n+1] is obtained from S[n] by positioning three copies of S[n] so that
-   every pair of copies has one common corner.
+A Sierpiński graph of order-1 (S[1]) is an equilateral triangle.
+S[n+1] is obtained from S[n] by positioning three copies of S[n] so that
+every pair of copies has one common corner.
 
-   Let C(n) be the number of cycles that pass exactly once through all the
-   vertices of S[n].
-   For example, C(3) = 8 because eight such cycles can be drawn on S[3], as
-   shown below:
+![](files/p_312_sierpinskyAt.gif)
 
-   It can also be verified that :
-   C(1) = C(2) = 1
-   C(5) = 71328803586048
-   C(10 000) mod 10^8 = 37652224
-   C(10 000) mod 13^8 = 617720485
+Let C(n) be the number of cycles that pass exactly once through all the
+vertices of S[n].
+For example, C(3) = 8 because eight such cycles can be drawn on S[3], as
+shown below:
 
-   Find C(C(C(10 000))) mod 13^8.
+![](files/p_312_sierpinsky8t.gif)
 
-   
-   p_312_sierpinskyAt.gif
-   p_312_sierpinsky8t.gif
-   Answer: 535113d1a81f421fe814d48205dac570
+It can also be verified that :
+    C(1) = C(2) = 1
+    C(5) = 71328803586048
+    C(10 000) mod 10^8 = 37652224
+    C(10 000) mod 13^8 = 617720485
+
+Find C(C(C(10 000))) mod 13^8.
+
+Answer: 535113d1a81f421fe814d48205dac570
 
 
 Problem 313
 ===========
 
 
-   In a sliding game a counter may slide horizontally or vertically into an
-   empty space. The objective of the game is to move the red counter from the
-   top left corner of a grid to the bottom right corner; the space always
-   starts in the bottom right corner. For example, the following sequence of
-   pictures show how the game can be completed in five moves on a 2 by 2
-   grid.
+In a sliding game a counter may slide horizontally or vertically into an
+empty space. The objective of the game is to move the red counter from the
+top left corner of a grid to the bottom right corner; the space always
+starts in the bottom right corner. For example, the following sequence of
+pictures show how the game can be completed in five moves on a 2 by 2
+grid.
 
-   Let S(m,n) represent the minimum number of moves to complete the game on
-   an m by n grid. For example, it can be verified that S(5,4) = 25.
+![](files/p_313_sliding_game_1.gif)
 
-   There are exactly 5482 grids for which S(m,n) = p^2, where p < 100 is
-   prime.
+Let S(m,n) represent the minimum number of moves to complete the game on
+an m by n grid. For example, it can be verified that S(5,4) = 25.
 
-   How many grids does S(m,n) = p^2, where p < 10^6 is prime?
+![](files/p_313_sliding_game_2.gif)
 
-   
-   p_313_sliding_game_1.gif
-   p_313_sliding_game_2.gif
-   Answer: 2468d42fa1c7f61547ce71c9826218ea
+There are exactly 5482 grids for which S(m,n) = p^2, where p < 100 is
+prime.
+
+How many grids does S(m,n) = p^2, where p < 10^6 is prime?
+
+Answer: 2468d42fa1c7f61547ce71c9826218ea
 
 
 Problem 314
@@ -7916,766 +7914,734 @@ Answer: aa457cae6f67945d50683a85a9b70230
 Problem 315
 ===========
 
+![](files/p_315_clocks.gif)
 
-   Sam and Max are asked to transform two digital clocks into two "digital
-   root" clocks.
-   A digital root clock is a digital clock that calculates digital roots step
-   by step.
+Sam and Max are asked to transform two digital clocks into two "digital
+root" clocks.
+A digital root clock is a digital clock that calculates digital roots step
+by step.
 
-   When a clock is fed a number, it will show it and then it will start the
-   calculation, showing all the intermediate values until it gets to the
-   result.
-   For example, if the clock is fed the number 137, it will show: "137" →
-   "11" → "2" and then it will go black, waiting for the next number.
+When a clock is fed a number, it will show it and then it will start the
+calculation, showing all the intermediate values until it gets to the
+result.
+For example, if the clock is fed the number 137, it will show: "137" →
+"11" → "2" and then it will go black, waiting for the next number.
 
-   Every digital number consists of some light segments: three horizontal
-   (top, middle, bottom) and four vertical (top-left, top-right, bottom-left,
-   bottom-right).
-   Number "1" is made of vertical top-right and bottom-right, number "4" is
-   made by middle horizontal and vertical top-left, top-right and
-   bottom-right. Number "8" lights them all.
+Every digital number consists of some light segments: three horizontal
+(top, middle, bottom) and four vertical (top-left, top-right, bottom-left,
+bottom-right).
+Number "1" is made of vertical top-right and bottom-right, number "4" is
+made by middle horizontal and vertical top-left, top-right and
+bottom-right. Number "8" lights them all.
 
-   The clocks consume energy only when segments are turned on/off.
-   To turn on a "2" will cost 5 transitions, while a "7" will cost only 4
-   transitions.
+The clocks consume energy only when segments are turned on/off.
+To turn on a "2" will cost 5 transitions, while a "7" will cost only 4
+transitions.
 
-   Sam and Max built two different clocks.
+Sam and Max built two different clocks.
 
-   Sam's clock is fed e.g. number 137: the clock shows "137", then the panel
-   is turned off, then the next number ("11") is turned on, then the panel is
-   turned off again and finally the last number ("2") is turned on and, after
-   some time, off.
-   For the example, with number 137, Sam's clock requires:
+Sam's clock is fed e.g. number 137: the clock shows "137", then the panel
+is turned off, then the next number ("11") is turned on, then the panel is
+turned off again and finally the last number ("2") is turned on and, after
+some time, off.
+For the example, with number 137, Sam's clock requires:
 
-   "137" : (2 + 5 + 4) × 2 = 22 transitions ("137" on/off).
-   "11"  : (2 + 2) × 2 = 8 transitions ("11" on/off).
-   "2"   : (5) × 2 = 10 transitions ("2" on/off).
+    "137" : (2 + 5 + 4) × 2 = 22 transitions ("137" on/off).
+    "11"  : (2 + 2) × 2 = 8 transitions ("11" on/off).
+    "2"   : (5) × 2 = 10 transitions ("2" on/off).
 
-   For a grand total of 40 transitions.
+For a grand total of 40 transitions.
 
-   Max's clock works differently. Instead of turning off the whole panel, it
-   is smart enough to turn off only those segments that won't be needed for
-   the next number.
-   For number 137, Max's clock requires:
+Max's clock works differently. Instead of turning off the whole panel, it
+is smart enough to turn off only those segments that won't be needed for
+the next number.
+For number 137, Max's clock requires:
 
-           2 + 5 + 4 = 11 transitions ("137" on)
-   "137" : 7 transitions (to turn off the segments that are not needed for
-           number "11").
-           0 transitions (number "11" is already turned on correctly)
-   "11"  : 3 transitions (to turn off the first "1" and the bottom part of
-           the second "1";
-           the top part is common with number "2").
-           4 tansitions (to turn on the remaining segments in order to get a
-   "2"   : "2")
-           5 transitions (to turn off number "2").
+            2 + 5 + 4 = 11 transitions ("137" on)
+    "137" : 7 transitions (to turn off the segments that are not needed for
+            number "11").
+            0 transitions (number "11" is already turned on correctly)
+    "11"  : 3 transitions (to turn off the first "1" and the bottom part of
+            the second "1";
+            the top part is common with number "2").
+            4 tansitions (to turn on the remaining segments in order to get a
+    "2"   : "2")
+            5 transitions (to turn off number "2").
 
-   For a grand total of 30 transitions.
+For a grand total of 30 transitions.
 
-   Of course, Max's clock consumes less power than Sam's one.
-   The two clocks are fed all the prime numbers between A = 10^7 and B =
-   2×10^7.
-   Find the difference between the total number of transitions needed by
-   Sam's clock and that needed by Max's one.
+Of course, Max's clock consumes less power than Sam's one.
+The two clocks are fed all the prime numbers between A = 10^7 and B =
+2×10^7.
+Find the difference between the total number of transitions needed by
+Sam's clock and that needed by Max's one.
 
-   
-   p_315_clocks.gif
-   Answer: 79b587f9c25a72dbe95428e283628421
+Answer: 79b587f9c25a72dbe95428e283628421
 
 
 Problem 316
 ===========
 
+Let p = p[1] p[2] p[3] ... be an infinite sequence of random digits,
+selected from {0,1,2,3,4,5,6,7,8,9} with equal probability.
+It can be seen that p corresponds to the real number 0.p[1] p[2] p[3] ....
+It can also be seen that choosing a random real number from the interval
+[0,1) is equivalent to choosing an infinite sequence of random digits
+selected from {0,1,2,3,4,5,6,7,8,9} with equal probability.
 
-   Let p = p[1] p[2] p[3] ... be an infinite sequence of random digits,
-   selected from {0,1,2,3,4,5,6,7,8,9} with equal probability.
-   It can be seen that p corresponds to the real number 0.p[1] p[2] p[3] ....
-   It can also be seen that choosing a random real number from the interval
-   [0,1) is equivalent to choosing an infinite sequence of random digits
-   selected from {0,1,2,3,4,5,6,7,8,9} with equal probability.
+For any positive integer n with d decimal digits, let k be the smallest
+index such that
+p[k, ]p[k+1], ...p[k+d-1] are the decimal digits of n, in the same order.
+Also, let g(n) be the expected value of k; it can be proven that g(n) is
+always finite and, interestingly, always an integer number.
 
-   For any positive integer n with d decimal digits, let k be the smallest
-   index such that
-   p[k, ]p[k+1], ...p[k+d-1] are the decimal digits of n, in the same order.
-   Also, let g(n) be the expected value of k; it can be proven that g(n) is
-   always finite and, interestingly, always an integer number.
+For example, if n = 535, then
+    for p = 31415926535897...., we get k = 9
+    for p = 355287143650049560000490848764084685354..., we get k = 36
+etc and we find that g(535) = 1008.
 
-   For example, if n = 535, then
-   for p = 31415926535897...., we get k = 9
-   for p = 355287143650049560000490848764084685354..., we get k = 36
-   etc and we find that g(535) = 1008.
+Given that ![](files/p_316_decexp1.gif), find ![](files/p_316_decexp2.gif)
 
-   Given that , find
+Note: ![](files/ p_316_decexp3.gif) represents the floor function.
 
-   Note: represents the floor function.
-   
-   p_316_decexp1.gif
-   p_316_decexp2.gif
-   p_316_decexp3.gif
-   Answer: 2495e8f6e9d4cdadbf0411144e7180b9
+Answer: 2495e8f6e9d4cdadbf0411144e7180b9
 
 
 Problem 317
 ===========
 
 
-   A firecracker explodes at a height of 100 m above level ground. It breaks
-   into a large number of very small fragments, which move in every
-   direction; all of them have the same initial velocity of 20 m/s.
+A firecracker explodes at a height of 100 m above level ground. It breaks
+into a large number of very small fragments, which move in every
+direction; all of them have the same initial velocity of 20 m/s.
 
-   We assume that the fragments move without air resistance, in a uniform
-   gravitational field with g=9.81 m/s^2.
+We assume that the fragments move without air resistance, in a uniform
+gravitational field with g=9.81 m/s^2.
 
-   Find the volume (in m^3) of the region through which the fragments move
-   before reaching the ground. Give your answer rounded to four decimal
-   places.
+Find the volume (in m^3) of the region through which the fragments move
+before reaching the ground. Give your answer rounded to four decimal
+places.
 
-   
-   Answer: b0e2bec93bfe598ade5d3d1141f76bdd
+
+Answer: b0e2bec93bfe598ade5d3d1141f76bdd
 
 
 Problem 318
 ===========
 
 
-   Consider the real number √2+√3.
-   When we calculate the even powers of √2+√3we get:
-   (√2+√3)^2 = 9.898979485566356...
-   (√2+√3)^4 = 97.98979485566356...
-   (√2+√3)^6 = 969.998969071069263...
-   (√2+√3)^8 = 9601.99989585502907...
-   (√2+√3)^10 = 95049.999989479221...
-   (√2+√3)^12 = 940897.9999989371855...
-   (√2+√3)^14 = 9313929.99999989263...
-   (√2+√3)^16 = 92198401.99999998915...
+Consider the real number √2+√3.
+When we calculate the even powers of √2+√3we get:
+    (√2+√3)^2 = 9.898979485566356...
+    (√2+√3)^4 = 97.98979485566356...
+    (√2+√3)^6 = 969.998969071069263...
+    (√2+√3)^8 = 9601.99989585502907...
+    (√2+√3)^10 = 95049.999989479221...
+    (√2+√3)^12 = 940897.9999989371855...
+    (√2+√3)^14 = 9313929.99999989263...
+    (√2+√3)^16 = 92198401.99999998915...
 
-   It looks like that the number of consecutive nines at the beginning of the
-   fractional part of these powers is non-decreasing.
-   In fact it can be proven that the fractional part of (√2+√3)^2n approaches
-   1 for large n.
+It looks like that the number of consecutive nines at the beginning of the
+fractional part of these powers is non-decreasing.
+In fact it can be proven that the fractional part of (√2+√3)^2n approaches
+1 for large n.
 
-   Consider all real numbers of the form √p+√q with p and q positive integers
-   and p<q, such that the fractional part of (√p+√q)^2n approaches 1 for
-   large n.
+Consider all real numbers of the form √p+√q with p and q positive integers
+and p<q, such that the fractional part of (√p+√q)^2n approaches 1 for
+large n.
 
-   Let C(p,q,n) be the number of consecutive nines at the beginning of the
-   fractional part of
-   (√p+√q)^2n.
+Let C(p,q,n) be the number of consecutive nines at the beginning of the
+fractional part of
+(√p+√q)^2n.
 
-   Let N(p,q) be the minimal value of n such that C(p,q,n) ≥ 2011.
+Let N(p,q) be the minimal value of n such that C(p,q,n) ≥ 2011.
 
-   Find ∑N(p,q) for p+q ≤ 2011.
+Find ∑N(p,q) for p+q ≤ 2011.
 
-   
-   Answer: de358f1c4d6e30c1a4f82c8bc5cedf2d
+
+Answer: de358f1c4d6e30c1a4f82c8bc5cedf2d
 
 
 Problem 319
 ===========
 
+Let x[1], x[2],..., x[n] be a sequence of length n such that:
 
-   Let x[1], x[2],..., x[n] be a sequence of length n such that:
+* x[1] = 2
+* for all 1 < i ≤ n : x[i-1] < x[i]
+* for all i and j with 1 ≤ i, j ≤ n : (x[i]) ^ j < (x[j] + 1)^i
 
-     • x[1] = 2
-     • for all 1 < i ≤ n : x[i-1] < x[i]
-     • for all i and j with 1 ≤ i, j ≤ n : (x[i]) ^ j < (x[j] + 1)^i
+There are only five such sequences of length 2, namely:{2,4}, {2,5},
+{2,6}, {2,7} and {2,8}.
+There are 293 such sequences of length 5; three examples are given below:
+{2,5,11,25,55}, {2,6,14,36,88}, {2,8,22,64,181}.
 
-   There are only five such sequences of length 2, namely:{2,4}, {2,5},
-   {2,6}, {2,7} and {2,8}.
-   There are 293 such sequences of length 5; three examples are given below:
-   {2,5,11,25,55}, {2,6,14,36,88}, {2,8,22,64,181}.
+Let t(n) denote the number of such sequences of length n.
+You are given that t(10) = 86195 and t(20) = 5227991891.
 
-   Let t(n) denote the number of such sequences of length n.
-   You are given that t(10) = 86195 and t(20) = 5227991891.
+Find t(10^10) and give your answer modulo 10^9.
 
-   Find t(10^10) and give your answer modulo 10^9.
 
-   
-   Answer: d346ab7d128ee0402820edf5fe4aed30
+Answer: d346ab7d128ee0402820edf5fe4aed30
 
 
 Problem 320
 ===========
 
+Let N(i) be the smallest integer n such that n! is divisible by
+(i!)^1234567890
 
-   Let N(i) be the smallest integer n such that n! is divisible by
-   (i!)^1234567890
+Let S(u)=∑N(i) for 10 ≤ i ≤ u.
 
-   Let S(u)=∑N(i) for 10 ≤ i ≤ u.
+S(1000)=614538266565663.
 
-   S(1000)=614538266565663.
+Find S(1 000 000) mod 10^18.
 
-   Find S(1 000 000) mod 10^18.
-
-   
-   Answer: 8426f939c3ee410a8c4d43886ef77ccb
+Answer: 8426f939c3ee410a8c4d43886ef77ccb
 
 
 Problem 321
 ===========
 
 
-   A horizontal row comprising of 2n + 1 squares has n red counters placed at
-   one end and n blue counters at the other end, being separated by a single
-   empty square in the centre. For example, when n = 3.
+A horizontal row comprising of 2n + 1 squares has n red counters placed at
+one end and n blue counters at the other end, being separated by a single
+empty square in the centre. For example, when n = 3.
 
-   A counter can move from one square to the next (slide) or can jump over
-   another counter (hop) as long as the square next to that counter is
-   unoccupied.
+![](files/p_321_swapping_counters_1.gif)
 
-   Let M(n) represent the minimum number of moves/actions to completely
-   reverse the positions of the coloured counters; that is, move all the red
-   counters to the right and all the blue counters to the left.
+A counter can move from one square to the next (slide) or can jump over
+another counter (hop) as long as the square next to that counter is
+unoccupied.
 
-   It can be verified M(3) = 15, which also happens to be a triangle number.
+![](files/p_321_swapping_counters_2.gif)
 
-   If we create a sequence based on the values of n for which M(n) is a
-   triangle number then the first five terms would be:
-   1, 3, 10, 22, and 63, and their sum would be 99.
+Let M(n) represent the minimum number of moves/actions to completely
+reverse the positions of the coloured counters; that is, move all the red
+counters to the right and all the blue counters to the left.
 
-   Find the sum of the first forty terms of this sequence.
+It can be verified M(3) = 15, which also happens to be a triangle number.
 
-   
-   p_321_swapping_counters_1.gif
-   p_321_swapping_counters_2.gif
-   Answer: 6d87412130312b01a999225a5fe689b1
+If we create a sequence based on the values of n for which M(n) is a
+triangle number then the first five terms would be:
+1, 3, 10, 22, and 63, and their sum would be 99.
+
+Find the sum of the first forty terms of this sequence.
+
+Answer: 6d87412130312b01a999225a5fe689b1
 
 
 Problem 322
 ===========
 
 
-   Let T(m, n) be the number of the binomial coefficients ^iC[n] that are
-   divisible by 10 for n ≤ i < m(i, m and n are positive integers).
-   You are given that T(10^9, 10^7-10) = 989697000.
+Let T(m, n) be the number of the binomial coefficients iC[n] that are
+divisible by 10 for n ≤ i < m(i, m and n are positive integers).
+You are given that T(10^9, 10^7-10) = 989697000.
 
-   Find T(10^18, 10^12-10).
+Find T(10^18, 10^12-10).
 
-   
-   Answer: a75af9d717fa592487fb45e7552204a8
+Answer: a75af9d717fa592487fb45e7552204a8
 
 
 Problem 323
 ===========
 
 
-   Let y[0], y[1], y[2],... be a sequence of random unsigned 32 bit integers
-   (i.e. 0 ≤ y[i] < 2^32, every value equally likely).
+Let y[0], y[1], y[2],... be a sequence of random unsigned 32 bit integers
+(i.e. 0 ≤ y[i] < 2^32, every value equally likely).
 
-   For the sequence x[i] the following recursion is given:
+For the sequence x[i] the following recursion is given:
 
      • x[0] = 0 and
      • x[i] = x[i-1] | y[i-1], for i > 0. ( | is the bitwise-OR operator)
 
-   It can be seen that eventually there will be an index N such that x[i] =
-   2^32 -1 (a bit-pattern of all ones) for all i ≥ N.
+It can be seen that eventually there will be an index N such that x[i] =
+2^32 -1 (a bit-pattern of all ones) for all i ≥ N.
 
-   Find the expected value of N.
-   Give your answer rounded to 10 digits after the decimal point.
+Find the expected value of N.
+Give your answer rounded to 10 digits after the decimal point.
 
-   
-   Answer: c8f8a7ab17a87f1b17a1f4a86c984ea7
+
+Answer: c8f8a7ab17a87f1b17a1f4a86c984ea7
 
 
 Problem 324
 ===========
 
+Let f(n) represent the number of ways one can fill a 3×3×n tower with
+blocks of 2×1×1.
+You're allowed to rotate the blocks in any way you like; however,
+rotations, reflections etc of the tower itself are counted as distinct.
 
-   Let f(n) represent the number of ways one can fill a 3×3×n tower with
-   blocks of 2×1×1.
-   You're allowed to rotate the blocks in any way you like; however,
-   rotations, reflections etc of the tower itself are counted as distinct.
+For example (with q = 100000007):
 
-   For example (with q = 100000007) :
-   f(2) = 229,
-   f(4) = 117805,
-   f(10) mod q = 96149360,
-   f(10^3) mod q = 24806056,
-   f(10^6) mod q = 30808124.
+    f(2) = 229,
+    f(4) = 117805,
+    f(10) mod q = 96149360,
+    f(10^3) mod q = 24806056,
+    f(10^6) mod q = 30808124.
 
-   Find f(10^10000) mod 100000007.
+Find f(10^10000) mod 100000007.
 
-   
-   Answer: b8d91b06d43a2ef98a6fcb0be4a6d617
+
+Answer: b8d91b06d43a2ef98a6fcb0be4a6d617
 
 
 Problem 325
 ===========
 
 
-   A game is played with two piles of stones and two players. At her turn, a
-   player removes a number of stones from the larger pile. The number of
-   stones she removes must be a positive multiple of the number of stones in
-   the smaller pile.
+A game is played with two piles of stones and two players. At her turn, a
+player removes a number of stones from the larger pile. The number of
+stones she removes must be a positive multiple of the number of stones in
+the smaller pile.
 
-   E.g., let the ordered pair(6,14) describe a configuration with 6 stones in
-   the smaller pile and 14 stones in the larger pile, then the first player
-   can remove 6 or 12 stones from the larger pile.
+E.g., let the ordered pair(6,14) describe a configuration with 6 stones in
+the smaller pile and 14 stones in the larger pile, then the first player
+can remove 6 or 12 stones from the larger pile.
 
-   The player taking all the stones from a pile wins the game.
+The player taking all the stones from a pile wins the game.
 
-   A winning configuration is one where the first player can force a win. For
-   example, (1,5), (2,6) and (3,12) are winning configurations because the
-   first player can immediately remove all stones in the second pile.
+A winning configuration is one where the first player can force a win. For
+example, (1,5), (2,6) and (3,12) are winning configurations because the
+first player can immediately remove all stones in the second pile.
 
-   A losing configuration is one where the second player can force a win, no
-   matter what the first player does. For example, (2,3) and (3,4) are losing
-   configurations: any legal move leaves a winning configuration for the
-   second player.
+A losing configuration is one where the second player can force a win, no
+matter what the first player does. For example, (2,3) and (3,4) are losing
+configurations: any legal move leaves a winning configuration for the
+second player.
 
-   Define S(N) as the sum of (x[i]+y[i]) for all losing configurations
-   (x[i],y[i]), 0 < x[i] < y[i] ≤ N. We can verify that S(10) = 211 and
-   S(10^4) = 230312207313.
+Define S(N) as the sum of (x[i]+y[i]) for all losing configurations
+(x[i],y[i]), 0 < x[i] < y[i] ≤ N. We can verify that S(10) = 211 and
+S(10^4) = 230312207313.
 
-   Find S(10^16) mod 7^10.
+Find S(10^16) mod 7^10.
 
-   
-   Answer: 5b1ce9ac67e0ad6690c728ccba6f0070
+Answer: 5b1ce9ac67e0ad6690c728ccba6f0070
 
 
 Problem 326
 ===========
 
+Let a[n] be a sequence recursively defined by: ![](files/p_326_formula1.gif).
 
-   Let a[n] be a sequence recursively defined by: .
+So the first 10 elements of a[n] are: 1,1,0,3,0,3,5,4,1,9.
 
-   So the first 10 elements of a[n] are: 1,1,0,3,0,3,5,4,1,9.
+Let f(N,M) represent the number of pairs (p,q) such that:
 
-   Let f(N,M) represent the number of pairs (p,q) such that:
+![](files/p_326_formula2.gif)
 
-   It can be seen that f(10,10)=4 with the pairs (3,3), (5,5), (7,9) and
-   (9,10).
+It can be seen that f(10,10)=4 with the pairs (3,3), (5,5), (7,9) and
+(9,10).
 
-   You are also given that f(10^4,10^3)=97158.
+You are also given that f(10^4,10^3)=97158.
 
-   Find f(10^12,10^6).
+Find f(10^12,10^6).
 
-   
-   p_326_formula1.gif
-   p_326_formula2.gif
-   Answer: d95dff1a5ceee0064993d98defdd603e
+Answer: d95dff1a5ceee0064993d98defdd603e
 
 
 Problem 327
 ===========
 
 
-   A series of three rooms are connected to each other by automatic doors.
+A series of three rooms are connected to each other by automatic doors.
 
-   Each door is operated by a security card. Once you enter a room the door
-   automatically closes and that security card cannot be used again. A
-   machine at the start will dispense an unlimited number of cards, but each
-   room (including the starting room) contains scanners and if they detect
-   that you are holding more than three security cards or if they detect an
-   unattended security card on the floor, then all the doors will become
-   permanently locked. However, each room contains a box where you may safely
-   store any number of security cards for use at a later stage.
+![](files/p_327_rooms_of_doom.gif)
 
-   If you simply tried to travel through the rooms one at a time then as you
-   entered room 3 you would have used all three cards and would be trapped in
-   that room forever!
+Each door is operated by a security card. Once you enter a room the door
+automatically closes and that security card cannot be used again. A
+machine at the start will dispense an unlimited number of cards, but each
+room (including the starting room) contains scanners and if they detect
+that you are holding more than three security cards or if they detect an
+unattended security card on the floor, then all the doors will become
+permanently locked. However, each room contains a box where you may safely
+store any number of security cards for use at a later stage.
 
-   However, if you make use of the storage boxes, then escape is possible.
-   For example, you could enter room 1 using your first card, place one card
-   in the storage box, and use your third card to exit the room back to the
-   start. Then after collecting three more cards from the dispensing machine
-   you could use one to enter room 1 and collect the card you placed in the
-   box a moment ago. You now have three cards again and will be able to
-   travel through the remaining three doors. This method allows you to travel
-   through all three rooms using six security cards in total.
+If you simply tried to travel through the rooms one at a time then as you
+entered room 3 you would have used all three cards and would be trapped in
+that room forever!
 
-   It is possible to travel through six rooms using a total of 123 security
-   cards while carrying a maximum of 3 cards.
+However, if you make use of the storage boxes, then escape is possible.
+For example, you could enter room 1 using your first card, place one card
+in the storage box, and use your third card to exit the room back to the
+start. Then after collecting three more cards from the dispensing machine
+you could use one to enter room 1 and collect the card you placed in the
+box a moment ago. You now have three cards again and will be able to
+travel through the remaining three doors. This method allows you to travel
+through all three rooms using six security cards in total.
 
-   Let C be the maximum number of cards which can be carried at any time.
+It is possible to travel through six rooms using a total of 123 security
+cards while carrying a maximum of 3 cards.
 
-   Let R be the number of rooms to travel through.
+Let C be the maximum number of cards which can be carried at any time.
 
-   Let M(C,R) be the minimum number of cards required from the dispensing
-   machine to travel through R rooms carrying up to a maximum of C cards at
-   any time.
+Let R be the number of rooms to travel through.
 
-   For example, M(3,6)=123 and M(4,6)=23.
-   And, ΣM(C,6)=146 for 3 ≤ C ≤ 4.
+Let M(C,R) be the minimum number of cards required from the dispensing
+machine to travel through R rooms carrying up to a maximum of C cards at
+any time.
 
-   You are given that ΣM(C,10)=10382 for 3 ≤ C ≤ 10.
+For example, M(3,6)=123 and M(4,6)=23.
+And, ΣM(C,6)=146 for 3 ≤ C ≤ 4.
 
-   Find ΣM(C,30) for 3 ≤ C ≤ 40.
+You are given that ΣM(C,10)=10382 for 3 ≤ C ≤ 10.
 
-   
-   p_327_rooms_of_doom.gif
-   Answer: 2cd4c0ad8a00c5be99802188ee2628fb
+Find ΣM(C,30) for 3 ≤ C ≤ 40.
+
+Answer: 2cd4c0ad8a00c5be99802188ee2628fb
 
 
 Problem 328
 ===========
 
 
-   We are trying to find a hidden number selected from the set of integers
-   {1, 2, ..., n} by asking questions. Each number (question) we ask, has a
-   cost equal to the number asked and we get one of three possible answers:
+We are trying to find a hidden number selected from the set of integers
+{1, 2, ..., n} by asking questions. Each number (question) we ask, has a
+cost equal to the number asked and we get one of three possible answers:
 
-     • "Your guess is lower than the hidden number", or
-     • "Yes, that's it!", or
-     • "Your guess is higher than the hidden number".
+* "Your guess is lower than the hidden number", or
+* "Yes, that's it!", or
+* "Your guess is higher than the hidden number".
 
-   Given the value of n, an optimal strategy minimizes the total cost (i.e.
-   the sum of all the questions asked) for the worst possible case. E.g.
+Given the value of n, an optimal strategy minimizes the total cost (i.e.
+the sum of all the questions asked) for the worst possible case. E.g.
 
-   If n=3, the best we can do is obviously to ask the number "2". The answer
-   will immediately lead us to find the hidden number (at a total cost = 2).
+If n=3, the best we can do is obviously to ask the number "2". The answer
+will immediately lead us to find the hidden number (at a total cost = 2).
 
-   If n=8, we might decide to use a "binary search" type of strategy: Our
-   first question would be "4" and if the hidden number is higher than 4 we
-   will need one or two additional questions.
-   Let our second question be "6". If the hidden number is still higher than
-   6, we will need a third question in order to discriminate between 7 and 8.
-   Thus, our third question will be "7" and the total cost for this
-   worst-case scenario will be 4+6+7=17.
+If n=8, we might decide to use a "binary search" type of strategy: Our
+first question would be "4" and if the hidden number is higher than 4 we
+will need one or two additional questions.
+Let our second question be "6". If the hidden number is still higher than
+6, we will need a third question in order to discriminate between 7 and 8.
+Thus, our third question will be "7" and the total cost for this
+worst-case scenario will be 4+6+7=17.
 
-   We can improve considerably the worst-case cost for n=8, by asking "5" as
-   our first question.
-   If we are told that the hidden number is higher than 5, our second
-   question will be "7", then we'll know for certain what the hidden number
-   is (for a total cost of 5+7=12).
-   If we are told that the hidden number is lower than 5, our second question
-   will be "3" and if the hidden number is lower than 3 our third question
-   will be "1", giving a total cost of 5+3+1=9.
-   Since 12>9, the worst-case cost for this strategy is 12. That's better
-   than what we achieved previously with the "binary search" strategy; it is
-   also better than or equal to any other strategy.
-   So, in fact, we have just described an optimal strategy for n=8.
+We can improve considerably the worst-case cost for n=8, by asking "5" as
+our first question.
+If we are told that the hidden number is higher than 5, our second
+question will be "7", then we'll know for certain what the hidden number
+is (for a total cost of 5+7=12).
+If we are told that the hidden number is lower than 5, our second question
+will be "3" and if the hidden number is lower than 3 our third question
+will be "1", giving a total cost of 5+3+1=9.
+Since 12>9, the worst-case cost for this strategy is 12. That's better
+than what we achieved previously with the "binary search" strategy; it is
+also better than or equal to any other strategy.
+So, in fact, we have just described an optimal strategy for n=8.
 
-   Let C(n) be the worst-case cost achieved by an optimal strategy for n, as
-   described above.
-   Thus C(1) = 0, C(2) = 1, C(3) = 2 and C(8) = 12.
-   Similarly, C(100) = 400 and C(n) = 17575.
+Let C(n) be the worst-case cost achieved by an optimal strategy for n, as
+described above.
+Thus C(1) = 0, C(2) = 1, C(3) = 2 and C(8) = 12.
+Similarly, C(100) = 400 and ![](files/p_328_sum1.gif)C(n) = 17575.
 
-   Find C(n).
+Find ![](files/p_328_sum2.gif)C(n).
 
-   
-   p_328_sum1.gif
-   p_328_sum2.gif
-   Answer: 92a3220ad5b17a562c039e6e93d6df90
+Answer: 92a3220ad5b17a562c039e6e93d6df90
 
 
 Problem 329
 ===========
 
+Susan has a prime frog.
 
-   Susan has a prime frog.
-   Her frog is jumping around over 500 squares numbered 1 to 500.He can only
-   jump one square to the left or to the right, with equal probability, and
-   he cannot jump outside the range [1;500].
-   (if it lands at either end, it automatically jumps to the only available
-   square on the next move.)
+Her frog is jumping around over 500 squares numbered 1 to 500.He can only
+jump one square to the left or to the right, with equal probability, and
+he cannot jump outside the range [1;500].
+(if it lands at either end, it automatically jumps to the only available
+square on the next move.)
 
-   When he is on a square with a prime number on it, he croaks 'P' (PRIME)
-   with probability 2/3 or 'N' (NOT PRIME) with probability 1/3 just before
-   jumping to the next square.
-   When he is on a square with a number on it that is not a prime he croaks
-   'P' with probability 1/3 or 'N' with probability 2/3 just before jumping
-   to the next square.
+When he is on a square with a prime number on it, he croaks 'P' (PRIME)
+with probability 2/3 or 'N' (NOT PRIME) with probability 1/3 just before
+jumping to the next square.
+When he is on a square with a number on it that is not a prime he croaks
+'P' with probability 1/3 or 'N' with probability 2/3 just before jumping
+to the next square.
 
-   Given that the frog's starting position is random with the same
-   probability for every square, and given that she listens to his first 15
-   croaks, what is the probability that she hears the sequence
-   PPPPNNPPPNPPNPN?
+Given that the frog's starting position is random with the same
+probability for every square, and given that she listens to his first 15
+croaks, what is the probability that she hears the sequence
+PPPPNNPPPNPPNPN?
 
-   Give your answer as a fraction p/q in reduced form.
-   
-   Answer: e392a8b1b053c83e68663e08456bb392
+Give your answer as a fraction p/q in reduced form.
+
+Answer: e392a8b1b053c83e68663e08456bb392
 
 
 Problem 330
 ===========
 
-   An infinite sequence of real numbers a(n) is defined for all integers n as
-   follows:
+An infinite sequence of real numbers a(n) is defined for all integers n as
+follows:
+
+![](files/ p_330_formula.gif)
 
    For example,
 
-   a(0) = 1  + 1  + 1  + ... = e − 1
-          1!   2!   3!
+    a(0) = 1  + 1  + 1  + ... = e − 1
+           1!   2!   3!
 
-   a(1) = e − 1 + 1  + 1  + ... = 2e − 3
-          1!      2!   3!
+    a(1) = e − 1 + 1  + 1  + ... = 2e − 3
+           1!      2!   3!
 
-   a(2) = 2e − 3 + e − 1 + 1  + ... = 7 e − 6
-          1!       2!      3!         2
+    a(2) = 2e − 3 + e − 1 + 1  + ... = 7 e − 6
+           1!       2!      3!         2
 
-   with e = 2.7182818... being Euler's constant.
+with e = 2.7182818... being Euler's constant.
 
-   It can be shown that a(n) is of  A(n) e + B(n) for integers A(n) and B(n).
-   the form                         n!
-
-   For example a(10) = 328161643 e − 652694486 .
-                       10!
-
-   Find A(10^9) + B(10^9) and give your answer mod 77 777 777.
-
+   It can be shown that a(n) is of the form (A(n) e + B(n))/(n!) for integers A(n) and B(n).
+                                                  
+For example:
    
-   p_330_formula.gif
-   Answer: d385d3fe0995b48a782a91477525b154
+    a(10) = _328161643 e − 652694486_.
+                      10!
+
+Find A(10^9) + B(10^9) and give your answer mod 77 777 777.
+
+Answer: d385d3fe0995b48a782a91477525b154
 
 
 Problem 331
 ===========
 
 
-   N×N disks are placed on a square game board. Each disk has a black side
-   and white side.
+N×N disks are placed on a square game board. Each disk has a black side
+and white side.
 
-   At each turn, you may choose a disk and flip all the disks in the same row
-   and the same column as this disk: thus 2×N-1 disks are flipped. The game
-   ends when all disks show their white side. The following example shows a
-   game on a 5×5 board.
+At each turn, you may choose a disk and flip all the disks in the same row
+and the same column as this disk: thus 2×N-1 disks are flipped. The game
+ends when all disks show their white side. The following example shows a
+game on a 5×5 board.
 
-   It can be proven that 3 is the minimal number of turns to finish this
-   game.
+![](files/p_331_crossflips3.gif)
 
-   The bottom left disk on the N×N board has coordinates (0,0);
-   the bottom right disk has coordinates (N-1,0) and the top left disk has
-   coordinates (0,N-1).
+It can be proven that 3 is the minimal number of turns to finish this
+game.
 
-   Let C[N] be the following configuration of a board with N×N disks:
-   A disk at (x,y) satisfying , shows its black side; otherwise, it shows its
-   white side. C[5] is shown above.
+The bottom left disk on the N×N board has coordinates (0,0);
+the bottom right disk has coordinates (N-1,0) and the top left disk has
+coordinates (0,N-1).
 
-   Let T(N) be the minimal number of turns to finish a game starting from
-   configuration C[N] or 0 if configuration C[N] is unsolvable.
-   We have shown that T(5)=3. You are also given that T(10)=29 and T(1
-   000)=395253.
+Let C[N] be the following configuration of a board with N×N disks:
+A disk at (x,y) satisfying ![](files/p_331_crossflips1.gif), shows its black side; otherwise, it shows its
+white side. C[5] is shown above.
 
-   Find .
+Let T(N) be the minimal number of turns to finish a game starting from
+configuration C[N] or 0 if configuration C[N] is unsolvable.
+We have shown that T(5)=3. You are also given that T(10)=29 and T(1
+000)=395253.
 
-   
-   p_331_crossflips3.gif
-   p_331_crossflips1.gif
-   p_331_crossflips2.gif
-   Answer: b609ccc578e71db9de0524fff94e1b70
+Find ![](files/p_331_crossflips2.gif).
+
+Answer: b609ccc578e71db9de0524fff94e1b70
 
 
 Problem 332
 ===========
 
+A spherical triangle is a figure formed on the surface of a sphere by
+three great circular arcs intersecting pairwise in three vertices.
 
-   A spherical triangle is a figure formed on the surface of a sphere by
-   three great circular arcs intersecting pairwise in three vertices.
+![](files/p_332_spherical.jpg)
 
-   Let C(r) be the sphere with the centre (0,0,0) and radius r.
-   Let Z(r) be the set of points on the surface of C(r) with integer
-   coordinates.
-   Let T(r) be the set of spherical triangles with vertices in
-   Z(r).Degenerate spherical triangles, formed by three points on the same
-   great arc, are not included in T(r).
-   Let A(r) be the area of the smallest spherical triangle in T(r).
+Let C(r) be the sphere with the centre (0,0,0) and radius r.
+Let Z(r) be the set of points on the surface of C(r) with integer
+coordinates.
+Let T(r) be the set of spherical triangles with vertices in
+Z(r).Degenerate spherical triangles, formed by three points on the same
+great arc, are not included in T(r).
+Let A(r) be the area of the smallest spherical triangle in T(r).
 
-   For example A(14) is 3.294040 rounded to six decimal places.
+For example A(14) is 3.294040 rounded to six decimal places.
 
-   Find A(r). Give your answer rounded to six decimal places.
+Find ![](files/p_332_sum.gif)A(r). Give your answer rounded to six decimal places.
 
-   
-   p_332_spherical.jpg
-   p_332_sum.gif
-   Answer: c2ae53ebfb15db373cfe5d71078ea1ca
+Answer: c2ae53ebfb15db373cfe5d71078ea1ca
 
 
 Problem 333
 ===========
 
 
-   All positive integers can be partitioned in such a way that each and every
-   term of the partition can be expressed as 2^ix3^j, where i,j ≥ 0.
+All positive integers can be partitioned in such a way that each and every
+term of the partition can be expressed as 2^ix3^j, where i,j ≥ 0.
 
-   Let's consider only those such partitions where none of the terms can
-   divide any of the other terms.
-   For example, the partition of 17 = 2 + 6 + 9 = (2^1x3^0 + 2^1x3^1 +
-   2^0x3^2) would not be valid since 2 can divide 6. Neither would the
-   partition 17 = 16 + 1 = (2^4x3^0 + 2^0x3^0) since 1 can divide 16. The
-   only valid partition of 17 would be 8 + 9 = (2^3x3^0 + 2^0x3^2).
+Let's consider only those such partitions where none of the terms can
+divide any of the other terms.
+For example, the partition of 17 = 2 + 6 + 9 = (2^1x3^0 + 2^1x3^1 +
+2^0x3^2) would not be valid since 2 can divide 6. Neither would the
+partition 17 = 16 + 1 = (2^4x3^0 + 2^0x3^0) since 1 can divide 16. The
+only valid partition of 17 would be 8 + 9 = (2^3x3^0 + 2^0x3^2).
 
-   Many integers have more than one valid partition, the first being 11
-   having the following two partitions.
-   11 = 2 + 9 = (2^1x3^0 + 2^0x3^2)
-   11 = 8 + 3 = (2^3x3^0 + 2^0x3^1)
+Many integers have more than one valid partition, the first being 11
+having the following two partitions.
 
-   Let's define P(n) as the number of valid partitions of n. For example,
-   P(11) = 2.
+    11 = 2 + 9 = (2^1x3^0 + 2^0x3^2)
+    11 = 8 + 3 = (2^3x3^0 + 2^0x3^1)
 
-   Let's consider only the prime integers q which would have a single valid
-   partition such as P(17).
+Let's define P(n) as the number of valid partitions of n. For example,
+P(11) = 2.
 
-   The sum of the primes q <100 such that P(q)=1 equals 233.
+Let's consider only the prime integers q which would have a single valid
+partition such as P(17).
 
-   Find the sum of the primes q <1000000 such that P(q)=1.
+The sum of the primes q <100 such that P(q)=1 equals 233.
 
-   
-   Answer: 8408ff3a470a94dbfca1819249eb547d
+Find the sum of the primes q <1000000 such that P(q)=1.
+
+Answer: 8408ff3a470a94dbfca1819249eb547d
 
 
 Problem 334
 ===========
 
 
-   In Plato's heaven, there exist an infinite number of bowls in a straight
-   line.
-   Each bowl either contains some or none of a finite number of beans.
-   A child plays a game, which allows only one kind of move: removing two
-   beans from any bowl, and putting one in each of the two adjacent bowls.
-   The game ends when each bowl contains either one or no beans.
+In Plato's heaven, there exist an infinite number of bowls in a straight
+line.
+Each bowl either contains some or none of a finite number of beans.
+A child plays a game, which allows only one kind of move: removing two
+beans from any bowl, and putting one in each of the two adjacent bowls.
+The game ends when each bowl contains either one or no beans.
 
-   For example, consider two adjacent bowls containing 2 and 3 beans
-   respectively, all other bowls being empty. The following eight moves will
-   finish the game:
+For example, consider two adjacent bowls containing 2 and 3 beans
+respectively, all other bowls being empty. The following eight moves will
+finish the game:
 
-   You are given the following sequences:
+![](files/p_334_beans.gif)
 
-   t[0] = 123456.
+You are given the following sequences:
 
-            t[i-1] ,         if t[i-1] is even
-   t[i] =   2
-            t[i-1]   926252, if t[i-1] is odd
-            2
-           where ⌊x⌋ is the floor function
-           and is the bitwise XOR operator.
+![](files/p_334.png)
 
-   b[i] = ( t[i] mod 2^11) + 1.
+The first two terms of the last sequence are b[1] = 289 and b[2] = 145.
+If we start with b[1] and b[2] beans in two adjacent bowls, 3419100 moves
+would be required to finish the game.
 
-   The first two terms of the last sequence are b[1] = 289 and b[2] = 145.
-   If we start with b[1] and b[2] beans in two adjacent bowls, 3419100 moves
-   would be required to finish the game.
+Consider now 1500 adjacent bowls containing b[1], b[2],..., b[1500] beans
+respectively, all other bowls being empty. Find how many moves it takes
+before the game ends.
 
-   Consider now 1500 adjacent bowls containing b[1], b[2],..., b[1500] beans
-   respectively, all other bowls being empty. Find how many moves it takes
-   before the game ends.
-
-   
-   p_334_beans.gif
-   p_334_cases.gif
-   p_334_lfloor.gif
-   p_334_rfloor.gif
-   p_334_oplus.gif
-   Answer: 71851da3058acf6b74e90251bdf4aa8f
+Answer: 71851da3058acf6b74e90251bdf4aa8f
 
 
 Problem 335
 ===========
 
 
-   Whenever Peter feels bored, he places some bowls, containing one bean
-   each, in a circle. After this, he takes all the beans out of a certain
-   bowl and drops them one by one in the bowls going clockwise. He repeats
-   this, starting from the bowl he dropped the last bean in, until the
-   initial situation appears again. For example with 5 bowls he acts as
-   follows:
+Whenever Peter feels bored, he places some bowls, containing one bean
+each, in a circle. After this, he takes all the beans out of a certain
+bowl and drops them one by one in the bowls going clockwise. He repeats
+this, starting from the bowl he dropped the last bean in, until the
+initial situation appears again. For example with 5 bowls he acts as
+follows:
 
-   So with 5 bowls it takes Peter 15 moves to return to the initial
-   situation.
+![](files/p_335_mancala.gif)
 
-   Let M(x) represent the number of moves required to return to the initial
-   situation, starting with x bowls. Thus, M(5) = 15. It can also be verified
-   that M(100) = 10920.
+So with 5 bowls it takes Peter 15 moves to return to the initial
+situation.
 
-   Find M(2^k+1). Give your answer modulo 7^9.
+Let M(x) represent the number of moves required to return to the initial
+situation, starting with x bowls. Thus, M(5) = 15. It can also be verified
+that M(100) = 10920.
 
-   
-   p_335_mancala.gif
-   p_335_sum.gif
-   Answer: 9a519cfa0ebdd4d1dd318f14b5799eea
+Find ![](files/p_335_sum.gif)M(2^k+1). Give your answer modulo 7^9.
+
+Answer: 9a519cfa0ebdd4d1dd318f14b5799eea
 
 
 Problem 336
 ===========
 
 
-   A train is used to transport four carriages in the order: ABCD. However,
-   sometimes when the train arrives to collect the carriages they are not in
-   the correct order.
-   To rearrange the carriages they are all shunted on to a large rotating
-   turntable. After the carriages are uncoupled at a specific point the train
-   moves off the turntable pulling the carriages still attached with it. The
-   remaining carriages are rotated 180 degrees. All of the carriages are then
-   rejoined and this process is repeated as often as necessary in order to
-   obtain the least number of uses of the turntable.
-   Some arrangements, such as ADCB, can be solved easily: the carriages are
-   separated between A and D, and after DCB are rotated the correct order has
-   been achieved.
+A train is used to transport four carriages in the order: ABCD. However,
+sometimes when the train arrives to collect the carriages they are not in
+the correct order.
+To rearrange the carriages they are all shunted on to a large rotating
+turntable. After the carriages are uncoupled at a specific point the train
+moves off the turntable pulling the carriages still attached with it. The
+remaining carriages are rotated 180 degrees. All of the carriages are then
+rejoined and this process is repeated as often as necessary in order to
+obtain the least number of uses of the turntable.
+Some arrangements, such as ADCB, can be solved easily: the carriages are
+separated between A and D, and after DCB are rotated the correct order has
+been achieved.
 
-   However, Simple Simon, the train driver, is not known for his efficiency,
-   so he always solves the problem by initially getting carriage A in the
-   correct place, then carriage B, and so on.
+However, Simple Simon, the train driver, is not known for his efficiency,
+so he always solves the problem by initially getting carriage A in the
+correct place, then carriage B, and so on.
 
-   Using four carriages, the worst possible arrangements for Simon, which we
-   shall call maximix arrangements, are DACB and DBAC; each requiring him
-   five rotations (although, using the most efficient approach, they could be
-   solved using just three rotations). The process he uses for DACB is shown
-   below.
+Using four carriages, the worst possible arrangements for Simon, which we
+shall call maximix arrangements, are DACB and DBAC; each requiring him
+five rotations (although, using the most efficient approach, they could be
+solved using just three rotations). The process he uses for DACB is shown
+below.
 
-   It can be verified that there are 24 maximix arrangements for six
-   carriages, of which the tenth lexicographic maximix arrangement is DFAECB.
+![](files/p_336_maximix.gif)
 
-   Find the 2011^th lexicographic maximix arrangement for eleven carriages.
+It can be verified that there are 24 maximix arrangements for six
+carriages, of which the tenth lexicographic maximix arrangement is DFAECB.
 
-   
-   p_336_maximix.gif
-   Answer: 7968e48fc692ce25bf7f5494f4ab6814
+Find the 2011th lexicographic maximix arrangement for eleven carriages.
+
+
+Answer: 7968e48fc692ce25bf7f5494f4ab6814
 
 
 Problem 337
 ===========
 
 
-   Let {a[1], a[2],..., a[n]} be an integer sequence of length n such that:
+Let {a[1], a[2],..., a[n]} be an integer sequence of length n such that:
 
      • a[1] = 6
      • for all 1 ≤ i < n : φ(a[i]) < φ(a[i+1]) < a[i] < a[i+1] ^1
 
-   Let S(N) be the number of such sequences with a[n] ≤ N.
-   For example, S(10) = 4: {6}, {6, 8}, {6, 8, 9} and {6, 10}.
-   We can verify that S(100) = 482073668 and S(10 000) mod 10^8 = 73808307.
+Let S(N) be the number of such sequences with a[n] ≤ N.
+For example, S(10) = 4: {6}, {6, 8}, {6, 8, 9} and {6, 10}.
+We can verify that S(100) = 482073668 and S(10 000) mod 10^8 = 73808307.
 
-   Find S(20 000 000) mod 10^8.
+Find S(20 000 000) mod 10^8.
 
-   ^1 φ denotes Euler's totient function.
+φ denotes Euler's totient function.
 
-   
-   Answer: a60bbbe1b90254043fb92820492a2f96
+Answer: a60bbbe1b90254043fb92820492a2f96
 
 
 Problem 338
 ===========
 
+A rectangular sheet of grid paper with integer dimensions w × h is given.
+Its grid spacing is 1.
+When we cut the sheet along the grid lines into two pieces and rearrange
+those pieces without overlap, we can make new rectangles with different
+dimensions.
 
-   A rectangular sheet of grid paper with integer dimensions w × h is given.
-   Its grid spacing is 1.
-   When we cut the sheet along the grid lines into two pieces and rearrange
-   those pieces without overlap, we can make new rectangles with different
-   dimensions.
+For example, from a sheet with dimensions 9 × 4 , we can make rectangles
+with dimensions 18 × 2, 12 × 3 and 6 × 6 by cutting and rearranging as
+below:
 
-   For example, from a sheet with dimensions 9 × 4 , we can make rectangles
-   with dimensions 18 × 2, 12 × 3 and 6 × 6 by cutting and rearranging as
-   below:
+![](files/p_338_gridpaper.gif)
 
-   Similarly, from a sheet with dimensions 9 × 8 , we can make rectangles
-   with dimensions 18 × 4 and 12 × 6 .
+Similarly, from a sheet with dimensions 9 × 8 , we can make rectangles
+with dimensions 18 × 4 and 12 × 6 .
 
-   For a pair w and h, let F(w,h) be the number of distinct rectangles that
-   can be made from a sheet with dimensions w × h .
-   For example, F(2,1) = 0, F(2,2) = 1, F(9,4) = 3 and F(9,8) = 2.
-   Note that rectangles congruent to the initial one are not counted in
-   F(w,h).
-   Note also that rectangles with dimensions w × h and dimensions h × w are
-   not considered distinct.
+For a pair w and h, let F(w,h) be the number of distinct rectangles that
+can be made from a sheet with dimensions w × h .
+For example, F(2,1) = 0, F(2,2) = 1, F(9,4) = 3 and F(9,8) = 2.
+Note that rectangles congruent to the initial one are not counted in
+F(w,h).
+Note also that rectangles with dimensions w × h and dimensions h × w are
+not considered distinct.
 
-   For an integer N, let G(N) be the sum of F(w,h) for all pairs w and h
-   which satisfy 0 < h ≤ w ≤ N.
-   We can verify that G(10) = 55, G(10^3) = 971745 and G(10^5) = 9992617687.
+For an integer N, let G(N) be the sum of F(w,h) for all pairs w and h
+which satisfy 0 < h ≤ w ≤ N.
+We can verify that G(10) = 55, G(10^3) = 971745 and G(10^5) = 9992617687.
 
-   Find G(10^12). Give your answer modulo 10^8.
+Find G(10^12). Give your answer modulo 10^8.
 
-   
-   p_338_gridpaper.gif
-   Answer: 99f4f702713f3422ced01dd7d3d79644
+Answer: 99f4f702713f3422ced01dd7d3d79644
 
 
 Problem 339
@@ -8699,9 +8665,7 @@ number of black sheep. Let E(n) be the expected final number of black
 sheep if Peredur uses an optimal strategy.
 
 You are given that E(5) = 6.871346 rounded to 6 places behind the decimal
-point.
-Find E(10 000) and give your answer rounded to 6 places behind the decimal
-point.
+point. Find E(10 000) and give your answer rounded to 6 places behind the decimal point.
 
 Answer: 0be02210b2d2212d37d026478093c457
 
@@ -8710,272 +8674,265 @@ Problem 340
 ===========
 
 
-   For fixed integers a, b, c, define the crazy function F(n) as follows:
-   F(n) = n - c for all n > b
-   F(n) = F(a + F(a + F(a + F(a + n)))) for all n ≤ b.
+For fixed integers a, b, c, define the crazy function F(n) as follows:
+    F(n) = n - c for all n > b
+    F(n) = F(a + F(a + F(a + F(a + n)))) for all n ≤ b.
 
-   Also, define S(a, b, c) = .
+Also, define S(a, b, c) = ![](files/p_340_formula.gif).
 
-   For example, if a = 50, b = 2000 and c = 40, then F(0) = 3240 and F(2000)
-   = 2040.
-   Also, S(50, 2000, 40) = 5204240.
+For example, if a = 50, b = 2000 and c = 40, then F(0) = 3240 and F(2000)
+= 2040.
+Also, S(50, 2000, 40) = 5204240.
 
-   Find the last 9 digits of S(21^7, 7^21, 12^7).
+Find the last 9 digits of S(21^7, 7^21, 12^7).
 
-   
-   p_340_formula.gif
-   Answer: fc838afe9ecde39bbe230923d7b50775
+Answer: fc838afe9ecde39bbe230923d7b50775
 
 
 Problem 341
 ===========
 
 
-   The Golomb's self-describing sequence {G(n)} is the only nondecreasing
-   sequence of natural numbers such that n appears exactly G(n) times in the
-   sequence. The values of G(n) for the first few n are
+The Golomb's self-describing sequence {G(n)} is the only nondecreasing
+sequence of natural numbers such that n appears exactly G(n) times in the
+sequence. The values of G(n) for the first few n are
 
-           n     1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  …
-           G(n)  1  2  2  3  3  4  4  4  5  5   5   6   6   6   6   …
+	   n     1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  …
+	   G(n)  1  2  2  3  3  4  4  4  5  5   5   6   6   6   6   …
 
-   You are given that G(10^3) = 86, G(10^6) = 6137.
-   You are also given that ΣG(n^3) = 153506976 for 1 ≤ n < 10^3.
+You are given that G(10^3) = 86, G(10^6) = 6137.
+You are also given that ΣG(n^3) = 153506976 for 1 ≤ n < 10^3.
 
-   Find ΣG(n^3) for 1 ≤ n < 10^6.
+Find ΣG(n^3) for 1 ≤ n < 10^6.
 
-   
-   Answer: 7c163c3b4886943667b5c89db0a6cd02
+
+Answer: 7c163c3b4886943667b5c89db0a6cd02
 
 
 Problem 342
 ===========
 
 
-   Consider the number 50.
-   50^2 = 2500 = 2^2 × 5^4, so φ(2500) = 2 × 4 × 5^3 = 8 × 5^3 = 2^3 × 5^3.
-   ^1
-   So 2500 is a square and φ(2500) is a cube.
+Consider the number 50.
+50^2 = 2500 = 2^2 × 5^4, so φ(2500) = 2 × 4 × 5^3 = 8 × 5^3 = 2^3 × 5^3.
+So 2500 is a square and φ(2500) is a cube.
 
-   Find the sum of all numbers n, 1 < n < 10^10 such that φ(n^2) is a cube.
+Find the sum of all numbers n, 1 < n < 10^10 such that φ(n^2) is a cube.
 
-   ^1 φ denotes Euler's totient function.
+φ denotes Euler's totient function.
 
-   
-   Answer: 0e9add0383d4116c7c5cb3dc73fc0536
+Answer: 0e9add0383d4116c7c5cb3dc73fc0536
 
 
 Problem 343
 ===========
 
 
-   For any positive integer k, a finite sequence a[i] of fractions x[i]/y[i]
-   is defined by:
-   a[1] = 1/k and
-   a[i] = (x[i-1]+1)/(y[i-1]-1) reduced to lowest terms for i>1.
-   When a[i] reaches some integer n, the sequence stops. (That is, when
-   y[i]=1.)
-   Define f(k) = n.
-   For example, for k = 20:
+For any positive integer k, a finite sequence a[i] of fractions x[i]/y[i]
+is defined by:
 
-   1/20 → 2/19 → 3/18 = 1/6 → 2/5 → 3/4 → 4/3 → 5/2 → 6/1 = 6
+    a[1] = 1/k and
+    a[i] = (x[i-1]+1)/(y[i-1]-1) reduced to lowest terms for i>1.
 
-   So f(20) = 6.
+When a[i] reaches some integer n, the sequence stops. (That is, when y[i]=1.)
 
-   Also f(1) = 1, f(2) = 2, f(3) = 1 and Σf(k^3) = 118937 for 1 ≤ k ≤ 100.
+Define f(k) = n.
+For example, for k = 20:
 
-   Find Σf(k^3) for 1 ≤ k ≤ 2×10^6.
+1/20 → 2/19 → 3/18 = 1/6 → 2/5 → 3/4 → 4/3 → 5/2 → 6/1 = 6
 
-   
-   Answer: 0e10bd111425ad8e1343ac79dac7bb0e
+So f(20) = 6.
+
+Also f(1) = 1, f(2) = 2, f(3) = 1 and Σf(k^3) = 118937 for 1 ≤ k ≤ 100.
+
+Find Σf(k^3) for 1 ≤ k ≤ 2×10^6.
+
+Answer: 0e10bd111425ad8e1343ac79dac7bb0e
 
 
 Problem 344
 ===========
 
 
-   One variant of N.G. de Bruijn's silver dollar game can be described as
-   follows:
+One variant of N.G. de Bruijn's silver dollar game can be described as
+follows:
 
-   On a strip of squares a number of coins are placed, at most one coin per
-   square. Only one coin, called the silver dollar, has any value. Two
-   players take turns making moves. At each turn a player must make either a
-   regular or a special move.
+On a strip of squares a number of coins are placed, at most one coin per
+square. Only one coin, called the silver dollar, has any value. Two
+players take turns making moves. At each turn a player must make either a
+regular or a special move.
 
-   A regular move consists of selecting one coin and moving it one or more
-   squares to the left. The coin cannot move out of the strip or jump on or
-   over another coin.
+A regular move consists of selecting one coin and moving it one or more
+squares to the left. The coin cannot move out of the strip or jump on or
+over another coin.
 
-   Alternatively, the player can choose to make the special move of pocketing
-   the leftmost coin rather than making a regular move. If no regular moves
-   are possible, the player is forced to pocket the leftmost coin.
+Alternatively, the player can choose to make the special move of pocketing
+the leftmost coin rather than making a regular move. If no regular moves
+are possible, the player is forced to pocket the leftmost coin.
 
-   The winner is the player who pockets the silver dollar.
+The winner is the player who pockets the silver dollar.
 
-   A winning configuration is an arrangement of coins on the strip where the
-   first player can force a win no matter what the second player does.
+![](files/p_344_silverdollar.gif)
 
-   Let W(n,c) be the number of winning configurations for a strip of n
-   squares, c worthless coins and one silver dollar.
+A winning configuration is an arrangement of coins on the strip where the
+first player can force a win no matter what the second player does.
 
-   You are given that W(10,2) = 324 and W(100,10) = 1514704946113500.
+Let W(n,c) be the number of winning configurations for a strip of n
+squares, c worthless coins and one silver dollar.
 
-   Find W(1 000 000, 100) modulo the semiprime 1000 036 000 099 (= 1 000 003
-   · 1 000 033).
+You are given that W(10,2) = 324 and W(100,10) = 1514704946113500.
 
-   
-   p_344_silverdollar.gif
-   Answer: 38e7b980b38fcac89b3e267e328cd292
+Find W(1 000 000, 100) modulo the semiprime 1000 036 000 099 (= 1 000 003 · 1 000 033).
+
+Answer: 38e7b980b38fcac89b3e267e328cd292
 
 
 Problem 345
 ===========
 
 
-   We define the Matrix Sum of a matrix as the maximum sum of matrix elements
-   with each element being the only one in his row and column. For example,
-   the Matrix Sum of the matrix below equals 3315 ( = 863 + 383 + 343 + 959 +
-   767):
+We define the Matrix Sum of a matrix as the maximum sum of matrix elements
+with each element being the only one in his row and column. For example,
+the Matrix Sum of the matrix below equals 3315 ( = 863 + 383 + 343 + 959 +
+767):
 
-                                7  53 183 439 863
-                              497 383 563  79 973
-                              287  63 343 169 583
-                              627 343 773 959 943
-                              767 473 103 699 303
+	    7  53 183 439 863
+	  497 383 563  79 973
+	  287  63 343 169 583
+	  627 343 773 959 943
+	  767 473 103 699 303
 
-   Find the Matrix Sum of:
+Find the Matrix Sum of:
 
-            7  53 183 439 863 497 383 563  79 973 287  63 343 169 583
-          627 343 773 959 943 767 473 103 699 303 957 703 583 639 913
-          447 283 463  29  23 487 463 993 119 883 327 493 423 159 743
-          217 623   3 399 853 407 103 983  89 463 290 516 212 462 350
-          960 376 682 962 300 780 486 502 912 800 250 346 172 812 350
-          870 456 192 162 593 473 915  45 989 873 823 965 425 329 803
-          973 965 905 919 133 673 665 235 509 613 673 815 165 992 326
-          322 148 972 962 286 255 941 541 265 323 925 281 601  95 973
-          445 721  11 525 473  65 511 164 138 672  18 428 154 448 848
-          414 456 310 312 798 104 566 520 302 248 694 976 430 392 198
-          184 829 373 181 631 101 969 613 840 740 778 458 284 760 390
-          821 461 843 513  17 901 711 993 293 157 274  94 192 156 574
-           34 124   4 878 450 476 712 914 838 669 875 299 823 329 699
-          815 559 813 459 522 788 168 586 966 232 308 833 251 631 107
-          813 883 451 509 615  77 281 613 459 205 380 274 302  35 805
+	    7  53 183 439 863 497 383 563  79 973 287  63 343 169 583
+	  627 343 773 959 943 767 473 103 699 303 957 703 583 639 913
+	  447 283 463  29  23 487 463 993 119 883 327 493 423 159 743
+	  217 623   3 399 853 407 103 983  89 463 290 516 212 462 350
+	  960 376 682 962 300 780 486 502 912 800 250 346 172 812 350
+	  870 456 192 162 593 473 915  45 989 873 823 965 425 329 803
+	  973 965 905 919 133 673 665 235 509 613 673 815 165 992 326
+	  322 148 972 962 286 255 941 541 265 323 925 281 601  95 973
+	  445 721  11 525 473  65 511 164 138 672  18 428 154 448 848
+	  414 456 310 312 798 104 566 520 302 248 694 976 430 392 198
+	  184 829 373 181 631 101 969 613 840 740 778 458 284 760 390
+	  821 461 843 513  17 901 711 993 293 157 274  94 192 156 574
+	   34 124   4 878 450 476 712 914 838 669 875 299 823 329 699
+	  815 559 813 459 522 788 168 586 966 232 308 833 251 631 107
+	  813 883 451 509 615  77 281 613 459 205 380 274 302  35 805
 
-   
-   Answer: cf3b784c8593890043b17e24088125d4
+
+Answer: cf3b784c8593890043b17e24088125d4
 
 
 Problem 346
 ===========
 
 
-   The number 7 is special, because 7 is 111 written in base 2, and 11
-   written in base 6
-   (i.e. 7[10] = 11[6] = 111[2]). In other words, 7 is a repunit in at least
-   two bases b > 1.
+The number 7 is special, because 7 is 111 written in base 2, and 11
+written in base 6
+(i.e. 7[10] = 11[6] = 111[2]). In other words, 7 is a repunit in at least
+two bases b > 1.
 
-   We shall call a positive integer with this property a strong repunit. It
-   can be verified that there are 8 strong repunits below 50:
-   {1,7,13,15,21,31,40,43}.
-   Furthermore, the sum of all strong repunits below 1000 equals 15864.
+We shall call a positive integer with this property a strong repunit. It
+can be verified that there are 8 strong repunits below 50:
+{1,7,13,15,21,31,40,43}.
+Furthermore, the sum of all strong repunits below 1000 equals 15864.
 
-   Find the sum of all strong repunits below 10^12.
-   
-   Answer: a17874b5a9ec9d7fc8c6489ab8ff29b9
+Find the sum of all strong repunits below 10^12.
+
+Answer: a17874b5a9ec9d7fc8c6489ab8ff29b9
 
 
 Problem 347
 ===========
 
 
-   The largest integer ≤ 100 that is only divisible by both the primes 2 and
-   3 is 96, as 96=32*3=2^5*3.For two distinct primes p and q let M(p,q,N) be
-   the largest positive integer ≤N only divisibleby both p and q and
-   M(p,q,N)=0 if such a positive integer does not exist.
+The largest integer ≤ 100 that is only divisible by both the primes 2 and
+3 is 96, as 96=32*3=2^5*3.For two distinct primes p and q let M(p,q,N) be
+the largest positive integer ≤N only divisibleby both p and q and
+M(p,q,N)=0 if such a positive integer does not exist.
 
-   E.g. M(2,3,100)=96.
-   M(3,5,100)=75 and not 90 because 90 is divisible by 2 ,3 and 5.
-   Also M(2,73,100)=0 because there does not exist a positive integer ≤ 100
-   that is divisible by both 2 and 73.
+E.g. M(2,3,100)=96.
+M(3,5,100)=75 and not 90 because 90 is divisible by 2 ,3 and 5.
+Also M(2,73,100)=0 because there does not exist a positive integer ≤ 100
+that is divisible by both 2 and 73.
 
-   Let S(N) be the sum of all distinct M(p,q,N).S(100)=2262.
+Let S(N) be the sum of all distinct M(p,q,N).S(100)=2262.
 
-   Find S(10 000 000).
+Find S(10 000 000).
 
-   
-   Answer: 96ce0eabcbe7a2b2eb1197a1bcc5d37b
+Answer: 96ce0eabcbe7a2b2eb1197a1bcc5d37b
 
 
 Problem 348
 ===========
 
 
-   Many numbers can be expressed as the sum of a square and a cube. Some of
-   them in more than one way.
+Many numbers can be expressed as the sum of a square and a cube. Some of
+them in more than one way.
 
-   Consider the palindromic numbers that can be expressed as the sum of a
-   square and a cube, both greater than 1, in exactly 4 different ways.
-   For example, 5229225 is a palindromic number and it can be expressed in
-   exactly 4 different ways:
+Consider the palindromic numbers that can be expressed as the sum of a
+square and a cube, both greater than 1, in exactly 4 different ways.
+For example, 5229225 is a palindromic number and it can be expressed in
+exactly 4 different ways:
 
-   2285^2 + 20^3
-   2223^2 + 66^3
-   1810^2 + 125^3
-   1197^2 + 156^3
+    2285^2 + 20^3
+    2223^2 + 66^3
+    1810^2 + 125^3
+    1197^2 + 156^3
 
-   Find the sum of the five smallest such palindromic numbers.
+Find the sum of the five smallest such palindromic numbers.
 
-   
-   Answer: f286f9159fc20aeb97a8bf8396ba64de
+Answer: f286f9159fc20aeb97a8bf8396ba64de
 
 
 Problem 349
 ===========
 
 
-   An ant moves on a regular grid of squares that are coloured either black
-   or white.
-   The ant is always oriented in one of the cardinal directions (left, right,
-   up or down) and moves from square to adjacent square according to the
-   following rules:
-   - if it is on a black square, it flips the color of the square to white,
-   rotates 90 degrees counterclockwise and moves forward one square.
-   - if it is on a white square, it flips the color of the square to black,
-   rotates 90 degrees clockwise and moves forward one square.
+An ant moves on a regular grid of squares that are coloured either black
+or white.
+The ant is always oriented in one of the cardinal directions (left, right,
+up or down) and moves from square to adjacent square according to the
+following rules:
+* if it is on a black square, it flips the color of the square to white,
+rotates 90 degrees counterclockwise and moves forward one square.
+*  if it is on a white square, it flips the color of the square to black,
+rotates 90 degrees clockwise and moves forward one square.
 
-   Starting with a grid that is entirely white, how many squares are black
-   after 10^18 moves of the ant?
+Starting with a grid that is entirely white, how many squares are black
+after 10^18 moves of the ant?
 
-   
-   Answer: 412b0faec10b3adb415363d2df26530d
+
+Answer: 412b0faec10b3adb415363d2df26530d
 
 
 Problem 350
 ===========
 
 
-   A list of size n is a sequence of n natural numbers.
-   Examples are (2,4,6), (2,6,4), (10,6,15,6), and (11).
+A list of size n is a sequence of n natural numbers.
+Examples are (2,4,6), (2,6,4), (10,6,15,6), and (11).
 
-   The greatest common divisor, or gcd, of a list is the largest natural
-   number that divides all entries of the list.
-   Examples: gcd(2,6,4) = 2, gcd(10,6,15,6) = 1 and gcd(11) = 11.
+The greatest common divisor, or gcd, of a list is the largest natural
+number that divides all entries of the list.
+Examples: gcd(2,6,4) = 2, gcd(10,6,15,6) = 1 and gcd(11) = 11.
 
-   The least common multiple, or lcm, of a list is the smallest natural
-   number divisible by each entry of the list.
-   Examples: lcm(2,6,4) = 12, lcm(10,6,15,6) = 30 and lcm(11) = 11.
+The least common multiple, or lcm, of a list is the smallest natural
+number divisible by each entry of the list.
+Examples: lcm(2,6,4) = 12, lcm(10,6,15,6) = 30 and lcm(11) = 11.
 
-   Let f(G, L, N) be the number of lists of size N with gcd ≥ G and lcm ≤ L.
-   For example:
+Let f(G, L, N) be the number of lists of size N with gcd ≥ G and lcm ≤ L.
+For example:
 
-   f(10, 100, 1) = 91.
-   f(10, 100, 2) = 327.
-   f(10, 100, 3) = 1135.
-   f(10, 100, 1000) mod 101^4 = 3286053.
+f(10, 100, 1) = 91.
+f(10, 100, 2) = 327.
+f(10, 100, 3) = 1135.
+f(10, 100, 1000) mod 101^4 = 3286053.
 
-   Find f(10^6, 10^12, 10^18) mod 101^4.
+Find f(10^6, 10^12, 10^18) mod 101^4.
 
-   
-   Answer: cad3ce6a252568bbcb41ca627d7e58ae
+Answer: cad3ce6a252568bbcb41ca627d7e58ae
 
 
 Problem 351
