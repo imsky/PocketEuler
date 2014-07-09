@@ -9113,13 +9113,10 @@ Problem 356
    n.
    For example, a[2] = 3.86619826...
 
-   Find the last eight digits of.
+   Find the last eight digits of ![](files/p_356_cubicpoly1.gif).
 
-   Note: represents the floor function.
+   Note: ![](files/p_356_cubicpoly2.gif) represents the floor function.
 
-   
-   p_356_cubicpoly1.gif
-   p_356_cubicpoly2.gif
    Answer: ab2104e80fa7da630ce7fd835d8006ee
 
 
@@ -9140,133 +9137,129 @@ Problem 357
 Problem 358
 ===========
 
+A cyclic number with n digits has a very interesting property:
+When it is multiplied by 1, 2, 3, 4, ... n, all the products have exactly
+the same digits, in the same order, but rotated in a circular fashion!
 
-   A cyclic number with n digits has a very interesting property:
-   When it is multiplied by 1, 2, 3, 4, ... n, all the products have exactly
-   the same digits, in the same order, but rotated in a circular fashion!
+The smallest cyclic number is the 6-digit number 142857:
 
-   The smallest cyclic number is the 6-digit number 142857 :
-   142857 × 1 = 142857
-   142857 × 2 = 285714
-   142857 × 3 = 428571
-   142857 × 4 = 571428
-   142857 × 5 = 714285
-   142857 × 6 = 857142
+    142857 × 1 = 142857
+    142857 × 2 = 285714
+    142857 × 3 = 428571
+    142857 × 4 = 571428
+    142857 × 5 = 714285
+    142857 × 6 = 857142
 
-   The next cyclic number is 0588235294117647 with 16 digits :
-   0588235294117647 × 1 = 0588235294117647
-   0588235294117647 × 2 = 1176470588235294
-   0588235294117647 × 3 = 1764705882352941
-   ...
-   0588235294117647 × 16 = 9411764705882352
-
-   Note that for cyclic numbers, leading zeros are important.
-
-   There is only one cyclic number for which, the eleven leftmost digits are
-   00000000137 and the five rightmost digits are 56789 (i.e., it has the form
-   00000000137...56789 with an unknown number of digits in the middle). Find
-   the sum of all its digits.
-
+The next cyclic number is 0588235294117647 with 16 digits:
    
-   Answer: 359e1ec8aeaa3932b54f2a5d20fa4f73
+    0588235294117647 × 1 = 0588235294117647
+    0588235294117647 × 2 = 1176470588235294
+    0588235294117647 × 3 = 1764705882352941
+    ...
+    0588235294117647 × 16 = 9411764705882352
+
+Note that for cyclic numbers, leading zeros are important.
+
+There is only one cyclic number for which, the eleven leftmost digits are
+00000000137 and the five rightmost digits are 56789 (i.e., it has the form
+00000000137...56789 with an unknown number of digits in the middle). Find
+the sum of all its digits.
+
+
+Answer: 359e1ec8aeaa3932b54f2a5d20fa4f73
 
 
 Problem 359
 ===========
 
 
-   An infinite number of people (numbered 1, 2, 3, etc.) are lined up to get
-   a room at Hilbert's newest infinite hotel. The hotel contains an infinite
-   number of floors (numbered 1, 2, 3, etc.), and each floor contains an
-   infinite number of rooms (numbered 1, 2, 3, etc.).
+An infinite number of people (numbered 1, 2, 3, etc.) are lined up to get
+a room at Hilbert's newest infinite hotel. The hotel contains an infinite
+number of floors (numbered 1, 2, 3, etc.), and each floor contains an
+infinite number of rooms (numbered 1, 2, 3, etc.).
 
-   Initially the hotel is empty. Hilbert declares a rule on how the nth
-   person is assigned a room: person n gets the first vacant room in the
-   lowest numbered floor satisfying either of the following:
+Initially the hotel is empty. Hilbert declares a rule on how the nth
+person is assigned a room: person n gets the first vacant room in the
+lowest numbered floor satisfying either of the following:
 
-     • the floor is empty
-     • the floor is not empty, and if the latest person taking a room in that
-       floor is person m, then m + n is a perfect square
+* the floor is empty
+* floor is not empty, and if the latest person taking a room in that
+  floor is person m, then m + n is a perfect square
 
-   Person 1 gets room 1 in floor 1 since floor 1 is empty.
-   Person 2 does not get room 2 in floor 1 since 1 + 2 = 3 is not a perfect
-   square.
-   Person 2 instead gets room 1 in floor 2 since floor 2 is empty.
-   Person 3 gets room 2 in floor 1 since 1 + 3 = 4 is a perfect square.
+Person 1 gets room 1 in floor 1 since floor 1 is empty.
+Person 2 does not get room 2 in floor 1 since 1 + 2 = 3 is not a perfect
+square.
+Person 2 instead gets room 1 in floor 2 since floor 2 is empty.
+Person 3 gets room 2 in floor 1 since 1 + 3 = 4 is a perfect square.
 
-   Eventually, every person in the line gets a room in the hotel.
+Eventually, every person in the line gets a room in the hotel.
 
-   Define P(f, r) to be n if person n occupies room r in floor f, and 0 if no
-   person occupies the room. Here are a few examples:
-   P(1, 1) = 1
-   P(1, 2) = 3
-   P(2, 1) = 2
-   P(10, 20) = 440
-   P(25, 75) = 4863
-   P(99, 100) = 19454
-
-   Find the sum of all P(f, r) for all positive f and r such that f × r =
-   71328803586048 and give the last 8 digits as your answer.
-
+Define P(f, r) to be n if person n occupies room r in floor f, and 0 if no
+person occupies the room. Here are a few examples:
    
-   Answer: 91525a22396940a99c496efcb75f2eee
+    P(1, 1) = 1
+    P(1, 2) = 3
+    P(2, 1) = 2
+    P(10, 20) = 440
+    P(25, 75) = 4863
+    P(99, 100) = 19454
+
+Find the sum of all P(f, r) for all positive f and r such that f × r =
+71328803586048 and give the last 8 digits as your answer.
+
+Answer: 91525a22396940a99c496efcb75f2eee
 
 
 Problem 360
 ===========
 
 
-   Given two points (x[1],y[1],z[1]) and (x[2],y[2],z[2]) in three
-   dimensional space, the Manhattan distance between those points is defined
-   as
-   |x[1]-x[2]|+|y[1]-y[2]|+|z[1]-z[2]|.
+Given two points (x[1],y[1],z[1]) and (x[2],y[2],z[2]) in three
+dimensional space, the Manhattan distance between those points is defined
+as |x[1]-x[2]|+|y[1]-y[2]|+|z[1]-z[2]|.
 
-   Let C(r) be a sphere with radius r and center in the origin O(0,0,0).
-   Let I(r) be the set of all points with integer coordinates on the surface
-   of C(r).
-   Let S(r) be the sum of the Manhattan distances of all elements of I(r) to
-   the origin O.
+Let C(r) be a sphere with radius r and center in the origin O(0,0,0).
+Let I(r) be the set of all points with integer coordinates on the surface
+of C(r).
+Let S(r) be the sum of the Manhattan distances of all elements of I(r) to
+the origin O.
 
-   E.g. S(45)=34518.
+E.g. S(45)=34518.
 
-   Find S(10^10).
+Find S(10^10).
 
-   
-   Answer: 82ec91527315eafb7e3acc139eeeb8eb
+Answer: 82ec91527315eafb7e3acc139eeeb8eb
 
 
 Problem 361
 ===========
 
 
-   The Thue-Morse sequence {T[n]} is a binary sequence satisfying:
+The Thue-Morse sequence {T[n]} is a binary sequence satisfying:
 
-     • T[0] = 0
-     • T[2n] = T[n]
-     • T[2n+1] = 1 - T[n]
+* T[0] = 0
+* T[2n] = T[n]
+* T[2n+1] = 1 - T[n]
 
-   The first several terms of {T[n]} are given as follows:
-   01101001100101101001011001101001....
+The first several terms of {T[n]} are given as follows: 01101001100101101001011001101001...
 
-   We define {A[n]} as the sorted sequence of integers such that the binary
-   expression of each element appears as a subsequence in {T[n]}.
-   For example, the decimal number 18 is expressed as 10010 in binary. 10010
-   appears in {T[n]} (T[8] to T[12]), so 18 is an element of {A[n]}.
-   The decimal number 14 is expressed as 1110 in binary. 1110 never appears
-   in {T[n]}, so 14 is not an element of {A[n]}.
+We define {A[n]} as the sorted sequence of integers such that the binary
+expression of each element appears as a subsequence in {T[n]}.
+For example, the decimal number 18 is expressed as 10010 in binary. 10010
+appears in {T[n]} (T[8] to T[12]), so 18 is an element of {A[n]}.
+The decimal number 14 is expressed as 1110 in binary. 1110 never appears
+in {T[n]}, so 14 is not an element of {A[n]}.
 
-   The first several terms of A[n] are given as follows:
+The first several terms of A[n] are given as follows:
 
-              n     0  1  2  3  4  5  6  7  8   9   10  11  12  …
-              A[n]  0  1  2  3  4  5  6  9  10  11  12  13  18  …
+		  n     0  1  2  3  4  5  6  7  8   9   10  11  12  …
+		  A[n]  0  1  2  3  4  5  6  9  10  11  12  13  18  …
 
-   We can also verify that A[100] = 3251 and A[1000] = 80852364498.
+We can also verify that A[100] = 3251 and A[1000] = 80852364498.
 
-   Find the last 9 digits of .
+Find the last 9 digits of ![](files/p_361_Thue-Morse1.gif).
 
-   
-   p_361_Thue-Morse1.gif
-   Answer: 6540278145900f1fa45b95cc2f9599f1
+Answer: 6540278145900f1fa45b95cc2f9599f1
 
 
 Problem 362
@@ -9335,27 +9328,27 @@ Answer: 2bc63386b7cccc64c67f90e719936143
 Problem 364
 ===========
 
+There are N seats in a row. N people come after each other to fill the
+seats according to the following rules:
 
-   There are N seats in a row. N people come after each other to fill the
-   seats according to the following rules:
+1. If there is any seat whose adjacent seat(s) are not occupied take such
+   a seat.
+2. If there is no such seat and there is any seat for which only one
+   adjacent seat is occupied take such a seat.
+3. Otherwise take one of the remaining available seats.
 
-    1. If there is any seat whose adjacent seat(s) are not occupied take such
-       a seat.
-    2. If there is no such seat and there is any seat for which only one
-       adjacent seat is occupied take such a seat.
-    3. Otherwise take one of the remaining available seats.
+Let T(N) be the number of possibilities that N seats are occupied by N
+people with the given rules.
 
-   Let T(N) be the number of possibilities that N seats are occupied by N
-   people with the given rules.
-   The following figure shows T(4)=8.
+The following figure shows T(4)=8.
 
-   We can verify that T(10) = 61632 and T(1 000) mod 100 000 007 = 47255094.
+![](files/p_364_comf_dist.gif)
 
-   Find T(1 000 000) mod 100 000 007.
+We can verify that T(10) = 61632 and T(1 000) mod 100 000 007 = 47255094.
 
-   
-   p_364_comf_dist.gif
-   Answer: d631977573d415a4766de9e6bd388cca
+Find T(1 000 000) mod 100 000 007.
+
+Answer: d631977573d415a4766de9e6bd388cca
 
 
 Problem 365
@@ -9538,18 +9531,15 @@ Problem 371
 Problem 372
 ===========
 
+Let R(M, N) be the number of lattice points (x, y) which satisfy M<x≤N,
+M<y≤N and ![](files/p_372_pencilray1.jpg) is odd.
 
-   Let R(M, N) be the number of lattice points (x, y) which satisfy M<x≤N,
-   M<y≤N and is odd.
-   We can verify that R(0, 100) = 3019 and R(100, 10000) = 29750422.
-   Find R(2·10^6, 10^9).
+We can verify that R(0, 100) = 3019 and R(100, 10000) = 29750422.
+Find R(2·10^6, 10^9).
 
-   Note: represents the floor function.
+Note: represents ![](files/p_372_pencilray2.gif) the floor function.
 
-   
-   p_372_pencilray1.jpg
-   p_372_pencilray2.gif
-   Answer: 5fdeda0dca23d12ae3eb1763b2c6f5ea
+Answer: 5fdeda0dca23d12ae3eb1763b2c6f5ea
 
 
 Problem 373
@@ -10135,33 +10125,33 @@ Problem 395
 ===========
 
 
-   The Pythagorean tree is a fractal generated by the following procedure:
+The Pythagorean tree is a fractal generated by the following procedure:
 
-   Start with a unit square. Then, calling one of the sides its base (in the
-   animation, the bottom side is the base):
+Start with a unit square. Then, calling one of the sides its base (in the
+animation, the bottom side is the base):
 
-    1. Attach a right triangle to the side opposite the base, with the
-       hypotenuse coinciding with that side and with the sides in a 3-4-5
-       ratio. Note that the smaller side of the triangle must be on the
-       'right' side with respect to the base (see animation).
-    2. Attach a square to each leg of the right triangle, with one of its
-       sides coinciding with that leg.
-    3. Repeat this procedure for both squares, considering as their bases the
-       sides touching the triangle.
+1. Attach a right triangle to the side opposite the base, with the
+   hypotenuse coinciding with that side and with the sides in a 3-4-5
+   ratio. Note that the smaller side of the triangle must be on the
+   'right' side with respect to the base (see animation).
+2. Attach a square to each leg of the right triangle, with one of its
+   sides coinciding with that leg.
+3. Repeat this procedure for both squares, considering as their bases the
+   sides touching the triangle.
 
-   The resulting figure, after an infinite number of iterations, is the
-   Pythagorean tree.
+The resulting figure, after an infinite number of iterations, is the
+Pythagorean tree.
 
-   It can be shown that there exists at least one rectangle, whose sides are
-   parallel to the largest square of the Pythagorean tree, which encloses the
-   Pythagorean tree completely.
+![](files/p_395_pythagorean.gif)
 
-   Find the smallest area possible for such a bounding rectangle, and give
-   your answer rounded to 10 decimal places.
+It can be shown that there exists at least one rectangle, whose sides are
+parallel to the largest square of the Pythagorean tree, which encloses the
+Pythagorean tree completely.
 
-   
-   p_395_pythagorean.gif
-   Answer: 505048b0c619161d05b9b3e492f3edc3
+Find the smallest area possible for such a bounding rectangle, and give
+your answer rounded to 10 decimal places.
+
+Answer: 505048b0c619161d05b9b3e492f3edc3
 
 
 Problem 396
