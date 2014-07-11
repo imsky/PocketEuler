@@ -9364,103 +9364,93 @@ Problem 365
 Problem 366
 ===========
 
+Two players, Anton and Bernhard, are playing the following game.
 
-   Two players, Anton and Bernhard, are playing the following game.
-   There is one pile of n stones.
-   The first player may remove any positive number of stones, but not the
-   whole pile.
-   Thereafter, each player may remove at most twice the number of stones his
-   opponent took on the previous move.
-   The player who removes the last stone wins.
+There is one pile of n stones.
 
-   E.g. n=5
-   If the first player takes anything more than one stone the next player
-   will be able to take all remaining stones.
-   If the first player takes one stone, leaving four, his opponent will take
-   also one stone, leaving three stones.
-   The first player cannot take all three because he may take at most 2x1=2
-   stones. So let's say he takes also one stone, leaving 2. The second player
-   can take the two remaining stones and wins.
-   So 5 is a losing position for the first player.
-   For some winning positions there is more than one possible move for the
-   first player.
-   E.g. when n=17 the first player can remove one or four stones.
+The first player may remove any positive number of stones, but not the
+whole pile.
 
-   Let M(n) be the maximum number of stones the first player can take from a
-   winning position at his first turn and M(n)=0 for any other position.
+Thereafter, each player may remove at most twice the number of stones his
+opponent took on the previous move.
+The player who removes the last stone wins.
 
-   ∑M(n) for n≤100 is 728.
+E.g. n=5
+If the first player takes anything more than one stone the next player
+will be able to take all remaining stones.
+If the first player takes one stone, leaving four, his opponent will take
+also one stone, leaving three stones.
+The first player cannot take all three because he may take at most 2x1=2
+stones. So let's say he takes also one stone, leaving 2. The second player
+can take the two remaining stones and wins.
+So 5 is a losing position for the first player.
+For some winning positions there is more than one possible move for the
+first player.
+E.g. when n=17 the first player can remove one or four stones.
 
-   Find ∑M(n) for n≤10^18.Give your answer modulo 10^8.
+Let M(n) be the maximum number of stones the first player can take from a
+winning position at his first turn and M(n)=0 for any other position.
 
-   
-   Answer: 8a080de12c5163d903b6212dd8086570
+∑M(n) for n≤100 is 728.
+
+Find ∑M(n) for n≤10^18.Give your answer modulo 10^8.
+
+Answer: 8a080de12c5163d903b6212dd8086570
 
 
 Problem 367
 ===========
 
+Bozo sort, not to be confused with the slightly less efficient bogo sort,
+consists out of checking if the input sequence is sorted and if not
+swapping randomly two elements. This is repeated until eventually the
+sequence is sorted.
 
-   Bozo sort, not to be confused with the slightly less efficient bogo sort,
-   consists out of checking if the input sequence is sorted and if not
-   swapping randomly two elements. This is repeated until eventually the
-   sequence is sorted.
+If we consider all permutations of the first 4 natural numbers as input
+the expectation value of the number of swaps, averaged over all 4! input
+sequences is 24.75.
+The already sorted sequence takes 0 steps.
 
-   If we consider all permutations of the first 4 natural numbers as input
-   the expectation value of the number of swaps, averaged over all 4! input
-   sequences is 24.75.
-   The already sorted sequence takes 0 steps.
+In this problem we consider the following variant on bozo sort.
+If the sequence is not in order we pick three elements at random and
+shuffle these three elements randomly.
+All 3!=6 permutations of those three elements are equally likely.
+The already sorted sequence will take 0 steps.
+If we consider all permutations of the first 4 natural numbers as input
+the expectation value of the number of shuffles, averaged over all 4!
+input sequences is 27.5.
+Consider as input sequences the permutations of the first 11 natural
+numbers.
+Averaged over all 11! input sequences, what is the expected number of
+shuffles this sorting algorithm will perform?
 
-   In this problem we consider the following variant on bozo sort.
-   If the sequence is not in order we pick three elements at random and
-   shuffle these three elements randomly.
-   All 3!=6 permutations of those three elements are equally likely.
-   The already sorted sequence will take 0 steps.
-   If we consider all permutations of the first 4 natural numbers as input
-   the expectation value of the number of shuffles, averaged over all 4!
-   input sequences is 27.5.
-   Consider as input sequences the permutations of the first 11 natural
-   numbers.
-   Averaged over all 11! input sequences, what is the expected number of
-   shuffles this sorting algorithm will perform?
+Give your answer rounded to the nearest integer.
 
-   Give your answer rounded to the nearest integer.
-
-   
-   Answer: 0589f090524e0eea1544b50eefd0ebd8
+Answer: 0589f090524e0eea1544b50eefd0ebd8
 
 
 Problem 368
 ===========
 
+The harmonic series 1 + 1/2 + 1/3 + 1/4 + ... is well known to be divergent.
 
-   The harmonic series 1 + 1 + 1 + 1 + ... is well known to be divergent.
-                           2   3   4
+If we however omit from this series every term where the denominator has a
+9 in it, the series remarkably enough converges to approximately
+22.9206766193.
+This modified harmonic series is called the Kempner series.
 
-   If we however omit from this series every term where the denominator has a
-   9 in it, the series remarkably enough converges to approximately
-   22.9206766193.
-   This modified harmonic series is called the Kempner series.
+Let us now consider another modified harmonic series by omitting from the
+harmonic series every term where the denominator has 3 or more equal
+consecutive digits.One can verify that out of the first 1200 terms of the
+harmonic series, only 20 terms will be omitted.
+These 20 omitted terms are: 1/111, 1/222, 1/333, 1/444, 1/555, 1/666, 1/777, 1/888, 1/999, 1/1000, 1/1110, 1/1111, 1/1112, 1/1113, 1/1114, 1/1115, 1/1116, 1/1117, 1/1118, and 1/1119.
 
-   Let us now consider another modified harmonic series by omitting from the
-   harmonic series every term where the denominator has 3 or more equal
-   consecutive digits.One can verify that out of the first 1200 terms of the
-   harmonic series, only 20 terms will be omitted.
-   These 20 omitted terms are:
+This series converges as well.
 
-   1   , 1   , 1   , 1   , 1   , 1   , 1   , 1   , 1   , 1    , 1    ,
-   111   222   333   444   555   666   777   888   999   1000   1110
+Find the value the series converges to.
+Give your answer rounded to 10 digits behind the decimal point.
 
-   1    , 1    , 1    , 1    , 1    , 1    , 1    , 1    and 1    .
-   1111   1112   1113   1114   1115   1116   1117   1118     1119
-
-   This series converges as well.
-
-   Find the value the series converges to.
-   Give your answer rounded to 10 digits behind the decimal point.
-
-   
-   Answer: bfb15c388f4721cbd5eb89f17be2eef2
+Answer: bfb15c388f4721cbd5eb89f17be2eef2
 
 
 Problem 369
