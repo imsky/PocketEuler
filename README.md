@@ -5459,54 +5459,50 @@ Problem 218
 ===========
 
 
-   Consider the right angled triangle with sides a=7, b=24 and c=25.The area
-   of this triangle is 84, which is divisible by the perfect numbers 6 and
-   28.
-   Moreover it is a primitive right angled triangle as gcd(a,b)=1 and
-   gcd(b,c)=1.
-   Also c is a perfect square.
+Consider the right angled triangle with sides a=7, b=24 and c=25.The area
+of this triangle is 84, which is divisible by the perfect numbers 6 and 28.
 
-   We will call a right angled triangle perfect if
-   -it is a primitive right angled triangle
-   -its hypotenuse is a perfect square
+Moreover it is a primitive right angled triangle as gcd(a,b)=1 and gcd(b,c)=1. 
+Also c is a perfect square.
 
-   We will call a right angled triangle super-perfect if
-   -it is a perfect right angled triangle and
-   -its area is a multiple of the perfect numbers 6 and 28.
+We will call a right angled triangle perfect if
+* it is a primitive right angled triangle
+* its hypotenuse is a perfect square
 
-   How many perfect right-angled triangles with c≤10^16 exist that are not
-   super-perfect?
+We will call a right angled triangle super-perfect if
+* it is a perfect right angled triangle and
+* its area is a multiple of the perfect numbers 6 and 28.
 
-   
-   Answer: cfcd208495d565ef66e7dff9f98764da
+How many perfect right-angled triangles with c≤10^16 exist that are not
+super-perfect?
 
+Answer: cfcd208495d565ef66e7dff9f98764da
 
 Problem 219
 ===========
 
 
-   Let A and B be bit strings (sequences of 0's and 1's).
-   If A is equal to the leftmost length(A) bits of B, then A is said to be a
-   prefix of B.
-   For example, 00110 is a prefix of 001101001, but not of 00111 or 100110.
+Let A and B be bit strings (sequences of 0's and 1's).
+If A is equal to the leftmost length(A) bits of B, then A is said to be a
+prefix of B.
+For example, 00110 is a prefix of 001101001, but not of 00111 or 100110.
 
-   A prefix-free code of size n is a collection of n distinct bit strings
-   such that no string is a prefix of any other. For example, this is a
-   prefix-free code of size 6:
+A prefix-free code of size n is a collection of n distinct bit strings
+such that no string is a prefix of any other. For example, this is a
+prefix-free code of size 6:
 
-                          0000, 0001, 001, 01, 10, 11
+    0000, 0001, 001, 01, 10, 11
 
-   Now suppose that it costs one penny to transmit a '0' bit, but four pence
-   to transmit a '1'.
-   Then the total cost of the prefix-free code shown above is 35 pence, which
-   happens to be the cheapest possible for the skewed pricing scheme in
-   question.
-   In short, we write Cost(6) = 35.
+Now suppose that it costs one penny to transmit a '0' bit, but four pence
+to transmit a '1'.
+Then the total cost of the prefix-free code shown above is 35 pence, which
+happens to be the cheapest possible for the skewed pricing scheme in
+question.
+In short, we write Cost(6) = 35.
 
-   What is Cost(10^9) ?
+What is Cost(10^9)?
 
-   
-   Answer: 578c22ef288b88c60fbcf4541351aff5
+Answer: 578c22ef288b88c60fbcf4541351aff5
 
 
 Problem 220
@@ -5543,20 +5539,19 @@ Problem 221
 ===========
 
 
-   We shall call a positive integer A an "Alexandrian integer", if there
-   exist integers p, q, r such that:
+We shall call a positive integer A an "Alexandrian integer", if there
+exist integers p, q, r such that:
 
-   A = p · q · r    and   1 = 1 + 1 + 1
-                          A   p   q   r
+    A = p · q · r    and   1 = 1 + 1 + 1
+                           A   p   q   r
 
-   For example, 630 is an Alexandrian integer (p = 5, q = −7, r = −18).In
-   fact, 630 is the 6th Alexandrian integer, the first 6 Alexandrian
-   integers being: 6, 42, 120, 156, 420 and 630.
+For example, 630 is an Alexandrian integer (p = 5, q = −7, r = −18).In
+fact, 630 is the 6th Alexandrian integer, the first 6 Alexandrian
+integers being: 6, 42, 120, 156, 420 and 630.
 
-   Find the 150000^th Alexandrian integer.
+Find the 150000^th Alexandrian integer.
 
-   
-   Answer: cb000c24f653d9c8f78b74123e6515ab
+Answer: cb000c24f653d9c8f78b74123e6515ab
 
 
 Problem 222
