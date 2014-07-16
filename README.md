@@ -5570,30 +5570,23 @@ Problem 222
 Problem 223
 ===========
 
+Let us call an integer sided triangle with sides a ≤ b ≤ c barely acute if
+the sides satisfy:  a^2 + b^2 = c^2 + 1.
 
-   Let us call an integer sided triangle with sides a ≤ b ≤ c barely acute if
-   the sides satisfy
-   a^2 + b^2 = c^2 + 1.
+How many barely acute triangles are there with perimeter ≤ 25,000,000?
 
-   How many barely acute triangles are there with perimeter ≤ 25,000,000?
-
-   
-   Answer: cb875e59736a1967c8da8fc8062a6bc5
-
+Answer: cb875e59736a1967c8da8fc8062a6bc5
 
 Problem 224
 ===========
 
 
-   Let us call an integer sided triangle with sides a ≤ b ≤ c barely obtuse
-   if the sides satisfy
-   a^2 + b^2 = c^2 - 1.
+Let us call an integer sided triangle with sides a ≤ b ≤ c barely obtuse
+if the sides satisfy:  a^2 + b^2 = c^2 - 1.
 
-   How many barely obtuse triangles are there with perimeter ≤ 75,000,000?
+How many barely obtuse triangles are there with perimeter ≤ 75,000,000?
 
-   
-   Answer: c43cfb12750dee27b4b0d016261e831b
-
+Answer: c43cfb12750dee27b4b0d016261e831b
 
 Problem 225
 ===========
@@ -5634,25 +5627,22 @@ Answer: ce6fd32d1d2fb58c4c0c1f7962c39f04
 Problem 227
 ===========
 
+"The Chase" is a game played with two dice and an even number of players.
 
-   "The Chase" is a game played with two dice and an even number of players.
+The players sit around a table; the game begins with two opposite players
+having one die each. On each turn, the two players with a die roll it.
+If a player rolls a 1, he passes the die to his neighbour on the left; if
+he rolls a 6, he passes the die to his neighbour on the right; otherwise,
+he keeps the die for the next turn.
+The game ends when one player has both dice after they have been rolled
+and passed; that player has then lost.
 
-   The players sit around a table; the game begins with two opposite players
-   having one die each. On each turn, the two players with a die roll it.
-   If a player rolls a 1, he passes the die to his neighbour on the left; if
-   he rolls a 6, he passes the die to his neighbour on the right; otherwise,
-   he keeps the die for the next turn.
-   The game ends when one player has both dice after they have been rolled
-   and passed; that player has then lost.
+In a game with 100 players, what is the expected number of turns the game
+lasts?
 
-   In a game with 100 players, what is the expected number of turns the game
-   lasts?
+Give your answer rounded to ten significant digits.
 
-   Give your answer rounded to ten significant digits.
-
-   
-   Answer: 7b87cd0a96f0f2f12f911cdc66608d95
-
+Answer: 7b87cd0a96f0f2f12f911cdc66608d95
 
 Problem 228
 ===========
@@ -5660,8 +5650,8 @@ Problem 228
 Let S[n] be the regular n-sided polygon – or shape – whose vertices v[k]
 (k = 1,2,…,n) have coordinates:
 
-	  x[k]   =   cos( ^2k-1/[n] ×180° )
-	  y[k]   =   sin( ^2k-1/[n] ×180° )
+	  x[k]   =   cos( ^2k-1/[n] × 180° )
+	  y[k]   =   sin( ^2k-1/[n] × 180° )
 
 Each S[n] is to be interpreted as a filled shape consisting of all points
 on the perimeter and in the interior.
@@ -5673,91 +5663,85 @@ coordinate-wise: (u, v) + (x, y) = (u+x, v+y).
 For example, the sum of S[3] and S[4] is the six-sided shape shown in pink
 below:
 
-					  [1]picture showing S_3 + S_4
+![](files/p_228.png)
 
 How many sides does S[1864] + S[1865] + … + S[1909] have?
 
-![](files/p_228.png)
-
 Answer: 35d0195ddaf58e52e12400de1c9333d8
-
 
 Problem 229
 ===========
 
 
-   Consider the number 3600. It is very special, because
+Consider the number 3600. It is very special, because
 
-   3600 = 48^2 +     36^2
+    3600 = 48^2 + 36^2
 
-   3600 = 20^2 + 2×40^2
+    3600 = 20^2 + 2×40^2
 
-   3600 = 30^2 + 3×30^2
+    3600 = 30^2 + 3×30^2
 
-   3600 = 45^2 + 7×15^2
+    3600 = 45^2 + 7×15^2
 
-   Similarly, we find that 88201 = 99^2 + 280^2 = 287^2 + 2×54^2 = 283^2 +
-   3×52^2 = 197^2 + 7×84^2.
+Similarly, we find that 88201 = 99^2 + 280^2 = 287^2 + 2×54^2 = 283^2 +
+3×52^2 = 197^2 + 7×84^2.
 
-   In 1747, Euler proved which numbers are representable as a sum of two
-   squares.We are interested in the numbers n which admit representations of
-   all of the following four types:
+In 1747, Euler proved which numbers are representable as a sum of two
+squares. We are interested in the numbers n which admit representations of
+all of the following four types:
 
-   n = a[1]^2 +   b[1]^2
+    n = a[1]^2 +   b[1]^2
 
-   n = a[2]^2 + 2 b[2]^2
+    n = a[2]^2 + 2 b[2]^2
 
-   n = a[3]^2 + 3 b[3]^2
+    n = a[3]^2 + 3 b[3]^2
 
-   n = a[7]^2 + 7 b[7]^2,
+    n = a[7]^2 + 7 b[7]^2,
 
-   where the a[k] and b[k] are positive integers.
+where the a[k] and b[k] are positive integers.
 
-   There are 75373 such numbers that do not exceed 10^7.
-   How many such numbers are there that do not exceed 2×10^9?
+There are 75373 such numbers that do not exceed 10^7.
+How many such numbers are there that do not exceed 2×10^9?
 
-   
-   Answer: d68b5ec8df4a56991901f67afbdef24f
-
+Answer: d68b5ec8df4a56991901f67afbdef24f
 
 Problem 230
 ===========
 
+For any two strings of digits, A and B, we define F[A,B] to be the
+sequence (A,B,AB,BAB,ABBAB,...) in which each term is the concatenation of
+the previous two.
 
-   For any two strings of digits, A and B, we define F[A,B] to be the
-   sequence (A,B,AB,BAB,ABBAB,...) in which each term is the concatenation of
-   the previous two.
+Further, we define D[A,B](n) to be the nth digit in the first term of
+F[A,B] that contains at least n digits.
 
-   Further, we define D[A,B](n) to be the nth digit in the first term of
-   F[A,B] that contains at least n digits.
+Example:
 
-   Example:
+Let A=1415926535, B=8979323846. We wish to find D[A,B](35), say.
 
-   Let A=1415926535, B=8979323846. We wish to find D[A,B](35), say.
+The first few terms of F[A,B] are:
 
-   The first few terms of F[A,B] are:
-   1415926535
-   8979323846
-   14159265358979323846
-   897932384614159265358979323846
-   14159265358979323846897932384614159265358979323846
+    1415926535
+    8979323846
+    14159265358979323846
+    897932384614159265358979323846
+    14159265358979323846897932384614159265358979323846
 
-   Then D[A,B](35) is the 35th digit in the fifth term, which is 9.
+Then D[A,B](35) is the 35th digit in the fifth term, which is 9.
 
-   Now we use for A the first 100 digits of π behind the decimal point:
+Now we use for A the first 100 digits of π behind the decimal point:
 
    14159265358979323846264338327950288419716939937510
    58209749445923078164062862089986280348253421170679
 
-   and for B the next hundred digits:
+and for B the next hundred digits:
 
    82148086513282306647093844609550582231725359408128
-   48111745028410270193852110555964462294895493038196 .
+   48111745028410270193852110555964462294895493038196.
 
-   Find ∑[n = 0,1,...,17]   10^n× D[A,B]((127+19n)×7^n) .
+Find ∑[n = 0,1,...,17]   10^n× D[A,B]((127+19n)×7^n).
 
-   
-   Answer: 040735038021ff4704bbd3a0964369ef
+Answer: 040735038021ff4704bbd3a0964369ef
 
 
 Problem 231
