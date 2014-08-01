@@ -81,11 +81,11 @@ Problem 6
 
 The sum of the squares of the first ten natural numbers is,
 
-					  1^2 + 2^2 + ... + 10^2 = 385
+    1^2 + 2^2 + ... + 10^2 = 385
 
 The square of the sum of the first ten natural numbers is,
 
-				   (1 + 2 + ... + 10)^2 = 55^2 = 3025
+    (1 + 2 + ... + 10)^2 = 55^2 = 3025
 
 Hence the difference between the sum of the squares of the first ten
 natural numbers and the square of the sum is 3025 − 385 = 2640.
@@ -143,7 +143,7 @@ Problem 9
 A Pythagorean triplet is a set of three natural numbers, a < b < c, for
 which,
 
-							a^2 + b^2 = c^2
+    a^2 + b^2 = c^2
 
 For example, 3^2 + 4^2 = 9 + 16 = 25 = 5^2.
 
@@ -173,7 +173,6 @@ The product of these numbers is 26 × 63 × 78 × 14 = 1788696.
 
 What is the greatest product of four adjacent numbers in the same
 direction (up, down, left, right, or diagonally) in the 20×20 grid?
-
 
 Answer: 678f5d2e1eaa42f04fa53411b4f441ac
 
@@ -313,8 +312,8 @@ Work out the first ten digits of the sum of the following one-hundred
                72107838435069186155435662884062257473692284509516
                20849603980134001723930671666823555245252804609722
                53503534226472524250874054075591789781264330331690
-   
-   Answer: 361113f19fd302adc31268f8283a4f2d
+
+Answer: 361113f19fd302adc31268f8283a4f2d
 
 
 Problem 14
@@ -330,7 +329,7 @@ integers:
 Using the rule above and starting with 13, we generate the following
 sequence:
 
-                   13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1
+    13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1
 
 It can be seen that this sequence (starting at 13 and finishing at 1)
 contains 10 terms. Although it has not been proved yet (Collatz Problem),
@@ -340,9 +339,7 @@ Which starting number, under one million, produces the longest chain?
 
 NOTE: Once the chain starts the terms are allowed to go above one million.
 
-
-   Answer: 5052c3765262bb2c6be537abd60b305e
-
+Answer: 5052c3765262bb2c6be537abd60b305e
 
 Problem 15
 ==========
@@ -360,33 +357,27 @@ Answer: 928f3957168ac592c4215dcd04e0b678
 Problem 16
 ==========
 
+2^15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
 
-   2^15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
+What is the sum of the digits of the number 2^1000?
 
-   What is the sum of the digits of the number 2^1000?
-
-   
-   Answer: 6a5889bb0190d0211a991f47bb19a777
-
+Answer: 6a5889bb0190d0211a991f47bb19a777
 
 Problem 17
 ==========
 
+If the numbers 1 to 5 are written out in words: one, two, three, four,
+five, then there are 3 + 3 + 5 + 4 + 4 = 19 letters used in total.
 
-   If the numbers 1 to 5 are written out in words: one, two, three, four,
-   five, then there are 3 + 3 + 5 + 4 + 4 = 19 letters used in total.
+If all the numbers from 1 to 1000 (one thousand) inclusive were written
+out in words, how many letters would be used?
 
-   If all the numbers from 1 to 1000 (one thousand) inclusive were written
-   out in words, how many letters would be used?
+NOTE: Do not count spaces or hyphens. For example, 342 (three hundred and
+forty-two) contains 23 letters and 115 (one hundred and fifteen) contains
+20 letters. The use of "and" when writing out numbers is in compliance
+with British usage.
 
-   NOTE: Do not count spaces or hyphens. For example, 342 (three hundred and
-   forty-two) contains 23 letters and 115 (one hundred and fifteen) contains
-   20 letters. The use of "and" when writing out numbers is in compliance
-   with British usage.
-
-   
-   Answer: 6a979d4a9cf85135408529edc8a133d0
-
+Answer: 6a979d4a9cf85135408529edc8a133d0
 
 Problem 18
 ==========
@@ -394,30 +385,30 @@ Problem 18
 By starting at the top of the triangle below and moving to adjacent
 numbers on the row below, the maximum total from top to bottom is 23.
 
-								   3
-								  7 4
-								 2 4 6
-								8 5 9 3
+	   3
+	  7 4
+	 2 4 6
+	8 5 9 3
 
 That is, 3 + 7 + 4 + 9 = 23.
 
 Find the maximum total from top to bottom of the triangle below:
 
-								   75
-								 95 64
-								17 47 82
-							  18 35 87 10
-							 20 04 82 47 65
-						   19 01 23 75 03 34
-						  88 02 77 73 07 63 67
-						99 65 04 28 06 16 70 92
-					   41 41 26 56 83 40 80 70 33
-					 41 48 72 33 47 32 37 16 94 29
-					53 71 44 65 25 43 91 52 97 51 14
-				  70 11 33 28 77 73 17 78 39 68 17 57
-				 91 71 52 38 17 14 91 43 58 50 27 29 48
-			   63 66 04 68 89 53 67 30 73 16 69 87 40 31
-			  04 62 98 27 23 09 70 98 73 93 38 53 60 04 23
+						   75
+						 95 64
+						17 47 82
+					  18 35 87 10
+					 20 04 82 47 65
+				   19 01 23 75 03 34
+				  88 02 77 73 07 63 67
+				99 65 04 28 06 16 70 92
+			   41 41 26 56 83 40 80 70 33
+			 41 48 72 33 47 32 37 16 94 29
+			53 71 44 65 25 43 91 52 97 51 14
+		  70 11 33 28 77 73 17 78 39 68 17 57
+		 91 71 52 38 17 14 91 43 58 50 27 29 48
+	   63 66 04 68 89 53 67 30 73 16 69 87 40 31
+	  04 62 98 27 23 09 70 98 73 93 38 53 60 04 23
 
 NOTE: As there are only 16384 routes, it is possible to solve this problem
 by trying every route. However, [Problem 67](#problem-67), is the same challenge with
@@ -431,8 +422,8 @@ Problem 19
 ==========
 
 
-   You are given the following information, but you may prefer to do some
-   research for yourself.
+You are given the following information, but you may prefer to do some
+research for yourself.
 
      • 1 Jan 1900 was a Monday.
      • Thirty days has September,
@@ -444,47 +435,38 @@ Problem 19
      • A leap year occurs on any year evenly divisible by 4, but not on a
        century unless it is divisible by 400.
 
-   How many Sundays fell on the first of the month during the twentieth
-   century (1 Jan 1901 to 31 Dec 2000)?
+How many Sundays fell on the first of the month during the twentieth
+century (1 Jan 1901 to 31 Dec 2000)?
 
-   
-   Answer: a4a042cf4fd6bfb47701cbc8a1653ada
-
+Answer: a4a042cf4fd6bfb47701cbc8a1653ada
 
 Problem 20
 ==========
 
+n! means n × (n − 1) × ... × 3 × 2 × 1
 
-   n! means n × (n − 1) × ... × 3 × 2 × 1
+For example, 10! = 10 × 9 × ... × 3 × 2 × 1 = 3628800,
+and the sum of the digits in the number 10! is 3 + 6 + 2 + 8 + 8 + 0 + 0 = 27.
 
-   For example, 10! = 10 × 9 × ... × 3 × 2 × 1 = 3628800,
-   and the sum of the digits in the number 10! is 3 + 6 + 2 + 8 + 8 + 0 + 0 =
-   27.
+Find the sum of the digits in the number 100!
 
-   Find the sum of the digits in the number 100!
-
-   
-   Answer: 443cb001c138b2561a0d90720d6ce111
-
+Answer: 443cb001c138b2561a0d90720d6ce111
 
 Problem 21
 ==========
 
+Let d(n) be defined as the sum of proper divisors of n (numbers less than
+n which divide evenly into n).
+If d(a) = b and d(b) = a, where a ≠ b, then a and b are an amicable pair
+and each of a and b are called amicable numbers.
 
-   Let d(n) be defined as the sum of proper divisors of n (numbers less than
-   n which divide evenly into n).
-   If d(a) = b and d(b) = a, where a ≠ b, then a and b are an amicable pair
-   and each of a and b are called amicable numbers.
+For example, the proper divisors of 220 are 1, 2, 4, 5, 10, 11, 20, 22,
+44, 55 and 110; therefore d(220) = 284. The proper divisors of 284 are 1,
+2, 4, 71 and 142; so d(284) = 220.
 
-   For example, the proper divisors of 220 are 1, 2, 4, 5, 10, 11, 20, 22,
-   44, 55 and 110; therefore d(220) = 284. The proper divisors of 284 are 1,
-   2, 4, 71 and 142; so d(284) = 220.
+Evaluate the sum of all the amicable numbers under 10000.
 
-   Evaluate the sum of all the amicable numbers under 10000.
-
-   
-   Answer: 51e04cd4e55e7e415bf24de9e1b0f3ff
-
+Answer: 51e04cd4e55e7e415bf24de9e1b0f3ff
 
 Problem 22
 ==========
@@ -502,89 +484,80 @@ What is the total of all the name scores in the file?
 
 Answer: f2c9c91cb025746f781fa4db8be3983f
 
-
 Problem 23
 ==========
 
+A perfect number is a number for which the sum of its proper divisors is
+exactly equal to the number. For example, the sum of the proper divisors
+of 28 would be 1 + 2 + 4 + 7 + 14 = 28, which means that 28 is a perfect
+number.
 
-   A perfect number is a number for which the sum of its proper divisors is
-   exactly equal to the number. For example, the sum of the proper divisors
-   of 28 would be 1 + 2 + 4 + 7 + 14 = 28, which means that 28 is a perfect
-   number.
+A number n is called deficient if the sum of its proper divisors is less
+than n and it is called abundant if this sum exceeds n.
 
-   A number n is called deficient if the sum of its proper divisors is less
-   than n and it is called abundant if this sum exceeds n.
+As 12 is the smallest abundant number, 1 + 2 + 3 + 4 + 6 = 16, the
+smallest number that can be written as the sum of two abundant numbers is
+24. By mathematical analysis, it can be shown that all integers greater
+than 28123 can be written as the sum of two abundant numbers. However,
+this upper limit cannot be reduced any further by analysis even though it
+is known that the greatest number that cannot be expressed as the sum of
+two abundant numbers is less than this limit.
 
-   As 12 is the smallest abundant number, 1 + 2 + 3 + 4 + 6 = 16, the
-   smallest number that can be written as the sum of two abundant numbers is
-   24. By mathematical analysis, it can be shown that all integers greater
-   than 28123 can be written as the sum of two abundant numbers. However,
-   this upper limit cannot be reduced any further by analysis even though it
-   is known that the greatest number that cannot be expressed as the sum of
-   two abundant numbers is less than this limit.
+Find the sum of all the positive integers which cannot be written as the
+sum of two abundant numbers.
 
-   Find the sum of all the positive integers which cannot be written as the
-   sum of two abundant numbers.
-
-   
-   Answer: 2c8258c0604152962f7787571511cf28
-
+Answer: 2c8258c0604152962f7787571511cf28
 
 Problem 24
 ==========
 
 
-   A permutation is an ordered arrangement of objects. For example, 3124 is
-   one possible permutation of the digits 1, 2, 3 and 4. If all of the
-   permutations are listed numerically or alphabetically, we call it
-   lexicographic order. The lexicographic permutations of 0, 1 and 2 are:
+A permutation is an ordered arrangement of objects. For example, 3124 is
+one possible permutation of the digits 1, 2, 3 and 4. If all of the
+permutations are listed numerically or alphabetically, we call it
+lexicographic order. The lexicographic permutations of 0, 1 and 2 are:
 
-                       012   021   102   120   201   210
+    012   021   102   120   201   210
 
-   What is the millionth lexicographic permutation of the digits 0, 1, 2, 3,
-   4, 5, 6, 7, 8 and 9?
+What is the millionth lexicographic permutation of the digits 0, 1, 2, 3,
+4, 5, 6, 7, 8 and 9?
 
-   
-   Answer: 7f155b45cb3f0a6e518d59ec348bff84
+Answer: 7f155b45cb3f0a6e518d59ec348bff84
 
 
 Problem 25
 ==========
 
+The Fibonacci sequence is defined by the recurrence relation:
 
-   The Fibonacci sequence is defined by the recurrence relation:
+    F[n] = F[n−1] + F[n−2], where F[1] = 1 and F[2] = 1.
 
-     F[n] = F[n−1] + F[n−2], where F[1] = 1 and F[2] = 1.
+Hence the first 12 terms will be:
 
-   Hence the first 12 terms will be:
+    F[1] = 1
+    F[2] = 1
+    F[3] = 2
+    F[4] = 3
+    F[5] = 5
+    F[6] = 8
+    F[7] = 13
+    F[8] = 21
+    F[9] = 34
+    F[10] = 55
+    F[11] = 89
+    F[12] = 144
 
-     F[1] = 1
-     F[2] = 1
-     F[3] = 2
-     F[4] = 3
-     F[5] = 5
-     F[6] = 8
-     F[7] = 13
-     F[8] = 21
-     F[9] = 34
-     F[10] = 55
-     F[11] = 89
-     F[12] = 144
+The 12th term, F[12], is the first term to contain three digits.
 
-   The 12th term, F[12], is the first term to contain three digits.
+What is the first term in the Fibonacci sequence to contain 1000 digits?
 
-   What is the first term in the Fibonacci sequence to contain 1000 digits?
-
-   
-   Answer: a376802c0811f1b9088828288eb0d3f0
-
+Answer: a376802c0811f1b9088828288eb0d3f0
 
 Problem 26
 ==========
 
-
-   A unit fraction contains 1 in the numerator. The decimal representation of
-   the unit fractions with denominators 2 to 10 are given:
+A unit fraction contains 1 in the numerator. The decimal representation of
+the unit fractions with denominators 2 to 10 are given:
 
      1/2  =  0.5
      1/3  =  0.(3)
@@ -596,322 +569,287 @@ Problem 26
      1/9  =  0.(1)
      1/10 =  0.1
 
-   Where 0.1(6) means 0.166666..., and has a 1-digit recurring cycle. It can
-   be seen that 1/7 has a 6-digit recurring cycle.
+Where 0.1(6) means 0.166666..., and has a 1-digit recurring cycle. It can
+be seen that 1/7 has a 6-digit recurring cycle.
 
-   Find the value of d < 1000 for which ^1/[d] contains the longest recurring
-   cycle in its decimal fraction part.
+Find the value of d < 1000 for which ^1/[d] contains the longest recurring
+cycle in its decimal fraction part.
 
-   
-   Answer: 6aab1270668d8cac7cef2566a1c5f569
+Answer: 6aab1270668d8cac7cef2566a1c5f569
 
 
 Problem 27
 ==========
 
-
-   Euler discovered the remarkable quadratic formula:
+Euler discovered the remarkable quadratic formula:
 
                                   n² + n + 41
 
-   It turns out that the formula will produce 40 primes for the consecutive
-   values n = 0 to 39. However, when n = 40, 40^2 + 40 + 41 = 40(40 + 1) + 41
-   is divisible by 41, and certainly when n = 41, 41² + 41 + 41 is clearly
-   divisible by 41.
+It turns out that the formula will produce 40 primes for the consecutive
+values n = 0 to 39. However, when n = 40, 40^2 + 40 + 41 = 40(40 + 1) + 41
+is divisible by 41, and certainly when n = 41, 41² + 41 + 41 is clearly
+divisible by 41.
 
-   The incredible formula  n² − 79n + 1601 was discovered, which produces 80
-   primes for the consecutive values n = 0 to 79. The product of the
-   coefficients, −79 and 1601, is −126479.
+The incredible formula  n² − 79n + 1601 was discovered, which produces 80
+primes for the consecutive values n = 0 to 79. The product of the
+coefficients, −79 and 1601, is −126479.
 
-   Considering quadratics of the form:
+Considering quadratics of the form:
 
-     n² + an + b, where |a| < 1000 and |b| < 1000
+    n² + an + b, where |a| < 1000 and |b| < 1000
 
-     where |n| is the modulus/absolute value of n
-     e.g. |11| = 11 and |−4| = 4
+where |n| is the modulus/absolute value of n, e.g. |11| = 11 and |−4| = 4
 
-   Find the product of the coefficients, a and b, for the quadratic
-   expression that produces the maximum number of primes for consecutive
-   values of n, starting with n = 0.
+Find the product of the coefficients, a and b, for the quadratic
+expression that produces the maximum number of primes for consecutive
+values of n, starting with n = 0.
 
-   
-   Answer: 69d9e3218fd7abb6ff453ea96505183d
-
+Answer: 69d9e3218fd7abb6ff453ea96505183d
 
 Problem 28
 ==========
 
 
-   Starting with the number 1 and moving to the right in a clockwise
-   direction a 5 by 5 spiral is formed as follows:
+Starting with the number 1 and moving to the right in a clockwise
+direction a 5 by 5 spiral is formed as follows:
 
-                                 21 22 23 24 25
-                                 20  7  8  9 10
-                                 19  6  1  2 11
-                                 18  5  4  3 12
-                                 17 16 15 14 13
+    21 22 23 24 25
+    20  7  8  9 10
+    19  6  1  2 11
+    18  5  4  3 12
+    17 16 15 14 13
 
-   It can be verified that the sum of the numbers on the diagonals is 101.
+It can be verified that the sum of the numbers on the diagonals is 101.
 
-   What is the sum of the numbers on the diagonals in a 1001 by 1001 spiral
-   formed in the same way?
+What is the sum of the numbers on the diagonals in a 1001 by 1001 spiral
+formed in the same way?
 
-   
-   Answer: 0d53425bd7c5bf9919df3718c8e49fa6
+Answer: 0d53425bd7c5bf9919df3718c8e49fa6
 
 
 Problem 29
 ==========
 
+Consider all integer combinations of a^b for 2 ≤ a ≤ 5 and 2 ≤ b ≤ 5:
 
-   Consider all integer combinations of a^b for 2 ≤ a ≤ 5 and 2 ≤ b ≤ 5:
+    2^2=4, 2^3=8, 2^4=16, 2^5=32
+    3^2=9, 3^3=27, 3^4=81, 3^5=243
+    4^2=16, 4^3=64, 4^4=256, 4^5=1024
+    5^2=25, 5^3=125, 5^4=625, 5^5=3125
 
-     2^2=4, 2^3=8, 2^4=16, 2^5=32
-     3^2=9, 3^3=27, 3^4=81, 3^5=243
-     4^2=16, 4^3=64, 4^4=256, 4^5=1024
-     5^2=25, 5^3=125, 5^4=625, 5^5=3125
+If they are then placed in numerical order, with any repeats removed, we
+get the following sequence of 15 distinct terms:
 
-   If they are then placed in numerical order, with any repeats removed, we
-   get the following sequence of 15 distinct terms:
+    4, 8, 9, 16, 25, 27, 32, 64, 81, 125, 243, 256, 625, 1024, 3125
 
-        4, 8, 9, 16, 25, 27, 32, 64, 81, 125, 243, 256, 625, 1024, 3125
+How many distinct terms are in the sequence generated by a^b for 2 ≤ a ≤
+100 and 2 ≤ b ≤ 100?
 
-   How many distinct terms are in the sequence generated by a^b for 2 ≤ a ≤
-   100 and 2 ≤ b ≤ 100?
-
-   
-   Answer: 6f0ca67289d79eb35d19decbc0a08453
+Answer: 6f0ca67289d79eb35d19decbc0a08453
 
 
 Problem 30
 ==========
 
+Surprisingly there are only three numbers that can be written as the sum
+of fourth powers of their digits:
 
-   Surprisingly there are only three numbers that can be written as the sum
-   of fourth powers of their digits:
+    1634 = 1^4 + 6^4 + 3^4 + 4^4
+    8208 = 8^4 + 2^4 + 0^4 + 8^4
+    9474 = 9^4 + 4^4 + 7^4 + 4^4
 
-     1634 = 1^4 + 6^4 + 3^4 + 4^4
-     8208 = 8^4 + 2^4 + 0^4 + 8^4
-     9474 = 9^4 + 4^4 + 7^4 + 4^4
+As 1 = 1^4 is not a sum it is not included.
 
-   As 1 = 1^4 is not a sum it is not included.
+The sum of these numbers is 1634 + 8208 + 9474 = 19316.
 
-   The sum of these numbers is 1634 + 8208 + 9474 = 19316.
+Find the sum of all the numbers that can be written as the sum of fifth
+powers of their digits.
 
-   Find the sum of all the numbers that can be written as the sum of fifth
-   powers of their digits.
-
-   
-   Answer: 27a1779a8a8c323a307ac8a70bc4489d
+Answer: 27a1779a8a8c323a307ac8a70bc4489d
 
 
 Problem 31
 ==========
 
 
-   In England the currency is made up of pound, £, and pence, p, and there
-   are eight coins in general circulation:
+In England the currency is made up of pound, £, and pence, p, and there
+are eight coins in general circulation:
 
      1p, 2p, 5p, 10p, 20p, 50p, £1 (100p) and £2 (200p).
 
-   It is possible to make £2 in the following way:
+It is possible to make £2 in the following way:
 
      1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p
 
-   How many different ways can £2 be made using any number of coins?
+How many different ways can £2 be made using any number of coins?
 
-   
-   Answer: 142dfe4a33d624d2b830a9257e96726d
+Answer: 142dfe4a33d624d2b830a9257e96726d
 
 
 Problem 32
 ==========
 
 
-   We shall say that an n-digit number is pandigital if it makes use of all
-   the digits 1 to n exactly once; for example, the 5-digit number, 15234, is
-   1 through 5 pandigital.
+We shall say that an n-digit number is pandigital if it makes use of all
+the digits 1 to n exactly once; for example, the 5-digit number, 15234, is
+1 through 5 pandigital.
 
-   The product 7254 is unusual, as the identity, 39 × 186 = 7254, containing
-   multiplicand, multiplier, and product is 1 through 9 pandigital.
+The product 7254 is unusual, as the identity, 39 × 186 = 7254, containing
+multiplicand, multiplier, and product is 1 through 9 pandigital.
 
-   Find the sum of all products whose multiplicand/multiplier/product
-   identity can be written as a 1 through 9 pandigital.
+Find the sum of all products whose multiplicand/multiplier/product
+identity can be written as a 1 through 9 pandigital.
 
-   HINT: Some products can be obtained in more than one way so be sure to
-   only include it once in your sum.
-   
-   Answer: 100f6e37d0b0564490a2ee27eff0660d
+HINT: Some products can be obtained in more than one way so be sure to
+only include it once in your sum.
+
+Answer: 100f6e37d0b0564490a2ee27eff0660d
 
 
 Problem 33
 ==========
 
 
-   The fraction 49/98 is a curious fraction, as an inexperienced
-   mathematician in attempting to simplify it may incorrectly believe that
-   49/98 = 4/8, which is correct, is obtained by cancelling the 9s.
+The fraction 49/98 is a curious fraction, as an inexperienced
+mathematician in attempting to simplify it may incorrectly believe that
+49/98 = 4/8, which is correct, is obtained by cancelling the 9s.
 
-   We shall consider fractions like, 30/50 = 3/5, to be trivial
-   examples.
+We shall consider fractions like, 30/50 = 3/5, to be trivial
+examples.
 
-   There are exactly four non-trivial examples of this type of fraction, less
-   than one in value, and containing two digits in the numerator and
-   denominator.
+There are exactly four non-trivial examples of this type of fraction, less
+than one in value, and containing two digits in the numerator and
+denominator.
 
-   If the product of these four fractions is given in its lowest common
-   terms, find the value of the denominator.
+If the product of these four fractions is given in its lowest common
+terms, find the value of the denominator.
 
-   
-   Answer: f899139df5e1059396431415e770c6dd
+Answer: f899139df5e1059396431415e770c6dd
 
 
 Problem 34
 ==========
 
+145 is a curious number, as 1! + 4! + 5! = 1 + 24 + 120 = 145.
 
-   145 is a curious number, as 1! + 4! + 5! = 1 + 24 + 120 = 145.
+Find the sum of all numbers which are equal to the sum of the factorial of
+their digits.
 
-   Find the sum of all numbers which are equal to the sum of the factorial of
-   their digits.
+Note: as 1! = 1 and 2! = 2 are not sums they are not included.
 
-   Note: as 1! = 1 and 2! = 2 are not sums they are not included.
-
-   
-   Answer: 60803ea798a0c0dfb7f36397d8d4d772
-
+Answer: 60803ea798a0c0dfb7f36397d8d4d772
 
 Problem 35
 ==========
 
+The number, 197, is called a circular prime because all rotations of the
+digits: 197, 971, and 719, are themselves prime.
 
-   The number, 197, is called a circular prime because all rotations of the
-   digits: 197, 971, and 719, are themselves prime.
+There are thirteen such primes below 100: 2, 3, 5, 7, 11, 13, 17, 31, 37,
+71, 73, 79, and 97.
 
-   There are thirteen such primes below 100: 2, 3, 5, 7, 11, 13, 17, 31, 37,
-   71, 73, 79, and 97.
+How many circular primes are there below one million?
 
-   How many circular primes are there below one million?
-
-   
-   Answer: b53b3a3d6ab90ce0268229151c9bde11
-
+Answer: b53b3a3d6ab90ce0268229151c9bde11
 
 Problem 36
 ==========
 
+The decimal number, 585 = 1001001001[2] (binary), is palindromic in both
+bases.
 
-   The decimal number, 585 = 1001001001[2] (binary), is palindromic in both
-   bases.
+Find the sum of all numbers, less than one million, which are palindromic
+in base 10 and base 2.
 
-   Find the sum of all numbers, less than one million, which are palindromic
-   in base 10 and base 2.
+(Please note that the palindromic number, in either base, may not include
+leading zeros.)
 
-   (Please note that the palindromic number, in either base, may not include
-   leading zeros.)
-
-   
-   Answer: 0e175dc2f28833885f62e7345addff03
-
+Answer: 0e175dc2f28833885f62e7345addff03
 
 Problem 37
 ==========
 
+The number 3797 has an interesting property. Being prime itself, it is
+possible to continuously remove digits from left to right, and remain
+prime at each stage: 3797, 797, 97, and 7. Similarly we can work from
+right to left: 3797, 379, 37, and 3.
 
-   The number 3797 has an interesting property. Being prime itself, it is
-   possible to continuously remove digits from left to right, and remain
-   prime at each stage: 3797, 797, 97, and 7. Similarly we can work from
-   right to left: 3797, 379, 37, and 3.
+Find the sum of the only eleven primes that are both truncatable from left
+to right and right to left.
 
-   Find the sum of the only eleven primes that are both truncatable from left
-   to right and right to left.
+NOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.
 
-   NOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.
-
-   
-   Answer: cace46c61b00de1b60874936a093981d
-
+Answer: cace46c61b00de1b60874936a093981d
 
 Problem 38
 ==========
 
-
-   Take the number 192 and multiply it by each of 1, 2, and 3:
+Take the number 192 and multiply it by each of 1, 2, and 3:
 
      192 × 1 = 192
      192 × 2 = 384
      192 × 3 = 576
 
-   By concatenating each product we get the 1 to 9 pandigital, 192384576. We
-   will call 192384576 the concatenated product of 192 and (1,2,3)
+By concatenating each product we get the 1 to 9 pandigital, 192384576. We
+will call 192384576 the concatenated product of 192 and (1,2,3)
 
-   The same can be achieved by starting with 9 and multiplying by 1, 2, 3, 4,
-   and 5, giving the pandigital, 918273645, which is the concatenated product
-   of 9 and (1,2,3,4,5).
+The same can be achieved by starting with 9 and multiplying by 1, 2, 3, 4,
+and 5, giving the pandigital, 918273645, which is the concatenated product
+of 9 and (1,2,3,4,5).
 
-   What is the largest 1 to 9 pandigital 9-digit number that can be formed as
-   the concatenated product of an integer with (1,2, ... , n) where n > 1?
+What is the largest 1 to 9 pandigital 9-digit number that can be formed as
+the concatenated product of an integer with (1,2, ... , n) where n > 1?
 
-   
-   Answer: f2a29ede8dc9fae7926dc7a4357ac25e
-
+Answer: f2a29ede8dc9fae7926dc7a4357ac25e
 
 Problem 39
 ==========
 
+If p is the perimeter of a right angle triangle with integral length
+sides, {a,b,c}, there are exactly three solutions for p = 120.
 
-   If p is the perimeter of a right angle triangle with integral length
-   sides, {a,b,c}, there are exactly three solutions for p = 120.
+    {20,48,52}, {24,45,51}, {30,40,50}
 
-   {20,48,52}, {24,45,51}, {30,40,50}
+For which value of p ≤ 1000, is the number of solutions maximised?
 
-   For which value of p ≤ 1000, is the number of solutions maximised?
-
-   
-   Answer: fa83a11a198d5a7f0bf77a1987bcd006
+Answer: fa83a11a198d5a7f0bf77a1987bcd006
 
 
 Problem 40
 ==========
 
+An irrational decimal fraction is created by concatenating the positive
+integers: 0.123456789101112131415161718192021...
 
-   An irrational decimal fraction is created by concatenating the positive
-   integers:
+It can be seen that the 12th digit of the fractional part is 1.
 
-                     0.123456789101112131415161718192021...
-
-   It can be seen that the 12th digit of the fractional part is 1.
-
-   If d[n] represents the nth digit of the fractional part, find the value
-   of the following expression.
+If d[n] represents the nth digit of the fractional part, find the value
+of the following expression.
 
       d[1] × d[10] × d[100] × d[1000] × d[10000] × d[100000] × d[1000000]
-
    
-   Answer: 6f3ef77ac0e3619e98159e9b6febf557
+Answer: 6f3ef77ac0e3619e98159e9b6febf557
 
 
 Problem 41
 ==========
 
+We shall say that an n-digit number is pandigital if it makes use of all
+the digits 1 to n exactly once. For example, 2143 is a 4-digit pandigital
+and is also prime.
 
-   We shall say that an n-digit number is pandigital if it makes use of all
-   the digits 1 to n exactly once. For example, 2143 is a 4-digit pandigital
-   and is also prime.
-
-   What is the largest n-digit pandigital prime that exists?
-
-   
-   Answer: d0a1bd6ab4229b2d0754be8923431404
+What is the largest n-digit pandigital prime that exists?
+  
+Answer: d0a1bd6ab4229b2d0754be8923431404
 
 
 Problem 42
 ==========
 
-The nth term of the sequence of triangle numbers is given by, t[n] =
-½n(n+1); so the first ten triangle numbers are:
+The nth term of the sequence of triangle numbers is given by, t[n] = ½n(n+1);
+so the first ten triangle numbers are:
 
-				1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...
+    1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...
 
 By converting each letter in a word to a number corresponding to its
 alphabetical position and adding these values we form a word value. For
@@ -1035,7 +973,6 @@ The series, 1^1 + 2^2 + 3^3 + ... + 10^10 = 10405071317.
 
 Find the last ten digits of the series, 1^1 + 2^2 + 3^3 + ... + 1000^1000.
 
-
 Answer: 0829124724747ae1c65da8cae5263346
 
 Problem 49
@@ -1055,13 +992,12 @@ sequence?
 
 Answer: 0b99933d3e2a9addccbb663d46cbb592
 
-
 Problem 50
 ==========
 
 The prime 41, can be written as the sum of six consecutive primes:
 
-                  41 = 2 + 3 + 5 + 7 + 11 + 13
+    41 = 2 + 3 + 5 + 7 + 11 + 13
 
 This is the longest sum of consecutive primes that adds to a prime below
 one-hundred.
@@ -1114,7 +1050,7 @@ There are exactly ten ways of selecting three from five, 12345:
 
 In combinatorics, we use the notation, ^5C[3] = 10.
 
-   In general,
+In general,
 
       nC[r] =  ___n!___ ,where r ≤ n, n! = n×(n−1)×...×3×2×1, and 0! = 1.
                r!(n−r)!
@@ -1123,7 +1059,6 @@ It is not until n = 23, that a value exceeds one-million: 23C[10] = 1144066.
 
 How many, not necessarily distinct, values of  nC[r], for 1 ≤ n ≤ 100,
 are greater than one-million?
-
 
 Answer: e3b21256183cf7c2c7a66be163579d37
 
@@ -1238,7 +1173,7 @@ Problem 57
 It is possible to show that the square root of two can be expressed as an
 infinite continued fraction.
 
-              √ 2 = 1 + 1/(2 + 1/(2 + 1/(2 + ... ))) = 1.414213...
+    √ 2 = 1 + 1/(2 + 1/(2 + 1/(2 + ... ))) = 1.414213...
 
 By expanding this for the first four iterations, we get:
 
@@ -1264,13 +1199,13 @@ Problem 58
 Starting with 1 and spiralling anticlockwise in the following way, a
 square spiral with side length 7 is formed.
 
-                              37 36 35 34 33 32 31
-                              38 17 16 15 14 13 30
-                              39 18  5  4  3 12 29
-                              40 19  6  1  2 11 28
-                              41 20  7  8  9 10 27
-                              42 21 22 23 24 25 26
-                              43 44 45 46 47 48 49
+				  37 36 35 34 33 32 31
+				  38 17 16 15 14 13 30
+				  39 18  5  4  3 12 29
+				  40 19  6  1  2 11 28
+				  41 20  7  8  9 10 27
+				  42 21 22 23 24 25 26
+				  43 44 45 46 47 48 49
 
 It is interesting to note that the odd squares lie along the bottom right
 diagonal, but what is more interesting is that 8 out of the 13 numbers
@@ -1381,14 +1316,12 @@ Answer: 8f46b522b5401b8b6df99a7410eea44b
 Problem 63
 ==========
 
-
 The 5-digit number, 16807=7^5, is also a fifth power. Similarly, the
 9-digit number, 134217728=8^9, is a ninth power.
 
 How many n-digit positive integers exist which are also an nth power?
 
 Answer: f457c545a9ded88f18ecee47145a72c0
-
 
 Problem 64
 ==========
@@ -1529,9 +1462,7 @@ Problem 66
 ==========
 
 
-Consider quadratic Diophantine equations of the form:
-
-                         x^2 – Dy^2 = 1
+Consider quadratic Diophantine equations of the form: x^2 – Dy^2 = 1
 
 For example, when D=13, the minimal solution in x is 649^2 – 13×180^2 = 1.
 
@@ -1642,7 +1573,6 @@ It can be seen that n=6 produces a maximum n/φ(n) for n ≤ 10.
 
 Find the value of n ≤ 1,000,000 for which n/φ(n) is a maximum.
 
-
 Answer: bf08b01ead83cbd62a9839ca1cf35ada
 
 
@@ -1662,7 +1592,6 @@ permutation of 79180.
 
 Find the value of n, 1 < n < 10^7, for which φ(n) is a permutation of n
 and the ratio n/φ(n) produces a minimum.
-
 
 Answer: 1884dde67ced589082c8b7043abce181
 
@@ -1685,13 +1614,11 @@ By listing the set of reduced proper fractions for d ≤ 1,000,000 in
 ascending order of size, find the numerator of the fraction immediately to
 the left of 3/7.
 
-
 Answer: 71f38fa2f04db30be52f883d583bfd6f
 
 
 Problem 72
 ==========
-
 
 Consider the fraction, n/d, where n and d are positive integers. If n<d
 and HCF(n,d)=1, it is called a reduced proper fraction.
@@ -1706,13 +1633,10 @@ It can be seen that there are 21 elements in this set.
 How many elements would be contained in the set of reduced proper
 fractions for d ≤ 1,000,000?
 
-
 Answer: 0384fb529dc651fe0f460acff3e9ac5d
-
 
 Problem 73
 ==========
-
 
 Consider the fraction, n/d, where n and d are positive integers. If n<d
 and HCF(n,d)=1, it is called a reduced proper fraction.
@@ -1729,10 +1653,8 @@ proper fractions for d ≤ 12,000?
 
 Answer: 990a49eb474672444137fff1e5528a1b
 
-
 Problem 74
 ==========
-
 
 The number 145 is well known for the property that the sum of the
 factorial of its digits is equal to 145:
@@ -1761,9 +1683,7 @@ sixty terms.
 How many chains, with a starting number below one million, contain exactly
 sixty non-repeating terms?
 
-
 Answer: 69cb3ea317a32c4e6143e665fdb20b14
-
 
 Problem 75
 ==========
@@ -1922,7 +1842,6 @@ Find the minimal path sum, in [matrix.txt](files/matrix.txt), a 31K text file co
 80 by 80 matrix, from the left column to the right column.
 
 Answer: e6b3b1cd89b018d4754cf63863f6690a
-
 
 Problem 83
 ==========
@@ -2084,8 +2003,7 @@ Problem 88
 
 A natural number, N, that can be written as the sum and product of a given
 set of at least two natural numbers, {a[1], a[2], ... , a[k]} is called a
-product-sum number: N = a[1] + a[2] + ... + a[k] = a[1] × a[2] × ... ×
-a[k].
+product-sum number: N = a[1] + a[2] + ... + a[k] = a[1] × a[2] × ... × a[k].
 
 For example, 6 = 1 + 2 + 3 = 1 × 2 × 3.
 
@@ -2265,7 +2183,6 @@ integral side lengths and area and whose perimeters do not exceed one
 billion (1,000,000,000).
 
 Answer: 3218c6bb59f2539ec39ad4bf37c10913
-
 
 Problem 95
 ==========
@@ -10323,25 +10240,25 @@ Problem 404
 ===========
 
 
-   E[a] is an ellipse with an equation of the form x^2 + 4y^2 = 4a^2.
-   E[a]' is the rotated image of E[a] by θ degrees counterclockwise around
-   the origin O(0, 0) for 0° < θ < 90°.
+E[a] is an ellipse with an equation of the form x^2 + 4y^2 = 4a^2.
+E[a]' is the rotated image of E[a] by θ degrees counterclockwise around
+the origin O(0, 0) for 0° < θ < 90°.
 
-   b is the distance to the origin of the two intersection points closest to
-   the origin and c is the distance of the two other intersection points.
-   We call an ordered triplet (a, b, c) a canonical ellipsoidal triplet if a,
-   b and c are positive integers.
-   For example, (209, 247, 286) is a canonical ellipsoidal triplet.
+![](files/p_404_c_ellipse.gif)
 
-   Let C(N) be the number of distinct canonical ellipsoidal triplets (a, b,
-   c) for a ≤ N.
-   It can be verified that C(10^3) = 7, C(10^4) = 106 and C(10^6) = 11845.
+b is the distance to the origin of the two intersection points closest to
+the origin and c is the distance of the two other intersection points.
+We call an ordered triplet (a, b, c) a canonical ellipsoidal triplet if a,
+b and c are positive integers.
+For example, (209, 247, 286) is a canonical ellipsoidal triplet.
 
-   Find C(10^17).
+Let C(N) be the number of distinct canonical ellipsoidal triplets (a, b,
+c) for a ≤ N.
+It can be verified that C(10^3) = 7, C(10^4) = 106 and C(10^6) = 11845.
 
-   
-   p_404_c_ellipse.gif
-   Answer: 2d1bc4b93bbc19d9e70c5b04338dea2e
+Find C(10^17).
+
+Answer: 2d1bc4b93bbc19d9e70c5b04338dea2e
 
 
 Problem 405
@@ -10352,18 +10269,18 @@ Let T(0) be the tiling consisting of a single rectangle.
 For n > 0, let T(n) be obtained from T(n-1) by replacing all tiles in the
 following manner:
 
+![](files/p_405_tile1.png)
+
 The following animation demonstrates the tilings T(n) for n from 0 to 5:
+
+![](files/p_405_tile2.gif)
 
 Let f(n) be the number of points where four tiles meet in T(n).
 For example, f(1) = 0, f(4) = 82 and f(10^9) mod 17^7 = 126897180.
 
 Find f(10^k) for k = 10^18, give your answer modulo 17^7.
 
-![](files/p_405_tile1.png)
-![](files/p_405_tile2.gif)
-
 Answer: 93b712426b768586f88d0bfe597842e6
-
 
 Problem 406
 ===========
@@ -10758,22 +10675,21 @@ Problem 419
 Problem 420
 ===========
 
+A positive integer matrix is a matrix whose elements are all positive
+integers.
+Some positive integer matrices can be expressed as a square of a positive
+integer matrix in two different ways. Here is an example:
 
-   A positive integer matrix is a matrix whose elements are all positive
-   integers.
-   Some positive integer matrices can be expressed as a square of a positive
-   integer matrix in two different ways. Here is an example:
+![](files/p_420_matrix.gif)
 
-   We define F(N) as the number of the 2x2 positive integer matrices which
-   have a trace less than N and which can be expressed as a square of a
-   positive integer matrix in two different ways.
-   We can verify that F(50) = 7 and F(1000) = 1019.
+We define F(N) as the number of the 2x2 positive integer matrices which
+have a trace less than N and which can be expressed as a square of a
+positive integer matrix in two different ways.
+We can verify that F(50) = 7 and F(1000) = 1019.
 
-   Find F(10^7).
+Find F(10^7).
 
-   
-   p_420_matrix.gif
-   Answer: e265e34e34fc54e8ceecd5e4b94b1381
+Answer: e265e34e34fc54e8ceecd5e4b94b1381
 
 
 Problem 421
@@ -10945,45 +10861,46 @@ Problem 426
 ===========
 
 
-   Consider an infinite row of boxes. Some of the boxes contain a ball. For
-   example, an initial configuration of 2 consecutive occupied boxes followed
-   by 2 empty boxes, 2 occupied boxes, 1 empty box, and 2 occupied boxes can
-   be denoted by the sequence (2, 2, 2, 1, 2), in which the number of
-   consecutive occupied and empty boxes appear alternately.
+Consider an infinite row of boxes. Some of the boxes contain a ball. For
+example, an initial configuration of 2 consecutive occupied boxes followed
+by 2 empty boxes, 2 occupied boxes, 1 empty box, and 2 occupied boxes can
+be denoted by the sequence (2, 2, 2, 1, 2), in which the number of
+consecutive occupied and empty boxes appear alternately.
 
-   A turn consists of moving each ball exactly once according to the
-   following rule: Transfer the leftmost ball which has not been moved to the
-   nearest empty box to its right.
+A turn consists of moving each ball exactly once according to the
+following rule: Transfer the leftmost ball which has not been moved to the
+nearest empty box to its right.
 
-   After one turn the sequence (2, 2, 2, 1, 2) becomes (2, 2, 1, 2, 3) as can
-   be seen below; note that we begin the new sequence starting at the first
-   occupied box.
+After one turn the sequence (2, 2, 2, 1, 2) becomes (2, 2, 1, 2, 3) as can
+be seen below; note that we begin the new sequence starting at the first
+occupied box.
 
-   A system like this is called a Box-Ball System or BBS for short.
+![](files/p_426_baxball1.gif)
 
-   It can be shown that after a sufficient number of turns, the system
-   evolves to a state where the consecutive numbers of occupied boxes is
-   invariant. In the example below, the consecutive numbers of occupied boxes
-   evolves to [1, 2, 3]; we shall call this the final state.
+A system like this is called a Box-Ball System or BBS for short.
 
-   We define the sequence {t[i]}:
+It can be shown that after a sufficient number of turns, the system
+evolves to a state where the consecutive numbers of occupied boxes is
+invariant. In the example below, the consecutive numbers of occupied boxes
+evolves to [1, 2, 3]; we shall call this the final state.
 
-     • s[0] = 290797
-     • s[k+1] = s[k]^2 mod 50515093
-     • t[k] = (s[k] mod 64) + 1
+![](files/p_426_baxball2.gif)
 
-   Starting from the initial configuration (t[0], t[1], …, t[10]), the final
-   state becomes [1, 3, 10, 24, 51, 75].
-   Starting from the initial configuration (t[0], t[1], …, t[10 000 000]),
-   find the final state.
-   Give as your answer the sum of the squares of the elements of the final
-   state. For example, if the final state is [1, 2, 3] then 14 ( = 1^2 + 2^2
-   + 3^2) is your answer.
+We define the sequence {t[i]}:
 
-   
-   p_426_baxball1.gif
-   p_426_baxball2.gif
-   Answer: b5d8157a351482da47da0512ca374007
+ • s[0] = 290797
+ • s[k+1] = s[k]^2 mod 50515093
+ • t[k] = (s[k] mod 64) + 1
+
+Starting from the initial configuration (t[0], t[1], …, t[10]), the final
+state becomes [1, 3, 10, 24, 51, 75].
+Starting from the initial configuration (t[0], t[1], …, t[10 000 000]),
+find the final state.
+Give as your answer the sum of the squares of the elements of the final
+state. For example, if the final state is [1, 2, 3] then 14 ( = 1^2 + 2^2
++ 3^2) is your answer.
+
+Answer: b5d8157a351482da47da0512ca374007
 
 
 Problem 427
@@ -11063,28 +10980,28 @@ Problem 430
 ===========
 
 
-   N disks are placed in a row, indexed 1 to N from left to right.
-   Each disk has a black side and white side. Initially all disks show their
-   white side.
+N disks are placed in a row, indexed 1 to N from left to right.
+Each disk has a black side and white side. Initially all disks show their
+white side.
 
-   At each turn, two, not necessarily distinct, integers A and B between 1
-   and N (inclusive) are chosen uniformly at random.
-   All disks with an index from A to B (inclusive) are flipped.
+At each turn, two, not necessarily distinct, integers A and B between 1
+and N (inclusive) are chosen uniformly at random.
+All disks with an index from A to B (inclusive) are flipped.
 
-   The following example shows the case N = 8. At the first turn A = 5 and B
-   = 2, and at the second turn A = 4 and B = 6.
+The following example shows the case N = 8. At the first turn A = 5 and B
+= 2, and at the second turn A = 4 and B = 6.
 
-   Let E(N, M) be the expected number of disks that show their white side
-   after M turns.
-   We can verify that E(3, 1) = 10/9, E(3, 2) = 5/3, E(10, 4) ≈ 5.157 and
-   E(100, 10) ≈ 51.893.
+![](files/p_430_flips.gif)
 
-   Find E(10^10, 4000).
-   Give your answer rounded to 2 decimal places behind the decimal point.
+Let E(N, M) be the expected number of disks that show their white side
+after M turns.
+We can verify that E(3, 1) = 10/9, E(3, 2) = 5/3, E(10, 4) ≈ 5.157 and
+E(100, 10) ≈ 51.893.
 
-   
-   p_430_flips.gif
-   Answer: 32b0825d7a110a1a220e80629c413411
+Find E(10^10, 4000).
+Give your answer rounded to 2 decimal places behind the decimal point.
+
+Answer: 32b0825d7a110a1a220e80629c413411
 
 
 Problem 431
@@ -11108,6 +11025,8 @@ a point on the top which has a horizontal distance of $x$ metres from the
 centre then a cone with a strangely curved and sloping base is formed. He
 shows Fred a picture.
 
+![](files/p_431_grain_silo.png)
+
 We shall let the amount of space wasted in cubic metres be given by
 $V(x)$. If $x = 1.114785284$, which happens to have three squared decimal
 places, then the amount of space wasted, $V(1.114785284) \approx 36$.
@@ -11128,8 +11047,6 @@ If Quick thinking Quentin is to satisfy frustratingly fussy Fred the
 farmer's appetite for all things square then determine the values of $x$
 for all possible square space wastage options and calculate $\sum x$
 correct to 9 decimal places.
-
-![](files/p_431_grain_silo.png)
 
 Answer: 5e5d81aa8bfaf92f68cdef0154c5c238
 
