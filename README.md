@@ -1044,7 +1044,7 @@ There are exactly ten ways of selecting three from five, 12345:
 
       123, 124, 125, 134, 135, 145, 234, 235, 245, and 345
 
-In combinatorics, we use the notation, ^5C[3] = 10.
+In combinatorics, we use the notation, 5C[3] = 10.
 
 In general,
 
@@ -1195,13 +1195,7 @@ Problem 58
 Starting with 1 and spiralling anticlockwise in the following way, a
 square spiral with side length 7 is formed.
 
-				  37 36 35 34 33 32 31
-				  38 17 16 15 14 13 30
-				  39 18  5  4  3 12 29
-				  40 19  6  1  2 11 28
-				  41 20  7  8  9 10 27
-				  42 21 22 23 24 25 26
-				  43 44 45 46 47 48 49
+![](files/p_58.png)
 
 It is interesting to note that the odd squares lie along the bottom right
 diagonal, but what is more interesting is that 8 out of the 13 numbers
@@ -1281,13 +1275,13 @@ formulae:
 The ordered set of three 4-digit numbers: 8128, 2882, 8281, has three
 interesting properties.
 
-1. The set is cyclic, in that the last two digits of each number is the
+1. The set is cyclic, in that the last two digits of each number is the
    first two digits of the next number (including the last number with
    the first).
-2. Each polygonal type: triangle (P[3,127]=8128), square (P[4,91]=8281),
+2. Each polygonal type: triangle (P[3,127]=8128), square (P[4,91]=8281),
    and pentagonal (P[5,44]=2882), is represented by a different number in
    the set.
-3. This is the only set of 4-digit numbers with this property.
+3. This is the only set of 4-digit numbers with this property.
 
 Find the sum of the only ordered set of six cyclic 4-digit numbers for
 which each polygonal type: triangle, square, pentagonal, hexagonal,
@@ -1298,8 +1292,8 @@ Answer: caec17d84884addeec35c3610645ab63
 Problem 62
 ==========
 
-The cube, 41063625 (345^3), can be permuted to produce two other cubes:
-56623104 (384^3) and 66430125 (405^3). In fact, 41063625 is the smallest
+The cube, 41063625 (345³), can be permuted to produce two other cubes:
+56623104 (384³) and 66430125 (405³). In fact, 41063625 is the smallest
 cube which has exactly three permutations of its digits which are also
 cube.
 
@@ -1458,9 +1452,9 @@ Problem 66
 ==========
 
 
-Consider quadratic Diophantine equations of the form: x^2 – Dy^2 = 1
+Consider quadratic Diophantine equations of the form: x² – Dy² = 1
 
-For example, when D=13, the minimal solution in x is 649^2 – 13×180^2 = 1.
+For example, when D=13, the minimal solution in x is 649² – 13×180² = 1.
 
 It can be assumed that there are no solutions in positive integers when D
 is square.
@@ -1468,11 +1462,11 @@ is square.
 By finding minimal solutions in x for D = {2, 3, 5, 6, 7}, we obtain the
 following:
 
-    3^2 – 2×2^2 = 1
-    2^2 – 3×1^2 = 1
-    9^2 – 5×4^2 = 1
-    5^2 – 6×2^2 = 1
-    8^2 – 7×3^2 = 1
+    3² – 2×2² = 1
+    2² – 3×1² = 1
+    9² – 5×4² = 1
+    5² – 6×2² = 1
+    8² – 7×3² = 1
 
 Hence, by considering minimal solutions in x for D ≤ 7, the largest x is
 obtained when D=5.
@@ -1576,7 +1570,7 @@ Problem 70
 ==========
 
 
-Euler's Totient function, φ(n) [sometimes called the phi function], is
+Euler's Totient function, φ(n) (sometimes called the phi function), is
 used to determine the number of positive numbers less than or equal to n
 which are relatively prime to n. For example, as 1, 2, 4, 5, 7, and 8, are
 all less than nine and relatively prime to nine, φ(9)=6.
