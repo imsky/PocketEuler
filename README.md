@@ -1,4 +1,4 @@
-# Local Euler
+# Pocket Euler
 
 This is the offline version of [Project Euler](https://projecteuler.net/).
 
