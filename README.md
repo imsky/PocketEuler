@@ -12236,7 +12236,7 @@ You are given F(2) = 45, F(4) = 4284990, F(100) = 26365463243, F(10^4) = 2495838
 Find F(10^8).
 
 
-Answer: 25044905874565165
+Answer: 4eb1b9788c1c6bed02f98d25c5633a21
 
 
 Problem 478
@@ -12268,5 +12268,5 @@ We can verify that `E(1) = 103`, `E(2) = 520447`, `E(10) mod 118 = 82608406` and
 Find `E(10 000 000) mod 11^8`.
 
 
-Answer: 59510340
+Answer: 02760aada255f7a5246b6ddc96b70a52
     
