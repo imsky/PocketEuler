@@ -12163,7 +12163,7 @@ Problem 474
    Find F(10^6!, 65432) modulo (10^16 + 61).
 
    
-   Answer: ?
+   Answer: dcfd11c680aa4cce11e1eee1a448440c
 
 
 Problem 475
