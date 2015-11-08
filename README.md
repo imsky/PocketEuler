@@ -12077,7 +12077,7 @@ Problem 471
    For G(10) the answer would have been 2.059722222e1.
 
    
-   Answer: ?
+   Answer: d632b70a0a349ed70ac17ef6246dd7d8
 
 
 Problem 472
