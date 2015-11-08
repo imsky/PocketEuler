@@ -12114,7 +12114,7 @@ Problem 472
    Find ∑f(N) for 1 ≤ N ≤ 10^12. Give the last 8 digits of your answer.
 
    
-   Answer: ?
+   Answer: 7d7ff31d9448e86ba9c901878c1fa5c6
 
 
 Problem 473
