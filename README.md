@@ -11980,7 +11980,7 @@ Problem 468
    Find F(11 111 111) mod 1 000 000 993.
 
    
-   Answer: ?
+   Answer: b7aa617d57bf1947ddfb9ae47c0feaac
 
 
 Problem 469
