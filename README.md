@@ -12047,7 +12047,7 @@ Problem 470
    Calculate F(20), rounded to the nearest integer.
 
    
-   Answer: ?
+   Answer: a37644507221e441ca9667e1c7e660c4
 
 
 Problem 471
