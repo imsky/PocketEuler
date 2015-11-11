@@ -11954,7 +11954,7 @@ Problem 467
    Find f(10 000) mod 1 000 000 007.
 
    
-   Answer: ?
+   Answer: 3ee327e7b4415f9e1cb75e3363c388b5
 
 
 Problem 468
