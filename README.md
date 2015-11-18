@@ -11715,7 +11715,7 @@ Problem 459
    Find W(10^6).
 
    
-   Answer: ?
+   Answer: abe2c990b8f028376186c2bc339e4c1e
 
 
 Problem 460
