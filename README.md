@@ -11686,7 +11686,7 @@ Problem 458
    Find T(10^12). Give the last 9 digits of your answer.
 
    
-   Answer: ?
+   Answer: d304abee61f0f6ac83a73de56d2fe578
 
 
 Problem 459
