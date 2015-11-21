@@ -6,6 +6,7 @@ This is the offline version of [Project Euler](https://projecteuler.net/).
 
 * Compiled by [Kyle Keen](http://kmkeen.com/local-euler/).
 * Converted to Github Markdown by [Ivan Malopinsky](http://imsky.co).
+* Missing answers provided by [George Netu](https://github.com/georgenetu).
 
 ### License
 
