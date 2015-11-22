@@ -11429,7 +11429,7 @@ Problem 447
    Find F(10^14) (mod 1 000 000 007).
 
    
-   Answer: ?
+   Answer: ea764a33b7368fccb4a1bbd37768d08c
 
 
 Problem 448
