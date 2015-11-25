@@ -11267,7 +11267,7 @@ Problem 440
    Find S(2000) mod 987 898 789.
 
    
-   Answer: ?
+   Answer: 214573d310bf2f02e066e4a9c193cc23
 
 
 Problem 441
