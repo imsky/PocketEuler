@@ -11391,7 +11391,7 @@ Find ∑ R(c) for c=C(10 000 000,k), and 1 ≤k≤ 9 999 999.
 Give your answer modulo 1 000 000 007.
 
 
-Answer: ?
+Answer: 0183cdbc44f24e971bd824e9deb2b478
 
 
 Problem 446
