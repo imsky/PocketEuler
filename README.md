@@ -11240,7 +11240,7 @@ Problem 439
    Find S(10^11) mod 10^9.
 
    
-   Answer: ?
+   Answer: da937ac1432c8ccd4de6f68df36e7980
 
 
 Problem 440
