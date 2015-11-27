@@ -11223,7 +11223,7 @@ Problem 438
    Find ∑S(t) for n = 7.
 
    
-   Answer: ?
+   Answer: ff0c265a14c2c0bb56f10dbff1768338
 
 
 Problem 439
