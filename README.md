@@ -12284,7 +12284,7 @@ Let S(_n_) = Σ (_a<sub>k</sub>_+_b<sub>k</sub>_)_<sup>p</sup>_ (_b<sub>k</sub>_
 
 Interestingly, S(_n_) is always an integer. For example, `S(4) = 51160`.
 
-Find `S(106) modulo 1 000 000 007`.
+Find S(10<sup>6</sup>) modulo 1 000 000 007.
 
 
 Answer: b64da7e8067be18d8145d3b550240d90
