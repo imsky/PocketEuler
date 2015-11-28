@@ -12270,4 +12270,21 @@ Find `E(10 000 000) mod 11^8`.
 
 
 Answer: 02760aada255f7a5246b6ddc96b70a52
-    
+
+
+Problem 479
+===========
+
+
+Let _a<sub>k</sub>_, _b<sub>k</sub>_, and _c<sub>k</sub>_ represent the three solutions (real or complex numbers) to the expression 1/_x_ = (_k_/_x_)<sup>2</sup> (_k_+_x_<sup>2</sup>) - _kx_.
+
+For instance, for _k_ = 5, we see that {_a<sub>5</sub>_, _b<sub>5</sub>_, _c<sub>5</sub>_} is approximately `{5.727244, -0.363622+2.057397i, -0.363622-2.057397i}`.
+
+Let S(_n_) = Σ (_a<sub>k</sub>_+_b<sub>k</sub>_)_<sup>p</sup>_ (_b<sub>k</sub>_+_c<sub>k</sub>_)_<sup>p</sup>_ (_c<sub>k</sub>_+_a<sub>k</sub>_)_<sup>p</sup>_ for all integers _p_, _k_ such that 1 ≤ _p_, _k_ ≤ _n_.
+
+Interestingly, S(_n_) is always an integer. For example, `S(4) = 51160`.
+
+Find `S(106) modulo 1 000 000 007`.
+
+
+Answer: b64da7e8067be18d8145d3b550240d90
