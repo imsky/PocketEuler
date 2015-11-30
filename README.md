@@ -12288,3 +12288,60 @@ Find S(10<sup>6</sup>) modulo 1 000 000 007.
 
 
 Answer: b64da7e8067be18d8145d3b550240d90
+
+
+Problem 480
+===========
+
+
+Consider all the words which can be formed by selecting letters, in any order, from the phrase:
+
+**thereisasyetinsufficientdataforameaningfulanswer**
+
+Suppose those with 15 letters or less are listed in alphabetical order and numbered sequentially starting at 1.
+The list would include:
+
+1 : a<br/>
+2 : aa<br/>
+3 : aaa<br/>
+4 : aaaa<br/>
+5 : aaaaa<br/>
+6 : aaaaaa<br/>
+7 : aaaaaac<br/>
+8 : aaaaaacd<br/>
+9 : aaaaaacde<br/>
+10 : aaaaaacdee<br/>
+11 : aaaaaacdeee<br/>
+12 : aaaaaacdeeee<br/>
+13 : aaaaaacdeeeee<br/>
+14 : aaaaaacdeeeeee<br/>
+15 : aaaaaacdeeeeeef<br/>
+16 : aaaaaacdeeeeeeg<br/>
+17 : aaaaaacdeeeeeeh<br/>
+...<br/>
+28 : aaaaaacdeeeeeey<br/>
+29 : aaaaaacdeeeeef<br/>
+30 : aaaaaacdeeeeefe<br/>
+...<br/>
+115246685191495242: euleoywuttttsss<br/>
+115246685191495243: euler<br/>
+115246685191495244: eulera<br/>
+...<br/>
+525069350231428029: ywuuttttssssrrr<br/>
+
+Define _P_(_w_) as the position of the word _w_.<br/>
+Define _W_(_p_) as the word in position _p_.<br/>
+We can see that _P_(_w_) and _W_(_p_) are inverses: _P_(_W_(_p_)) = _p_ and _W_(_P_(_w_)) = _w_.<br/>
+
+Examples:
+
+_W_(10) = aaaaaacdee<br/>
+_P_(aaaaaacdee) = 10<br/>
+_W_(115246685191495243) = euler<br/>
+_P_(euler) = 115246685191495243<br/>
+
+Find _W_(_P_(legionary) + _P_(calorimeters) - _P_(annihilate) + _P_(orchestrated) - _P_(fluttering)).
+Give your answer using lowercase characters (no punctuation or space).
+
+Answer: b97e157bf53033d21f610d2350b92faf
+
