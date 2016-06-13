@@ -1,5 +1,7 @@
 # Pocket Euler
 
+[![Build Status](https://travis-ci.org/imsky/PocketEuler.svg?branch=master)](https://travis-ci.org/imsky/PocketEuler)
+
 This is the offline version of [Project Euler](https://projecteuler.net/).
 
 ### History
