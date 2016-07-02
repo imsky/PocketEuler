@@ -3746,7 +3746,7 @@ using distinct integers.
 
 For instance, the numbers {2,3,4,5,7,12,15,20,28,35} can be used:
 
-![](files/p_152_sum.gif)
+1/2 = 1/2^2 + 1/3^2 + 1/4^2 + 1/5^2 + 1/7^2 + 1/12^2 + 1/15^2 + 1/20^2 + 1/28^2 + 1/35^2
 
 In fact, only using integers between 2 and 45 inclusive, there are exactly
 three ways to do it, the remaining two being:
