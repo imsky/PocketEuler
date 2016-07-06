@@ -14,7 +14,7 @@ module.exports = {
       "hard-break-spaces": false,  // MD009
       "no-tabs": false,  // MD010
       "no-consecutive-blank-lines": false,  // MD012
-      "maximum-line-length": 250,  // MD013
+      "maximum-line-length": false,  // MD013
       "no-multiple-toplevel-headings": false,  // MD025
       "list-item-indent": false,  // MD030
       "no-missing-blank-lines": false,  // MD031 & MD032
