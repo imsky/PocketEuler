@@ -3777,12 +3777,19 @@ To distinguish them from Gaussian integers with b ≠ 0 we call such
 integers "rational integers."
 A Gaussian integer is called a divisor of a rational integer n if the
 result is also a Gaussian integer.
-If for example we divide 5 by 1+2i we can simplify ![](files/p_153_formule1.gif) in the following
-manner:
+
+If for example we divide 5 by $1+2i$ we can simplify $\dfrac{5}{1+2i}$ in the following manner:
+
 Multiply numerator and denominator by the complex conjugate of 1+2i: 1−2i.
-The result is ![](files/p_153_formule2.gif).
+
+The result is
+$\dfrac{5}{1+2i} = \dfrac{5}{1+2i} \dfrac{1-2i}{1-2i} = \dfrac{5(1-2i) }{1-(2i)^2} = \dfrac{5(1-2i) }{1-(-4)} = \dfrac{5(1-2i) }{5} = 1-2i$.
+
 So 1+2i is a divisor of 5.
-Note that 1+i is not a divisor of 5 because ![](files/p_153_formule5.gif).
+
+Note that $1+i$ is not a divisor of 5 because
+$\dfrac{5}{1+i} = \dfrac{5}{2} - \dfrac{5}{2} i$.
+
 Note also that if the Gaussian Integer (a+bi) is a divisor of a rational
 integer n, then its complex conjugate (a−bi) is also a divisor of n.
 
@@ -3800,11 +3807,12 @@ positive rational integers:
 | 5   | 1, 1+2i, 1-2i, 2+i, 2-i, 5                        | 12                         |
 
 
-For divisors with positive real parts, then, we have: ![](files/p_153_formule6.gif).
+For divisors with positive real parts, then, we have:
+$\sum_{n=1}^{5} s(n) = 35$.
 
-For 1 ≤ n ≤ 10^5, ∑ s(n)=17924657155.
+For $1 ≤ n ≤ 10^5, ∑ s(n)=17924657155$.
 
-What is ∑ s(n) for 1 ≤ n ≤ 10^8?
+What is $∑ s(n) \text{ for } 1 ≤ n ≤ 10^8$?
 
 Answer: 08ec9d6e6c2275d37e7a227fb2d1f06f
 
@@ -3861,8 +3869,9 @@ Find D(18).
 
 Reminder : When connecting capacitors C[1], C[2] etc in parallel, the
 total capacitance is C[T] = C[1] + C[2] +...,
-whereas when connecting them in series, the overall capacitance is given
-by: ![](files/p_155_capsform.gif)
+
+whereas when connecting them in series, the overall capacitance is given by:
+$\dfrac{1}{ \text{C}_\text{T} } = \dfrac{1}{ \text{C}_1 } + \dfrac{1}{ \text{C}_2 } + ...$
 
 Answer: da0a3fc900cc8ae42d514e280524ee39
 
@@ -5518,7 +5527,9 @@ Problem 225
 Problem 226
 ===========
 
-The blancmange curve is the set of points (x,y) such that 0 ≤ x ≤ 1 and ![](files/p_226_formula.gif),
+The blancmange curve is the set of points $(x,y)$ such that $0 ≤ x ≤ 1$ and
+$y = \sum_{n=0}^{\infty} \dfrac{s(2^n x) }{2^n}$,
+
 where s(x) = the distance from x to the nearest integer.
 
 The area under the blancmange curve is equal to ½, shown in pink in the
@@ -6124,7 +6135,7 @@ Problem 251
 A triplet of positive integers (a,b,c) is called a Cardano Triplet if it
 satisfies the condition:
 
-![](files/p_251_cardano.gif)
+$\sqrt[3]{a + b\sqrt{c} } + \sqrt[3]{a - b\sqrt{c} } = 1$
 
 For example, (2,1,5) is a Cardano Triplet.
 
@@ -6259,14 +6270,16 @@ If d is odd, set x[0] = 2×10^(d-1)⁄2.
 If d is even, set x[0] = 7×10^(d-2)⁄2.
 Repeat:
 
-![](files/p_255_Heron.gif)
+$x_{k+1} = \biggr\lfloor \dfrac{x_k + \lceil n / x_k \rceil }{2} \biggr\rfloor$
 
 until x[k+1] = x[k].
 
 As an example, let us find the rounded-square-root of n = 4321.
 n has 4 digits, so x[0] = 7×10^(4-2)⁄2 = 70.
 
-![](files/p_255_Example.gif)
+$x_1 = \biggr\lfloor \dfrac{70 + \lceil 4321 / 70 \rceil }{2} \biggr\rfloor = 66$.
+
+$x_2 = \biggr\lfloor \dfrac{66 + \lceil 4321 / 66 \rceil }{2} \biggr\rfloor = 66$.
 
 Since x[2] = x[1], we stop here.
 So, after just two iterations, we have found that the rounded-square-root
@@ -6283,8 +6296,7 @@ iterations required to find the rounded-square-root of a 14-digit number
 (10^13 ≤ n < 10^14)?
 Give your answer rounded to 10 decimal places.
 
-Note: The symbols ⌊x⌋ and ⌈x⌉ represent the floor function and ceiling
-function respectively.
+Note: The symbols $\lfloor x \rfloor$ and $\lceil x \rceil$ represent the floor function and ceiling function respectively.
 
 Answer: 12be028b156b49faa1137febda940ab5
 
@@ -6462,7 +6474,7 @@ Problem 262
 The following equation represents the continuous topography of a
 mountainous region, giving the elevation h at any point (x,y):
 
-![](files/p_262_formula1.gif)
+$h = \biggr( 5000 - \dfrac{x^2 + y^2 + xy }{200} + \dfrac{25(x + y) }{2} \biggr) ⋅ e^{- \biggr\rvert \dfrac{x^2 + y^2 }{1000000} - \dfrac{3(x + y) }{2000} + \dfrac{7}{10} \biggr\rvert }$
 
 A mosquito intends to fly from A(200,200) to B(1400,1400), without leaving
 the area given by 0 ≤ x, y ≤ 1600.
@@ -6941,7 +6953,7 @@ Problem 282
 For non-negative integers m, n, the Ackermann function A(m, n) is defined
 as follows:
 
-![](files/p_282_formula.gif)
+$A(m,n) = \begin{cases} n + 1 & \text{if } m = 0\\ A(m-1, 1) & \text{if } m > 0 \text{ and } n = 0\\ A(m-1, A(m, n-1)) & \text{if } m > 0 \text{ and } n > 0\\ \end{cases}$
 
 For example A(1, 0) = 2, A(2, 2) = 7 and A(3, 4) = 125.
 
@@ -7149,8 +7161,8 @@ Problem 290
 Problem 291
 ===========
 
-A prime number p is called a Panaitopol prime if ![](files/p_291_formula.gif) for some positive
-integers x and y.
+A prime number $p$ is called a Panaitopol prime if $p = \dfrac{x^4 - y^4 }{x^3 + y^3}$
+for some positive integers $x$ and $y$.
 
 Find how many Panaitopol primes are less than 5×10^15.
 
@@ -7492,9 +7504,9 @@ that, written in base 10, uses only digits ≤ 2.
 
 Thus f(2)=2, f(3)=12, f(7)=21, f(42)=210, f(89)=1121222.
 
-Also, ![](files/p303_formula100.gif).
+Also, $\sum_{n=1}^{100} \dfrac{f(n) }{n} = 11363107$.
 
-Find ![](files/p303_formula10000.gif).
+Find $\sum_{n=1}^{1000} \dfrac{f(n) }{n}$.
 
 Answer: b904a0b3d922e628a828e744ee7d3a60
 
@@ -7874,9 +7886,10 @@ For example, if n = 535, then
     for p = 355287143650049560000490848764084685354..., we get k = 36
 etc and we find that g(535) = 1008.
 
-Given that ![](files/p_316_decexp1.gif), find ![](files/p_316_decexp2.gif)
+Given that $y = \sum_{n=2}^{999} g \biggr( \biggr\lfloor \dfrac{10^6 }{n} \biggr\rfloor \biggr) = 27280188$,
+find $\sum_{n=2}^{999999} g \biggr( \biggr\lfloor \dfrac{10^{16} }{n} \biggr\rfloor \biggr)$
 
-Note: ![](files/p_316_decexp3.gif) represents the floor function.
+Note: $\lfloor x \rfloor$ represents the floor function.
 
 Answer: 2495e8f6e9d4cdadbf0411144e7180b9
 
@@ -8100,13 +8113,13 @@ Problem 326
 
 Let a[n] be a sequence recursively defined by:
 
-![](files/p_326_formula1.gif)
+$a = 1, a_n = ( \sum_{k=1}^{n-1} k⋅a_k ) \bmod n$
 
 So the first 10 elements of a[n] are: 1,1,0,3,0,3,5,4,1,9.
 
 Let f(N,M) represent the number of pairs (p,q) such that:
 
-![](files/p_326_formula2.gif)
+$1 ≤ p ≤ q ≤ \text{N}$ and $( \sum_{i=p}^q a_i ) \bmod M = 0$
 
 It can be seen that f(10,10)=4 with the pairs (3,3), (5,5), (7,9) and
 (9,10).
@@ -8208,12 +8221,13 @@ than what we achieved previously with the "binary search" strategy; it is
 also better than or equal to any other strategy.
 So, in fact, we have just described an optimal strategy for n=8.
 
-Let C(n) be the worst-case cost achieved by an optimal strategy for n, as
-described above.
-Thus C(1) = 0, C(2) = 1, C(3) = 2 and C(8) = 12.
-Similarly, C(100) = 400 and ![](files/p_328_sum1.gif)C(n) = 17575.
+Let $\text{C}(n)$ be the worst-case cost achieved by an optimal strategy for $n$, as described above.
 
-Find ![](files/p_328_sum2.gif)C(n).
+Thus $\text{C}(1) = 0, \text{C}(2) = 1, \text{C}(3) = 2 \text{ and } \text{C}(8) = 12$.
+
+Similarly, $\text{C}(100) = 400$ and $\sum_{n=1}^{100} \text{C}(n) = 17575$.
+
+Find $\sum_{n=1}^{200000} \text{C}(n)$.
 
 Answer: 92a3220ad5b17a562c039e6e93d6df90
 
@@ -8252,7 +8266,7 @@ Problem 330
 An infinite sequence of real numbers a(n) is defined for all integers n as
 follows:
 
-![](files/p_330_formula.gif)
+$a(n) = \begin{cases} 1 & n < 0 \\ \sum_{i=0}^{\infty} \dfrac{a(n-i) }{i!} & n ≥ 0 \end{cases}$
 
 For example,
 
@@ -8301,15 +8315,17 @@ the bottom right disk has coordinates (N-1,0) and the top left disk has
 coordinates (0,N-1).
 
 Let C[N] be the following configuration of a board with N×N disks:
-A disk at (x,y) satisfying ![](files/p_331_crossflips1.gif), shows its black side; otherwise, it shows its
-white side. C[5] is shown above.
+
+A disk at $(x,y)$ satisfying $N - 1 ≤ \sqrt{x^2 + y^2} < N$,
+shows its black side; otherwise, it shows its white side.
+$C_5$ is shown above.
 
 Let T(N) be the minimal number of turns to finish a game starting from
 configuration C[N] or 0 if configuration C[N] is unsolvable.
 We have shown that T(5)=3. You are also given that T(10)=29 and T(1
 000)=395253.
 
-Find ![](files/p_331_crossflips2.gif).
+Find $\sum_{i=3}^{31} T(2^i - i)$.
 
 Answer: b609ccc578e71db9de0524fff94e1b70
 
@@ -8332,7 +8348,8 @@ Let A(r) be the area of the smallest spherical triangle in T(r).
 
 For example A(14) is 3.294040 rounded to six decimal places.
 
-Find ![](files/p_332_sum.gif)A(r). Give your answer rounded to six decimal places.
+Find $\sum_{r=1}^{50} \text{A}(r)$.
+Give your answer rounded to six decimal places.
 
 Answer: c2ae53ebfb15db373cfe5d71078ea1ca
 
@@ -8389,7 +8406,13 @@ finish the game:
 
 You are given the following sequences:
 
-![](files/p_334.png)
+$t_0 = 123456$.
+
+$t_i = \begin{cases} \dfrac{t_i-1 }{2} , & \text{if } t_i-1 \text{ is even} \\ \lfloor \dfrac{t_i-1 }{2} \rfloor \oplus 926252, & \text{if } t_i-1 \text{ is odd} \end{cases}$.
+
+where $\lfloor x \rfloor$ is the floor function and $\oplus$ is the bitwise XOR operator.
+
+$b_i = ( t_i \bmod 2^{11} ) + 1$.
 
 The first two terms of the last sequence are b[1] = 289 and b[2] = 145.
 If we start with b[1] and b[2] beans in two adjacent bowls, 3419100 moves
@@ -8422,7 +8445,8 @@ Let M(x) represent the number of moves required to return to the initial
 situation, starting with x bowls. Thus, M(5) = 15. It can also be verified
 that M(100) = 10920.
 
-Find ![](files/p_335_sum.gif)M(2^k+1). Give your answer modulo 7^9.
+Find $\sum_{k=0}^{10^{18} } M(2^k + 1)$.
+Give your answer modulo $7^9$.
 
 Answer: 9a519cfa0ebdd4d1dd318f14b5799eea
 
@@ -8554,7 +8578,7 @@ For fixed integers a, b, c, define the crazy function F(n) as follows:
     F(n) = n - c for all n > b
     F(n) = F(a + F(a + F(a + F(a + n)))) for all n ≤ b.
 
-Also, define S(a, b, c) = ![](files/p_340_formula.gif).
+Also, define S(a, b, c) = $\sum_{n=0}^{b} \text{F}(n)$.
 
 For example, if a = 50, b = 2000 and c = 40, then F(0) = 3240 and F(2000)
 = 2040.
@@ -8985,13 +9009,14 @@ Problem 356
 ===========
 
 
-   Let a[n] be the largest real root of a polynomial g(x) = x^3 - 2^n·x^2 +
-   n.
-   For example, a[2] = 3.86619826...
+Let $a_n$ be the largest real root of a polynomial $g(x) = x^3 - 2^n·x^2 + n$.
 
-   Find the last eight digits of ![](files/p_356_cubicpoly1.gif).
+For example, $a_2 = 3.86619826...$
 
-   Note: ![](files/p_356_cubicpoly2.gif) represents the floor function.
+Find the last eight digits of
+$\sum_{i=1}^{30} \lfloor {a_i}^{987654321} \rfloor$.
+
+Note: $\lfloor a \rfloor$ represents the floor function.
 
    Answer: ab2104e80fa7da630ce7fd835d8006ee
 
@@ -9133,7 +9158,7 @@ The first several terms of A[n] are given as follows:
 
 We can also verify that A[100] = 3251 and A[1000] = 80852364498.
 
-Find the last 9 digits of ![](files/p_361_Thue-Morse1.gif).
+Find the last 9 digits of $\sum_{k=1}^{10} \text{A}_{{10}^k}$.
 
 Answer: 6540278145900f1fa45b95cc2f9599f1
 
@@ -9396,13 +9421,14 @@ Problem 371
 Problem 372
 ===========
 
-Let R(M, N) be the number of lattice points (x, y) which satisfy M<x≤N,
-M<y≤N and ![](files/p_372_pencilray1.jpg) is odd.
+Let $\text{R}(M, N)$ be the number of lattice points $(x, y)$ which satisfy $M<x≤N, M<y≤N$ and
+$\biggr\lfloor \dfrac{y^2}{x^2} \biggr\rfloor \text{ is odd}$.
 
-We can verify that R(0, 100) = 3019 and R(100, 10000) = 29750422.
-Find R(2·10^6, 10^9).
+We can verify that $\text{R}(0, 100) = 3019$ and $\text{R}(100, 10000) = 29750422$.
 
-Note: represents ![](files/p_372_pencilray2.gif) the floor function.
+Find $\text{R}(2·10^6, 10^9)$.
+
+Note: $\lfloor x \rfloor$ represents the floor function.
 
 Answer: 5fdeda0dca23d12ae3eb1763b2c6f5ea
 
@@ -10662,7 +10688,7 @@ integers.
 Some positive integer matrices can be expressed as a square of a positive
 integer matrix in two different ways. Here is an example:
 
-![](files/p_420_matrix.gif)
+$\pmatrix{40 & 12 \\48 & 40} = \pmatrix{2 & 3 \\12 & 2}^2 = \pmatrix{6 & 1 \\4 & 6}^2$
 
 We define F(N) as the number of the 2x2 positive integer matrices which
 have a trace less than N and which can be expressed as a square of a
