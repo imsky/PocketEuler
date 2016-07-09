@@ -3646,12 +3646,11 @@ Problem 149
    First, generate four million pseudo-random numbers using a specific form
    of what is known as a "Lagged Fibonacci Generator":
 
-   For 1 ≤ k ≤ 55, s[k] = [100003 − 200003k + 300007k^3] (modulo 1000000) −
-   500000.
-   For 56 ≤ k ≤ 4000000, s[k] = [s[k−24] + s[k−55] + 1000000] (modulo
-   1000000) − 500000.
+For $1 ≤ k ≤ 55, s_k = [100003 − 200003k + 300007k^3] \hspace{0pt} (\text{modulo } 1000000) − 500000$.
 
-   Thus, s[10] = −393027 and s[100] = 86613.
+For $56 ≤ k ≤ 4000000, s_k = [s_{k-24} + s_{k-55} + 1000000] \hspace{0pt} (\text{modulo } 1000000) − 500000$.
+
+Thus, $s_10 = −393027$ and $s_100 = 86613$.
 
    The terms of s are then arranged in a 2000×2000 table, using the first
    2000 numbers to fill the first row (sequentially), the next 2000 numbers
@@ -4156,11 +4155,11 @@ Problem 165
    20000 numbers using the so-called "Blum Blum Shub" pseudo-random number
    generator.
 
-   s[0] = 290797
+$s_0 = 290797$
 
-   s[n+1] = s[n]×s[n] (modulo 50515093)
+$s_{n+1} = s_n × s_n (\text{modulo } 50515093)$
 
-   t[n] = s[n] (modulo 500)
+$t_n = s_n (\text{modulo } 500)$
 
    To create each line segment, we use four consecutive numbers t[n]. That
    is, the first line segment is given by:
@@ -4663,8 +4662,9 @@ The telephone number of the caller and the called number in record n are
 Caller(n) = S[2n-1] and Called(n) = S[2n] where S[1,2,3,...] come from the
 "Lagged Fibonacci Generator":
 
-For 1 ≤ k ≤ 55, S[k] = [100003 - 200003k + 300007k^3] (modulo 1000000)
-For 56 ≤ k, S[k] = [S[k-24] + S[k-55]] (modulo 1000000)
+For $1 ≤ \text{k} ≤ 55, \text{S}_{\text{k}} = [100003 - 200003\text{k} + 300007\text{k}^3] \hspace{0pt} (\text{modulo } 1000000)$
+
+For $56 ≤ \text{k}, \text{S}_{\text{k}} = [\text{S}_{\text{k-24}} + \text{S}_{\text{k-55}}] \hspace{0pt} (\text{modulo } 1000000)$
 
 If Caller(n) = Called(n) then the user is assumed to have misdialled and
 the call fails; otherwise the call is successful.
@@ -5222,13 +5222,12 @@ Problem 211
 ===========
 
 
-   For a positive integer n, let σ[2](n) be the sum of the squares of its
-   divisors. For example,
+For a positive integer $n$, let $\sigma_2(n)$ be the sum of the squares of its divisors.
+For example,
 
-                       σ[2](10) = 1 + 4 + 25 + 100 = 130.
+$\sigma_2(10) = 1 + 4 + 25 + 100 = 130$.
 
-   Find the sum of all n, 0 < n < 64,000,000 such that σ[2](n) is a perfect
-   square.
+Find the sum of all $n$, $0 < n < 64,000,000$ such that $\sigma_2(n)$ is a perfect square.
 
    
    Answer: 5fe0ed146690e7bca448687a94353a73
@@ -5568,8 +5567,7 @@ Answer: 7b87cd0a96f0f2f12f911cdc66608d95
 Problem 228
 ===========
 
-Let S[n] be the regular n-sided polygon – or shape – whose vertices v[k]
-(k = 1,2,…,n) have coordinates:
+Let $S_\text{n}$ be the regular $n$-sided polygon – or shape – whose vertices $v_k (k = 1, 2, …, n)$ have coordinates:
 
 	  x[k]   =   cos( ^2k-1/[n] × 180° )
 	  y[k]   =   sin( ^2k-1/[n] × 180° )
@@ -5633,12 +5631,11 @@ For any two strings of digits, A and B, we define F[A,B] to be the
 sequence (A,B,AB,BAB,ABBAB,...) in which each term is the concatenation of
 the previous two.
 
-Further, we define D[A,B](n) to be the nth digit in the first term of
-F[A,B] that contains at least n digits.
+Further, we define $\text{D}_{\text{A,B}}(n)$ to be the $n$th digit in the first term of $\text{F}_{\text{A,B}}$ that contains at least $n$ digits.
 
 Example:
 
-Let A=1415926535, B=8979323846. We wish to find D[A,B](35), say.
+Let A=1415926535, B=8979323846. We wish to find $\text{D}_{\text{A,B}}(35)$, say.
 
 The first few terms of F[A,B] are:
 
@@ -5648,7 +5645,7 @@ The first few terms of F[A,B] are:
     897932384614159265358979323846
     14159265358979323846897932384614159265358979323846
 
-Then D[A,B](35) is the 35th digit in the fifth term, which is 9.
+Then $\text{D}_{\text{A,B}}(35)$ is the 35th digit in the fifth term, which is 9.
 
 Now we use for A the first 100 digits of π behind the decimal point:
 
@@ -5660,7 +5657,7 @@ and for B the next hundred digits:
    82148086513282306647093844609550582231725359408128
    48111745028410270193852110555964462294895493038196.
 
-Find ∑[n = 0,1,...,17]   10^n× D[A,B]((127+19n)×7^n).
+Find $\sum_{n=0,1,...,17} \hspace{8pt} 10^n × \text{D}_{\text{A,B} }((127 + 19n) × 7^n)$.
 
 Answer: 040735038021ff4704bbd3a0964369ef
 
@@ -9214,8 +9211,8 @@ the segments P[0]P[1] in P[0] and P[2]P[3] in P[3].
 
 A cubic Bézier curve with P[0]=(1,0), P[1]=(1,v), P[2]=(v,1) and
 P[3]=(0,1) is used to approximate a quarter circle.
-The value v>0 is chosen such that the area enclosed by the lines OP[0],
-OP[3] and the curve is equal to ^π/[4] (the area of the quarter circle).
+
+The value $v > 0$ is chosen such that the area enclosed by the lines $\text{OP}_0, \text{OP}_3$ and the curve is equal to $\pi / 4$ (the area of the quarter circle).
 
 By how many percent does the length of the curve differ from the length of
 the quarter circle?
@@ -9694,14 +9691,15 @@ Problem 383
 ===========
 
 
-   Let f[5](n) be the largest integer x for which 5^x divides n.
-   For example, f[5](625000) = 7.
+Let $\text{f}_5(n)$ be the largest integer $x$ for which $5^x$ divides $n$.
 
-   Let T[5](n) be the number of integers i which satisfy f[5]((2·i-1)!) <
-   2·f[5](i!) and 1 ≤ i ≤ n.
-   It can be verified that T[5](10^3) = 68 and T[5](10^9) = 2408210.
+For example, $\text{f}_5(625000) = 7$.
 
-   Find T[5](10^18).
+Let $\text{T}_5(n)$ be the number of integers $i$ which satisfy $\text{f}_5((2 · i-1)!) < 2 · \text{f}_5(i!)$ and $1 ≤ i ≤ n$.
+
+It can be verified that $\text{T}_5(10^3) = 68$ and $\text{T}_5(10^9) = 2408210$.
+
+Find $\text{T}_5(10^{18})$.
 
    
    Answer: c1bc7c945344e1967bfaced9ade895a0
@@ -11376,12 +11374,12 @@ Problem 444
    the game ends in a game consisting of p players (e.g. E(111) = 5.2912 when
    rounded to 5 significant digits).
 
-   Let S[1](N) = E(p)
-   Let S[k](N) = S[k-1](p) for k > 1
+Let $\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$
 
-   Find S[20](10^14) and write the answer in scientific notation rounded to
-   10 significant digits. Use a lowercase e to separate mantissa and exponent
-   (e.g. S[3](100) = 5.983679014e5).
+Let $\text{S}_k(N) = \sum_{p=1}^N \text{S}_{k-1}(p)$ for $k > 1$
+
+Find $\text{S}_{20}(10^{14})$ and write the answer in scientific notation rounded to 10 significant digits.
+Use a lowercase e to separate mantissa and exponent (e.g. $\text{S}_3(100) = 5.983679014\text{e}5$).
 
    
    Answer: e6745c386ba3c0de1bf56897e453c7c8
@@ -11749,14 +11747,14 @@ and y[1] as follows:
 *   If $y_0 = y_1$, the value of $v$ equals $y_0$.
 *   If $y_0 ≠ y_1$, the value of $v$ equals $(y_1 - y_0) / (\ln(y_1) - \ln(y_0))$.
 
-The left image is one of the possible paths for d = 4. First the ant goes
-from A(0, 1) to P[1](1, 3) at velocity (3 - 1) / (ln(3) - ln(1)) ≈ 1.8205.
+The left image is one of the possible paths for $d = 4$.
+First the ant goes from $\text{A}(0, 1)$ to $\text{P}_1(1, 3)$ at velocity $(3 - 1) / (\ln(3) - \ln(1)) ≈ 1.8205$.
 Then the required time is sqrt(5) / 1.8205 ≈ 1.2283.
 
-   From P[1](1, 3) to P[2](3, 3) the ant travels at velocity 3 so the
-   required time is 2 / 3 ≈ 0.6667. From P[2](3, 3) to B(4, 1) the ant
-   travels at velocity (1 - 3) / (ln(1) - ln(3)) ≈ 1.8205 so the required
-   time is sqrt(5) / 1.8205 ≈ 1.2283.
+From $\text{P}_1(1, 3)$ to $\text{P}_2(3, 3)$ the ant travels at velocity 3 so the required time is $2 / 3 ≈ 0.6667$.
+From $\text{P}_2(3, 3)$ to $\text{B}(4, 1)$ the ant travels at velocity $(1 - 3) / (\ln(1) - \ln(3)) ≈ 1.8205$
+so the required time is $\text{sqrt}(5) / 1.8205 ≈ 1.2283$.
+
    Thus the total required time is 1.2283 + 0.6667 + 1.2283 = 3.1233.
 
    The right image is another path. The total required time is calculated as
@@ -11777,21 +11775,21 @@ Problem 461
 ===========
 
 
-   Let f[n](k) = e^k/n - 1, for all non-negative integers k.
+Let $f_n(k) = e^{k/n} - 1$, for all non-negative integers $k$.
 
-   Remarkably, f[200](6) + f[200](75) + f[200](89) + f[200](226) =
-   3.141592644529… ≈ π.
+Remarkably, $f_{200}(6) + f_{200}(75) + f_{200}(89) + f_{200}(226) = 3.141592644529… ≈ \pi$.
 
-   In fact, it is the best approximation of π of the form
-   f[n](a) + f[n](b) + f[n](c) + f[n](d) for n = 200.
+In fact, it is the best approximation of $\pi$ of the form
+$f_n(a) + f_n(b) + f_n(c) + f_n(d)$ for $n = 200$.
 
-   Let g(n) = a^2 + b^2 + c^2 + d^ 2 for a, b, c, d that minimize the error:
-   | f[n](a) + f[n](b) + f[n](c) + f[n](d) - π|
-   (where |x| denotes the absolute value of x).
+Let $g(n) = a^2 + b^2 + c^2 + d^{\text{ }2}$ for $a, b, c, d$ that minimize the error:
+$| f_n(a) + f_n(b) + f_n(c) + f_n(d) - \pi |$
 
-   You are given g(200) = 6^2 + 75^2 + 89^2 + 226^2 = 64658.
+(where $|x|$ denotes the absolute value of $x$).
 
-   Find g(10000). ^
+You are given $g(200) = 6^2 + 75^2 + 89^2 + 226^2 = 64658$.
+
+Find $g(10000)$.
 
    
    Answer: 70c3eff774c9d5cdb29284c16b9d1bc6
@@ -11980,14 +11978,19 @@ Problem 468
    An integer is called B-smooth if none of its prime factors is greater than
    B.
 
-   Let S[B](n) be the largest B-smooth divisor of n.
-   Examples:
-   S[1](10) = 1
-   S[4](2100) = 12
-   S[17](2496144) = 5712
+Let $\text{S}_B(n)$ be the largest $B$-smooth divisor of $n$.
 
-   Define F(n) = ∑[1≤B≤n] ∑[0≤r≤n] S[B](C(n,r)). Here, C(n,r) denotes the
-   binomial coefficient.
+   Examples:
+
+$\text{S}_1(10) = 1$
+
+$\text{S}_4(2100) = 12$
+
+$\text{S}_{17}(2496144) = 5712$
+
+Define $\text{F}(n) = ∑_{1≤B≤n} ∑_{0≤r≤n} \text{S}_B(\text{C}(n, r))$.
+Here, $\text{C}(n, r)$ denotes the binomial coefficient.
+
    Examples:
    F(11) = 3132
    F(1 111) mod 1 000 000 993 = 706036312
