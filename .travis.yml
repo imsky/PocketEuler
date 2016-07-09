@@ -16,5 +16,4 @@ script:
   - mdl -c ./.mdlrc README.md
   - markdownlint -c ./.markdownlint.json README.md
   - node $HOME/remark/packages/remark-cli/cli.js --config=./.remarkrc.js --frail --no-stdout -u remark-lint README.md
-  # Do not fail on the invalid links from issue #3
-  - node $HOME/remark/packages/remark-cli/cli.js --no-stdout -u remark-validate-links README.md
+  - node $HOME/remark/packages/remark-cli/cli.js --config=./.remarkrc.js --frail --no-stdout -u remark-validate-links README.md
