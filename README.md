@@ -9754,7 +9754,8 @@ Problem 385
    - the vertices of T have integer coordinates with absolute value ≤ n, and
    - the foci^1 of the largest-area ellipse inside T are (√13,0) and
    (-√13,0).
-   Let A(n) be the sum of the areas of all such triangles.
+
+Let A(n) be the sum of the areas of all such triangles.
 
    For example, if n = 8, there are two such triangles. Their vertices are
    (-4,-3),(-4,3),(8,0) and (4,3),(4,-3),(-8,0), and the area of each
@@ -9984,6 +9985,7 @@ Problem 394
    Jeff eats a pie in an unusual way.
    The pie is circular. He starts with slicing an initial cut in the pie
    along a radius.
+
    While there is at least a given fraction F of pie left, he performs the
    following procedure:
    - He makes two slices from the pie centre to any point of what is
@@ -9991,8 +9993,9 @@ Problem 394
    likely. This will divide the remaining pie into three pieces.
    - Going counterclockwise from the initial cut, he takes the first two pie
    pieces and eats them.
-   When less than a fraction F of pie remains, he does not repeat this
-   procedure. Instead, he eats all of the remaining pie.
+
+When less than a fraction F of pie remains, he does not repeat this
+procedure. Instead, he eats all of the remaining pie.
 
    For x ≥ 1, let E(x) be the expected number of times Jeff repeats the
    procedure above with F = ^1/[x].
@@ -11364,8 +11367,8 @@ Problem 444
    player then scratches his newly-acquired ticket and reveals its worth to
    everyone at the table.
 
-   The game ends once all tickets have been scratched. All players still
-   remaining at the table must leave with their currently-held tickets.
+The game ends once all tickets have been scratched. All players still
+remaining at the table must leave with their currently-held tickets.
 
    Assume that each player uses the optimal strategy for maximizing the
    expected value of his ticket winnings.
@@ -11807,12 +11810,16 @@ Problem 462
    comes after all of its proper divisors.
 
    This is one of the possible permutations for N = 20.
-   - 1, 2, 4, 3, 9, 8, 16, 6, 18, 12.
+
+> 1, 2, 4, 3, 9, 8, 16, 6, 18, 12.
+
    This is not a valid permutation because 12 comes before its divisor 6.
-   - 1, 2, 4, 3, 9, 8, 12, 16, 6, 18.
+
+> 1, 2, 4, 3, 9, 8, 12, 16, 6, 18.
 
    We can verify that F(6) = 5, F(8) = 9, F(20) = 450 and F(1000) ≈
    8.8521816557e21.
+
    Find F(10^18). Give as your answer its scientific notation rounded to ten
    digits after the decimal point.
    When giving your answer, use a lowercase e to separate mantissa and
