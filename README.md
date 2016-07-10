@@ -3053,10 +3053,9 @@ Problem 125
    The palindromic number 595 is interesting because it can be written as the
    sum of consecutive squares: 6^2 + 7^2 + 8^2 + 9^2 + 10^2 + 11^2 + 12^2.
 
-   There are exactly eleven palindromes below one-thousand that can be
-   written as consecutive square sums, and the sum of these palindromes is
-   4164. Note that 1 = 0^2 + 1^2 has not been included as this problem is
-   concerned with the squares of positive integers.
+There are exactly eleven palindromes below one-thousand that can be written as consecutive square sums,
+and the sum of these palindromes is 4164.
+Note that $1 = 0^2 + 1^2$ has not been included as this problem is concerned with the squares of positive integers.
 
    Find the sum of all the numbers less than 10^8 that are both palindromic
    and can be written as the sum of consecutive squares.
@@ -10902,9 +10901,9 @@ Starting from the initial configuration (t[0], t[1], …, t[10]), the final
 state becomes [1, 3, 10, 24, 51, 75].
 Starting from the initial configuration (t[0], t[1], …, t[10 000 000]),
 find the final state.
-Give as your answer the sum of the squares of the elements of the final
-state. For example, if the final state is [1, 2, 3] then 14 ( = 1^2 + 2^2
-+ 3^2) is your answer.
+
+Give as your answer the sum of the squares of the elements of the final state.
+For example, if the final state is [1, 2, 3] then $14 \text{ } (\text{ } = 1^2 + 2^2 + 3^2)$ is your answer.
 
 Answer: b5d8157a351482da47da0512ca374007
 
@@ -11219,9 +11218,8 @@ Problem 438
 ===========
 
 
-   For an n-tuple of integers t = (a[1], ..., a[n]), let (x[1], ..., x[n]) be
-   the solutions of the polynomial equation x^n + a[1]x^n-1 + a[2]x^n-2 + ...
-   + a[n-1]x + a[n] = 0.
+For an $n$-tuple of integers $t = (a_1, ..., a_n)$, let $(x_1, ..., x_n)$ be the solutions
+of the polynomial equation $x^n + a_1 x^{n-1} + a_2 x^{n-2} + ... + a_{n-1} x + a_n = 0$.
 
 Consider the following two conditions:
 
@@ -11247,8 +11245,8 @@ Problem 439
 
    Let d(k) be the sum of all divisors of k.
    We define the function S(N) = ∑[1≤i≤N] ∑[1≤j≤N] d(i·j).
-   For example, S(3) = d(1) + d(2) + d(3) + d(2) + d(4) + d(6) + d(3) + d(6)
-   + d(9) = 59.
+
+For example, $\text{S}(3) = d(1) + d(2) + d(3) + d(2) + d(4) + d(6) + d(3) + d(6) + d(9) = 59$.
 
    You are given that S(10^3) = 563576517282 and S(10^5) mod 10^9 =
    215766508.
