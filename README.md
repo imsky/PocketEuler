@@ -5257,8 +5257,9 @@ Problem 212
 
    where S[1],...,S[300000] come from the "Lagged Fibonacci Generator":
 
-   For 1 ≤ k ≤ 55, S[k] = [100003 - 200003k + 300007k^3]   (modulo 1000000)
-   For 56 ≤ k, S[k] = [S[k-24] + S[k-55]]   (modulo 1000000)
+For $1 \leq \boldsymbol{k} \leq 55, S_k = [100003 - 200003\boldsymbol{k} + 300007\boldsymbol{k}^3] \hspace{0pt} (\text{modulo } 1000000)$
+
+For $56 \leq \boldsymbol{k}, S_k = [S_{k-24} + S_{k-55}] \hspace{0pt} (\text{modulo } 1000000)$
 
    Thus, C[1] has parameters {(7,53,183),(94,369,56)}, C[2] has parameters
    {(2383,3563,5079),(42,212,344)}, and so on.
