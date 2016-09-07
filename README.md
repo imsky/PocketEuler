@@ -12395,3 +12395,24 @@ Find E(14) rounded to 8 decimal places.
 
 
 Answer: 2dfd5108fcb120426ae938aed3bfef8f
+
+
+Problem 482
+===========
+
+ABC is an integer sided triangle with incenter I and perimeter p.
+
+The segments IA, IB and IC have integral length as well.
+
+Let L = p + |IA| + |IB| + |IC|.
+
+Let S(P) = ∑L for all such triangles where p ≤ P. For example, S(103) = 3619.
+
+Find S(107).
+
+
+Answer: 24d71e97017a9118e31c9129c2146cd1
+
+
+
+
