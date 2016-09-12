@@ -12420,26 +12420,26 @@ Problem 483
 
 
 We define a *permutation* as an operation that rearranges the order of the elements {1, 2, 3, ..., n}. There are n! such permutations, one of which leaves the elements in their initial order. For n = 3 we have 3! = 6 permutations:
-- P<sub>1</sub> = keep the initial order
-- P<sub>2</sub> = exchange the 1<sup>st</sup> and 2<sup>nd</sup> elements
-- P<sub>3</sub> = exchange the 1<sup>st</sup> and 3<sup>rd</sup> elements
-- P<sub>4</sub> = exchange the 2<sup>nd</sup> and 3<sup>rd</sup> elements
-- P<sub>5</sub> = rotate the elements to the right
-- P<sub>6</sub> = rotate the elements to the left
+- P[1] = keep the initial order
+- P[2] = exchange the 1^st and 2^nd elements
+- P[3] = exchange the 1^st and 3^rd elements
+- P[4] = exchange the 2^nd and 3^rd elements
+- P[5] = rotate the elements to the right
+- P[6] = rotate the elements to the left
 
 If we select one of these permutations, and we re-apply the <u>same</u> permutation repeatedly, we eventually restore the initial order. <br>
-For a permutation P<sub>i</sub>, let f(P<sub>i</sub>) be the number of steps required to restore the initial order by applying the permutation P<sub>i</sub> repeatedly. <br>
+For a permutation P[i], let f(P[i]) be the number of steps required to restore the initial order by applying the permutation P[i] repeatedly. <br>
 For n = 3, we obtain:
-- f(P<sub>1</sub>) = 1 : (1,2,3) → (1,2,3)
-- f(P<sub>2</sub>) = 2 : (1,2,3) → (2,1,3) → (1,2,3)
-- f(P<sub>3</sub>) = 2 : (1,2,3) → (3,2,1) → (1,2,3)
-- f(P<sub>4</sub>) = 2 : (1,2,3) → (1,3,2) → (1,2,3)
-- f(P<sub>5</sub>) = 3 : (1,2,3) → (3,1,2) → (2,3,1) → (1,2,3)
-- f(P<sub>6</sub>) = 3 : (1,2,3) → (2,3,1) → (3,1,2) → (1,2,3)
+- f(P[1]) = 1 : (1,2,3) → (1,2,3)
+- f(P[2]) = 2 : (1,2,3) → (2,1,3) → (1,2,3)
+- f(P[3]) = 2 : (1,2,3) → (3,2,1) → (1,2,3)
+- f(P[4]) = 2 : (1,2,3) → (1,3,2) → (1,2,3)
+- f(P[5]) = 3 : (1,2,3) → (3,1,2) → (2,3,1) → (1,2,3)
+- f(P[6]) = 3 : (1,2,3) → (2,3,1) → (3,1,2) → (1,2,3)
 
-Let g(n) be the average value of f<sup>2</sup>(P<sub>i</sub>) over all permutations P<sub>i</sub> of length n.
+Let g(n) be the average value of f^2(P[i]) over all permutations P[i] of length n.
 
-g(3) = (1<sup>2</sup> + 2<sup>2</sup> + 2<sup>2</sup> + 2<sup>2</sup> + 3<sup>2</sup> + 3<sup>2</sup>)/3! = 31/6 ≈ 5.166666667e0 <br>
+g(3) = (1^2 + 2^2 + 2^2 + 2^2 + 3^2 + 3^2)/3! = 31/6 ≈ 5.166666667e0 <br>
 g(5) = 2081/120 ≈ 1.734166667e1 <br>
 g(20) = 12422728886023769167301/2432902008176640000 ≈ 5.106136147e3
 
