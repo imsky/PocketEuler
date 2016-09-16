@@ -12448,3 +12448,22 @@ Find g(350) and write the answer in scientific notation rounded to 10 significan
 
 
 Answer: 97727a4443f564c0e26eb2f28d2127f4
+
+
+Problem 484
+===========
+
+
+The **arithmetic derivative** is defined by
+
+- _p'_ = 1 for any prime _p_
+- _(ab)'_ = _a'b_ + _ab'_ for all integers _a_, _b_ (Leibniz rule)
+
+For example, 20' = 24
+
+Find ∑ **gcd**(_k_,_k'_) for 1 < _k_ ≤ 5·10^15
+
+Note: **gcd**(_x_,_y_) denotes the greatest common divisor of _x_ and _y_.
+
+
+Answer: 1140b7b7382b87a3ad6833b57f13e9df
