@@ -12467,3 +12467,19 @@ Note: **gcd**(_x_,_y_) denotes the greatest common divisor of _x_ and _y_.
 
 
 Answer: 1140b7b7382b87a3ad6833b57f13e9df
+
+
+Problem 485
+===========
+
+
+Let d(n) be the number of divisors of n.
+Let M(n,k) be the maximum value of d(j) for n ≤ j ≤ n+k-1.
+Let S(u,k) be the sum of M(n,k) for 1 ≤ n ≤ u-k+1.
+
+You are given that S(1000,10)=17176.
+
+Find S(100 000 000,100 000).
+
+
+Answer: 8f6e6b4e1907757ff7287f76aa237551
