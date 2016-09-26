@@ -12495,7 +12495,7 @@ Let `F[5](n)` be the number of strings *s* such that:
 - *s* has length at most *n*, and
 - *s* contains a palindromic substring of length at least 5.
 
-For example, `F[5](4) = 0`, `F[5](5) = 8`, `F[5](6) = 42` and `F[5](11)` = 3844.
+For example, `F[5](4)` = 0, `F[5](5)` = 8, `F[5](6)` = 42 and `F[5](11)` = 3844.
 
 Let D(*L*) be the number of integers *n* such that 5 ≤ *n* ≤ *L* and `F[5](n)` is divisible by 87654321.
 
