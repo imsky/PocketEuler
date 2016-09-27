@@ -12505,3 +12505,19 @@ Find D(10^18).
 
 Answer: d00e6482f3a49de0e2a984711e484f59
 
+
+Problem 487
+===========
+
+
+Let `f[k]`(*n*) be the sum of the *k*^th powers of the first *n* positive integers.
+
+For example, `f[2](10)` = 1^2 + 2^2 + 3^2 + 4^2 + 5^2 + 6^2 + 7^2 + 8^2 + 9^2 + 10^2 = 385.
+
+Let `S[k]`(*n*) be the sum of `f[k]`(*i*) for 1 ≤ i ≤ n. For example, `S[4](100)` = 35375333830.
+
+What is `∑ (S[10000](10^12) mod p)` over all primes *p* between 2 ⋅ 10^9 and 2 ⋅ 10^9 + 2000?
+
+
+Answer: 0e1227136d764a590dd6e067b305819b
+
