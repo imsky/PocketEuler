@@ -1,0 +1,133 @@
+#!/bin/bash
+
+# An (inefficient) way to generate the subtitles of PE's problems.
+
+#might contain bugs, so saving README.md before running it might be a good idea.
+scriptLocation=$(cd $(dirname "$0");pwd -P)
+script="$(basename "$0")"
+#this is assuming that the script is in a subfolder in the folder where
+#README.md is. if otherwise, please edit the according lines.
+mkdir -p "$scriptLocation/.scriptthings"
+file="$scriptLocation/../README.md"
+if [ ! -s "$file" ]
+then
+   file="$scriptLocation/README.md"
+fi
+if [ ! -s "$file" ]
+then
+   echo "Cannot find README.md" 1>&2
+fi
+script="$scriptLocation/$script"
+htmlfile="$scriptLocation/.scriptthings/projecteuler_allproblems.htm"
+parsedfile="$htmlfile.parsed"
+
+function parsehtml()
+{
+   if [ -s "$parsedfile" ]
+   then
+      #rm "$parsedfile"
+      return
+   fi
+   if [ ! -s "$htmlfile" ]
+   then
+      echo "$htmlfile dosn't exist, or is empty. (re)downloading." 1>&2
+      wget 'https://projecteuler.net/show=all' -O "$htmlfile"
+   fi
+   cat "$htmlfile" |egrep "problem=[0-9]+\">Problem [0-9]+: .*<span style=\"font-size:70%;\"" -o|egrep "Problem [0-9]+: [^<]+" -o >> "$parsedfile.tmp"
+   last=$(tail "$parsedfile.tmp" -n1|gawk -- '{print $2}')
+   last=${last%?}
+   for l in $(seq "$last")
+   do
+      p=$(grep "Problem $l:" "$parsedfile.tmp")
+      plast=${p:(-1)}
+      while [ "$plast" == "?" ] || [ "$plast" == "!" ] || [ "$plast" == " " ] || [ "$plast" == "," ]
+      do
+         p=${p%?}
+         plast=${p:(-1)}
+      done
+      echo "$p" >> "$parsedfile"
+   done
+   rm -f "$parsedfile.tmp"
+}
+function getProb()
+{
+   prob="$1"
+   #echo "Doing problem $prob" 1>&2
+   echo -e -n "\b\b\b$prob" 1>&2
+   pH1="Problem $1"
+   pH1len=$(echo -n "$pH1"|wc -m)
+   if [ -s "$file" ]
+   then
+      inOut=$(cat "$file" |egrep "^Problem $prob$" -A 4|grep "^\-\+$" -c)
+   else
+      inOut="0"
+   fi
+   if [ "$inOut" -gt "0" ]
+   then
+      echo "$pH1"
+      for i in $(seq "$pH1len")
+      do
+         echo -n '='
+      done
+      echo
+   else
+      p=$(grep "Problem $prob:" "$parsedfile")
+      pH2=$(echo "$p"|gawk -- 'BEGIN {
+      FS="Problem [0-9]+: "}
+      {print $2}')
+
+      pH2Last=${pH2:(-1)}
+      while [ "$pH2Last" == "?" ] || [ "$pH2Last" == "!" ] || [ "$pH2Last" == " " ] || [ "$pH2Last" == "," ]
+      do
+         pH2=${pH2%?}
+         pH2Last=${pH2:(-1)}
+      done
+
+      pH2len=$(echo -n "$pH2"|wc -m)
+      echo "$pH1"
+      for i in $(seq "$pH1len")
+      do
+         echo -n '='
+      done
+      echo
+      echo
+
+      echo "$pH2"
+      for i in $(seq "$pH2len")
+      do
+         echo -n '-'
+      done
+      echo
+   fi
+
+
+}
+
+function run()
+{
+   scFile=$(tempfile)
+   outtempfile=$(tempfile)
+   echo  '#!/bin/gawk' >> $scFile
+   echo -n '/^Problem/ {system("' >> $scFile
+   echo -n "$script" >> $scFile
+   echo   ' p "$2) }
+   ! /^(Problem|========*$)/ {
+   print}' >> $scFile
+   parsehtml
+   gawk -f "$scFile" "$file" >> "$outtempfile"
+   echo -e "\b\b\bDone."
+   rm "$scFile"
+   #rm "$parsedfile"
+   mv "$outtempfile" "$file"
+}
+
+if [ "$1" == "p" ]
+then
+   getProb $2
+   exit 0
+fi
+if [ "$1" ]
+then
+   file="$(pwd -P)/$(basename "$1")"
+fi
+run
