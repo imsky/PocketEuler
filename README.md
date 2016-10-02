@@ -13986,6 +13986,9 @@ Answer: 0e1227136d764a590dd6e067b305819b
 Problem 488
 ===========
 
+Unbalanced Nim
+--------------
+
 
 Alice and Bob have enjoyed playing **Nim** every day. However, they finally got bored of playing ordinary three-heap Nim.
 So, they added an extra rule:
